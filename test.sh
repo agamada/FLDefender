@@ -1,0 +1,1 @@
+nohup python -u main.py  > test.out 2>&1 &

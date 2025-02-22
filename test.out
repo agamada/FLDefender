@@ -1,0 +1,31 @@
+
+*****************EXP-0*****************
+Exp repeats: 3
+Communication Rounds: 100
+Clients: 20
+
+Filtering rule: avg
+Dataset: Cifar10
+Model: cnn
+Learning Rate: 0.04
+Batch Size: 64
+Device: cuda
+Device id: 0
+IID: True
+
+Adversaries: 0
+*****************EXP-0*****************
+
+
+============= Running time: 0th =============
+
+------------- Round number: 0 -------------
+Evaluate global model
+Averaged Train Loss: 2.3166
+Test Accurancy: 0.0914
+--------------- time cost --------------- 104.41358613967896 s
+
+------------- Round number: 1 -------------
+Evaluate global model
+Averaged Train Loss: 2.3166
+Test Accurancy: 0.0914
