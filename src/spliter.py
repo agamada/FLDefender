@@ -1,3 +1,4 @@
+import torch
 import random
 import numpy as np
 from torchvision import transforms, datasets
@@ -25,6 +26,13 @@ def get_dataset(dataset_name):
     train_set = target_set(root=data_path, download=False, train=True, transform=trans)
     test_set = target_set(root=data_path, download=False, train=False, transform=trans)
 
+    # def _preload_dataset(dataset):
+    #     data_tensor = torch.stack([x for x, _ in dataset])
+    #     target_tensor = torch.tensor([y for _, y in dataset])
+    #     return data.TensorDataset(data_tensor, target_tensor)
+
+    # train_set = _preload_dataset(train_set)
+    # test_set = _preload_dataset(test_set)
     return train_set, test_set
 
 

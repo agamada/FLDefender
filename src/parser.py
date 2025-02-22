@@ -34,7 +34,7 @@ def args_parser():
                         )
 
     # model & dataset related arguments
-    parser.add_argument('--model', choices=['cnn', 'cnn2'], default='cnn', help='model type')
+    parser.add_argument('--model', choices=['cnn', 'cnn2'], default='cnn2', help='model type')
     parser.add_argument('--dataset', choices=['FashionMNIST', 'Cifar10'],
                         default='Cifar10', help='name of the dataset')
     parser.add_argument('--iid', choices=[0, 1], default=1, type=int, help='IID dataset split(1 for IID, 0 for non-IID)')

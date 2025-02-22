@@ -7,6 +7,7 @@ import numpy as np
 import time
 
 from src.model import init_cnn
+from src.utils import read_client_data
 
 
 class Server(object):
@@ -59,10 +60,9 @@ class Server(object):
         for client in self.clients:
             client.receive_model(self.global_model)
 
-    def load_data(self, data_dict):
+    def load_data(self):
         for client in self.clients:
-            client.load_data(data_dict['train'][client.id])
-        self.test_data = DataLoader(data_dict['test'], batch_size=self.b, shuffle=True)
+            client.load_data()
 
     def select_clients(self):
         # select all
@@ -131,17 +131,13 @@ class Server(object):
             total_train_loss += train_loss
         total_train_loss = total_train_loss / num_train_samples
 
-        num_test_correct = 0
         num_test_samples = 0
-        self.global_model.eval()
-        with torch.no_grad():
-            for x, y in self.test_data:
-                x = x.to(self.device)
-                y = y.to(self.device)
-                output = self.global_model(x)
-                num_test_correct += (torch.sum(torch.argmax(output, dim=1) == y)).item()
-                num_test_samples += y.shape[0]
-        total_test_acc = num_test_correct / num_test_samples
+        total_test_acc = 0
+        for client in self.clients:
+            correct_num, test_num = client.test_metrics()
+            num_test_samples += test_num
+            total_test_acc += correct_num
+        total_test_acc = total_test_acc / num_test_samples
         return total_train_loss, total_test_acc
 
     def get_results(self):
@@ -228,7 +224,8 @@ class Client(object):
         self.device = args.device
 
         self.num_samples = 0
-        self.train_data = None
+        self.train_loader = None
+        self.test_loader = None
         self.loss = nn.CrossEntropyLoss()
         self.optimizer = torch.optim.SGD(self.model.parameters(), lr=self.lr)   # model必须提前准备好
         self.learning_rate_scheduler = torch.optim.lr_scheduler.ExponentialLR(
@@ -240,40 +237,47 @@ class Client(object):
         for param, new_param in zip(self.model.parameters(), new_model.parameters()):
             param.data = new_param.data.clone()
 
-    def load_data(self, dataset):
-        self.num_samples = len(dataset)
-        self.train_data = DataLoader(dataset, batch_size=self.b, shuffle=True, num_workers=8)
+    def load_data(self, is_train=True):
+        if is_train:
+            train_data = read_client_data(self.dataset, self.id, is_train=True)
+            return DataLoader(train_data, batch_size=self.b, shuffle=True, drop_last=True)
+        else:
+            test_data = read_client_data(self.dataset, self.id, is_train=False)
+            return DataLoader(test_data, batch_size=self.b, shuffle=True, drop_last=False)
 
     def train(self):
+        train_loader = self.load_data(is_train=True)
+        self.num_samples = len(train_loader.dataset)
         self.model.train()
+        t_list = []
         for epoch in range(self.e):
-            s_t1 = time.time()
-            t_list = []
-            s_t3 = time.time()
-            for i, (x, y) in enumerate(self.train_data):
-                print("load data time {}".format(time.time() - s_t3))
-                s_t2 = time.time()
-                x = x.to(self.device)
+            
+            s_t = time.time()
+            for i, (x, y) in enumerate(train_loader):
+                if type(x) == type([]):
+                    x[0] = x[0].to(self.device)
+                else:
+                    x = x.to(self.device)
                 y = y.to(self.device)
                 output = self.model(x)
                 self.optimizer.zero_grad()
                 loss = self.loss(output, y)
                 loss.backward()
                 self.optimizer.step()
-                t_list.append(time.time() - s_t2)
-                s_t3 = time.time()
-            print("client {} epoch {} timecost/batch {} batch_num {} train time: {}s".format(self.id, epoch, np.mean(t_list), len(t_list), time.time() - s_t1))
+            t_list.append(time.time() - s_t)
+        print('client ', self.id, ' train time / epoch ',np.mean(t_list))
         
         if self.ld:
             self.learning_rate_scheduler.step()
     
     def train_metrics(self):
+        train_loader = self.load_data(is_train=True)
         self.model.eval()
 
         train_num = 0
         total_loss = 0
         with torch.no_grad():
-            for x, y in self.train_data:
+            for x, y in train_loader:
                 x = x.to(self.device)
                 y = y.to(self.device)
                 output = self.model(x)
@@ -281,6 +285,21 @@ class Client(object):
                 train_num += y.shape[0]
                 total_loss += loss.item() * y.shape[0]
         return total_loss, train_num
+
+    def test_metrics(self):
+        test_loader = self.load_data(is_train=False)
+        self.model.eval()
+
+        test_num = 0
+        correct_num = 0
+        with torch.no_grad():
+            for x, y in test_loader:
+                x = x.to(self.device)
+                y = y.to(self.device)
+                output = self.model(x)
+                test_num += y.shape[0]
+                correct_num += (torch.sum(torch.argmax(output, dim=1) == y)).item()
+        return correct_num, test_num
 
                 
 

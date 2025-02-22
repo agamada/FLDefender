@@ -27,16 +27,16 @@ if __name__ == '__main__':
 
     parser.parameters_info(args)
 
-    # split dataset
-    if args.iid:
-        data_dict = spliter.split_iid(args.dataset, args.k)
-    else:
-        if args.partition == "dir":
-            data_dict = spliter.split_non_iid_dir(args.dataset, args.k, args.nc, args.p)
-        elif args.partition == "exdir":
-            data_dict = spliter.split_non_iid_exdir(args.dataset, args.k, args.nc, args.p)
-        else:
-            raise NotImplementedError
+    # # split dataset
+    # if args.iid:
+    #     data_dict = spliter.split_iid(args.dataset, args.k)
+    # else:
+    #     if args.partition == "dir":
+    #         data_dict = spliter.split_non_iid_dir(args.dataset, args.k, args.nc, args.p)
+    #     elif args.partition == "exdir":
+    #         data_dict = spliter.split_non_iid_exdir(args.dataset, args.k, args.nc, args.p)
+    #     else:
+    #         raise NotImplementedError
     
     # prepare model
     if args.model == "cnn":
@@ -56,6 +56,6 @@ if __name__ == '__main__':
         print(f"\n============= Running time: {n}th =============")
         start = time.time()
         server = roles.Server(model, args)
-        server.load_data(data_dict)
+        server.load_data()
         server.train()
     
