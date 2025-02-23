@@ -65,7 +65,7 @@ def args_parser():
 def parameters_info(args):
     """display parameter pertaining to exp settings
     """
-    print("\n*****************EXP-{0}*****************".format(args.exp))
+    print("*****************EXP-{0}*****************".format(args.exp))
     print("Exp repeats: {0}".format(args.n))
     print("Communication Rounds: {0}".format(args.r))
     print("Clients: {0}\n".format(args.k))
@@ -100,4 +100,4 @@ def parameters_info(args):
     elif args.mp == "min_max":
         print("Model Poisoning: Min-max attack")
 
-    print("*****************EXP-{0}*****************\n".format(args.exp))
+    print("*****************EXP-{0}*****************".format(args.exp))

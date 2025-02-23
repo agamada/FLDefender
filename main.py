@@ -12,10 +12,11 @@ from src import spliter
 from src import parser
 from src import roles
 
-
-torch.manual_seed(1)
-random.seed(1)
-np.random.seed(1)
+seed = 0
+torch.manual_seed(seed)
+torch.cuda.manual_seed(seed)
+random.seed(seed)
+np.random.seed(seed)
 
 if __name__ == '__main__':
     args = parser.args_parser()

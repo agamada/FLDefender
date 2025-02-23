@@ -162,18 +162,16 @@ class Server(object):
             # evaluate global model
             print(f"\n------------- Round number: {i} -------------")
             print("Evaluate global model")
-            s_t = time.time()
+            # s_t = time.time()
             self.evaluate()
-            print("evaluate time: {}s".format(time.time() - s_t))
+            # print("evaluate time: {}s".format(time.time() - s_t))
 
             # select client
             self.select_clients()
 
             # client train model
             for client in self.selected_clients:
-                s_t = time.time()
                 client.train()
-                print("client {} train time: {}s".format(client.id, time.time() - s_t))
             self.receive_model()
             self.model_to_update()
 
@@ -186,16 +184,14 @@ class Server(object):
             # aggregate
             # self.update_to_model()
 
-            s_t = time.time()
             self.aggregate_model()
-            print("aggregation time: {}s".format(time.time() - s_t))
 
             time_list.append(time.time() - start_time)
             print('-'*15, 'time cost', '-'*15, time_list[-1], 's')
 
-        print("\nBest accuracy.")
+        print("\nBest accuracy:")
         print(max(self.rs_test_acc))
-        print("\nAverage time cost per round.")
+        print("\nAverage time cost per round:")
         print(sum(time_list[1:])/len(time_list[1:]))
             
 
@@ -272,7 +268,7 @@ class Client(object):
                 loss.backward()
                 self.optimizer.step()
             t_list.append(time.time() - s_t)
-        print('client ', self.id, ' train time / epoch ',np.mean(t_list))
+        # print('client ', self.id, ' train time / epoch ',np.mean(t_list))
         
         if self.ld:
             self.learning_rate_scheduler.step()

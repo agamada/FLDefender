@@ -15,5 +15,6 @@
     最终：Cifar10客户端本地epoch平均训练时长 0.43s -> 0.15s
 
 训练过程中随机数种子不能保证重复训练结果一致
-    思路：除torch.
+    思路：设置torch.manual_seed(seed)、torch.cuda.manual_seed(seed)、random.seed(seed)、np.random.seed(seed)
+    结果：只能保证模型在训练起点保持一致，相同算法在重复训练时也会出现些许偏差，暂时忽略。
 
