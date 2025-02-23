@@ -1,11 +1,10 @@
 import copy
 import torch
-import argparse
+import random
 import os
 import time
 import warnings
 import numpy as np
-import torchvision
 import logging
 
 from src.model import *
@@ -14,7 +13,9 @@ from src import parser
 from src import roles
 
 
-torch.manual_seed(0)
+torch.manual_seed(1)
+random.seed(1)
+np.random.seed(1)
 
 if __name__ == '__main__':
     args = parser.args_parser()

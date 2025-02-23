@@ -237,23 +237,30 @@ class Client(object):
         for param, new_param in zip(self.model.parameters(), new_model.parameters()):
             param.data = new_param.data.clone()
 
-    def load_data(self, is_train=True):
-        if is_train:
-            train_data = read_client_data(self.dataset, self.id, is_train=True)
-            return DataLoader(train_data, batch_size=self.b, shuffle=True, drop_last=True)
-        else:
-            test_data = read_client_data(self.dataset, self.id, is_train=False)
-            return DataLoader(test_data, batch_size=self.b, shuffle=True, drop_last=False)
+    def load_data(self):
+        # if is_train:
+        #     train_data = read_client_data(self.dataset, self.id, is_train=True)
+        #     return DataLoader(train_data, batch_size=self.b, shuffle=True, drop_last=True)
+        # else:
+        #     test_data = read_client_data(self.dataset, self.id, is_train=False)
+        #     return DataLoader(test_data, batch_size=self.b, shuffle=True, drop_last=False)
+        train_data = read_client_data(self.dataset, self.id, is_train=True)
+        self.train_loader =  DataLoader(train_data, batch_size=self.b, shuffle=True, drop_last=True)
+        self.num_samples = len(train_data)
+        test_data = read_client_data(self.dataset, self.id, is_train=False)
+        self.test_loader =  DataLoader(test_data, batch_size=self.b, shuffle=True, drop_last=False)
 
     def train(self):
-        train_loader = self.load_data(is_train=True)
-        self.num_samples = len(train_loader.dataset)
+        # s_t = time.time()
+        # train_loader = self.load_data(is_train=True)
+        # print('client ', self.id, ' load data time: ', time.time() - s_t)
+        # self.num_samples = len(train_loader.dataset)
         self.model.train()
         t_list = []
         for epoch in range(self.e):
             
             s_t = time.time()
-            for i, (x, y) in enumerate(train_loader):
+            for i, (x, y) in enumerate(self.train_loader):
                 if type(x) == type([]):
                     x[0] = x[0].to(self.device)
                 else:
@@ -271,13 +278,13 @@ class Client(object):
             self.learning_rate_scheduler.step()
     
     def train_metrics(self):
-        train_loader = self.load_data(is_train=True)
+        # train_loader = self.load_data(is_train=True)
         self.model.eval()
 
         train_num = 0
         total_loss = 0
         with torch.no_grad():
-            for x, y in train_loader:
+            for x, y in self.train_loader:
                 x = x.to(self.device)
                 y = y.to(self.device)
                 output = self.model(x)
@@ -287,13 +294,13 @@ class Client(object):
         return total_loss, train_num
 
     def test_metrics(self):
-        test_loader = self.load_data(is_train=False)
+        # test_loader = self.load_data(is_train=False)
         self.model.eval()
 
         test_num = 0
         correct_num = 0
         with torch.no_grad():
-            for x, y in test_loader:
+            for x, y in self.test_loader:
                 x = x.to(self.device)
                 y = y.to(self.device)
                 output = self.model(x)
