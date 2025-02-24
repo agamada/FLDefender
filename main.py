@@ -21,10 +21,30 @@ np.random.seed(seed)
 if __name__ == '__main__':
     args = parser.args_parser()
 
+    # set result file name and save path
+    if args.exp == 1:
+        args.sp = f'./exp/exp1/{args.dataset}'
+        args.sn = f'{args.mp}_{args.filter}_{args.m}'
+    else:
+        args.sp = f'./exp/exp0/{args.dataset}'
+        args.sn = f'{args.mp}_{args.filter}_{args.m}'
+    
+    if not os.path.exists(args.sp):
+        os.makedirs(args.sp)
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(message)s",
+        handlers=[
+            logging.StreamHandler(),
+            logging.FileHandler(os.path.join(args.sp, args.sn) + '.log', mode="w")
+        ]
+    )
+    logger = logging.getLogger(__name__)
+
     os.environ["CUDA_VISIBLE_DEVICES"] = args.device_id
 
     if args.device == "cuda" and not torch.cuda.is_available():
-        print("\ncuda is not avaiable.\n")
         args.device = "cpu"
 
     parser.parameters_info(args)
@@ -55,9 +75,9 @@ if __name__ == '__main__':
         raise NotImplementedError
     
     for n in range(args.n):
-        print(f"\n============= Running time: {n}th =============")
+        logger.info(f"Running time: {n}th ==========================")
         start = time.time()
-        server = roles.Server(model, args)
+        server = roles.Server(model, n, args)
         server.load_data()
         server.train()
     

@@ -1,4 +1,7 @@
 import argparse
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def args_parser():
@@ -12,6 +15,9 @@ def args_parser():
     # experiments related arguments
     parser.add_argument('--exp', type=int, default=0, help='tell which experiment is ongoing')
     parser.add_argument('--n', type=int, default=1, help='repeat the experiment for n times')
+    parser.add_argument('--seed', type=int, default=0, help='random seed')
+    parser.add_argument('--sp', type=str, default='./', help='save_path')
+    parser.add_argument('--sn', type=str, default='run', help='save_name')
 
     # federated learning related arguments
     parser.add_argument('--r', type=int, default=5, help='communication rounds of training')
@@ -37,9 +43,9 @@ def args_parser():
     parser.add_argument('--model', choices=['cnn', 'cnn2'], default='cnn2', help='model type')
     parser.add_argument('--dataset', choices=['FashionMNIST', 'Cifar10'],
                         default='Cifar10', help='name of the dataset')
-    parser.add_argument('--iid', choices=[0, 1], default=1, type=int, help='IID dataset split(1 for IID, 0 for non-IID)')
-    parser.add_argument('--partition', choices=['dir', 'exdir'], default='exdir', type=str, help='non-IID partition method')
-    parser.add_argument('--p', type=float, default=0.1, help='degree of non-IID')
+    # parser.add_argument('--iid', choices=[0, 1], default=1, type=int, help='IID dataset split(1 for IID, 0 for non-IID)')
+    # parser.add_argument('--partition', choices=['dir', 'exdir'], default='exdir', type=str, help='non-IID partition method')
+    # parser.add_argument('--p', type=float, default=0.1, help='degree of non-IID')
 
     # poisoning attacks related arguments
     parser.add_argument('--m', type=int, default=0, help='number of malicious clients/ attackers')
@@ -65,39 +71,39 @@ def args_parser():
 def parameters_info(args):
     """display parameter pertaining to exp settings
     """
-    print("*****************EXP-{0}*****************".format(args.exp))
-    print("Exp repeats: {0}".format(args.n))
-    print("Communication Rounds: {0}".format(args.r))
-    print("Clients: {0}\n".format(args.k))
+    logger.info("*****************EXP-{0}*****************".format(args.exp))
+    logger.info("Exp repeats: {0}".format(args.n))
+    logger.info("Communication Rounds: {0}".format(args.r))
+    logger.info("Clients: {0}\n".format(args.k))
 
-    print("Filtering rule: {0}".format(args.filter))
+    logger.info("Filtering rule: {0}".format(args.filter))
 
-    print("Dataset: {0}".format(args.dataset))
-    print("Model: {0}".format(args.model))
-    print("Learning Rate: {0}".format(args.lr))
-    print("Batch Size: {0}".format(args.b))
-    print("Device: {0}".format(args.device))
+    logger.info("Dataset: {0}".format(args.dataset))
+    logger.info("Model: {0}".format(args.model))
+    logger.info("Learning Rate: {0}".format(args.lr))
+    logger.info("Batch Size: {0}".format(args.b))
+    logger.info("Device: {0}".format(args.device))
     if args.device == "cuda":
-        print("Device id: {0}".format(args.device_id))
-    if args.iid == 1:
-        print("IID: True\n")
-    elif args.iid == 0:
-        print("Non-IID, Partition: {0}".format(args.partition))
-        print("Degree of non-IID: {0}\n".format(args.p))
+        logger.info("Device id: {0}".format(args.device_id))
+    # if args.iid == 1:
+    #     logger.info("IID: True")
+    # elif args.iid == 0:
+    #     logger.info("Non-IID, Partition: {0}".format(args.partition))
+    #     logger.info("Degree of non-IID: {0}\n".format(args.p))
 
-    print("Adversaries: {0}".format(args.m))
+    logger.info("Adversaries: {0}".format(args.m))
     if args.dp == 'lf':
-        print("Targeted Label Flipping: {0}-->{1}".format(args.ls, args.lt))
+        logger.info("Targeted Label Flipping: {0}-->{1}".format(args.ls, args.lt))
     elif args.dp == 'rlf':
-        print("Untargeted label Flipping")
+        logger.info("Untargeted label Flipping")
     if args.mp == "scale":
-        print("Model Poisoning: Scaling up")
-        print("Scaling factor: {0}".format(args.s))
+        logger.info("Model Poisoning: Scaling up")
+        logger.info("Scaling factor: {0}".format(args.s))
     elif args.mp == "neg":
-        print("Model Poisoning: Negative contribution")
+        logger.info("Model Poisoning: Negative contribution")
     elif args.mp == "rand":
-        print("Model Poisoning: Random contribution")
+        logger.info("Model Poisoning: Random contribution")
     elif args.mp == "min_max":
-        print("Model Poisoning: Min-max attack")
+        logger.info("Model Poisoning: Min-max attack")
 
-    print("*****************EXP-{0}*****************".format(args.exp))
+    logger.info("*****************EXP-{0}*****************".format(args.exp))

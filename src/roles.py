@@ -1,3 +1,4 @@
+import os
 import copy
 import random
 import torch
@@ -5,13 +6,16 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 import numpy as np
 import time
+import h5py
+import logging
 
 from src.model import init_cnn
 from src.utils import read_client_data
 
+logger = logging.getLogger('client')
 
 class Server(object):
-    def __init__(self, model, args):
+    def __init__(self, model, times, args):
         self.args = args
         # federated learning related arguments
         self.r = args.r
@@ -30,6 +34,7 @@ class Server(object):
         self.s = args.s
         self.lamda = args.lamda
         self.device = args.device
+        self.times = times
 
         self.test_data = None
         self.loss = nn.CrossEntropyLoss()
@@ -140,15 +145,28 @@ class Server(object):
         total_test_acc = total_test_acc / num_test_samples
         return total_train_loss, total_test_acc
 
-    def get_results(self):
+    def save_results(self):
+        result_path = self.args.sp
+        if not os.path.exists(result_path):
+            os.makedirs(result_path)
+        
+        if (len(self.rs_test_acc)):
+            file_path = os.path.join(self.args.sp, self.args.sn + '.h5')
+            logger.info("Saving results to {}".format(file_path))
+
+            with h5py.File(file_path, 'w') as hf:
+                hf.create_dataset('rs_test_acc', data=self.rs_test_acc)
+                hf.create_dataset('rs_train_loss', data=self.rs_train_loss)
+                hf.create_dataset('args', data=str(self.args))
+        
         return self.rs_train_loss, self.rs_test_acc
 
     def evaluate(self):
         train_loss, test_acc = self.calculate_metrics()
         self.rs_train_loss.append(train_loss)
         self.rs_test_acc.append(test_acc)
-        print("Averaged Train Loss: {:.4f}".format(train_loss))
-        print("Test Accurancy: {:.4f}".format(test_acc))
+        logger.info("Averaged Train Loss: {:.4f}".format(train_loss))
+        logger.info("Test Accurancy: {:.4f}".format(test_acc))
 
 
     def train(self):
@@ -156,15 +174,16 @@ class Server(object):
 
         for i in range(self.r + 1):
             start_time = time.time()
+            
             # send_model
             self.send_model()
 
             # evaluate global model
-            print(f"\n------------- Round number: {i} -------------")
-            print("Evaluate global model")
+            logger.info(f"Round number: {i} --------------------------")
+            logger.info("Evaluate global model")
             # s_t = time.time()
             self.evaluate()
-            # print("evaluate time: {}s".format(time.time() - s_t))
+            # logger.info("evaluate time: {}s".format(time.time() - s_t))
 
             # select client
             self.select_clients()
@@ -187,12 +206,12 @@ class Server(object):
             self.aggregate_model()
 
             time_list.append(time.time() - start_time)
-            print('-'*15, 'time cost', '-'*15, time_list[-1], 's')
+            # logger.info('-'*15, 'time cost', '-'*15, time_list[-1], 's')
 
-        print("\nBest accuracy:")
-        print(max(self.rs_test_acc))
-        print("\nAverage time cost per round:")
-        print(sum(time_list[1:])/len(time_list[1:]))
+        logger.info("Run over")
+        self.save_results()
+        logger.info("Best accuracy: {}".format(max(self.rs_test_acc)))
+        logger.info("Average time cost per round: {}".format(sum(time_list[1:])/len(time_list[1:])))
             
 
 
@@ -249,7 +268,7 @@ class Client(object):
     def train(self):
         # s_t = time.time()
         # train_loader = self.load_data(is_train=True)
-        # print('client ', self.id, ' load data time: ', time.time() - s_t)
+        # logger.info('client ', self.id, ' load data time: ', time.time() - s_t)
         # self.num_samples = len(train_loader.dataset)
         self.model.train()
         t_list = []
@@ -268,7 +287,7 @@ class Client(object):
                 loss.backward()
                 self.optimizer.step()
             t_list.append(time.time() - s_t)
-        # print('client ', self.id, ' train time / epoch ',np.mean(t_list))
+        # logger.info('client ', self.id, ' train time / epoch ',np.mean(t_list))
         
         if self.ld:
             self.learning_rate_scheduler.step()
