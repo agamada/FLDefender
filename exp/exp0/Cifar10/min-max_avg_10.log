@@ -1,0 +1,525 @@
+2025-02-24 22:23:16,429 - *****************EXP-0*****************
+2025-02-24 22:23:16,430 - Exp repeats: 1
+2025-02-24 22:23:16,430 - Communication Rounds: 100
+2025-02-24 22:23:16,430 - Clients: 20
+
+2025-02-24 22:23:16,430 - Attack method: min-max
+2025-02-24 22:23:16,430 - Filtering rule: avg
+2025-02-24 22:23:16,430 - Dataset: Cifar10
+2025-02-24 22:23:16,430 - Model: cnn2
+2025-02-24 22:23:16,430 - Learning Rate: 0.02
+2025-02-24 22:23:16,430 - Batch Size: 64
+2025-02-24 22:23:16,430 - Device: cuda
+2025-02-24 22:23:16,430 - Device id: 0
+2025-02-24 22:23:16,430 - Adversaries: 10
+2025-02-24 22:23:16,431 - *****************EXP-0*****************
+2025-02-24 22:23:16,722 - Running time: 0th ==========================
+2025-02-24 22:23:22,214 - Round number: 0 --------------------------
+2025-02-24 22:23:22,214 - Evaluate global model
+2025-02-24 22:23:29,516 - Averaged Train Loss: 2.3055
+2025-02-24 22:23:29,517 - Test Accurancy: 0.1179
+2025-02-24 22:23:51,430 - min_max_attack try_count: 20
+2025-02-24 22:23:51,441 - Round number: 1 --------------------------
+2025-02-24 22:23:51,441 - Evaluate global model
+2025-02-24 22:23:58,421 - Averaged Train Loss: 2.3042
+2025-02-24 22:23:58,421 - Test Accurancy: 0.1178
+2025-02-24 22:24:20,370 - min_max_attack try_count: 20
+2025-02-24 22:24:20,383 - Round number: 2 --------------------------
+2025-02-24 22:24:20,383 - Evaluate global model
+2025-02-24 22:24:27,191 - Averaged Train Loss: 2.2962
+2025-02-24 22:24:27,192 - Test Accurancy: 0.1241
+2025-02-24 22:24:48,621 - min_max_attack try_count: 20
+2025-02-24 22:24:48,635 - Round number: 3 --------------------------
+2025-02-24 22:24:48,635 - Evaluate global model
+2025-02-24 22:24:56,081 - Averaged Train Loss: 2.2340
+2025-02-24 22:24:56,081 - Test Accurancy: 0.2283
+2025-02-24 22:25:17,543 - min_max_attack try_count: 20
+2025-02-24 22:25:17,557 - Round number: 4 --------------------------
+2025-02-24 22:25:17,557 - Evaluate global model
+2025-02-24 22:25:25,363 - Averaged Train Loss: 2.0946
+2025-02-24 22:25:25,363 - Test Accurancy: 0.3045
+2025-02-24 22:25:47,120 - min_max_attack try_count: 20
+2025-02-24 22:25:47,131 - Round number: 5 --------------------------
+2025-02-24 22:25:47,131 - Evaluate global model
+2025-02-24 22:25:54,153 - Averaged Train Loss: 1.9898
+2025-02-24 22:25:54,153 - Test Accurancy: 0.3165
+2025-02-24 22:26:15,996 - min_max_attack try_count: 20
+2025-02-24 22:26:16,010 - Round number: 6 --------------------------
+2025-02-24 22:26:16,010 - Evaluate global model
+2025-02-24 22:26:23,016 - Averaged Train Loss: 1.9278
+2025-02-24 22:26:23,016 - Test Accurancy: 0.3272
+2025-02-24 22:26:44,657 - min_max_attack try_count: 20
+2025-02-24 22:26:44,668 - Round number: 7 --------------------------
+2025-02-24 22:26:44,668 - Evaluate global model
+2025-02-24 22:26:51,379 - Averaged Train Loss: 1.8856
+2025-02-24 22:26:51,379 - Test Accurancy: 0.3330
+2025-02-24 22:27:13,458 - min_max_attack try_count: 20
+2025-02-24 22:27:13,474 - Round number: 8 --------------------------
+2025-02-24 22:27:13,474 - Evaluate global model
+2025-02-24 22:27:20,339 - Averaged Train Loss: 1.8436
+2025-02-24 22:27:20,339 - Test Accurancy: 0.3454
+2025-02-24 22:27:42,026 - min_max_attack try_count: 20
+2025-02-24 22:27:42,040 - Round number: 9 --------------------------
+2025-02-24 22:27:42,040 - Evaluate global model
+2025-02-24 22:27:49,558 - Averaged Train Loss: 1.8045
+2025-02-24 22:27:49,559 - Test Accurancy: 0.3594
+2025-02-24 22:28:11,047 - min_max_attack try_count: 20
+2025-02-24 22:28:11,058 - Round number: 10 --------------------------
+2025-02-24 22:28:11,058 - Evaluate global model
+2025-02-24 22:28:17,779 - Averaged Train Loss: 1.7716
+2025-02-24 22:28:17,779 - Test Accurancy: 0.3703
+2025-02-24 22:28:39,792 - min_max_attack try_count: 20
+2025-02-24 22:28:39,807 - Round number: 11 --------------------------
+2025-02-24 22:28:39,807 - Evaluate global model
+2025-02-24 22:28:46,992 - Averaged Train Loss: 1.7424
+2025-02-24 22:28:46,993 - Test Accurancy: 0.3796
+2025-02-24 22:29:09,213 - min_max_attack try_count: 20
+2025-02-24 22:29:09,225 - Round number: 12 --------------------------
+2025-02-24 22:29:09,225 - Evaluate global model
+2025-02-24 22:29:16,067 - Averaged Train Loss: 1.7085
+2025-02-24 22:29:16,067 - Test Accurancy: 0.3880
+2025-02-24 22:29:38,069 - min_max_attack try_count: 20
+2025-02-24 22:29:38,080 - Round number: 13 --------------------------
+2025-02-24 22:29:38,081 - Evaluate global model
+2025-02-24 22:29:44,746 - Averaged Train Loss: 1.6739
+2025-02-24 22:29:44,746 - Test Accurancy: 0.4017
+2025-02-24 22:30:06,691 - min_max_attack try_count: 20
+2025-02-24 22:30:06,701 - Round number: 14 --------------------------
+2025-02-24 22:30:06,701 - Evaluate global model
+2025-02-24 22:30:13,991 - Averaged Train Loss: 1.6466
+2025-02-24 22:30:13,992 - Test Accurancy: 0.4123
+2025-02-24 22:30:35,919 - min_max_attack try_count: 20
+2025-02-24 22:30:35,933 - Round number: 15 --------------------------
+2025-02-24 22:30:35,934 - Evaluate global model
+2025-02-24 22:30:43,475 - Averaged Train Loss: 1.6220
+2025-02-24 22:30:43,475 - Test Accurancy: 0.4199
+2025-02-24 22:31:05,415 - min_max_attack try_count: 20
+2025-02-24 22:31:05,426 - Round number: 16 --------------------------
+2025-02-24 22:31:05,426 - Evaluate global model
+2025-02-24 22:31:12,895 - Averaged Train Loss: 1.5984
+2025-02-24 22:31:12,895 - Test Accurancy: 0.4265
+2025-02-24 22:31:34,743 - min_max_attack try_count: 20
+2025-02-24 22:31:34,754 - Round number: 17 --------------------------
+2025-02-24 22:31:34,754 - Evaluate global model
+2025-02-24 22:31:41,919 - Averaged Train Loss: 1.5822
+2025-02-24 22:31:41,920 - Test Accurancy: 0.4332
+2025-02-24 22:32:03,785 - min_max_attack try_count: 20
+2025-02-24 22:32:03,803 - Round number: 18 --------------------------
+2025-02-24 22:32:03,804 - Evaluate global model
+2025-02-24 22:32:11,072 - Averaged Train Loss: 1.5639
+2025-02-24 22:32:11,073 - Test Accurancy: 0.4366
+2025-02-24 22:32:32,815 - min_max_attack try_count: 20
+2025-02-24 22:32:32,831 - Round number: 19 --------------------------
+2025-02-24 22:32:32,831 - Evaluate global model
+2025-02-24 22:32:39,657 - Averaged Train Loss: 1.5539
+2025-02-24 22:32:39,657 - Test Accurancy: 0.4428
+2025-02-24 22:33:01,745 - min_max_attack try_count: 20
+2025-02-24 22:33:01,760 - Round number: 20 --------------------------
+2025-02-24 22:33:01,760 - Evaluate global model
+2025-02-24 22:33:08,661 - Averaged Train Loss: 1.5415
+2025-02-24 22:33:08,661 - Test Accurancy: 0.4438
+2025-02-24 22:33:30,573 - min_max_attack try_count: 20
+2025-02-24 22:33:30,588 - Round number: 21 --------------------------
+2025-02-24 22:33:30,588 - Evaluate global model
+2025-02-24 22:33:38,207 - Averaged Train Loss: 1.5311
+2025-02-24 22:33:38,207 - Test Accurancy: 0.4498
+2025-02-24 22:34:00,500 - min_max_attack try_count: 20
+2025-02-24 22:34:00,512 - Round number: 22 --------------------------
+2025-02-24 22:34:00,512 - Evaluate global model
+2025-02-24 22:34:07,219 - Averaged Train Loss: 1.5224
+2025-02-24 22:34:07,219 - Test Accurancy: 0.4514
+2025-02-24 22:34:29,337 - min_max_attack try_count: 20
+2025-02-24 22:34:29,351 - Round number: 23 --------------------------
+2025-02-24 22:34:29,352 - Evaluate global model
+2025-02-24 22:34:36,270 - Averaged Train Loss: 1.5215
+2025-02-24 22:34:36,271 - Test Accurancy: 0.4531
+2025-02-24 22:34:58,055 - min_max_attack try_count: 20
+2025-02-24 22:34:58,066 - Round number: 24 --------------------------
+2025-02-24 22:34:58,066 - Evaluate global model
+2025-02-24 22:35:04,792 - Averaged Train Loss: 1.5120
+2025-02-24 22:35:04,793 - Test Accurancy: 0.4566
+2025-02-24 22:35:26,852 - min_max_attack try_count: 20
+2025-02-24 22:35:26,871 - Round number: 25 --------------------------
+2025-02-24 22:35:26,871 - Evaluate global model
+2025-02-24 22:35:33,568 - Averaged Train Loss: 1.5018
+2025-02-24 22:35:33,568 - Test Accurancy: 0.4592
+2025-02-24 22:35:55,447 - min_max_attack try_count: 20
+2025-02-24 22:35:55,466 - Round number: 26 --------------------------
+2025-02-24 22:35:55,466 - Evaluate global model
+2025-02-24 22:36:02,877 - Averaged Train Loss: 1.4970
+2025-02-24 22:36:02,877 - Test Accurancy: 0.4599
+2025-02-24 22:36:24,619 - min_max_attack try_count: 20
+2025-02-24 22:36:24,630 - Round number: 27 --------------------------
+2025-02-24 22:36:24,630 - Evaluate global model
+2025-02-24 22:36:31,559 - Averaged Train Loss: 1.4927
+2025-02-24 22:36:31,559 - Test Accurancy: 0.4608
+2025-02-24 22:36:53,652 - min_max_attack try_count: 20
+2025-02-24 22:36:53,671 - Round number: 28 --------------------------
+2025-02-24 22:36:53,671 - Evaluate global model
+2025-02-24 22:37:00,459 - Averaged Train Loss: 1.4866
+2025-02-24 22:37:00,459 - Test Accurancy: 0.4626
+2025-02-24 22:37:22,504 - min_max_attack try_count: 20
+2025-02-24 22:37:22,515 - Round number: 29 --------------------------
+2025-02-24 22:37:22,515 - Evaluate global model
+2025-02-24 22:37:29,719 - Averaged Train Loss: 1.4834
+2025-02-24 22:37:29,720 - Test Accurancy: 0.4632
+2025-02-24 22:37:51,870 - min_max_attack try_count: 20
+2025-02-24 22:37:51,882 - Round number: 30 --------------------------
+2025-02-24 22:37:51,882 - Evaluate global model
+2025-02-24 22:37:58,533 - Averaged Train Loss: 1.4794
+2025-02-24 22:37:58,533 - Test Accurancy: 0.4631
+2025-02-24 22:38:20,100 - min_max_attack try_count: 20
+2025-02-24 22:38:20,111 - Round number: 31 --------------------------
+2025-02-24 22:38:20,111 - Evaluate global model
+2025-02-24 22:38:26,734 - Averaged Train Loss: 1.4777
+2025-02-24 22:38:26,734 - Test Accurancy: 0.4640
+2025-02-24 22:38:48,895 - min_max_attack try_count: 20
+2025-02-24 22:38:48,907 - Round number: 32 --------------------------
+2025-02-24 22:38:48,907 - Evaluate global model
+2025-02-24 22:38:55,804 - Averaged Train Loss: 1.4778
+2025-02-24 22:38:55,805 - Test Accurancy: 0.4630
+2025-02-24 22:39:17,739 - min_max_attack try_count: 20
+2025-02-24 22:39:17,751 - Round number: 33 --------------------------
+2025-02-24 22:39:17,751 - Evaluate global model
+2025-02-24 22:39:25,332 - Averaged Train Loss: 1.4753
+2025-02-24 22:39:25,332 - Test Accurancy: 0.4664
+2025-02-24 22:39:46,872 - min_max_attack try_count: 20
+2025-02-24 22:39:46,886 - Round number: 34 --------------------------
+2025-02-24 22:39:46,886 - Evaluate global model
+2025-02-24 22:39:53,901 - Averaged Train Loss: 1.4746
+2025-02-24 22:39:53,901 - Test Accurancy: 0.4642
+2025-02-24 22:40:15,700 - min_max_attack try_count: 20
+2025-02-24 22:40:15,716 - Round number: 35 --------------------------
+2025-02-24 22:40:15,716 - Evaluate global model
+2025-02-24 22:40:22,999 - Averaged Train Loss: 1.4702
+2025-02-24 22:40:23,000 - Test Accurancy: 0.4674
+2025-02-24 22:40:45,207 - min_max_attack try_count: 20
+2025-02-24 22:40:45,222 - Round number: 36 --------------------------
+2025-02-24 22:40:45,222 - Evaluate global model
+2025-02-24 22:40:51,803 - Averaged Train Loss: 1.4693
+2025-02-24 22:40:51,803 - Test Accurancy: 0.4672
+2025-02-24 22:41:13,614 - min_max_attack try_count: 20
+2025-02-24 22:41:13,625 - Round number: 37 --------------------------
+2025-02-24 22:41:13,625 - Evaluate global model
+2025-02-24 22:41:20,465 - Averaged Train Loss: 1.4654
+2025-02-24 22:41:20,465 - Test Accurancy: 0.4696
+2025-02-24 22:41:42,217 - min_max_attack try_count: 20
+2025-02-24 22:41:42,232 - Round number: 38 --------------------------
+2025-02-24 22:41:42,232 - Evaluate global model
+2025-02-24 22:41:49,741 - Averaged Train Loss: 1.4677
+2025-02-24 22:41:49,741 - Test Accurancy: 0.4714
+2025-02-24 22:42:11,387 - min_max_attack try_count: 20
+2025-02-24 22:42:11,399 - Round number: 39 --------------------------
+2025-02-24 22:42:11,399 - Evaluate global model
+2025-02-24 22:42:18,566 - Averaged Train Loss: 1.4624
+2025-02-24 22:42:18,566 - Test Accurancy: 0.4709
+2025-02-24 22:42:40,611 - min_max_attack try_count: 20
+2025-02-24 22:42:40,624 - Round number: 40 --------------------------
+2025-02-24 22:42:40,624 - Evaluate global model
+2025-02-24 22:42:47,727 - Averaged Train Loss: 1.4599
+2025-02-24 22:42:47,728 - Test Accurancy: 0.4734
+2025-02-24 22:43:09,653 - min_max_attack try_count: 20
+2025-02-24 22:43:09,667 - Round number: 41 --------------------------
+2025-02-24 22:43:09,668 - Evaluate global model
+2025-02-24 22:43:16,932 - Averaged Train Loss: 1.4598
+2025-02-24 22:43:16,932 - Test Accurancy: 0.4751
+2025-02-24 22:43:38,797 - min_max_attack try_count: 20
+2025-02-24 22:43:38,810 - Round number: 42 --------------------------
+2025-02-24 22:43:38,810 - Evaluate global model
+2025-02-24 22:43:46,124 - Averaged Train Loss: 1.4613
+2025-02-24 22:43:46,124 - Test Accurancy: 0.4751
+2025-02-24 22:44:08,373 - min_max_attack try_count: 20
+2025-02-24 22:44:08,383 - Round number: 43 --------------------------
+2025-02-24 22:44:08,384 - Evaluate global model
+2025-02-24 22:44:15,090 - Averaged Train Loss: 1.4633
+2025-02-24 22:44:15,090 - Test Accurancy: 0.4747
+2025-02-24 22:44:36,960 - min_max_attack try_count: 20
+2025-02-24 22:44:36,975 - Round number: 44 --------------------------
+2025-02-24 22:44:36,975 - Evaluate global model
+2025-02-24 22:44:43,713 - Averaged Train Loss: 1.4653
+2025-02-24 22:44:43,713 - Test Accurancy: 0.4752
+2025-02-24 22:45:05,830 - min_max_attack try_count: 20
+2025-02-24 22:45:05,843 - Round number: 45 --------------------------
+2025-02-24 22:45:05,843 - Evaluate global model
+2025-02-24 22:45:12,374 - Averaged Train Loss: 1.4618
+2025-02-24 22:45:12,374 - Test Accurancy: 0.4747
+2025-02-24 22:45:34,518 - min_max_attack try_count: 20
+2025-02-24 22:45:34,529 - Round number: 46 --------------------------
+2025-02-24 22:45:34,529 - Evaluate global model
+2025-02-24 22:45:41,446 - Averaged Train Loss: 1.4604
+2025-02-24 22:45:41,447 - Test Accurancy: 0.4769
+2025-02-24 22:46:03,400 - min_max_attack try_count: 20
+2025-02-24 22:46:03,419 - Round number: 47 --------------------------
+2025-02-24 22:46:03,419 - Evaluate global model
+2025-02-24 22:46:10,812 - Averaged Train Loss: 1.4611
+2025-02-24 22:46:10,812 - Test Accurancy: 0.4778
+2025-02-24 22:46:33,080 - min_max_attack try_count: 20
+2025-02-24 22:46:33,100 - Round number: 48 --------------------------
+2025-02-24 22:46:33,100 - Evaluate global model
+2025-02-24 22:46:40,087 - Averaged Train Loss: 1.4623
+2025-02-24 22:46:40,087 - Test Accurancy: 0.4767
+2025-02-24 22:47:02,031 - min_max_attack try_count: 20
+2025-02-24 22:47:02,048 - Round number: 49 --------------------------
+2025-02-24 22:47:02,048 - Evaluate global model
+2025-02-24 22:47:08,831 - Averaged Train Loss: 1.4659
+2025-02-24 22:47:08,832 - Test Accurancy: 0.4765
+2025-02-24 22:47:30,816 - min_max_attack try_count: 20
+2025-02-24 22:47:30,833 - Round number: 50 --------------------------
+2025-02-24 22:47:30,833 - Evaluate global model
+2025-02-24 22:47:38,085 - Averaged Train Loss: 1.4658
+2025-02-24 22:47:38,086 - Test Accurancy: 0.4751
+2025-02-24 22:48:00,291 - min_max_attack try_count: 20
+2025-02-24 22:48:00,306 - Round number: 51 --------------------------
+2025-02-24 22:48:00,306 - Evaluate global model
+2025-02-24 22:48:07,668 - Averaged Train Loss: 1.4568
+2025-02-24 22:48:07,669 - Test Accurancy: 0.4766
+2025-02-24 22:48:29,883 - min_max_attack try_count: 20
+2025-02-24 22:48:29,895 - Round number: 52 --------------------------
+2025-02-24 22:48:29,895 - Evaluate global model
+2025-02-24 22:48:36,397 - Averaged Train Loss: 1.4584
+2025-02-24 22:48:36,397 - Test Accurancy: 0.4775
+2025-02-24 22:48:58,791 - min_max_attack try_count: 20
+2025-02-24 22:48:58,803 - Round number: 53 --------------------------
+2025-02-24 22:48:58,803 - Evaluate global model
+2025-02-24 22:49:05,280 - Averaged Train Loss: 1.4575
+2025-02-24 22:49:05,280 - Test Accurancy: 0.4779
+2025-02-24 22:49:27,315 - min_max_attack try_count: 20
+2025-02-24 22:49:27,330 - Round number: 54 --------------------------
+2025-02-24 22:49:27,331 - Evaluate global model
+2025-02-24 22:49:33,987 - Averaged Train Loss: 1.4584
+2025-02-24 22:49:33,987 - Test Accurancy: 0.4775
+2025-02-24 22:49:56,169 - min_max_attack try_count: 20
+2025-02-24 22:49:56,180 - Round number: 55 --------------------------
+2025-02-24 22:49:56,180 - Evaluate global model
+2025-02-24 22:50:03,060 - Averaged Train Loss: 1.4687
+2025-02-24 22:50:03,061 - Test Accurancy: 0.4746
+2025-02-24 22:50:25,158 - min_max_attack try_count: 20
+2025-02-24 22:50:25,169 - Round number: 56 --------------------------
+2025-02-24 22:50:25,169 - Evaluate global model
+2025-02-24 22:50:31,914 - Averaged Train Loss: 1.4829
+2025-02-24 22:50:31,914 - Test Accurancy: 0.4704
+2025-02-24 22:50:54,195 - min_max_attack try_count: 20
+2025-02-24 22:50:54,207 - Round number: 57 --------------------------
+2025-02-24 22:50:54,207 - Evaluate global model
+2025-02-24 22:51:01,441 - Averaged Train Loss: 1.4776
+2025-02-24 22:51:01,441 - Test Accurancy: 0.4730
+2025-02-24 22:51:23,933 - min_max_attack try_count: 20
+2025-02-24 22:51:23,947 - Round number: 58 --------------------------
+2025-02-24 22:51:23,947 - Evaluate global model
+2025-02-24 22:51:30,387 - Averaged Train Loss: 1.4898
+2025-02-24 22:51:30,387 - Test Accurancy: 0.4736
+2025-02-24 22:51:52,671 - min_max_attack try_count: 20
+2025-02-24 22:51:52,684 - Round number: 59 --------------------------
+2025-02-24 22:51:52,685 - Evaluate global model
+2025-02-24 22:51:59,166 - Averaged Train Loss: 1.4927
+2025-02-24 22:51:59,166 - Test Accurancy: 0.4724
+2025-02-24 22:52:21,624 - min_max_attack try_count: 20
+2025-02-24 22:52:21,634 - Round number: 60 --------------------------
+2025-02-24 22:52:21,634 - Evaluate global model
+2025-02-24 22:52:28,124 - Averaged Train Loss: 1.4988
+2025-02-24 22:52:28,125 - Test Accurancy: 0.4744
+2025-02-24 22:52:50,683 - min_max_attack try_count: 20
+2025-02-24 22:52:50,694 - Round number: 61 --------------------------
+2025-02-24 22:52:50,695 - Evaluate global model
+2025-02-24 22:52:57,412 - Averaged Train Loss: 1.4967
+2025-02-24 22:52:57,413 - Test Accurancy: 0.4744
+2025-02-24 22:53:19,599 - min_max_attack try_count: 20
+2025-02-24 22:53:19,610 - Round number: 62 --------------------------
+2025-02-24 22:53:19,610 - Evaluate global model
+2025-02-24 22:53:26,191 - Averaged Train Loss: 1.4987
+2025-02-24 22:53:26,191 - Test Accurancy: 0.4755
+2025-02-24 22:53:48,293 - min_max_attack try_count: 20
+2025-02-24 22:53:48,305 - Round number: 63 --------------------------
+2025-02-24 22:53:48,305 - Evaluate global model
+2025-02-24 22:53:54,670 - Averaged Train Loss: 1.5075
+2025-02-24 22:53:54,671 - Test Accurancy: 0.4770
+2025-02-24 22:54:17,014 - min_max_attack try_count: 20
+2025-02-24 22:54:17,025 - Round number: 64 --------------------------
+2025-02-24 22:54:17,025 - Evaluate global model
+2025-02-24 22:54:23,705 - Averaged Train Loss: 1.5087
+2025-02-24 22:54:23,706 - Test Accurancy: 0.4774
+2025-02-24 22:54:46,005 - min_max_attack try_count: 20
+2025-02-24 22:54:46,016 - Round number: 65 --------------------------
+2025-02-24 22:54:46,016 - Evaluate global model
+2025-02-24 22:54:52,590 - Averaged Train Loss: 1.5230
+2025-02-24 22:54:52,590 - Test Accurancy: 0.4751
+2025-02-24 22:55:14,846 - min_max_attack try_count: 20
+2025-02-24 22:55:14,857 - Round number: 66 --------------------------
+2025-02-24 22:55:14,857 - Evaluate global model
+2025-02-24 22:55:21,574 - Averaged Train Loss: 1.5213
+2025-02-24 22:55:21,575 - Test Accurancy: 0.4770
+2025-02-24 22:55:43,846 - min_max_attack try_count: 20
+2025-02-24 22:55:43,857 - Round number: 67 --------------------------
+2025-02-24 22:55:43,857 - Evaluate global model
+2025-02-24 22:55:50,543 - Averaged Train Loss: 1.5310
+2025-02-24 22:55:50,543 - Test Accurancy: 0.4753
+2025-02-24 22:56:12,786 - min_max_attack try_count: 20
+2025-02-24 22:56:12,797 - Round number: 68 --------------------------
+2025-02-24 22:56:12,797 - Evaluate global model
+2025-02-24 22:56:19,165 - Averaged Train Loss: 1.5287
+2025-02-24 22:56:19,166 - Test Accurancy: 0.4769
+2025-02-24 22:56:41,255 - min_max_attack try_count: 20
+2025-02-24 22:56:41,270 - Round number: 69 --------------------------
+2025-02-24 22:56:41,270 - Evaluate global model
+2025-02-24 22:56:48,391 - Averaged Train Loss: 1.5446
+2025-02-24 22:56:48,392 - Test Accurancy: 0.4759
+2025-02-24 22:57:10,386 - min_max_attack try_count: 20
+2025-02-24 22:57:10,396 - Round number: 70 --------------------------
+2025-02-24 22:57:10,397 - Evaluate global model
+2025-02-24 22:57:16,655 - Averaged Train Loss: 1.5367
+2025-02-24 22:57:16,655 - Test Accurancy: 0.4803
+2025-02-24 22:57:38,990 - min_max_attack try_count: 20
+2025-02-24 22:57:39,002 - Round number: 71 --------------------------
+2025-02-24 22:57:39,002 - Evaluate global model
+2025-02-24 22:57:45,681 - Averaged Train Loss: 1.5233
+2025-02-24 22:57:45,681 - Test Accurancy: 0.4821
+2025-02-24 22:58:07,842 - min_max_attack try_count: 20
+2025-02-24 22:58:07,857 - Round number: 72 --------------------------
+2025-02-24 22:58:07,857 - Evaluate global model
+2025-02-24 22:58:14,660 - Averaged Train Loss: 1.5548
+2025-02-24 22:58:14,661 - Test Accurancy: 0.4780
+2025-02-24 22:58:37,066 - min_max_attack try_count: 20
+2025-02-24 22:58:37,076 - Round number: 73 --------------------------
+2025-02-24 22:58:37,076 - Evaluate global model
+2025-02-24 22:58:44,057 - Averaged Train Loss: 1.5680
+2025-02-24 22:58:44,057 - Test Accurancy: 0.4775
+2025-02-24 22:59:05,864 - min_max_attack try_count: 20
+2025-02-24 22:59:05,875 - Round number: 74 --------------------------
+2025-02-24 22:59:05,875 - Evaluate global model
+2025-02-24 22:59:12,076 - Averaged Train Loss: 1.5897
+2025-02-24 22:59:12,076 - Test Accurancy: 0.4760
+2025-02-24 22:59:34,807 - min_max_attack try_count: 20
+2025-02-24 22:59:34,819 - Round number: 75 --------------------------
+2025-02-24 22:59:34,819 - Evaluate global model
+2025-02-24 22:59:41,159 - Averaged Train Loss: 1.5999
+2025-02-24 22:59:41,159 - Test Accurancy: 0.4760
+2025-02-24 23:00:03,709 - min_max_attack try_count: 20
+2025-02-24 23:00:03,725 - Round number: 76 --------------------------
+2025-02-24 23:00:03,725 - Evaluate global model
+2025-02-24 23:00:10,355 - Averaged Train Loss: 1.6061
+2025-02-24 23:00:10,356 - Test Accurancy: 0.4761
+2025-02-24 23:00:32,525 - min_max_attack try_count: 20
+2025-02-24 23:00:32,538 - Round number: 77 --------------------------
+2025-02-24 23:00:32,538 - Evaluate global model
+2025-02-24 23:00:38,788 - Averaged Train Loss: 1.5998
+2025-02-24 23:00:38,788 - Test Accurancy: 0.4789
+2025-02-24 23:01:01,479 - min_max_attack try_count: 20
+2025-02-24 23:01:01,491 - Round number: 78 --------------------------
+2025-02-24 23:01:01,491 - Evaluate global model
+2025-02-24 23:01:07,874 - Averaged Train Loss: 1.6648
+2025-02-24 23:01:07,874 - Test Accurancy: 0.4714
+2025-02-24 23:01:30,124 - min_max_attack try_count: 20
+2025-02-24 23:01:30,141 - Round number: 79 --------------------------
+2025-02-24 23:01:30,141 - Evaluate global model
+2025-02-24 23:01:36,820 - Averaged Train Loss: 1.6317
+2025-02-24 23:01:36,820 - Test Accurancy: 0.4800
+2025-02-24 23:01:59,142 - min_max_attack try_count: 20
+2025-02-24 23:01:59,154 - Round number: 80 --------------------------
+2025-02-24 23:01:59,154 - Evaluate global model
+2025-02-24 23:02:05,970 - Averaged Train Loss: 1.6263
+2025-02-24 23:02:05,970 - Test Accurancy: 0.4805
+2025-02-24 23:02:28,504 - min_max_attack try_count: 20
+2025-02-24 23:02:28,518 - Round number: 81 --------------------------
+2025-02-24 23:02:28,519 - Evaluate global model
+2025-02-24 23:02:34,818 - Averaged Train Loss: 1.6549
+2025-02-24 23:02:34,818 - Test Accurancy: 0.4775
+2025-02-24 23:02:57,344 - min_max_attack try_count: 20
+2025-02-24 23:02:57,355 - Round number: 82 --------------------------
+2025-02-24 23:02:57,355 - Evaluate global model
+2025-02-24 23:03:03,883 - Averaged Train Loss: 1.6542
+2025-02-24 23:03:03,883 - Test Accurancy: 0.4781
+2025-02-24 23:03:26,352 - min_max_attack try_count: 20
+2025-02-24 23:03:26,362 - Round number: 83 --------------------------
+2025-02-24 23:03:26,362 - Evaluate global model
+2025-02-24 23:03:32,858 - Averaged Train Loss: 1.7107
+2025-02-24 23:03:32,858 - Test Accurancy: 0.4751
+2025-02-24 23:03:55,412 - min_max_attack try_count: 20
+2025-02-24 23:03:55,427 - Round number: 84 --------------------------
+2025-02-24 23:03:55,427 - Evaluate global model
+2025-02-24 23:04:01,807 - Averaged Train Loss: 1.7251
+2025-02-24 23:04:01,807 - Test Accurancy: 0.4763
+2025-02-24 23:04:24,513 - min_max_attack try_count: 20
+2025-02-24 23:04:24,525 - Round number: 85 --------------------------
+2025-02-24 23:04:24,525 - Evaluate global model
+2025-02-24 23:04:30,717 - Averaged Train Loss: 1.7358
+2025-02-24 23:04:30,717 - Test Accurancy: 0.4761
+2025-02-24 23:04:53,298 - min_max_attack try_count: 20
+2025-02-24 23:04:53,308 - Round number: 86 --------------------------
+2025-02-24 23:04:53,309 - Evaluate global model
+2025-02-24 23:04:59,570 - Averaged Train Loss: 1.7325
+2025-02-24 23:04:59,570 - Test Accurancy: 0.4769
+2025-02-24 23:05:22,023 - min_max_attack try_count: 20
+2025-02-24 23:05:22,037 - Round number: 87 --------------------------
+2025-02-24 23:05:22,038 - Evaluate global model
+2025-02-24 23:05:28,480 - Averaged Train Loss: 1.6675
+2025-02-24 23:05:28,480 - Test Accurancy: 0.4815
+2025-02-24 23:05:51,034 - min_max_attack try_count: 20
+2025-02-24 23:05:51,049 - Round number: 88 --------------------------
+2025-02-24 23:05:51,049 - Evaluate global model
+2025-02-24 23:05:57,396 - Averaged Train Loss: 1.6898
+2025-02-24 23:05:57,396 - Test Accurancy: 0.4812
+2025-02-24 23:06:19,857 - min_max_attack try_count: 20
+2025-02-24 23:06:19,871 - Round number: 89 --------------------------
+2025-02-24 23:06:19,872 - Evaluate global model
+2025-02-24 23:06:26,574 - Averaged Train Loss: 1.7299
+2025-02-24 23:06:26,574 - Test Accurancy: 0.4804
+2025-02-24 23:06:49,232 - min_max_attack try_count: 20
+2025-02-24 23:06:49,246 - Round number: 90 --------------------------
+2025-02-24 23:06:49,246 - Evaluate global model
+2025-02-24 23:06:55,692 - Averaged Train Loss: 1.7192
+2025-02-24 23:06:55,693 - Test Accurancy: 0.4842
+2025-02-24 23:07:18,485 - min_max_attack try_count: 20
+2025-02-24 23:07:18,496 - Round number: 91 --------------------------
+2025-02-24 23:07:18,496 - Evaluate global model
+2025-02-24 23:07:24,877 - Averaged Train Loss: 1.7526
+2025-02-24 23:07:24,877 - Test Accurancy: 0.4823
+2025-02-24 23:07:47,632 - min_max_attack try_count: 20
+2025-02-24 23:07:47,643 - Round number: 92 --------------------------
+2025-02-24 23:07:47,643 - Evaluate global model
+2025-02-24 23:07:53,887 - Averaged Train Loss: 1.7605
+2025-02-24 23:07:53,887 - Test Accurancy: 0.4838
+2025-02-24 23:08:16,495 - min_max_attack try_count: 20
+2025-02-24 23:08:16,506 - Round number: 93 --------------------------
+2025-02-24 23:08:16,506 - Evaluate global model
+2025-02-24 23:08:22,630 - Averaged Train Loss: 1.8636
+2025-02-24 23:08:22,630 - Test Accurancy: 0.4760
+2025-02-24 23:08:45,197 - min_max_attack try_count: 20
+2025-02-24 23:08:45,209 - Round number: 94 --------------------------
+2025-02-24 23:08:45,209 - Evaluate global model
+2025-02-24 23:08:51,652 - Averaged Train Loss: 1.7242
+2025-02-24 23:08:51,652 - Test Accurancy: 0.4900
+2025-02-24 23:09:14,572 - min_max_attack try_count: 20
+2025-02-24 23:09:14,584 - Round number: 95 --------------------------
+2025-02-24 23:09:14,584 - Evaluate global model
+2025-02-24 23:09:20,953 - Averaged Train Loss: 1.8122
+2025-02-24 23:09:20,953 - Test Accurancy: 0.4854
+2025-02-24 23:09:43,439 - min_max_attack try_count: 20
+2025-02-24 23:09:43,453 - Round number: 96 --------------------------
+2025-02-24 23:09:43,453 - Evaluate global model
+2025-02-24 23:09:49,682 - Averaged Train Loss: 1.7994
+2025-02-24 23:09:49,682 - Test Accurancy: 0.4847
+2025-02-24 23:10:12,069 - min_max_attack try_count: 20
+2025-02-24 23:10:12,085 - Round number: 97 --------------------------
+2025-02-24 23:10:12,085 - Evaluate global model
+2025-02-24 23:10:18,531 - Averaged Train Loss: 1.8893
+2025-02-24 23:10:18,531 - Test Accurancy: 0.4829
+2025-02-24 23:10:41,407 - min_max_attack try_count: 20
+2025-02-24 23:10:41,422 - Round number: 98 --------------------------
+2025-02-24 23:10:41,422 - Evaluate global model
+2025-02-24 23:10:47,562 - Averaged Train Loss: 1.8868
+2025-02-24 23:10:47,562 - Test Accurancy: 0.4822
+2025-02-24 23:11:10,577 - min_max_attack try_count: 20
+2025-02-24 23:11:10,589 - Round number: 99 --------------------------
+2025-02-24 23:11:10,589 - Evaluate global model
+2025-02-24 23:11:16,339 - Averaged Train Loss: 1.9774
+2025-02-24 23:11:16,339 - Test Accurancy: 0.4773
+2025-02-24 23:11:32,814 - min_max_attack try_count: 20
+2025-02-24 23:11:32,824 - Round number: 100 --------------------------
+2025-02-24 23:11:32,824 - Evaluate global model
+2025-02-24 23:11:37,850 - Averaged Train Loss: 1.9742
+2025-02-24 23:11:37,851 - Test Accurancy: 0.4767
+2025-02-24 23:11:46,971 - min_max_attack try_count: 20
+2025-02-24 23:11:46,972 - Run over
+2025-02-24 23:11:46,972 - Saving results to ./exp/exp0/Cifar10/min-max_avg_10.h5
+2025-02-24 23:11:46,976 - Best accuracy: 0.4900066622251832
+2025-02-24 23:11:46,976 - Average time cost per round: 28.7553981590271

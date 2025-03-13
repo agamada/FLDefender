@@ -20,11 +20,11 @@ def args_parser():
     parser.add_argument('--sn', type=str, default='run', help='save_name')
 
     # federated learning related arguments
-    parser.add_argument('--r', type=int, default=5, help='communication rounds of training')
+    parser.add_argument('--r', type=int, default=100, help='communication rounds of training')
     parser.add_argument('--k', type=int, default=20, help='number of participants')
-    parser.add_argument('--e', type=int, default=5, help='number of local epochs')
+    parser.add_argument('--e', type=int, default=3, help='number of local epochs')
     parser.add_argument('--b', type=int, default=64, help='local batch size')
-    parser.add_argument('--lr', type=float, default=0.04, help='learning rate')
+    parser.add_argument('--lr', type=float, default=0.02, help='learning rate')
     parser.add_argument('--ld', type=bool, default=False, help='use learning rate decay or not')
     parser.add_argument('--ldg', type=float, default=0.995, help='learning rate decay gamma')
     parser.add_argument('--nc', type=int, default=10, help='number of classes')
@@ -52,7 +52,7 @@ def args_parser():
     parser.add_argument('--dp', choices=['none', 'lf', 'rlf'], default='none', help='data poisoning method')
     parser.add_argument('--ls', type=int, default=5, help='source label to flip')
     parser.add_argument('--lt', type=int, default=3, help='targeted label after flipping')
-    parser.add_argument('--mp', choices=['none', 'scale', 'neg', 'rand', 'min_max'], default='none',
+    parser.add_argument('--mp', choices=['none', 'min-max', 'LIE', 'rand'], default='none',
                         help='model poisoning method')
     parser.add_argument('--s', type=float, default=1, help='scaling factor')
     parser.add_argument('--lamda', type=float, default=0.2, help='hyper parameter')
@@ -75,7 +75,7 @@ def parameters_info(args):
     logger.info("Exp repeats: {0}".format(args.n))
     logger.info("Communication Rounds: {0}".format(args.r))
     logger.info("Clients: {0}\n".format(args.k))
-
+    logger.info("Attack method: {0}".format(args.mp))
     logger.info("Filtering rule: {0}".format(args.filter))
 
     logger.info("Dataset: {0}".format(args.dataset))

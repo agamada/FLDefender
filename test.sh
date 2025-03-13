@@ -1,1 +1,1 @@
-nohup python -u main.py  > test.out 2>&1 &
+python main.py --model cnn2 --filter avg --mp min-max --m 2

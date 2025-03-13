@@ -11,6 +11,7 @@ import logging
 
 from src.model import init_cnn
 from src.utils import read_client_data
+from src.attack_methods import min_max_attack, LIE_attack
 
 logger = logging.getLogger('client')
 
@@ -122,7 +123,14 @@ class Server(object):
             start_idx += param_size
 
     def poisoning_attack(self):
-        pass
+        if self.mp == 'min-max':
+            self.uploaded_updates, self.uploaded_weights = min_max_attack(
+                self.uploaded_updates, self.uploaded_weights, self.m
+            )
+        elif self.mp == 'LIE':
+            self.uploaded_updates, self.uploaded_weights = LIE_attack(
+                self.uploaded_updates, self.uploaded_weights, self.m, self.nc
+            )
 
     def filter_update(self):
         pass
