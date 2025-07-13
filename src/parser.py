@@ -56,6 +56,7 @@ def args_parser():
                         help='model poisoning method')
     parser.add_argument('--s', type=float, default=1, help='scaling factor')
     parser.add_argument('--lamda', type=float, default=0.2, help='hyper parameter')
+    parser.add_argument('--trmean_ratio', type=float, default=0.2, help='ratio for trimmed mean')
 
     # other arguments
     parser.add_argument("--device", type=str, default="cuda",

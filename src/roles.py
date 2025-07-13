@@ -12,6 +12,7 @@ import logging
 from src.model import init_cnn
 from src.utils import read_client_data
 from src.attack_methods import min_max_attack, LIE_attack
+from src.defend_methods import krum, median, trimmed, multi_Krum
 
 logger = logging.getLogger('client')
 
@@ -34,6 +35,7 @@ class Server(object):
         self.mp = args.mp
         self.s = args.s
         self.lamda = args.lamda
+        self.trmean_ratio = args.trmean_ratio
         self.device = args.device
         self.times = times
 
@@ -108,6 +110,7 @@ class Server(object):
             self.uploaded_models.append(model)
 
     def aggregate_model(self):
+        # 通过聚合uploaded_updates中的本地更新获得全局更新
         total_updates = torch.zeros_like(self.uploaded_updates[0])
         total_weights = sum(self.uploaded_weights)      # 归一化
         for weight, update in zip(self.uploaded_weights, self.uploaded_updates):
@@ -133,7 +136,20 @@ class Server(object):
             )
 
     def filter_update(self):
-        pass
+        if self.filter == 'krum':
+            selected_id = krum(self.uploaded_updates, self.m)
+            self.uploaded_ids = [self.uploaded_ids[selected_id]]
+            self.uploaded_updates = [self.uploaded_updates[selected_id]]
+            self.uploaded_weights = [self.uploaded_weights[selected_id]]
+            logger.info("Krum select client: {}".format(selected_id))
+        elif self.filter == 'median':
+            selected_update = median(self.uploaded_updates)
+            self.uploaded_updates = [selected_update]
+            self.uploaded_weights = [1]
+        elif self.filter == 'trmean':
+            selected_update = trimmed(self.uploaded_updates, self.trmean_ratio)
+            self.uploaded_updates = [selected_update]
+            self.uploaded_weights = [1]
 
     def calculate_metrics(self):
         num_train_samples = 0

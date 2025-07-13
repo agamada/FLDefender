@@ -22,9 +22,10 @@ if __name__ == '__main__':
     args = parser.args_parser()
 
     # set result file name and save path
+    # exp1:find good lr
     if args.exp == 1:
         args.sp = f'./exp/exp1/{args.dataset}'
-        args.sn = f'{args.mp}_{args.filter}_{args.m}'
+        args.sn = f'{args.mp}_{args.filter}_{args.lr}'
     else:
         args.sp = f'./exp/exp0/{args.dataset}'
         args.sn = f'{args.mp}_{args.filter}_{args.m}'
