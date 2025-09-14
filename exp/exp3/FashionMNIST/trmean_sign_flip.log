@@ -1,0 +1,425 @@
+2025-09-12 23:51:37,686 - *****************EXP-3*****************
+2025-09-12 23:51:37,686 - Exp repeats: 1
+2025-09-12 23:51:37,686 - Communication Rounds: 100
+2025-09-12 23:51:37,686 - Clients: 40
+
+2025-09-12 23:51:37,686 - Attack method: sign_flip
+2025-09-12 23:51:37,686 - Filtering rule: trmean
+2025-09-12 23:51:37,686 - Dataset: FashionMNIST
+2025-09-12 23:51:37,686 - Model: cnn
+2025-09-12 23:51:37,686 - Learning Rate: 0.2
+2025-09-12 23:51:37,687 - Batch Size: 64
+2025-09-12 23:51:37,687 - Device: cuda
+2025-09-12 23:51:37,687 - Device id: 0
+2025-09-12 23:51:37,687 - Adversaries: 16
+2025-09-12 23:51:37,687 - Model Poisoning: Sign Flip attack
+2025-09-12 23:51:37,687 - *****************EXP-3*****************
+2025-09-12 23:51:38,301 - Running time: 0th ==========================
+2025-09-12 23:51:40,625 - Round number: 0 --------------------------
+2025-09-12 23:51:40,625 - Evaluate global model
+2025-09-12 23:51:43,263 - Averaged Train Loss: 2.3031
+2025-09-12 23:51:43,263 - Test Accurancy: 0.1321
+2025-09-12 23:51:47,966 - Round number: 1 --------------------------
+2025-09-12 23:51:47,966 - Evaluate global model
+2025-09-12 23:51:49,479 - Averaged Train Loss: 2.2490
+2025-09-12 23:51:49,482 - Test Accurancy: 0.2365
+2025-09-12 23:51:53,999 - Round number: 2 --------------------------
+2025-09-12 23:51:54,000 - Evaluate global model
+2025-09-12 23:51:55,476 - Averaged Train Loss: 2.2000
+2025-09-12 23:51:55,476 - Test Accurancy: 0.3326
+2025-09-12 23:51:59,820 - Round number: 3 --------------------------
+2025-09-12 23:51:59,821 - Evaluate global model
+2025-09-12 23:52:01,244 - Averaged Train Loss: 2.0255
+2025-09-12 23:52:01,246 - Test Accurancy: 0.3477
+2025-09-12 23:52:05,887 - Round number: 4 --------------------------
+2025-09-12 23:52:05,888 - Evaluate global model
+2025-09-12 23:52:07,249 - Averaged Train Loss: 1.9224
+2025-09-12 23:52:07,249 - Test Accurancy: 0.3697
+2025-09-12 23:52:11,673 - Round number: 5 --------------------------
+2025-09-12 23:52:11,674 - Evaluate global model
+2025-09-12 23:52:13,139 - Averaged Train Loss: 1.7319
+2025-09-12 23:52:13,140 - Test Accurancy: 0.4265
+2025-09-12 23:52:17,549 - Round number: 6 --------------------------
+2025-09-12 23:52:17,550 - Evaluate global model
+2025-09-12 23:52:19,037 - Averaged Train Loss: 1.4047
+2025-09-12 23:52:19,037 - Test Accurancy: 0.4933
+2025-09-12 23:52:23,322 - Round number: 7 --------------------------
+2025-09-12 23:52:23,323 - Evaluate global model
+2025-09-12 23:52:24,696 - Averaged Train Loss: 1.2841
+2025-09-12 23:52:24,696 - Test Accurancy: 0.5232
+2025-09-12 23:52:29,009 - Round number: 8 --------------------------
+2025-09-12 23:52:29,009 - Evaluate global model
+2025-09-12 23:52:30,446 - Averaged Train Loss: 1.1972
+2025-09-12 23:52:30,446 - Test Accurancy: 0.5383
+2025-09-12 23:52:34,677 - Round number: 9 --------------------------
+2025-09-12 23:52:34,678 - Evaluate global model
+2025-09-12 23:52:36,245 - Averaged Train Loss: 1.1408
+2025-09-12 23:52:36,246 - Test Accurancy: 0.5683
+2025-09-12 23:52:40,559 - Round number: 10 --------------------------
+2025-09-12 23:52:40,560 - Evaluate global model
+2025-09-12 23:52:42,080 - Averaged Train Loss: 1.0988
+2025-09-12 23:52:42,080 - Test Accurancy: 0.5852
+2025-09-12 23:52:46,210 - Round number: 11 --------------------------
+2025-09-12 23:52:46,211 - Evaluate global model
+2025-09-12 23:52:47,779 - Averaged Train Loss: 1.0890
+2025-09-12 23:52:47,779 - Test Accurancy: 0.6047
+2025-09-12 23:52:51,780 - Round number: 12 --------------------------
+2025-09-12 23:52:51,781 - Evaluate global model
+2025-09-12 23:52:53,252 - Averaged Train Loss: 1.0662
+2025-09-12 23:52:53,252 - Test Accurancy: 0.6103
+2025-09-12 23:52:57,532 - Round number: 13 --------------------------
+2025-09-12 23:52:57,532 - Evaluate global model
+2025-09-12 23:52:58,985 - Averaged Train Loss: 1.0448
+2025-09-12 23:52:58,986 - Test Accurancy: 0.6371
+2025-09-12 23:53:03,069 - Round number: 14 --------------------------
+2025-09-12 23:53:03,069 - Evaluate global model
+2025-09-12 23:53:04,544 - Averaged Train Loss: 1.0517
+2025-09-12 23:53:04,544 - Test Accurancy: 0.6438
+2025-09-12 23:53:08,581 - Round number: 15 --------------------------
+2025-09-12 23:53:08,582 - Evaluate global model
+2025-09-12 23:53:10,124 - Averaged Train Loss: 1.0589
+2025-09-12 23:53:10,124 - Test Accurancy: 0.6489
+2025-09-12 23:53:14,246 - Round number: 16 --------------------------
+2025-09-12 23:53:14,246 - Evaluate global model
+2025-09-12 23:53:15,833 - Averaged Train Loss: 1.0645
+2025-09-12 23:53:15,833 - Test Accurancy: 0.6538
+2025-09-12 23:53:20,145 - Round number: 17 --------------------------
+2025-09-12 23:53:20,145 - Evaluate global model
+2025-09-12 23:53:21,627 - Averaged Train Loss: 0.9990
+2025-09-12 23:53:21,627 - Test Accurancy: 0.6639
+2025-09-12 23:53:25,932 - Round number: 18 --------------------------
+2025-09-12 23:53:25,933 - Evaluate global model
+2025-09-12 23:53:27,592 - Averaged Train Loss: 0.9919
+2025-09-12 23:53:27,596 - Test Accurancy: 0.6752
+2025-09-12 23:53:33,725 - Round number: 19 --------------------------
+2025-09-12 23:53:33,736 - Evaluate global model
+2025-09-12 23:53:37,642 - Averaged Train Loss: 1.0031
+2025-09-12 23:53:37,643 - Test Accurancy: 0.6777
+2025-09-12 23:53:42,178 - Round number: 20 --------------------------
+2025-09-12 23:53:42,178 - Evaluate global model
+2025-09-12 23:53:44,172 - Averaged Train Loss: 1.0067
+2025-09-12 23:53:44,172 - Test Accurancy: 0.6727
+2025-09-12 23:53:48,383 - Round number: 21 --------------------------
+2025-09-12 23:53:48,383 - Evaluate global model
+2025-09-12 23:53:49,975 - Averaged Train Loss: 1.0158
+2025-09-12 23:53:49,975 - Test Accurancy: 0.6737
+2025-09-12 23:53:54,038 - Round number: 22 --------------------------
+2025-09-12 23:53:54,039 - Evaluate global model
+2025-09-12 23:53:55,566 - Averaged Train Loss: 0.9954
+2025-09-12 23:53:55,567 - Test Accurancy: 0.6777
+2025-09-12 23:53:59,755 - Round number: 23 --------------------------
+2025-09-12 23:53:59,756 - Evaluate global model
+2025-09-12 23:54:01,372 - Averaged Train Loss: 0.9798
+2025-09-12 23:54:01,373 - Test Accurancy: 0.6817
+2025-09-12 23:54:05,315 - Round number: 24 --------------------------
+2025-09-12 23:54:05,315 - Evaluate global model
+2025-09-12 23:54:06,746 - Averaged Train Loss: 1.0072
+2025-09-12 23:54:06,747 - Test Accurancy: 0.6819
+2025-09-12 23:54:10,855 - Round number: 25 --------------------------
+2025-09-12 23:54:10,855 - Evaluate global model
+2025-09-12 23:54:12,386 - Averaged Train Loss: 1.0164
+2025-09-12 23:54:12,387 - Test Accurancy: 0.6858
+2025-09-12 23:54:16,530 - Round number: 26 --------------------------
+2025-09-12 23:54:16,530 - Evaluate global model
+2025-09-12 23:54:18,029 - Averaged Train Loss: 0.9793
+2025-09-12 23:54:18,030 - Test Accurancy: 0.6863
+2025-09-12 23:54:22,149 - Round number: 27 --------------------------
+2025-09-12 23:54:22,150 - Evaluate global model
+2025-09-12 23:54:23,696 - Averaged Train Loss: 0.9321
+2025-09-12 23:54:23,696 - Test Accurancy: 0.6917
+2025-09-12 23:54:27,892 - Round number: 28 --------------------------
+2025-09-12 23:54:27,892 - Evaluate global model
+2025-09-12 23:54:29,430 - Averaged Train Loss: 0.9357
+2025-09-12 23:54:29,430 - Test Accurancy: 0.6938
+2025-09-12 23:54:33,732 - Round number: 29 --------------------------
+2025-09-12 23:54:33,732 - Evaluate global model
+2025-09-12 23:54:35,202 - Averaged Train Loss: 0.9130
+2025-09-12 23:54:35,203 - Test Accurancy: 0.6982
+2025-09-12 23:54:39,479 - Round number: 30 --------------------------
+2025-09-12 23:54:39,479 - Evaluate global model
+2025-09-12 23:54:41,001 - Averaged Train Loss: 0.8704
+2025-09-12 23:54:41,001 - Test Accurancy: 0.7045
+2025-09-12 23:54:45,216 - Round number: 31 --------------------------
+2025-09-12 23:54:45,216 - Evaluate global model
+2025-09-12 23:54:46,654 - Averaged Train Loss: 0.8847
+2025-09-12 23:54:46,654 - Test Accurancy: 0.7049
+2025-09-12 23:54:50,818 - Round number: 32 --------------------------
+2025-09-12 23:54:50,818 - Evaluate global model
+2025-09-12 23:54:52,315 - Averaged Train Loss: 0.8930
+2025-09-12 23:54:52,316 - Test Accurancy: 0.7036
+2025-09-12 23:54:56,347 - Round number: 33 --------------------------
+2025-09-12 23:54:56,347 - Evaluate global model
+2025-09-12 23:54:57,861 - Averaged Train Loss: 0.8652
+2025-09-12 23:54:57,861 - Test Accurancy: 0.7087
+2025-09-12 23:55:01,885 - Round number: 34 --------------------------
+2025-09-12 23:55:01,885 - Evaluate global model
+2025-09-12 23:55:03,395 - Averaged Train Loss: 0.8370
+2025-09-12 23:55:03,395 - Test Accurancy: 0.7093
+2025-09-12 23:55:07,566 - Round number: 35 --------------------------
+2025-09-12 23:55:07,567 - Evaluate global model
+2025-09-12 23:55:08,980 - Averaged Train Loss: 0.8497
+2025-09-12 23:55:08,980 - Test Accurancy: 0.7094
+2025-09-12 23:55:13,223 - Round number: 36 --------------------------
+2025-09-12 23:55:13,223 - Evaluate global model
+2025-09-12 23:55:14,640 - Averaged Train Loss: 0.9225
+2025-09-12 23:55:14,640 - Test Accurancy: 0.7042
+2025-09-12 23:55:18,737 - Round number: 37 --------------------------
+2025-09-12 23:55:18,737 - Evaluate global model
+2025-09-12 23:55:20,181 - Averaged Train Loss: 0.9312
+2025-09-12 23:55:20,182 - Test Accurancy: 0.7063
+2025-09-12 23:55:24,278 - Round number: 38 --------------------------
+2025-09-12 23:55:24,278 - Evaluate global model
+2025-09-12 23:55:25,682 - Averaged Train Loss: 0.9440
+2025-09-12 23:55:25,682 - Test Accurancy: 0.7046
+2025-09-12 23:55:29,794 - Round number: 39 --------------------------
+2025-09-12 23:55:29,794 - Evaluate global model
+2025-09-12 23:55:31,277 - Averaged Train Loss: 0.9623
+2025-09-12 23:55:31,277 - Test Accurancy: 0.7021
+2025-09-12 23:55:35,504 - Round number: 40 --------------------------
+2025-09-12 23:55:35,504 - Evaluate global model
+2025-09-12 23:55:36,974 - Averaged Train Loss: 0.9515
+2025-09-12 23:55:36,974 - Test Accurancy: 0.7066
+2025-09-12 23:55:41,065 - Round number: 41 --------------------------
+2025-09-12 23:55:41,066 - Evaluate global model
+2025-09-12 23:55:42,540 - Averaged Train Loss: 0.9094
+2025-09-12 23:55:42,540 - Test Accurancy: 0.7122
+2025-09-12 23:55:46,518 - Round number: 42 --------------------------
+2025-09-12 23:55:46,518 - Evaluate global model
+2025-09-12 23:55:47,961 - Averaged Train Loss: 0.8820
+2025-09-12 23:55:47,961 - Test Accurancy: 0.7169
+2025-09-12 23:55:52,075 - Round number: 43 --------------------------
+2025-09-12 23:55:52,076 - Evaluate global model
+2025-09-12 23:55:53,674 - Averaged Train Loss: 0.8667
+2025-09-12 23:55:53,675 - Test Accurancy: 0.7184
+2025-09-12 23:55:57,827 - Round number: 44 --------------------------
+2025-09-12 23:55:57,828 - Evaluate global model
+2025-09-12 23:55:59,251 - Averaged Train Loss: 0.9147
+2025-09-12 23:55:59,252 - Test Accurancy: 0.7155
+2025-09-12 23:56:03,730 - Round number: 45 --------------------------
+2025-09-12 23:56:03,730 - Evaluate global model
+2025-09-12 23:56:05,221 - Averaged Train Loss: 0.8968
+2025-09-12 23:56:05,222 - Test Accurancy: 0.7201
+2025-09-12 23:56:09,583 - Round number: 46 --------------------------
+2025-09-12 23:56:09,584 - Evaluate global model
+2025-09-12 23:56:11,076 - Averaged Train Loss: 0.8602
+2025-09-12 23:56:11,076 - Test Accurancy: 0.7223
+2025-09-12 23:56:15,141 - Round number: 47 --------------------------
+2025-09-12 23:56:15,142 - Evaluate global model
+2025-09-12 23:56:16,668 - Averaged Train Loss: 0.8476
+2025-09-12 23:56:16,669 - Test Accurancy: 0.7245
+2025-09-12 23:56:20,791 - Round number: 48 --------------------------
+2025-09-12 23:56:20,791 - Evaluate global model
+2025-09-12 23:56:22,348 - Averaged Train Loss: 0.8729
+2025-09-12 23:56:22,348 - Test Accurancy: 0.7236
+2025-09-12 23:56:26,450 - Round number: 49 --------------------------
+2025-09-12 23:56:26,451 - Evaluate global model
+2025-09-12 23:56:28,083 - Averaged Train Loss: 0.9028
+2025-09-12 23:56:28,084 - Test Accurancy: 0.7217
+2025-09-12 23:56:32,331 - Round number: 50 --------------------------
+2025-09-12 23:56:32,332 - Evaluate global model
+2025-09-12 23:56:34,029 - Averaged Train Loss: 0.8702
+2025-09-12 23:56:34,029 - Test Accurancy: 0.7219
+2025-09-12 23:56:38,248 - Round number: 51 --------------------------
+2025-09-12 23:56:38,248 - Evaluate global model
+2025-09-12 23:56:39,928 - Averaged Train Loss: 0.8809
+2025-09-12 23:56:39,928 - Test Accurancy: 0.7216
+2025-09-12 23:56:43,996 - Round number: 52 --------------------------
+2025-09-12 23:56:43,996 - Evaluate global model
+2025-09-12 23:56:45,636 - Averaged Train Loss: 0.8927
+2025-09-12 23:56:45,636 - Test Accurancy: 0.7229
+2025-09-12 23:56:49,472 - Round number: 53 --------------------------
+2025-09-12 23:56:49,473 - Evaluate global model
+2025-09-12 23:56:50,964 - Averaged Train Loss: 0.8595
+2025-09-12 23:56:50,965 - Test Accurancy: 0.7282
+2025-09-12 23:56:54,849 - Round number: 54 --------------------------
+2025-09-12 23:56:54,849 - Evaluate global model
+2025-09-12 23:56:56,452 - Averaged Train Loss: 0.8839
+2025-09-12 23:56:56,452 - Test Accurancy: 0.7256
+2025-09-12 23:57:00,375 - Round number: 55 --------------------------
+2025-09-12 23:57:00,376 - Evaluate global model
+2025-09-12 23:57:01,925 - Averaged Train Loss: 0.9025
+2025-09-12 23:57:01,925 - Test Accurancy: 0.7243
+2025-09-12 23:57:06,062 - Round number: 56 --------------------------
+2025-09-12 23:57:06,062 - Evaluate global model
+2025-09-12 23:57:07,655 - Averaged Train Loss: 0.9212
+2025-09-12 23:57:07,655 - Test Accurancy: 0.7196
+2025-09-12 23:57:12,031 - Round number: 57 --------------------------
+2025-09-12 23:57:12,032 - Evaluate global model
+2025-09-12 23:57:13,591 - Averaged Train Loss: 0.9492
+2025-09-12 23:57:13,591 - Test Accurancy: 0.7174
+2025-09-12 23:57:17,715 - Round number: 58 --------------------------
+2025-09-12 23:57:17,716 - Evaluate global model
+2025-09-12 23:57:19,288 - Averaged Train Loss: 0.9047
+2025-09-12 23:57:19,288 - Test Accurancy: 0.7256
+2025-09-12 23:57:23,299 - Round number: 59 --------------------------
+2025-09-12 23:57:23,300 - Evaluate global model
+2025-09-12 23:57:24,873 - Averaged Train Loss: 0.9090
+2025-09-12 23:57:24,873 - Test Accurancy: 0.7260
+2025-09-12 23:57:29,279 - Round number: 60 --------------------------
+2025-09-12 23:57:29,280 - Evaluate global model
+2025-09-12 23:57:30,916 - Averaged Train Loss: 0.9371
+2025-09-12 23:57:30,916 - Test Accurancy: 0.7249
+2025-09-12 23:57:35,091 - Round number: 61 --------------------------
+2025-09-12 23:57:35,092 - Evaluate global model
+2025-09-12 23:57:36,824 - Averaged Train Loss: 0.8883
+2025-09-12 23:57:36,825 - Test Accurancy: 0.7302
+2025-09-12 23:57:40,908 - Round number: 62 --------------------------
+2025-09-12 23:57:40,909 - Evaluate global model
+2025-09-12 23:57:42,486 - Averaged Train Loss: 0.9173
+2025-09-12 23:57:42,486 - Test Accurancy: 0.7276
+2025-09-12 23:57:46,809 - Round number: 63 --------------------------
+2025-09-12 23:57:46,810 - Evaluate global model
+2025-09-12 23:57:48,406 - Averaged Train Loss: 0.8869
+2025-09-12 23:57:48,406 - Test Accurancy: 0.7327
+2025-09-12 23:57:52,539 - Round number: 64 --------------------------
+2025-09-12 23:57:52,539 - Evaluate global model
+2025-09-12 23:57:54,150 - Averaged Train Loss: 0.8579
+2025-09-12 23:57:54,151 - Test Accurancy: 0.7380
+2025-09-12 23:57:58,026 - Round number: 65 --------------------------
+2025-09-12 23:57:58,027 - Evaluate global model
+2025-09-12 23:57:59,624 - Averaged Train Loss: 0.8788
+2025-09-12 23:57:59,624 - Test Accurancy: 0.7355
+2025-09-12 23:58:03,644 - Round number: 66 --------------------------
+2025-09-12 23:58:03,645 - Evaluate global model
+2025-09-12 23:58:05,180 - Averaged Train Loss: 0.8810
+2025-09-12 23:58:05,180 - Test Accurancy: 0.7384
+2025-09-12 23:58:09,110 - Round number: 67 --------------------------
+2025-09-12 23:58:09,111 - Evaluate global model
+2025-09-12 23:58:10,772 - Averaged Train Loss: 0.8956
+2025-09-12 23:58:10,773 - Test Accurancy: 0.7350
+2025-09-12 23:58:14,699 - Round number: 68 --------------------------
+2025-09-12 23:58:14,699 - Evaluate global model
+2025-09-12 23:58:16,301 - Averaged Train Loss: 0.8916
+2025-09-12 23:58:16,301 - Test Accurancy: 0.7374
+2025-09-12 23:58:20,176 - Round number: 69 --------------------------
+2025-09-12 23:58:20,176 - Evaluate global model
+2025-09-12 23:58:21,748 - Averaged Train Loss: 0.9183
+2025-09-12 23:58:21,749 - Test Accurancy: 0.7366
+2025-09-12 23:58:25,716 - Round number: 70 --------------------------
+2025-09-12 23:58:25,716 - Evaluate global model
+2025-09-12 23:58:27,258 - Averaged Train Loss: 0.9273
+2025-09-12 23:58:27,258 - Test Accurancy: 0.7355
+2025-09-12 23:58:31,233 - Round number: 71 --------------------------
+2025-09-12 23:58:31,233 - Evaluate global model
+2025-09-12 23:58:32,788 - Averaged Train Loss: 0.9065
+2025-09-12 23:58:32,788 - Test Accurancy: 0.7381
+2025-09-12 23:58:36,800 - Round number: 72 --------------------------
+2025-09-12 23:58:36,801 - Evaluate global model
+2025-09-12 23:58:38,351 - Averaged Train Loss: 0.9148
+2025-09-12 23:58:38,352 - Test Accurancy: 0.7349
+2025-09-12 23:58:42,259 - Round number: 73 --------------------------
+2025-09-12 23:58:42,260 - Evaluate global model
+2025-09-12 23:58:43,829 - Averaged Train Loss: 0.9429
+2025-09-12 23:58:43,829 - Test Accurancy: 0.7354
+2025-09-12 23:58:47,914 - Round number: 74 --------------------------
+2025-09-12 23:58:47,914 - Evaluate global model
+2025-09-12 23:58:49,477 - Averaged Train Loss: 0.9747
+2025-09-12 23:58:49,477 - Test Accurancy: 0.7338
+2025-09-12 23:58:53,842 - Round number: 75 --------------------------
+2025-09-12 23:58:53,842 - Evaluate global model
+2025-09-12 23:58:55,358 - Averaged Train Loss: 0.9168
+2025-09-12 23:58:55,359 - Test Accurancy: 0.7411
+2025-09-12 23:58:59,368 - Round number: 76 --------------------------
+2025-09-12 23:58:59,369 - Evaluate global model
+2025-09-12 23:59:00,896 - Averaged Train Loss: 0.9495
+2025-09-12 23:59:00,896 - Test Accurancy: 0.7380
+2025-09-12 23:59:04,907 - Round number: 77 --------------------------
+2025-09-12 23:59:04,907 - Evaluate global model
+2025-09-12 23:59:06,538 - Averaged Train Loss: 0.9630
+2025-09-12 23:59:06,539 - Test Accurancy: 0.7390
+2025-09-12 23:59:10,479 - Round number: 78 --------------------------
+2025-09-12 23:59:10,479 - Evaluate global model
+2025-09-12 23:59:12,031 - Averaged Train Loss: 0.9670
+2025-09-12 23:59:12,031 - Test Accurancy: 0.7396
+2025-09-12 23:59:16,144 - Round number: 79 --------------------------
+2025-09-12 23:59:16,145 - Evaluate global model
+2025-09-12 23:59:17,707 - Averaged Train Loss: 0.9804
+2025-09-12 23:59:17,708 - Test Accurancy: 0.7412
+2025-09-12 23:59:21,710 - Round number: 80 --------------------------
+2025-09-12 23:59:21,711 - Evaluate global model
+2025-09-12 23:59:23,244 - Averaged Train Loss: 0.9276
+2025-09-12 23:59:23,245 - Test Accurancy: 0.7484
+2025-09-12 23:59:27,197 - Round number: 81 --------------------------
+2025-09-12 23:59:27,198 - Evaluate global model
+2025-09-12 23:59:28,772 - Averaged Train Loss: 0.9707
+2025-09-12 23:59:28,772 - Test Accurancy: 0.7456
+2025-09-12 23:59:32,776 - Round number: 82 --------------------------
+2025-09-12 23:59:32,776 - Evaluate global model
+2025-09-12 23:59:34,312 - Averaged Train Loss: 0.9381
+2025-09-12 23:59:34,312 - Test Accurancy: 0.7493
+2025-09-12 23:59:38,360 - Round number: 83 --------------------------
+2025-09-12 23:59:38,360 - Evaluate global model
+2025-09-12 23:59:39,815 - Averaged Train Loss: 1.0014
+2025-09-12 23:59:39,815 - Test Accurancy: 0.7426
+2025-09-12 23:59:44,249 - Round number: 84 --------------------------
+2025-09-12 23:59:44,249 - Evaluate global model
+2025-09-12 23:59:45,856 - Averaged Train Loss: 0.9734
+2025-09-12 23:59:45,856 - Test Accurancy: 0.7451
+2025-09-12 23:59:49,931 - Round number: 85 --------------------------
+2025-09-12 23:59:49,931 - Evaluate global model
+2025-09-12 23:59:51,409 - Averaged Train Loss: 1.0032
+2025-09-12 23:59:51,409 - Test Accurancy: 0.7424
+2025-09-12 23:59:55,438 - Round number: 86 --------------------------
+2025-09-12 23:59:55,439 - Evaluate global model
+2025-09-12 23:59:56,881 - Averaged Train Loss: 0.9985
+2025-09-12 23:59:56,881 - Test Accurancy: 0.7455
+2025-09-13 00:00:00,972 - Round number: 87 --------------------------
+2025-09-13 00:00:00,973 - Evaluate global model
+2025-09-13 00:00:02,385 - Averaged Train Loss: 1.0124
+2025-09-13 00:00:02,386 - Test Accurancy: 0.7424
+2025-09-13 00:00:06,556 - Round number: 88 --------------------------
+2025-09-13 00:00:06,557 - Evaluate global model
+2025-09-13 00:00:08,004 - Averaged Train Loss: 1.0267
+2025-09-13 00:00:08,004 - Test Accurancy: 0.7439
+2025-09-13 00:00:12,064 - Round number: 89 --------------------------
+2025-09-13 00:00:12,064 - Evaluate global model
+2025-09-13 00:00:13,506 - Averaged Train Loss: 1.0231
+2025-09-13 00:00:13,506 - Test Accurancy: 0.7431
+2025-09-13 00:00:17,603 - Round number: 90 --------------------------
+2025-09-13 00:00:17,604 - Evaluate global model
+2025-09-13 00:00:18,965 - Averaged Train Loss: 1.0828
+2025-09-13 00:00:18,965 - Test Accurancy: 0.7393
+2025-09-13 00:00:23,045 - Round number: 91 --------------------------
+2025-09-13 00:00:23,045 - Evaluate global model
+2025-09-13 00:00:24,430 - Averaged Train Loss: 1.0642
+2025-09-13 00:00:24,431 - Test Accurancy: 0.7416
+2025-09-13 00:00:28,555 - Round number: 92 --------------------------
+2025-09-13 00:00:28,555 - Evaluate global model
+2025-09-13 00:00:29,992 - Averaged Train Loss: 1.1008
+2025-09-13 00:00:29,992 - Test Accurancy: 0.7403
+2025-09-13 00:00:33,961 - Round number: 93 --------------------------
+2025-09-13 00:00:33,961 - Evaluate global model
+2025-09-13 00:00:35,357 - Averaged Train Loss: 1.1167
+2025-09-13 00:00:35,358 - Test Accurancy: 0.7404
+2025-09-13 00:00:39,387 - Round number: 94 --------------------------
+2025-09-13 00:00:39,387 - Evaluate global model
+2025-09-13 00:00:40,825 - Averaged Train Loss: 1.0979
+2025-09-13 00:00:40,826 - Test Accurancy: 0.7421
+2025-09-13 00:00:45,021 - Round number: 95 --------------------------
+2025-09-13 00:00:45,021 - Evaluate global model
+2025-09-13 00:00:46,524 - Averaged Train Loss: 1.1250
+2025-09-13 00:00:46,524 - Test Accurancy: 0.7399
+2025-09-13 00:00:50,572 - Round number: 96 --------------------------
+2025-09-13 00:00:50,573 - Evaluate global model
+2025-09-13 00:00:52,206 - Averaged Train Loss: 1.1198
+2025-09-13 00:00:52,206 - Test Accurancy: 0.7400
+2025-09-13 00:00:56,357 - Round number: 97 --------------------------
+2025-09-13 00:00:56,357 - Evaluate global model
+2025-09-13 00:00:57,980 - Averaged Train Loss: 1.2142
+2025-09-13 00:00:57,980 - Test Accurancy: 0.7358
+2025-09-13 00:01:02,199 - Round number: 98 --------------------------
+2025-09-13 00:01:02,199 - Evaluate global model
+2025-09-13 00:01:03,708 - Averaged Train Loss: 1.2402
+2025-09-13 00:01:03,708 - Test Accurancy: 0.7325
+2025-09-13 00:01:08,037 - Round number: 99 --------------------------
+2025-09-13 00:01:08,038 - Evaluate global model
+2025-09-13 00:01:09,600 - Averaged Train Loss: 1.1635
+2025-09-13 00:01:09,601 - Test Accurancy: 0.7373
+2025-09-13 00:01:14,151 - Round number: 100 --------------------------
+2025-09-13 00:01:14,157 - Evaluate global model
+2025-09-13 00:01:17,779 - Averaged Train Loss: 1.2016
+2025-09-13 00:01:17,780 - Test Accurancy: 0.7343
+2025-09-13 00:01:21,751 - Run over
+2025-09-13 00:01:21,754 - Saving results to ./exp/exp3/FashionMNIST/trmean_sign_flip.h5
+2025-09-13 00:01:21,800 - Best accuracy: 0.7492862852575083
+2025-09-13 00:01:21,801 - Average time cost per round: 5.7378942489624025

@@ -1,0 +1,526 @@
+2025-09-14 00:26:58,715 - *****************EXP-3*****************
+2025-09-14 00:26:58,715 - Exp repeats: 1
+2025-09-14 00:26:58,715 - Communication Rounds: 100
+2025-09-14 00:26:58,715 - Clients: 40
+
+2025-09-14 00:26:58,715 - Attack method: sign_flip
+2025-09-14 00:26:58,715 - Filtering rule: krum
+2025-09-14 00:26:58,715 - Dataset: Cifar10
+2025-09-14 00:26:58,715 - Model: cnn2
+2025-09-14 00:26:58,715 - Learning Rate: 0.04
+2025-09-14 00:26:58,715 - Batch Size: 64
+2025-09-14 00:26:58,715 - Device: cuda
+2025-09-14 00:26:58,715 - Device id: 0
+2025-09-14 00:26:58,716 - Adversaries: 16
+2025-09-14 00:26:58,716 - Model Poisoning: Sign Flip attack
+2025-09-14 00:26:58,716 - *****************EXP-3*****************
+2025-09-14 00:26:59,474 - Running time: 0th ==========================
+2025-09-14 00:27:09,224 - Round number: 0 --------------------------
+2025-09-14 00:27:09,226 - Evaluate global model
+2025-09-14 00:27:17,455 - Averaged Train Loss: 2.3046
+2025-09-14 00:27:17,456 - Test Accurancy: 0.0977
+2025-09-14 00:27:30,587 - Krum select client: 26
+2025-09-14 00:27:30,732 - Round number: 1 --------------------------
+2025-09-14 00:27:30,732 - Evaluate global model
+2025-09-14 00:27:35,538 - Averaged Train Loss: 2.6203
+2025-09-14 00:27:35,541 - Test Accurancy: 0.1016
+2025-09-14 00:27:44,726 - Krum select client: 26
+2025-09-14 00:27:44,750 - Round number: 2 --------------------------
+2025-09-14 00:27:44,751 - Evaluate global model
+2025-09-14 00:27:48,033 - Averaged Train Loss: 2.6567
+2025-09-14 00:27:48,033 - Test Accurancy: 0.1028
+2025-09-14 00:27:57,783 - Krum select client: 26
+2025-09-14 00:27:57,812 - Round number: 3 --------------------------
+2025-09-14 00:27:57,812 - Evaluate global model
+2025-09-14 00:28:02,081 - Averaged Train Loss: 2.5214
+2025-09-14 00:28:02,082 - Test Accurancy: 0.1492
+2025-09-14 00:28:10,929 - Krum select client: 26
+2025-09-14 00:28:10,943 - Round number: 4 --------------------------
+2025-09-14 00:28:10,943 - Evaluate global model
+2025-09-14 00:28:16,230 - Averaged Train Loss: 2.9280
+2025-09-14 00:28:16,232 - Test Accurancy: 0.1243
+2025-09-14 00:28:26,368 - Krum select client: 26
+2025-09-14 00:28:26,384 - Round number: 5 --------------------------
+2025-09-14 00:28:26,384 - Evaluate global model
+2025-09-14 00:28:30,603 - Averaged Train Loss: 2.6898
+2025-09-14 00:28:30,604 - Test Accurancy: 0.1436
+2025-09-14 00:28:40,679 - Krum select client: 26
+2025-09-14 00:28:40,701 - Round number: 6 --------------------------
+2025-09-14 00:28:40,702 - Evaluate global model
+2025-09-14 00:28:45,281 - Averaged Train Loss: 2.4100
+2025-09-14 00:28:45,282 - Test Accurancy: 0.1822
+2025-09-14 00:28:54,513 - Krum select client: 26
+2025-09-14 00:28:54,527 - Round number: 7 --------------------------
+2025-09-14 00:28:54,527 - Evaluate global model
+2025-09-14 00:28:58,882 - Averaged Train Loss: 2.7960
+2025-09-14 00:28:58,884 - Test Accurancy: 0.1684
+2025-09-14 00:29:09,647 - Krum select client: 26
+2025-09-14 00:29:09,662 - Round number: 8 --------------------------
+2025-09-14 00:29:09,662 - Evaluate global model
+2025-09-14 00:29:12,954 - Averaged Train Loss: 2.3144
+2025-09-14 00:29:12,954 - Test Accurancy: 0.2099
+2025-09-14 00:29:22,427 - Krum select client: 26
+2025-09-14 00:29:22,450 - Round number: 9 --------------------------
+2025-09-14 00:29:22,450 - Evaluate global model
+2025-09-14 00:29:26,987 - Averaged Train Loss: 2.6363
+2025-09-14 00:29:26,989 - Test Accurancy: 0.1700
+2025-09-14 00:29:36,858 - Krum select client: 26
+2025-09-14 00:29:36,880 - Round number: 10 --------------------------
+2025-09-14 00:29:36,880 - Evaluate global model
+2025-09-14 00:29:41,599 - Averaged Train Loss: 2.6078
+2025-09-14 00:29:41,600 - Test Accurancy: 0.1903
+2025-09-14 00:29:51,675 - Krum select client: 26
+2025-09-14 00:29:51,704 - Round number: 11 --------------------------
+2025-09-14 00:29:51,704 - Evaluate global model
+2025-09-14 00:29:55,246 - Averaged Train Loss: 2.5168
+2025-09-14 00:29:55,249 - Test Accurancy: 0.2238
+2025-09-14 00:30:06,060 - Krum select client: 26
+2025-09-14 00:30:06,076 - Round number: 12 --------------------------
+2025-09-14 00:30:06,076 - Evaluate global model
+2025-09-14 00:30:09,583 - Averaged Train Loss: 2.3388
+2025-09-14 00:30:09,585 - Test Accurancy: 0.2216
+2025-09-14 00:30:20,008 - Krum select client: 26
+2025-09-14 00:30:20,034 - Round number: 13 --------------------------
+2025-09-14 00:30:20,034 - Evaluate global model
+2025-09-14 00:30:23,753 - Averaged Train Loss: 2.4821
+2025-09-14 00:30:23,754 - Test Accurancy: 0.2040
+2025-09-14 00:30:33,889 - Krum select client: 26
+2025-09-14 00:30:33,911 - Round number: 14 --------------------------
+2025-09-14 00:30:33,911 - Evaluate global model
+2025-09-14 00:30:37,359 - Averaged Train Loss: 2.5830
+2025-09-14 00:30:37,360 - Test Accurancy: 0.2059
+2025-09-14 00:30:47,195 - Krum select client: 26
+2025-09-14 00:30:47,226 - Round number: 15 --------------------------
+2025-09-14 00:30:47,226 - Evaluate global model
+2025-09-14 00:30:51,360 - Averaged Train Loss: 2.2544
+2025-09-14 00:30:51,362 - Test Accurancy: 0.2779
+2025-09-14 00:31:01,397 - Krum select client: 26
+2025-09-14 00:31:01,413 - Round number: 16 --------------------------
+2025-09-14 00:31:01,413 - Evaluate global model
+2025-09-14 00:31:06,214 - Averaged Train Loss: 2.8585
+2025-09-14 00:31:06,217 - Test Accurancy: 0.2236
+2025-09-14 00:31:16,463 - Krum select client: 26
+2025-09-14 00:31:16,479 - Round number: 17 --------------------------
+2025-09-14 00:31:16,479 - Evaluate global model
+2025-09-14 00:31:19,272 - Averaged Train Loss: 2.3790
+2025-09-14 00:31:19,273 - Test Accurancy: 0.2480
+2025-09-14 00:31:29,965 - Krum select client: 26
+2025-09-14 00:31:29,984 - Round number: 18 --------------------------
+2025-09-14 00:31:29,984 - Evaluate global model
+2025-09-14 00:31:33,155 - Averaged Train Loss: 2.5986
+2025-09-14 00:31:33,155 - Test Accurancy: 0.2499
+2025-09-14 00:31:43,315 - Krum select client: 26
+2025-09-14 00:31:43,340 - Round number: 19 --------------------------
+2025-09-14 00:31:43,340 - Evaluate global model
+2025-09-14 00:31:46,994 - Averaged Train Loss: 2.5403
+2025-09-14 00:31:46,995 - Test Accurancy: 0.2878
+2025-09-14 00:31:56,796 - Krum select client: 26
+2025-09-14 00:31:56,816 - Round number: 20 --------------------------
+2025-09-14 00:31:56,817 - Evaluate global model
+2025-09-14 00:32:00,167 - Averaged Train Loss: 2.8097
+2025-09-14 00:32:00,169 - Test Accurancy: 0.2904
+2025-09-14 00:32:10,379 - Krum select client: 26
+2025-09-14 00:32:10,398 - Round number: 21 --------------------------
+2025-09-14 00:32:10,399 - Evaluate global model
+2025-09-14 00:32:13,757 - Averaged Train Loss: 2.8039
+2025-09-14 00:32:13,758 - Test Accurancy: 0.2947
+2025-09-14 00:32:24,078 - Krum select client: 28
+2025-09-14 00:32:24,102 - Round number: 22 --------------------------
+2025-09-14 00:32:24,102 - Evaluate global model
+2025-09-14 00:32:27,799 - Averaged Train Loss: 2.9614
+2025-09-14 00:32:27,800 - Test Accurancy: 0.1895
+2025-09-14 00:32:37,857 - Krum select client: 28
+2025-09-14 00:32:37,879 - Round number: 23 --------------------------
+2025-09-14 00:32:37,879 - Evaluate global model
+2025-09-14 00:32:41,993 - Averaged Train Loss: 2.8217
+2025-09-14 00:32:41,993 - Test Accurancy: 0.1954
+2025-09-14 00:32:51,501 - Krum select client: 28
+2025-09-14 00:32:51,529 - Round number: 24 --------------------------
+2025-09-14 00:32:51,529 - Evaluate global model
+2025-09-14 00:32:55,665 - Averaged Train Loss: 3.6444
+2025-09-14 00:32:55,665 - Test Accurancy: 0.1706
+2025-09-14 00:33:04,701 - Krum select client: 28
+2025-09-14 00:33:04,726 - Round number: 25 --------------------------
+2025-09-14 00:33:04,726 - Evaluate global model
+2025-09-14 00:33:08,817 - Averaged Train Loss: 3.4655
+2025-09-14 00:33:08,818 - Test Accurancy: 0.1630
+2025-09-14 00:33:18,182 - Krum select client: 28
+2025-09-14 00:33:18,195 - Round number: 26 --------------------------
+2025-09-14 00:33:18,195 - Evaluate global model
+2025-09-14 00:33:22,388 - Averaged Train Loss: 3.0922
+2025-09-14 00:33:22,390 - Test Accurancy: 0.2220
+2025-09-14 00:33:32,306 - Krum select client: 28
+2025-09-14 00:33:32,321 - Round number: 27 --------------------------
+2025-09-14 00:33:32,321 - Evaluate global model
+2025-09-14 00:33:36,503 - Averaged Train Loss: 2.6951
+2025-09-14 00:33:36,506 - Test Accurancy: 0.2547
+2025-09-14 00:33:46,513 - Krum select client: 28
+2025-09-14 00:33:46,530 - Round number: 28 --------------------------
+2025-09-14 00:33:46,531 - Evaluate global model
+2025-09-14 00:33:50,510 - Averaged Train Loss: 3.8072
+2025-09-14 00:33:50,511 - Test Accurancy: 0.1642
+2025-09-14 00:34:00,603 - Krum select client: 28
+2025-09-14 00:34:00,624 - Round number: 29 --------------------------
+2025-09-14 00:34:00,625 - Evaluate global model
+2025-09-14 00:34:05,139 - Averaged Train Loss: 2.8904
+2025-09-14 00:34:05,140 - Test Accurancy: 0.2316
+2025-09-14 00:34:15,004 - Krum select client: 28
+2025-09-14 00:34:15,026 - Round number: 30 --------------------------
+2025-09-14 00:34:15,026 - Evaluate global model
+2025-09-14 00:34:19,449 - Averaged Train Loss: 3.3785
+2025-09-14 00:34:19,449 - Test Accurancy: 0.2482
+2025-09-14 00:34:28,865 - Krum select client: 28
+2025-09-14 00:34:28,886 - Round number: 31 --------------------------
+2025-09-14 00:34:28,886 - Evaluate global model
+2025-09-14 00:34:33,323 - Averaged Train Loss: 3.2031
+2025-09-14 00:34:33,323 - Test Accurancy: 0.2336
+2025-09-14 00:34:43,380 - Krum select client: 28
+2025-09-14 00:34:43,403 - Round number: 32 --------------------------
+2025-09-14 00:34:43,403 - Evaluate global model
+2025-09-14 00:34:47,992 - Averaged Train Loss: 3.6873
+2025-09-14 00:34:47,993 - Test Accurancy: 0.2422
+2025-09-14 00:34:57,683 - Krum select client: 28
+2025-09-14 00:34:57,707 - Round number: 33 --------------------------
+2025-09-14 00:34:57,708 - Evaluate global model
+2025-09-14 00:35:02,263 - Averaged Train Loss: 5.0746
+2025-09-14 00:35:02,263 - Test Accurancy: 0.1839
+2025-09-14 00:35:12,232 - Krum select client: 28
+2025-09-14 00:35:12,257 - Round number: 34 --------------------------
+2025-09-14 00:35:12,258 - Evaluate global model
+2025-09-14 00:35:17,165 - Averaged Train Loss: 3.6797
+2025-09-14 00:35:17,167 - Test Accurancy: 0.2346
+2025-09-14 00:35:27,550 - Krum select client: 28
+2025-09-14 00:35:27,566 - Round number: 35 --------------------------
+2025-09-14 00:35:27,566 - Evaluate global model
+2025-09-14 00:35:31,876 - Averaged Train Loss: 4.4012
+2025-09-14 00:35:31,876 - Test Accurancy: 0.2320
+2025-09-14 00:35:42,192 - Krum select client: 28
+2025-09-14 00:35:42,208 - Round number: 36 --------------------------
+2025-09-14 00:35:42,208 - Evaluate global model
+2025-09-14 00:35:46,514 - Averaged Train Loss: 4.7559
+2025-09-14 00:35:46,514 - Test Accurancy: 0.2324
+2025-09-14 00:35:57,413 - Krum select client: 26
+2025-09-14 00:35:57,430 - Round number: 37 --------------------------
+2025-09-14 00:35:57,430 - Evaluate global model
+2025-09-14 00:36:01,715 - Averaged Train Loss: 2.3753
+2025-09-14 00:36:01,718 - Test Accurancy: 0.3134
+2025-09-14 00:36:11,893 - Krum select client: 26
+2025-09-14 00:36:11,929 - Round number: 38 --------------------------
+2025-09-14 00:36:11,929 - Evaluate global model
+2025-09-14 00:36:17,128 - Averaged Train Loss: 3.0786
+2025-09-14 00:36:17,130 - Test Accurancy: 0.2906
+2025-09-14 00:36:26,120 - Krum select client: 26
+2025-09-14 00:36:26,154 - Round number: 39 --------------------------
+2025-09-14 00:36:26,154 - Evaluate global model
+2025-09-14 00:36:31,417 - Averaged Train Loss: 3.4638
+2025-09-14 00:36:31,420 - Test Accurancy: 0.3134
+2025-09-14 00:36:40,587 - Krum select client: 26
+2025-09-14 00:36:40,607 - Round number: 40 --------------------------
+2025-09-14 00:36:40,607 - Evaluate global model
+2025-09-14 00:36:45,779 - Averaged Train Loss: 2.9371
+2025-09-14 00:36:45,781 - Test Accurancy: 0.3209
+2025-09-14 00:36:55,267 - Krum select client: 26
+2025-09-14 00:36:55,285 - Round number: 41 --------------------------
+2025-09-14 00:36:55,285 - Evaluate global model
+2025-09-14 00:36:59,053 - Averaged Train Loss: 3.8400
+2025-09-14 00:36:59,054 - Test Accurancy: 0.3083
+2025-09-14 00:37:09,104 - Krum select client: 26
+2025-09-14 00:37:09,120 - Round number: 42 --------------------------
+2025-09-14 00:37:09,120 - Evaluate global model
+2025-09-14 00:37:13,131 - Averaged Train Loss: 3.9946
+2025-09-14 00:37:13,131 - Test Accurancy: 0.3281
+2025-09-14 00:37:22,324 - Krum select client: 26
+2025-09-14 00:37:22,345 - Round number: 43 --------------------------
+2025-09-14 00:37:22,345 - Evaluate global model
+2025-09-14 00:37:26,942 - Averaged Train Loss: 4.1544
+2025-09-14 00:37:26,943 - Test Accurancy: 0.3291
+2025-09-14 00:37:36,046 - Krum select client: 26
+2025-09-14 00:37:36,075 - Round number: 44 --------------------------
+2025-09-14 00:37:36,076 - Evaluate global model
+2025-09-14 00:37:40,951 - Averaged Train Loss: 4.5276
+2025-09-14 00:37:40,952 - Test Accurancy: 0.3266
+2025-09-14 00:37:50,369 - Krum select client: 26
+2025-09-14 00:37:50,391 - Round number: 45 --------------------------
+2025-09-14 00:37:50,391 - Evaluate global model
+2025-09-14 00:37:55,570 - Averaged Train Loss: 4.6842
+2025-09-14 00:37:55,571 - Test Accurancy: 0.3285
+2025-09-14 00:38:06,003 - Krum select client: 26
+2025-09-14 00:38:06,030 - Round number: 46 --------------------------
+2025-09-14 00:38:06,030 - Evaluate global model
+2025-09-14 00:38:11,616 - Averaged Train Loss: 4.8397
+2025-09-14 00:38:11,619 - Test Accurancy: 0.3274
+2025-09-14 00:38:22,050 - Krum select client: 26
+2025-09-14 00:38:22,076 - Round number: 47 --------------------------
+2025-09-14 00:38:22,077 - Evaluate global model
+2025-09-14 00:38:27,061 - Averaged Train Loss: 4.9263
+2025-09-14 00:38:27,062 - Test Accurancy: 0.3303
+2025-09-14 00:38:35,984 - Krum select client: 26
+2025-09-14 00:38:36,001 - Round number: 48 --------------------------
+2025-09-14 00:38:36,001 - Evaluate global model
+2025-09-14 00:38:40,823 - Averaged Train Loss: 5.0616
+2025-09-14 00:38:40,825 - Test Accurancy: 0.3289
+2025-09-14 00:38:49,395 - Krum select client: 26
+2025-09-14 00:38:49,421 - Round number: 49 --------------------------
+2025-09-14 00:38:49,422 - Evaluate global model
+2025-09-14 00:38:54,223 - Averaged Train Loss: 5.1657
+2025-09-14 00:38:54,223 - Test Accurancy: 0.3267
+2025-09-14 00:39:03,650 - Krum select client: 26
+2025-09-14 00:39:03,666 - Round number: 50 --------------------------
+2025-09-14 00:39:03,666 - Evaluate global model
+2025-09-14 00:39:07,826 - Averaged Train Loss: 5.2659
+2025-09-14 00:39:07,827 - Test Accurancy: 0.3265
+2025-09-14 00:39:18,215 - Krum select client: 26
+2025-09-14 00:39:18,231 - Round number: 51 --------------------------
+2025-09-14 00:39:18,231 - Evaluate global model
+2025-09-14 00:39:22,365 - Averaged Train Loss: 5.4139
+2025-09-14 00:39:22,366 - Test Accurancy: 0.3251
+2025-09-14 00:39:31,145 - Krum select client: 26
+2025-09-14 00:39:31,167 - Round number: 52 --------------------------
+2025-09-14 00:39:31,168 - Evaluate global model
+2025-09-14 00:39:35,389 - Averaged Train Loss: 5.4641
+2025-09-14 00:39:35,391 - Test Accurancy: 0.3263
+2025-09-14 00:39:45,713 - Krum select client: 26
+2025-09-14 00:39:45,732 - Round number: 53 --------------------------
+2025-09-14 00:39:45,732 - Evaluate global model
+2025-09-14 00:39:49,767 - Averaged Train Loss: 5.5408
+2025-09-14 00:39:49,767 - Test Accurancy: 0.3248
+2025-09-14 00:39:58,281 - Krum select client: 26
+2025-09-14 00:39:58,302 - Round number: 54 --------------------------
+2025-09-14 00:39:58,302 - Evaluate global model
+2025-09-14 00:40:03,482 - Averaged Train Loss: 5.5698
+2025-09-14 00:40:03,485 - Test Accurancy: 0.3270
+2025-09-14 00:40:12,467 - Krum select client: 26
+2025-09-14 00:40:12,486 - Round number: 55 --------------------------
+2025-09-14 00:40:12,486 - Evaluate global model
+2025-09-14 00:40:17,526 - Averaged Train Loss: 5.6565
+2025-09-14 00:40:17,528 - Test Accurancy: 0.3254
+2025-09-14 00:40:27,667 - Krum select client: 26
+2025-09-14 00:40:27,682 - Round number: 56 --------------------------
+2025-09-14 00:40:27,683 - Evaluate global model
+2025-09-14 00:40:31,122 - Averaged Train Loss: 5.7192
+2025-09-14 00:40:31,123 - Test Accurancy: 0.3263
+2025-09-14 00:40:40,243 - Krum select client: 24
+2025-09-14 00:40:40,265 - Round number: 57 --------------------------
+2025-09-14 00:40:40,265 - Evaluate global model
+2025-09-14 00:40:45,058 - Averaged Train Loss: 2.8791
+2025-09-14 00:40:45,060 - Test Accurancy: 0.2172
+2025-09-14 00:40:54,170 - Krum select client: 24
+2025-09-14 00:40:54,192 - Round number: 58 --------------------------
+2025-09-14 00:40:54,192 - Evaluate global model
+2025-09-14 00:40:58,868 - Averaged Train Loss: 2.9279
+2025-09-14 00:40:58,871 - Test Accurancy: 0.2192
+2025-09-14 00:41:08,450 - Krum select client: 24
+2025-09-14 00:41:08,473 - Round number: 59 --------------------------
+2025-09-14 00:41:08,474 - Evaluate global model
+2025-09-14 00:41:13,281 - Averaged Train Loss: 2.9384
+2025-09-14 00:41:13,282 - Test Accurancy: 0.2350
+2025-09-14 00:41:22,865 - Krum select client: 24
+2025-09-14 00:41:22,880 - Round number: 60 --------------------------
+2025-09-14 00:41:22,880 - Evaluate global model
+2025-09-14 00:41:26,593 - Averaged Train Loss: 3.2714
+2025-09-14 00:41:26,594 - Test Accurancy: 0.2291
+2025-09-14 00:41:36,933 - Krum select client: 24
+2025-09-14 00:41:36,956 - Round number: 61 --------------------------
+2025-09-14 00:41:36,957 - Evaluate global model
+2025-09-14 00:41:40,910 - Averaged Train Loss: 3.3530
+2025-09-14 00:41:40,910 - Test Accurancy: 0.2266
+2025-09-14 00:41:50,091 - Krum select client: 24
+2025-09-14 00:41:50,113 - Round number: 62 --------------------------
+2025-09-14 00:41:50,113 - Evaluate global model
+2025-09-14 00:41:54,671 - Averaged Train Loss: 3.3910
+2025-09-14 00:41:54,673 - Test Accurancy: 0.2330
+2025-09-14 00:42:03,945 - Krum select client: 24
+2025-09-14 00:42:03,970 - Round number: 63 --------------------------
+2025-09-14 00:42:03,970 - Evaluate global model
+2025-09-14 00:42:08,781 - Averaged Train Loss: 3.5114
+2025-09-14 00:42:08,782 - Test Accurancy: 0.2340
+2025-09-14 00:42:17,689 - Krum select client: 24
+2025-09-14 00:42:17,712 - Round number: 64 --------------------------
+2025-09-14 00:42:17,712 - Evaluate global model
+2025-09-14 00:42:22,753 - Averaged Train Loss: 3.6719
+2025-09-14 00:42:22,754 - Test Accurancy: 0.2342
+2025-09-14 00:42:31,515 - Krum select client: 24
+2025-09-14 00:42:31,542 - Round number: 65 --------------------------
+2025-09-14 00:42:31,542 - Evaluate global model
+2025-09-14 00:42:36,298 - Averaged Train Loss: 3.7789
+2025-09-14 00:42:36,298 - Test Accurancy: 0.2370
+2025-09-14 00:42:45,665 - Krum select client: 24
+2025-09-14 00:42:45,680 - Round number: 66 --------------------------
+2025-09-14 00:42:45,680 - Evaluate global model
+2025-09-14 00:42:49,551 - Averaged Train Loss: 3.7605
+2025-09-14 00:42:49,552 - Test Accurancy: 0.2406
+2025-09-14 00:42:59,318 - Krum select client: 24
+2025-09-14 00:42:59,333 - Round number: 67 --------------------------
+2025-09-14 00:42:59,334 - Evaluate global model
+2025-09-14 00:43:03,108 - Averaged Train Loss: 4.0871
+2025-09-14 00:43:03,109 - Test Accurancy: 0.2358
+2025-09-14 00:43:12,830 - Krum select client: 24
+2025-09-14 00:43:12,852 - Round number: 68 --------------------------
+2025-09-14 00:43:12,852 - Evaluate global model
+2025-09-14 00:43:16,896 - Averaged Train Loss: 4.0160
+2025-09-14 00:43:16,898 - Test Accurancy: 0.2424
+2025-09-14 00:43:26,652 - Krum select client: 24
+2025-09-14 00:43:26,685 - Round number: 69 --------------------------
+2025-09-14 00:43:26,686 - Evaluate global model
+2025-09-14 00:43:31,081 - Averaged Train Loss: 4.2528
+2025-09-14 00:43:31,082 - Test Accurancy: 0.2382
+2025-09-14 00:43:40,965 - Krum select client: 24
+2025-09-14 00:43:40,989 - Round number: 70 --------------------------
+2025-09-14 00:43:40,989 - Evaluate global model
+2025-09-14 00:43:44,982 - Averaged Train Loss: 4.3490
+2025-09-14 00:43:44,983 - Test Accurancy: 0.2404
+2025-09-14 00:43:55,172 - Krum select client: 24
+2025-09-14 00:43:55,204 - Round number: 71 --------------------------
+2025-09-14 00:43:55,205 - Evaluate global model
+2025-09-14 00:43:59,788 - Averaged Train Loss: 4.5908
+2025-09-14 00:43:59,790 - Test Accurancy: 0.2368
+2025-09-14 00:44:08,964 - Krum select client: 24
+2025-09-14 00:44:08,994 - Round number: 72 --------------------------
+2025-09-14 00:44:08,994 - Evaluate global model
+2025-09-14 00:44:13,792 - Averaged Train Loss: 4.4541
+2025-09-14 00:44:13,795 - Test Accurancy: 0.2441
+2025-09-14 00:44:23,323 - Krum select client: 24
+2025-09-14 00:44:23,344 - Round number: 73 --------------------------
+2025-09-14 00:44:23,344 - Evaluate global model
+2025-09-14 00:44:28,455 - Averaged Train Loss: 4.5653
+2025-09-14 00:44:28,456 - Test Accurancy: 0.2436
+2025-09-14 00:44:37,804 - Krum select client: 24
+2025-09-14 00:44:37,820 - Round number: 74 --------------------------
+2025-09-14 00:44:37,820 - Evaluate global model
+2025-09-14 00:44:41,808 - Averaged Train Loss: 4.8439
+2025-09-14 00:44:41,809 - Test Accurancy: 0.2386
+2025-09-14 00:44:52,128 - Krum select client: 24
+2025-09-14 00:44:52,148 - Round number: 75 --------------------------
+2025-09-14 00:44:52,148 - Evaluate global model
+2025-09-14 00:44:56,322 - Averaged Train Loss: 4.9037
+2025-09-14 00:44:56,322 - Test Accurancy: 0.2383
+2025-09-14 00:45:05,995 - Krum select client: 24
+2025-09-14 00:45:06,016 - Round number: 76 --------------------------
+2025-09-14 00:45:06,016 - Evaluate global model
+2025-09-14 00:45:10,056 - Averaged Train Loss: 4.9398
+2025-09-14 00:45:10,057 - Test Accurancy: 0.2396
+2025-09-14 00:45:19,348 - Krum select client: 24
+2025-09-14 00:45:19,370 - Round number: 77 --------------------------
+2025-09-14 00:45:19,370 - Evaluate global model
+2025-09-14 00:45:23,626 - Averaged Train Loss: 4.9673
+2025-09-14 00:45:23,627 - Test Accurancy: 0.2424
+2025-09-14 00:45:32,905 - Krum select client: 24
+2025-09-14 00:45:32,931 - Round number: 78 --------------------------
+2025-09-14 00:45:32,932 - Evaluate global model
+2025-09-14 00:45:37,472 - Averaged Train Loss: 5.0963
+2025-09-14 00:45:37,473 - Test Accurancy: 0.2402
+2025-09-14 00:45:46,908 - Krum select client: 24
+2025-09-14 00:45:46,922 - Round number: 79 --------------------------
+2025-09-14 00:45:46,922 - Evaluate global model
+2025-09-14 00:45:51,311 - Averaged Train Loss: 5.2170
+2025-09-14 00:45:51,313 - Test Accurancy: 0.2393
+2025-09-14 00:46:01,003 - Krum select client: 24
+2025-09-14 00:46:01,019 - Round number: 80 --------------------------
+2025-09-14 00:46:01,019 - Evaluate global model
+2025-09-14 00:46:04,484 - Averaged Train Loss: 5.2290
+2025-09-14 00:46:04,485 - Test Accurancy: 0.2394
+2025-09-14 00:46:13,812 - Krum select client: 24
+2025-09-14 00:46:13,845 - Round number: 81 --------------------------
+2025-09-14 00:46:13,846 - Evaluate global model
+2025-09-14 00:46:18,574 - Averaged Train Loss: 5.3325
+2025-09-14 00:46:18,575 - Test Accurancy: 0.2386
+2025-09-14 00:46:28,313 - Krum select client: 28
+2025-09-14 00:46:28,327 - Round number: 82 --------------------------
+2025-09-14 00:46:28,327 - Evaluate global model
+2025-09-14 00:46:31,765 - Averaged Train Loss: 3.4965
+2025-09-14 00:46:31,766 - Test Accurancy: 0.2488
+2025-09-14 00:46:41,858 - Krum select client: 28
+2025-09-14 00:46:41,875 - Round number: 83 --------------------------
+2025-09-14 00:46:41,875 - Evaluate global model
+2025-09-14 00:46:45,429 - Averaged Train Loss: 3.6730
+2025-09-14 00:46:45,430 - Test Accurancy: 0.2531
+2025-09-14 00:46:54,370 - Krum select client: 28
+2025-09-14 00:46:54,389 - Round number: 84 --------------------------
+2025-09-14 00:46:54,389 - Evaluate global model
+2025-09-14 00:46:58,506 - Averaged Train Loss: 4.0977
+2025-09-14 00:46:58,507 - Test Accurancy: 0.2464
+2025-09-14 00:47:07,736 - Krum select client: 28
+2025-09-14 00:47:07,760 - Round number: 85 --------------------------
+2025-09-14 00:47:07,761 - Evaluate global model
+2025-09-14 00:47:13,133 - Averaged Train Loss: 4.3329
+2025-09-14 00:47:13,135 - Test Accurancy: 0.2486
+2025-09-14 00:47:22,401 - Krum select client: 28
+2025-09-14 00:47:22,449 - Round number: 86 --------------------------
+2025-09-14 00:47:22,450 - Evaluate global model
+2025-09-14 00:47:27,779 - Averaged Train Loss: 4.6453
+2025-09-14 00:47:27,781 - Test Accurancy: 0.2430
+2025-09-14 00:47:37,308 - Krum select client: 28
+2025-09-14 00:47:37,332 - Round number: 87 --------------------------
+2025-09-14 00:47:37,333 - Evaluate global model
+2025-09-14 00:47:41,687 - Averaged Train Loss: 4.8112
+2025-09-14 00:47:41,688 - Test Accurancy: 0.2451
+2025-09-14 00:47:51,179 - Krum select client: 28
+2025-09-14 00:47:51,204 - Round number: 88 --------------------------
+2025-09-14 00:47:51,204 - Evaluate global model
+2025-09-14 00:47:55,606 - Averaged Train Loss: 4.9620
+2025-09-14 00:47:55,607 - Test Accurancy: 0.2476
+2025-09-14 00:48:05,264 - Krum select client: 28
+2025-09-14 00:48:05,291 - Round number: 89 --------------------------
+2025-09-14 00:48:05,291 - Evaluate global model
+2025-09-14 00:48:10,177 - Averaged Train Loss: 5.1555
+2025-09-14 00:48:10,177 - Test Accurancy: 0.2455
+2025-09-14 00:48:20,033 - Krum select client: 28
+2025-09-14 00:48:20,047 - Round number: 90 --------------------------
+2025-09-14 00:48:20,048 - Evaluate global model
+2025-09-14 00:48:23,154 - Averaged Train Loss: 5.4316
+2025-09-14 00:48:23,155 - Test Accurancy: 0.2418
+2025-09-14 00:48:32,978 - Krum select client: 28
+2025-09-14 00:48:33,001 - Round number: 91 --------------------------
+2025-09-14 00:48:33,001 - Evaluate global model
+2025-09-14 00:48:36,886 - Averaged Train Loss: 5.4310
+2025-09-14 00:48:36,887 - Test Accurancy: 0.2464
+2025-09-14 00:48:47,436 - Krum select client: 28
+2025-09-14 00:48:47,455 - Round number: 92 --------------------------
+2025-09-14 00:48:47,455 - Evaluate global model
+2025-09-14 00:48:51,097 - Averaged Train Loss: 5.5254
+2025-09-14 00:48:51,098 - Test Accurancy: 0.2476
+2025-09-14 00:49:01,832 - Krum select client: 28
+2025-09-14 00:49:01,847 - Round number: 93 --------------------------
+2025-09-14 00:49:01,847 - Evaluate global model
+2025-09-14 00:49:05,338 - Averaged Train Loss: 5.7524
+2025-09-14 00:49:05,338 - Test Accurancy: 0.2431
+2025-09-14 00:49:15,709 - Krum select client: 28
+2025-09-14 00:49:15,731 - Round number: 94 --------------------------
+2025-09-14 00:49:15,731 - Evaluate global model
+2025-09-14 00:49:19,387 - Averaged Train Loss: 5.7800
+2025-09-14 00:49:19,387 - Test Accurancy: 0.2443
+2025-09-14 00:49:29,921 - Krum select client: 28
+2025-09-14 00:49:29,950 - Round number: 95 --------------------------
+2025-09-14 00:49:29,950 - Evaluate global model
+2025-09-14 00:49:34,092 - Averaged Train Loss: 5.8126
+2025-09-14 00:49:34,093 - Test Accurancy: 0.2474
+2025-09-14 00:49:44,042 - Krum select client: 28
+2025-09-14 00:49:44,072 - Round number: 96 --------------------------
+2025-09-14 00:49:44,073 - Evaluate global model
+2025-09-14 00:49:48,040 - Averaged Train Loss: 5.9469
+2025-09-14 00:49:48,040 - Test Accurancy: 0.2457
+2025-09-14 00:49:56,814 - Krum select client: 28
+2025-09-14 00:49:56,840 - Round number: 97 --------------------------
+2025-09-14 00:49:56,841 - Evaluate global model
+2025-09-14 00:49:59,816 - Averaged Train Loss: 6.0358
+2025-09-14 00:49:59,817 - Test Accurancy: 0.2455
+2025-09-14 00:50:05,977 - Krum select client: 28
+2025-09-14 00:50:05,990 - Round number: 98 --------------------------
+2025-09-14 00:50:05,990 - Evaluate global model
+2025-09-14 00:50:08,724 - Averaged Train Loss: 6.0830
+2025-09-14 00:50:08,726 - Test Accurancy: 0.2457
+2025-09-14 00:50:15,814 - Krum select client: 28
+2025-09-14 00:50:15,828 - Round number: 99 --------------------------
+2025-09-14 00:50:15,829 - Evaluate global model
+2025-09-14 00:50:18,310 - Averaged Train Loss: 6.1398
+2025-09-14 00:50:18,312 - Test Accurancy: 0.2457
+2025-09-14 00:50:24,257 - Krum select client: 28
+2025-09-14 00:50:24,272 - Round number: 100 --------------------------
+2025-09-14 00:50:24,272 - Evaluate global model
+2025-09-14 00:50:26,113 - Averaged Train Loss: 6.2355
+2025-09-14 00:50:26,113 - Test Accurancy: 0.2446
+2025-09-14 00:50:30,776 - Krum select client: 28
+2025-09-14 00:50:30,777 - Run over
+2025-09-14 00:50:30,778 - Saving results to ./exp/exp3/Cifar10/krum_sign_flip.h5
+2025-09-14 00:50:30,791 - Best accuracy: 0.3302697302697303
+2025-09-14 00:50:30,791 - Average time cost per round: 13.80060553073883

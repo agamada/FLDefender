@@ -1,0 +1,526 @@
+2025-09-13 14:05:42,437 - *****************EXP-3*****************
+2025-09-13 14:05:42,437 - Exp repeats: 1
+2025-09-13 14:05:42,437 - Communication Rounds: 100
+2025-09-13 14:05:42,437 - Clients: 40
+
+2025-09-13 14:05:42,437 - Attack method: none
+2025-09-13 14:05:42,437 - Filtering rule: median
+2025-09-13 14:05:42,437 - Dataset: FashionMNIST
+2025-09-13 14:05:42,438 - Model: cnn
+2025-09-13 14:05:42,438 - Learning Rate: 0.2
+2025-09-13 14:05:42,438 - Batch Size: 64
+2025-09-13 14:05:42,438 - Device: cuda
+2025-09-13 14:05:42,438 - Device id: 0
+2025-09-13 14:05:42,438 - Adversaries: 0
+2025-09-13 14:05:42,438 - Targeted Label Flipping: 4-->6
+2025-09-13 14:05:42,438 - *****************EXP-3*****************
+2025-09-13 14:05:43,172 - Running time: 0th ==========================
+2025-09-13 14:05:45,102 - Round number: 0 --------------------------
+2025-09-13 14:05:45,103 - Evaluate global model
+2025-09-13 14:05:47,515 - Averaged Train Loss: 2.3031
+2025-09-13 14:05:47,516 - Test Accurancy: 0.1321
+2025-09-13 14:05:47,517 - Attack Success Rate: 0.0006
+2025-09-13 14:05:52,341 - Round number: 1 --------------------------
+2025-09-13 14:05:52,342 - Evaluate global model
+2025-09-13 14:05:53,864 - Averaged Train Loss: 2.2683
+2025-09-13 14:05:53,865 - Test Accurancy: 0.2273
+2025-09-13 14:05:53,865 - Attack Success Rate: 0.0011
+2025-09-13 14:05:58,381 - Round number: 2 --------------------------
+2025-09-13 14:05:58,382 - Evaluate global model
+2025-09-13 14:05:59,970 - Averaged Train Loss: 1.4619
+2025-09-13 14:05:59,970 - Test Accurancy: 0.5943
+2025-09-13 14:05:59,970 - Attack Success Rate: 0.0006
+2025-09-13 14:06:04,477 - Round number: 3 --------------------------
+2025-09-13 14:06:04,477 - Evaluate global model
+2025-09-13 14:06:06,090 - Averaged Train Loss: 0.8898
+2025-09-13 14:06:06,091 - Test Accurancy: 0.7009
+2025-09-13 14:06:06,091 - Attack Success Rate: 0.0006
+2025-09-13 14:06:10,368 - Round number: 4 --------------------------
+2025-09-13 14:06:10,369 - Evaluate global model
+2025-09-13 14:06:12,008 - Averaged Train Loss: 0.7277
+2025-09-13 14:06:12,008 - Test Accurancy: 0.7380
+2025-09-13 14:06:12,008 - Attack Success Rate: 0.0011
+2025-09-13 14:06:16,439 - Round number: 5 --------------------------
+2025-09-13 14:06:16,439 - Evaluate global model
+2025-09-13 14:06:18,220 - Averaged Train Loss: 0.6430
+2025-09-13 14:06:18,220 - Test Accurancy: 0.7606
+2025-09-13 14:06:18,220 - Attack Success Rate: 0.0034
+2025-09-13 14:06:22,522 - Round number: 6 --------------------------
+2025-09-13 14:06:22,523 - Evaluate global model
+2025-09-13 14:06:24,305 - Averaged Train Loss: 0.5850
+2025-09-13 14:06:24,305 - Test Accurancy: 0.7804
+2025-09-13 14:06:24,306 - Attack Success Rate: 0.0052
+2025-09-13 14:06:28,586 - Round number: 7 --------------------------
+2025-09-13 14:06:28,586 - Evaluate global model
+2025-09-13 14:06:30,271 - Averaged Train Loss: 0.5525
+2025-09-13 14:06:30,272 - Test Accurancy: 0.7904
+2025-09-13 14:06:30,272 - Attack Success Rate: 0.0046
+2025-09-13 14:06:34,577 - Round number: 8 --------------------------
+2025-09-13 14:06:34,577 - Evaluate global model
+2025-09-13 14:06:36,255 - Averaged Train Loss: 0.5328
+2025-09-13 14:06:36,256 - Test Accurancy: 0.7984
+2025-09-13 14:06:36,256 - Attack Success Rate: 0.0046
+2025-09-13 14:06:40,359 - Round number: 9 --------------------------
+2025-09-13 14:06:40,360 - Evaluate global model
+2025-09-13 14:06:42,001 - Averaged Train Loss: 0.5125
+2025-09-13 14:06:42,001 - Test Accurancy: 0.8061
+2025-09-13 14:06:42,001 - Attack Success Rate: 0.0069
+2025-09-13 14:06:46,186 - Round number: 10 --------------------------
+2025-09-13 14:06:46,187 - Evaluate global model
+2025-09-13 14:06:47,890 - Averaged Train Loss: 0.4885
+2025-09-13 14:06:47,890 - Test Accurancy: 0.8149
+2025-09-13 14:06:47,890 - Attack Success Rate: 0.0115
+2025-09-13 14:06:51,974 - Round number: 11 --------------------------
+2025-09-13 14:06:51,974 - Evaluate global model
+2025-09-13 14:06:53,701 - Averaged Train Loss: 0.4690
+2025-09-13 14:06:53,701 - Test Accurancy: 0.8236
+2025-09-13 14:06:53,701 - Attack Success Rate: 0.0132
+2025-09-13 14:06:57,872 - Round number: 12 --------------------------
+2025-09-13 14:06:57,873 - Evaluate global model
+2025-09-13 14:06:59,629 - Averaged Train Loss: 0.4556
+2025-09-13 14:06:59,629 - Test Accurancy: 0.8296
+2025-09-13 14:06:59,629 - Attack Success Rate: 0.0155
+2025-09-13 14:07:03,852 - Round number: 13 --------------------------
+2025-09-13 14:07:03,852 - Evaluate global model
+2025-09-13 14:07:05,505 - Averaged Train Loss: 0.4448
+2025-09-13 14:07:05,506 - Test Accurancy: 0.8338
+2025-09-13 14:07:05,506 - Attack Success Rate: 0.0161
+2025-09-13 14:07:09,747 - Round number: 14 --------------------------
+2025-09-13 14:07:09,747 - Evaluate global model
+2025-09-13 14:07:11,352 - Averaged Train Loss: 0.4366
+2025-09-13 14:07:11,352 - Test Accurancy: 0.8371
+2025-09-13 14:07:11,353 - Attack Success Rate: 0.0138
+2025-09-13 14:07:15,507 - Round number: 15 --------------------------
+2025-09-13 14:07:15,508 - Evaluate global model
+2025-09-13 14:07:17,092 - Averaged Train Loss: 0.4255
+2025-09-13 14:07:17,092 - Test Accurancy: 0.8423
+2025-09-13 14:07:17,092 - Attack Success Rate: 0.0155
+2025-09-13 14:07:21,275 - Round number: 16 --------------------------
+2025-09-13 14:07:21,275 - Evaluate global model
+2025-09-13 14:07:22,916 - Averaged Train Loss: 0.4184
+2025-09-13 14:07:22,916 - Test Accurancy: 0.8433
+2025-09-13 14:07:22,916 - Attack Success Rate: 0.0144
+2025-09-13 14:07:27,308 - Round number: 17 --------------------------
+2025-09-13 14:07:27,308 - Evaluate global model
+2025-09-13 14:07:29,052 - Averaged Train Loss: 0.4051
+2025-09-13 14:07:29,053 - Test Accurancy: 0.8506
+2025-09-13 14:07:29,053 - Attack Success Rate: 0.0247
+2025-09-13 14:07:33,183 - Round number: 18 --------------------------
+2025-09-13 14:07:33,183 - Evaluate global model
+2025-09-13 14:07:34,933 - Averaged Train Loss: 0.4021
+2025-09-13 14:07:34,934 - Test Accurancy: 0.8519
+2025-09-13 14:07:34,934 - Attack Success Rate: 0.0184
+2025-09-13 14:07:39,096 - Round number: 19 --------------------------
+2025-09-13 14:07:39,096 - Evaluate global model
+2025-09-13 14:07:40,791 - Averaged Train Loss: 0.3942
+2025-09-13 14:07:40,791 - Test Accurancy: 0.8558
+2025-09-13 14:07:40,791 - Attack Success Rate: 0.0195
+2025-09-13 14:07:44,858 - Round number: 20 --------------------------
+2025-09-13 14:07:44,859 - Evaluate global model
+2025-09-13 14:07:46,617 - Averaged Train Loss: 0.3876
+2025-09-13 14:07:46,617 - Test Accurancy: 0.8589
+2025-09-13 14:07:46,618 - Attack Success Rate: 0.0212
+2025-09-13 14:07:50,559 - Round number: 21 --------------------------
+2025-09-13 14:07:50,559 - Evaluate global model
+2025-09-13 14:07:52,339 - Averaged Train Loss: 0.3853
+2025-09-13 14:07:52,340 - Test Accurancy: 0.8582
+2025-09-13 14:07:52,340 - Attack Success Rate: 0.0201
+2025-09-13 14:07:56,270 - Round number: 22 --------------------------
+2025-09-13 14:07:56,271 - Evaluate global model
+2025-09-13 14:07:58,115 - Averaged Train Loss: 0.3803
+2025-09-13 14:07:58,115 - Test Accurancy: 0.8603
+2025-09-13 14:07:58,116 - Attack Success Rate: 0.0195
+2025-09-13 14:08:02,259 - Round number: 23 --------------------------
+2025-09-13 14:08:02,259 - Evaluate global model
+2025-09-13 14:08:04,192 - Averaged Train Loss: 0.3753
+2025-09-13 14:08:04,193 - Test Accurancy: 0.8622
+2025-09-13 14:08:04,193 - Attack Success Rate: 0.0212
+2025-09-13 14:08:08,275 - Round number: 24 --------------------------
+2025-09-13 14:08:08,275 - Evaluate global model
+2025-09-13 14:08:10,071 - Averaged Train Loss: 0.3703
+2025-09-13 14:08:10,071 - Test Accurancy: 0.8654
+2025-09-13 14:08:10,071 - Attack Success Rate: 0.0212
+2025-09-13 14:08:14,117 - Round number: 25 --------------------------
+2025-09-13 14:08:14,117 - Evaluate global model
+2025-09-13 14:08:16,003 - Averaged Train Loss: 0.3636
+2025-09-13 14:08:16,004 - Test Accurancy: 0.8667
+2025-09-13 14:08:16,004 - Attack Success Rate: 0.0253
+2025-09-13 14:08:20,063 - Round number: 26 --------------------------
+2025-09-13 14:08:20,063 - Evaluate global model
+2025-09-13 14:08:21,953 - Averaged Train Loss: 0.3572
+2025-09-13 14:08:21,954 - Test Accurancy: 0.8686
+2025-09-13 14:08:21,954 - Attack Success Rate: 0.0264
+2025-09-13 14:08:25,931 - Round number: 27 --------------------------
+2025-09-13 14:08:25,932 - Evaluate global model
+2025-09-13 14:08:27,784 - Averaged Train Loss: 0.3550
+2025-09-13 14:08:27,785 - Test Accurancy: 0.8696
+2025-09-13 14:08:27,785 - Attack Success Rate: 0.0264
+2025-09-13 14:08:32,030 - Round number: 28 --------------------------
+2025-09-13 14:08:32,031 - Evaluate global model
+2025-09-13 14:08:33,937 - Averaged Train Loss: 0.3517
+2025-09-13 14:08:33,937 - Test Accurancy: 0.8702
+2025-09-13 14:08:33,937 - Attack Success Rate: 0.0258
+2025-09-13 14:08:38,169 - Round number: 29 --------------------------
+2025-09-13 14:08:38,170 - Evaluate global model
+2025-09-13 14:08:40,021 - Averaged Train Loss: 0.3468
+2025-09-13 14:08:40,022 - Test Accurancy: 0.8715
+2025-09-13 14:08:40,022 - Attack Success Rate: 0.0264
+2025-09-13 14:08:44,129 - Round number: 30 --------------------------
+2025-09-13 14:08:44,130 - Evaluate global model
+2025-09-13 14:08:45,927 - Averaged Train Loss: 0.3466
+2025-09-13 14:08:45,927 - Test Accurancy: 0.8719
+2025-09-13 14:08:45,927 - Attack Success Rate: 0.0212
+2025-09-13 14:08:50,053 - Round number: 31 --------------------------
+2025-09-13 14:08:50,053 - Evaluate global model
+2025-09-13 14:08:52,014 - Averaged Train Loss: 0.3422
+2025-09-13 14:08:52,014 - Test Accurancy: 0.8732
+2025-09-13 14:08:52,014 - Attack Success Rate: 0.0207
+2025-09-13 14:08:56,101 - Round number: 32 --------------------------
+2025-09-13 14:08:56,102 - Evaluate global model
+2025-09-13 14:08:57,872 - Averaged Train Loss: 0.3429
+2025-09-13 14:08:57,872 - Test Accurancy: 0.8734
+2025-09-13 14:08:57,872 - Attack Success Rate: 0.0258
+2025-09-13 14:09:02,135 - Round number: 33 --------------------------
+2025-09-13 14:09:02,135 - Evaluate global model
+2025-09-13 14:09:03,829 - Averaged Train Loss: 0.3373
+2025-09-13 14:09:03,830 - Test Accurancy: 0.8744
+2025-09-13 14:09:03,830 - Attack Success Rate: 0.0253
+2025-09-13 14:09:07,926 - Round number: 34 --------------------------
+2025-09-13 14:09:07,926 - Evaluate global model
+2025-09-13 14:09:09,827 - Averaged Train Loss: 0.3336
+2025-09-13 14:09:09,827 - Test Accurancy: 0.8759
+2025-09-13 14:09:09,827 - Attack Success Rate: 0.0264
+2025-09-13 14:09:13,893 - Round number: 35 --------------------------
+2025-09-13 14:09:13,894 - Evaluate global model
+2025-09-13 14:09:15,701 - Averaged Train Loss: 0.3325
+2025-09-13 14:09:15,702 - Test Accurancy: 0.8752
+2025-09-13 14:09:15,702 - Attack Success Rate: 0.0253
+2025-09-13 14:09:20,022 - Round number: 36 --------------------------
+2025-09-13 14:09:20,023 - Evaluate global model
+2025-09-13 14:09:21,796 - Averaged Train Loss: 0.3296
+2025-09-13 14:09:21,797 - Test Accurancy: 0.8765
+2025-09-13 14:09:21,797 - Attack Success Rate: 0.0264
+2025-09-13 14:09:26,019 - Round number: 37 --------------------------
+2025-09-13 14:09:26,019 - Evaluate global model
+2025-09-13 14:09:27,833 - Averaged Train Loss: 0.3254
+2025-09-13 14:09:27,833 - Test Accurancy: 0.8783
+2025-09-13 14:09:27,833 - Attack Success Rate: 0.0258
+2025-09-13 14:09:32,219 - Round number: 38 --------------------------
+2025-09-13 14:09:32,219 - Evaluate global model
+2025-09-13 14:09:34,063 - Averaged Train Loss: 0.3267
+2025-09-13 14:09:34,063 - Test Accurancy: 0.8775
+2025-09-13 14:09:34,063 - Attack Success Rate: 0.0218
+2025-09-13 14:09:38,199 - Round number: 39 --------------------------
+2025-09-13 14:09:38,200 - Evaluate global model
+2025-09-13 14:09:40,120 - Averaged Train Loss: 0.3230
+2025-09-13 14:09:40,121 - Test Accurancy: 0.8791
+2025-09-13 14:09:40,121 - Attack Success Rate: 0.0235
+2025-09-13 14:09:44,017 - Round number: 40 --------------------------
+2025-09-13 14:09:44,018 - Evaluate global model
+2025-09-13 14:09:45,921 - Averaged Train Loss: 0.3180
+2025-09-13 14:09:45,922 - Test Accurancy: 0.8803
+2025-09-13 14:09:45,922 - Attack Success Rate: 0.0327
+2025-09-13 14:09:49,801 - Round number: 41 --------------------------
+2025-09-13 14:09:49,802 - Evaluate global model
+2025-09-13 14:09:51,713 - Averaged Train Loss: 0.3174
+2025-09-13 14:09:51,713 - Test Accurancy: 0.8816
+2025-09-13 14:09:51,713 - Attack Success Rate: 0.0276
+2025-09-13 14:09:55,717 - Round number: 42 --------------------------
+2025-09-13 14:09:55,718 - Evaluate global model
+2025-09-13 14:09:57,659 - Averaged Train Loss: 0.3158
+2025-09-13 14:09:57,659 - Test Accurancy: 0.8806
+2025-09-13 14:09:57,660 - Attack Success Rate: 0.0310
+2025-09-13 14:10:01,716 - Round number: 43 --------------------------
+2025-09-13 14:10:01,717 - Evaluate global model
+2025-09-13 14:10:03,608 - Averaged Train Loss: 0.3169
+2025-09-13 14:10:03,609 - Test Accurancy: 0.8801
+2025-09-13 14:10:03,609 - Attack Success Rate: 0.0235
+2025-09-13 14:10:07,817 - Round number: 44 --------------------------
+2025-09-13 14:10:07,817 - Evaluate global model
+2025-09-13 14:10:09,700 - Averaged Train Loss: 0.3131
+2025-09-13 14:10:09,701 - Test Accurancy: 0.8820
+2025-09-13 14:10:09,701 - Attack Success Rate: 0.0258
+2025-09-13 14:10:13,598 - Round number: 45 --------------------------
+2025-09-13 14:10:13,598 - Evaluate global model
+2025-09-13 14:10:15,537 - Averaged Train Loss: 0.3091
+2025-09-13 14:10:15,537 - Test Accurancy: 0.8836
+2025-09-13 14:10:15,537 - Attack Success Rate: 0.0287
+2025-09-13 14:10:19,603 - Round number: 46 --------------------------
+2025-09-13 14:10:19,603 - Evaluate global model
+2025-09-13 14:10:21,395 - Averaged Train Loss: 0.3092
+2025-09-13 14:10:21,395 - Test Accurancy: 0.8826
+2025-09-13 14:10:21,395 - Attack Success Rate: 0.0287
+2025-09-13 14:10:25,432 - Round number: 47 --------------------------
+2025-09-13 14:10:25,432 - Evaluate global model
+2025-09-13 14:10:27,237 - Averaged Train Loss: 0.3083
+2025-09-13 14:10:27,237 - Test Accurancy: 0.8826
+2025-09-13 14:10:27,237 - Attack Success Rate: 0.0235
+2025-09-13 14:10:31,600 - Round number: 48 --------------------------
+2025-09-13 14:10:31,601 - Evaluate global model
+2025-09-13 14:10:33,612 - Averaged Train Loss: 0.3078
+2025-09-13 14:10:33,612 - Test Accurancy: 0.8826
+2025-09-13 14:10:33,613 - Attack Success Rate: 0.0293
+2025-09-13 14:10:37,822 - Round number: 49 --------------------------
+2025-09-13 14:10:37,823 - Evaluate global model
+2025-09-13 14:10:39,483 - Averaged Train Loss: 0.3063
+2025-09-13 14:10:39,483 - Test Accurancy: 0.8822
+2025-09-13 14:10:39,484 - Attack Success Rate: 0.0281
+2025-09-13 14:10:43,728 - Round number: 50 --------------------------
+2025-09-13 14:10:43,728 - Evaluate global model
+2025-09-13 14:10:45,540 - Averaged Train Loss: 0.3026
+2025-09-13 14:10:45,540 - Test Accurancy: 0.8848
+2025-09-13 14:10:45,540 - Attack Success Rate: 0.0264
+2025-09-13 14:10:49,760 - Round number: 51 --------------------------
+2025-09-13 14:10:49,760 - Evaluate global model
+2025-09-13 14:10:51,567 - Averaged Train Loss: 0.3031
+2025-09-13 14:10:51,568 - Test Accurancy: 0.8839
+2025-09-13 14:10:51,568 - Attack Success Rate: 0.0281
+2025-09-13 14:10:55,702 - Round number: 52 --------------------------
+2025-09-13 14:10:55,704 - Evaluate global model
+2025-09-13 14:10:57,508 - Averaged Train Loss: 0.3036
+2025-09-13 14:10:57,509 - Test Accurancy: 0.8839
+2025-09-13 14:10:57,509 - Attack Success Rate: 0.0276
+2025-09-13 14:11:01,774 - Round number: 53 --------------------------
+2025-09-13 14:11:01,775 - Evaluate global model
+2025-09-13 14:11:03,619 - Averaged Train Loss: 0.3001
+2025-09-13 14:11:03,620 - Test Accurancy: 0.8849
+2025-09-13 14:11:03,620 - Attack Success Rate: 0.0287
+2025-09-13 14:11:07,683 - Round number: 54 --------------------------
+2025-09-13 14:11:07,683 - Evaluate global model
+2025-09-13 14:11:09,475 - Averaged Train Loss: 0.2981
+2025-09-13 14:11:09,476 - Test Accurancy: 0.8860
+2025-09-13 14:11:09,476 - Attack Success Rate: 0.0281
+2025-09-13 14:11:13,840 - Round number: 55 --------------------------
+2025-09-13 14:11:13,841 - Evaluate global model
+2025-09-13 14:11:15,732 - Averaged Train Loss: 0.2996
+2025-09-13 14:11:15,732 - Test Accurancy: 0.8852
+2025-09-13 14:11:15,732 - Attack Success Rate: 0.0258
+2025-09-13 14:11:19,621 - Round number: 56 --------------------------
+2025-09-13 14:11:19,621 - Evaluate global model
+2025-09-13 14:11:21,578 - Averaged Train Loss: 0.2992
+2025-09-13 14:11:21,579 - Test Accurancy: 0.8854
+2025-09-13 14:11:21,579 - Attack Success Rate: 0.0258
+2025-09-13 14:11:25,462 - Round number: 57 --------------------------
+2025-09-13 14:11:25,462 - Evaluate global model
+2025-09-13 14:11:27,418 - Averaged Train Loss: 0.2953
+2025-09-13 14:11:27,418 - Test Accurancy: 0.8864
+2025-09-13 14:11:27,418 - Attack Success Rate: 0.0281
+2025-09-13 14:11:31,472 - Round number: 58 --------------------------
+2025-09-13 14:11:31,472 - Evaluate global model
+2025-09-13 14:11:33,606 - Averaged Train Loss: 0.2950
+2025-09-13 14:11:33,606 - Test Accurancy: 0.8867
+2025-09-13 14:11:33,606 - Attack Success Rate: 0.0287
+2025-09-13 14:11:37,525 - Round number: 59 --------------------------
+2025-09-13 14:11:37,525 - Evaluate global model
+2025-09-13 14:11:39,347 - Averaged Train Loss: 0.2956
+2025-09-13 14:11:39,347 - Test Accurancy: 0.8864
+2025-09-13 14:11:39,347 - Attack Success Rate: 0.0270
+2025-09-13 14:11:43,600 - Round number: 60 --------------------------
+2025-09-13 14:11:43,600 - Evaluate global model
+2025-09-13 14:11:45,475 - Averaged Train Loss: 0.2937
+2025-09-13 14:11:45,475 - Test Accurancy: 0.8869
+2025-09-13 14:11:45,475 - Attack Success Rate: 0.0270
+2025-09-13 14:11:49,442 - Round number: 61 --------------------------
+2025-09-13 14:11:49,443 - Evaluate global model
+2025-09-13 14:11:51,323 - Averaged Train Loss: 0.2902
+2025-09-13 14:11:51,323 - Test Accurancy: 0.8879
+2025-09-13 14:11:51,323 - Attack Success Rate: 0.0287
+2025-09-13 14:11:55,291 - Round number: 62 --------------------------
+2025-09-13 14:11:55,291 - Evaluate global model
+2025-09-13 14:11:57,136 - Averaged Train Loss: 0.2896
+2025-09-13 14:11:57,136 - Test Accurancy: 0.8875
+2025-09-13 14:11:57,136 - Attack Success Rate: 0.0293
+2025-09-13 14:12:01,306 - Round number: 63 --------------------------
+2025-09-13 14:12:01,306 - Evaluate global model
+2025-09-13 14:12:03,086 - Averaged Train Loss: 0.2884
+2025-09-13 14:12:03,086 - Test Accurancy: 0.8888
+2025-09-13 14:12:03,086 - Attack Success Rate: 0.0287
+2025-09-13 14:12:07,267 - Round number: 64 --------------------------
+2025-09-13 14:12:07,268 - Evaluate global model
+2025-09-13 14:12:09,190 - Averaged Train Loss: 0.2859
+2025-09-13 14:12:09,190 - Test Accurancy: 0.8893
+2025-09-13 14:12:09,190 - Attack Success Rate: 0.0264
+2025-09-13 14:12:13,224 - Round number: 65 --------------------------
+2025-09-13 14:12:13,224 - Evaluate global model
+2025-09-13 14:12:15,121 - Averaged Train Loss: 0.2848
+2025-09-13 14:12:15,122 - Test Accurancy: 0.8896
+2025-09-13 14:12:15,122 - Attack Success Rate: 0.0281
+2025-09-13 14:12:19,232 - Round number: 66 --------------------------
+2025-09-13 14:12:19,232 - Evaluate global model
+2025-09-13 14:12:21,087 - Averaged Train Loss: 0.2856
+2025-09-13 14:12:21,087 - Test Accurancy: 0.8894
+2025-09-13 14:12:21,087 - Attack Success Rate: 0.0258
+2025-09-13 14:12:25,345 - Round number: 67 --------------------------
+2025-09-13 14:12:25,345 - Evaluate global model
+2025-09-13 14:12:27,115 - Averaged Train Loss: 0.2851
+2025-09-13 14:12:27,115 - Test Accurancy: 0.8889
+2025-09-13 14:12:27,115 - Attack Success Rate: 0.0258
+2025-09-13 14:12:31,134 - Round number: 68 --------------------------
+2025-09-13 14:12:31,134 - Evaluate global model
+2025-09-13 14:12:32,851 - Averaged Train Loss: 0.2851
+2025-09-13 14:12:32,851 - Test Accurancy: 0.8890
+2025-09-13 14:12:32,851 - Attack Success Rate: 0.0258
+2025-09-13 14:12:36,987 - Round number: 69 --------------------------
+2025-09-13 14:12:36,987 - Evaluate global model
+2025-09-13 14:12:38,821 - Averaged Train Loss: 0.2826
+2025-09-13 14:12:38,822 - Test Accurancy: 0.8899
+2025-09-13 14:12:38,822 - Attack Success Rate: 0.0258
+2025-09-13 14:12:42,824 - Round number: 70 --------------------------
+2025-09-13 14:12:42,824 - Evaluate global model
+2025-09-13 14:12:44,624 - Averaged Train Loss: 0.2839
+2025-09-13 14:12:44,624 - Test Accurancy: 0.8889
+2025-09-13 14:12:44,624 - Attack Success Rate: 0.0253
+2025-09-13 14:12:48,645 - Round number: 71 --------------------------
+2025-09-13 14:12:48,646 - Evaluate global model
+2025-09-13 14:12:50,444 - Averaged Train Loss: 0.2835
+2025-09-13 14:12:50,444 - Test Accurancy: 0.8901
+2025-09-13 14:12:50,445 - Attack Success Rate: 0.0258
+2025-09-13 14:12:54,557 - Round number: 72 --------------------------
+2025-09-13 14:12:54,558 - Evaluate global model
+2025-09-13 14:12:56,354 - Averaged Train Loss: 0.2840
+2025-09-13 14:12:56,354 - Test Accurancy: 0.8886
+2025-09-13 14:12:56,354 - Attack Success Rate: 0.0247
+2025-09-13 14:13:00,176 - Round number: 73 --------------------------
+2025-09-13 14:13:00,176 - Evaluate global model
+2025-09-13 14:13:02,088 - Averaged Train Loss: 0.2797
+2025-09-13 14:13:02,088 - Test Accurancy: 0.8901
+2025-09-13 14:13:02,088 - Attack Success Rate: 0.0258
+2025-09-13 14:13:06,032 - Round number: 74 --------------------------
+2025-09-13 14:13:06,033 - Evaluate global model
+2025-09-13 14:13:07,877 - Averaged Train Loss: 0.2819
+2025-09-13 14:13:07,878 - Test Accurancy: 0.8900
+2025-09-13 14:13:07,879 - Attack Success Rate: 0.0241
+2025-09-13 14:13:11,840 - Round number: 75 --------------------------
+2025-09-13 14:13:11,841 - Evaluate global model
+2025-09-13 14:13:13,680 - Averaged Train Loss: 0.2812
+2025-09-13 14:13:13,681 - Test Accurancy: 0.8895
+2025-09-13 14:13:13,681 - Attack Success Rate: 0.0241
+2025-09-13 14:13:17,680 - Round number: 76 --------------------------
+2025-09-13 14:13:17,681 - Evaluate global model
+2025-09-13 14:13:19,592 - Averaged Train Loss: 0.2811
+2025-09-13 14:13:19,593 - Test Accurancy: 0.8896
+2025-09-13 14:13:19,593 - Attack Success Rate: 0.0235
+2025-09-13 14:13:23,539 - Round number: 77 --------------------------
+2025-09-13 14:13:23,540 - Evaluate global model
+2025-09-13 14:13:25,282 - Averaged Train Loss: 0.2751
+2025-09-13 14:13:25,282 - Test Accurancy: 0.8912
+2025-09-13 14:13:25,282 - Attack Success Rate: 0.0270
+2025-09-13 14:13:29,324 - Round number: 78 --------------------------
+2025-09-13 14:13:29,325 - Evaluate global model
+2025-09-13 14:13:31,145 - Averaged Train Loss: 0.2772
+2025-09-13 14:13:31,146 - Test Accurancy: 0.8911
+2025-09-13 14:13:31,146 - Attack Success Rate: 0.0241
+2025-09-13 14:13:35,209 - Round number: 79 --------------------------
+2025-09-13 14:13:35,210 - Evaluate global model
+2025-09-13 14:13:37,134 - Averaged Train Loss: 0.2766
+2025-09-13 14:13:37,134 - Test Accurancy: 0.8909
+2025-09-13 14:13:37,134 - Attack Success Rate: 0.0235
+2025-09-13 14:13:41,361 - Round number: 80 --------------------------
+2025-09-13 14:13:41,361 - Evaluate global model
+2025-09-13 14:13:43,154 - Averaged Train Loss: 0.2755
+2025-09-13 14:13:43,155 - Test Accurancy: 0.8916
+2025-09-13 14:13:43,155 - Attack Success Rate: 0.0241
+2025-09-13 14:13:47,437 - Round number: 81 --------------------------
+2025-09-13 14:13:47,438 - Evaluate global model
+2025-09-13 14:13:49,263 - Averaged Train Loss: 0.2761
+2025-09-13 14:13:49,264 - Test Accurancy: 0.8907
+2025-09-13 14:13:49,264 - Attack Success Rate: 0.0241
+2025-09-13 14:13:53,618 - Round number: 82 --------------------------
+2025-09-13 14:13:53,619 - Evaluate global model
+2025-09-13 14:13:55,339 - Averaged Train Loss: 0.2750
+2025-09-13 14:13:55,339 - Test Accurancy: 0.8905
+2025-09-13 14:13:55,339 - Attack Success Rate: 0.0230
+2025-09-13 14:13:59,593 - Round number: 83 --------------------------
+2025-09-13 14:13:59,593 - Evaluate global model
+2025-09-13 14:14:01,390 - Averaged Train Loss: 0.2737
+2025-09-13 14:14:01,390 - Test Accurancy: 0.8919
+2025-09-13 14:14:01,390 - Attack Success Rate: 0.0247
+2025-09-13 14:14:05,697 - Round number: 84 --------------------------
+2025-09-13 14:14:05,698 - Evaluate global model
+2025-09-13 14:14:07,407 - Averaged Train Loss: 0.2727
+2025-09-13 14:14:07,408 - Test Accurancy: 0.8922
+2025-09-13 14:14:07,408 - Attack Success Rate: 0.0247
+2025-09-13 14:14:11,740 - Round number: 85 --------------------------
+2025-09-13 14:14:11,741 - Evaluate global model
+2025-09-13 14:14:13,473 - Averaged Train Loss: 0.2725
+2025-09-13 14:14:13,474 - Test Accurancy: 0.8917
+2025-09-13 14:14:13,474 - Attack Success Rate: 0.0230
+2025-09-13 14:14:17,737 - Round number: 86 --------------------------
+2025-09-13 14:14:17,737 - Evaluate global model
+2025-09-13 14:14:19,549 - Averaged Train Loss: 0.2693
+2025-09-13 14:14:19,549 - Test Accurancy: 0.8929
+2025-09-13 14:14:19,549 - Attack Success Rate: 0.0258
+2025-09-13 14:14:23,719 - Round number: 87 --------------------------
+2025-09-13 14:14:23,719 - Evaluate global model
+2025-09-13 14:14:25,458 - Averaged Train Loss: 0.2692
+2025-09-13 14:14:25,458 - Test Accurancy: 0.8927
+2025-09-13 14:14:25,458 - Attack Success Rate: 0.0253
+2025-09-13 14:14:29,721 - Round number: 88 --------------------------
+2025-09-13 14:14:29,722 - Evaluate global model
+2025-09-13 14:14:31,468 - Averaged Train Loss: 0.2681
+2025-09-13 14:14:31,468 - Test Accurancy: 0.8925
+2025-09-13 14:14:31,468 - Attack Success Rate: 0.0258
+2025-09-13 14:14:35,480 - Round number: 89 --------------------------
+2025-09-13 14:14:35,481 - Evaluate global model
+2025-09-13 14:14:37,302 - Averaged Train Loss: 0.2707
+2025-09-13 14:14:37,302 - Test Accurancy: 0.8921
+2025-09-13 14:14:37,302 - Attack Success Rate: 0.0212
+2025-09-13 14:14:41,231 - Round number: 90 --------------------------
+2025-09-13 14:14:41,231 - Evaluate global model
+2025-09-13 14:14:43,114 - Averaged Train Loss: 0.2691
+2025-09-13 14:14:43,114 - Test Accurancy: 0.8923
+2025-09-13 14:14:43,114 - Attack Success Rate: 0.0253
+2025-09-13 14:14:47,271 - Round number: 91 --------------------------
+2025-09-13 14:14:47,271 - Evaluate global model
+2025-09-13 14:14:49,084 - Averaged Train Loss: 0.2687
+2025-09-13 14:14:49,085 - Test Accurancy: 0.8924
+2025-09-13 14:14:49,085 - Attack Success Rate: 0.0224
+2025-09-13 14:14:53,021 - Round number: 92 --------------------------
+2025-09-13 14:14:53,021 - Evaluate global model
+2025-09-13 14:14:54,922 - Averaged Train Loss: 0.2685
+2025-09-13 14:14:54,922 - Test Accurancy: 0.8923
+2025-09-13 14:14:54,922 - Attack Success Rate: 0.0247
+2025-09-13 14:14:59,098 - Round number: 93 --------------------------
+2025-09-13 14:14:59,099 - Evaluate global model
+2025-09-13 14:15:00,952 - Averaged Train Loss: 0.2654
+2025-09-13 14:15:00,952 - Test Accurancy: 0.8931
+2025-09-13 14:15:00,953 - Attack Success Rate: 0.0258
+2025-09-13 14:15:04,898 - Round number: 94 --------------------------
+2025-09-13 14:15:04,898 - Evaluate global model
+2025-09-13 14:15:06,659 - Averaged Train Loss: 0.2680
+2025-09-13 14:15:06,659 - Test Accurancy: 0.8921
+2025-09-13 14:15:06,660 - Attack Success Rate: 0.0218
+2025-09-13 14:15:10,698 - Round number: 95 --------------------------
+2025-09-13 14:15:10,699 - Evaluate global model
+2025-09-13 14:15:12,503 - Averaged Train Loss: 0.2674
+2025-09-13 14:15:12,503 - Test Accurancy: 0.8927
+2025-09-13 14:15:12,503 - Attack Success Rate: 0.0247
+2025-09-13 14:15:16,909 - Round number: 96 --------------------------
+2025-09-13 14:15:16,909 - Evaluate global model
+2025-09-13 14:15:18,755 - Averaged Train Loss: 0.2662
+2025-09-13 14:15:18,756 - Test Accurancy: 0.8928
+2025-09-13 14:15:18,756 - Attack Success Rate: 0.0235
+2025-09-13 14:15:23,125 - Round number: 97 --------------------------
+2025-09-13 14:15:23,126 - Evaluate global model
+2025-09-13 14:15:25,007 - Averaged Train Loss: 0.2661
+2025-09-13 14:15:25,007 - Test Accurancy: 0.8932
+2025-09-13 14:15:25,007 - Attack Success Rate: 0.0241
+2025-09-13 14:15:29,316 - Round number: 98 --------------------------
+2025-09-13 14:15:29,317 - Evaluate global model
+2025-09-13 14:15:31,202 - Averaged Train Loss: 0.2670
+2025-09-13 14:15:31,203 - Test Accurancy: 0.8923
+2025-09-13 14:15:31,203 - Attack Success Rate: 0.0224
+2025-09-13 14:15:35,423 - Round number: 99 --------------------------
+2025-09-13 14:15:35,423 - Evaluate global model
+2025-09-13 14:15:37,215 - Averaged Train Loss: 0.2654
+2025-09-13 14:15:37,215 - Test Accurancy: 0.8926
+2025-09-13 14:15:37,215 - Attack Success Rate: 0.0258
+2025-09-13 14:15:41,432 - Round number: 100 --------------------------
+2025-09-13 14:15:41,432 - Evaluate global model
+2025-09-13 14:15:43,118 - Averaged Train Loss: 0.2635
+2025-09-13 14:15:43,118 - Test Accurancy: 0.8931
+2025-09-13 14:15:43,118 - Attack Success Rate: 0.0276
+2025-09-13 14:15:47,373 - Run over
+2025-09-13 14:15:47,373 - Saving results to ./exp/exp3/FashionMNIST/median_none.h5
+2025-09-13 14:15:47,381 - Best accuracy: 0.8931711773438392
+2025-09-13 14:15:47,381 - Average time cost per round: 5.950386698246002
