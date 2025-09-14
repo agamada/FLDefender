@@ -8,11 +8,13 @@ import numpy as np
 import time
 import h5py
 import logging
+import json
+from pathlib import Path
 
 from src.model import init_cnn
 from src.utils import read_client_data
-from src.attack_methods import min_max_attack, LIE_attack
-from src.defend_methods import krum, median, trimmed, multi_Krum
+from src.attack_methods import min_max_attack, LIE_attack, sign_flip_attack, random_attack, CAMP_attack, scale_attack
+from src.defend_methods import krum, median, trimmed, multi_krum, selective_mean, dpd
 
 logger = logging.getLogger('client')
 
@@ -32,12 +34,17 @@ class Server(object):
         # poisoning attacks related arguments
         self.m = args.m
         self.dp = args.dp
+        self.ls = args.ls
+        self.lt = args.lt
         self.mp = args.mp
         self.s = args.s
         self.lamda = args.lamda
         self.trmean_ratio = args.trmean_ratio
         self.device = args.device
         self.times = times
+        self.vector_s = None # for CAMP attack
+        self.dpd_mode = args.dpd_mode
+        self.noise_level = args.noise_level
 
         self.test_data = None
         self.loss = nn.CrossEntropyLoss()
@@ -52,6 +59,7 @@ class Server(object):
 
         self.rs_test_acc = []
         self.rs_train_loss = []
+        self.rs_asr = []
 
         self.init_model()
         self.init_clients()
@@ -70,7 +78,10 @@ class Server(object):
 
     def load_data(self):
         for client in self.clients:
-            client.load_data()
+            if self.dp == 'lf' and client.id < self.m:
+                client.load_data(is_lf=True, ls=self.ls, lt=self.lt)
+            else:
+                client.load_data()
 
     def select_clients(self):
         # select all
@@ -134,6 +145,25 @@ class Server(object):
             self.uploaded_updates, self.uploaded_weights = LIE_attack(
                 self.uploaded_updates, self.uploaded_weights, self.m, self.nc
             )
+        elif self.mp == 'sign_flip':
+            self.uploaded_updates, self.uploaded_weights = sign_flip_attack(
+                self.uploaded_updates, self.uploaded_weights, self.m
+            )
+        elif self.mp == 'random':
+            self.uploaded_updates, self.uploaded_weights = random_attack(
+                self.uploaded_updates, self.uploaded_weights, self.m
+            )
+        elif self.mp == 'CAMP':
+            if self.vector_s is None:
+                print(self.uploaded_updates[0].device)
+                self.vector_s = torch.sign(torch.randn_like(self.uploaded_updates[0]))
+                self.vector_s[self.vector_s == 0] = 1 # to avoid zero vectors
+            self.uploaded_updates, self.uploaded_weights = CAMP_attack(
+                self.uploaded_updates, self.uploaded_weights, self.m, 
+                self.args.CAMP_mode, self.filter, self.vector_s, self.args.lamda, self.args.pk
+            )
+        elif self.mp == 'scale':
+            self.uploaded_updates = scale_attack(self.uploaded_updates, self.m, self.s)
 
     def filter_update(self):
         if self.filter == 'krum':
@@ -150,6 +180,22 @@ class Server(object):
             selected_update = trimmed(self.uploaded_updates, self.trmean_ratio)
             self.uploaded_updates = [selected_update]
             self.uploaded_weights = [1]
+        elif self.filter == 'multi-krum':
+            selected_indices = multi_krum(self.uploaded_updates, self.m)
+            self.uploaded_ids = [self.uploaded_ids[i] for i in selected_indices]
+            self.uploaded_updates = [self.uploaded_updates[i] for i in selected_indices]
+            self.uploaded_weights = [self.uploaded_weights[i] for i in selected_indices]
+            logger.info("Multi-krum select clients: {}".format(selected_indices))
+        elif self.filter == 'sad':
+            selected_update = selective_mean(self.uploaded_updates, self.args)
+            self.uploaded_updates = [selected_update]
+            self.uploaded_weights = [1]
+        elif self.filter == 'dpd':
+            tmp1 = copy.deepcopy(self.uploaded_updates[0])
+            # print("before dpd , update norm:", torch.norm(tmp1))
+            dpd(self.uploaded_updates, self.dpd_mode, self.noise_level)
+            # print("after dpd , update norm:", torch.norm(self.uploaded_updates[0]))
+            # print("different update norm:", torch.norm(tmp1 - self.uploaded_updates[0]))
 
     def calculate_metrics(self):
         num_train_samples = 0
@@ -169,6 +215,30 @@ class Server(object):
         total_test_acc = total_test_acc / num_test_samples
         return total_train_loss, total_test_acc
 
+    def calculate_metrics_with_asr(self):
+        num_train_samples = 0
+        total_train_loss = 0
+        for client in self.clients:
+            train_loss, train_num = client.train_metrics()
+            num_train_samples += train_num
+            total_train_loss += train_loss
+        total_train_loss = total_train_loss / num_train_samples
+
+        num_test_samples = 0
+        total_test_acc = 0
+        # ASR
+        total_ls = 0
+        total_ls_to_lt = 0
+        for client in self.clients:
+            correct_num, test_num, ls_num, ls_to_lt_num = client.test_metrics_with_asr()
+            num_test_samples += test_num
+            total_test_acc += correct_num
+            total_ls += ls_num
+            total_ls_to_lt += ls_to_lt_num
+        total_test_acc = total_test_acc / num_test_samples
+        asr = total_ls_to_lt / total_ls if total_ls > 0 else 0
+        return total_train_loss, total_test_acc, asr   
+
     def save_results(self):
         result_path = self.args.sp
         if not os.path.exists(result_path):
@@ -181,16 +251,38 @@ class Server(object):
             with h5py.File(file_path, 'w') as hf:
                 hf.create_dataset('rs_test_acc', data=self.rs_test_acc)
                 hf.create_dataset('rs_train_loss', data=self.rs_train_loss)
+                hf.create_dataset('asr', data=self.rs_asr)
                 hf.create_dataset('args', data=str(self.args))
         
         return self.rs_train_loss, self.rs_test_acc
 
-    def evaluate(self):
-        train_loss, test_acc = self.calculate_metrics()
-        self.rs_train_loss.append(train_loss)
-        self.rs_test_acc.append(test_acc)
-        logger.info("Averaged Train Loss: {:.4f}".format(train_loss))
-        logger.info("Test Accurancy: {:.4f}".format(test_acc))
+    def evaluate(self, epoch):
+        if self.dp == 'lf':
+            train_loss, test_acc, asr = self.calculate_metrics_with_asr()
+            self.rs_train_loss.append(train_loss)
+            self.rs_test_acc.append(test_acc)
+            self.rs_asr.append(asr)
+            logger.info("Averaged Train Loss: {:.4f}".format(train_loss))
+            logger.info("Test Accurancy: {:.4f}".format(test_acc))
+            logger.info("Attack Success Rate: {:.4f}".format(asr))
+        else:
+            train_loss, test_acc = self.calculate_metrics()
+            self.rs_train_loss.append(train_loss)
+            self.rs_test_acc.append(test_acc)
+            logger.info("Averaged Train Loss: {:.4f}".format(train_loss))
+            logger.info("Test Accurancy: {:.4f}".format(test_acc))
+
+        # # 结构化日志记录
+        # log_entry = {
+        #     "epoch": epoch,
+        #     "timestamp": time.time(),
+        #     "train_loss": float(train_loss),
+        #     "test_acc": float(test_acc),
+        # }
+        
+        # # 追加写入JSON文件
+        # with open(self.args.log_file, "a") as f:
+        #     f.write(json.dumps(log_entry) + "\n")
 
 
     def train(self):
@@ -206,7 +298,7 @@ class Server(object):
             logger.info(f"Round number: {i} --------------------------")
             logger.info("Evaluate global model")
             # s_t = time.time()
-            self.evaluate()
+            self.evaluate(i)
             # logger.info("evaluate time: {}s".format(time.time() - s_t))
 
             # select client
@@ -276,16 +368,25 @@ class Client(object):
         for param, new_param in zip(self.model.parameters(), new_model.parameters()):
             param.data = new_param.data.clone()
 
-    def load_data(self):
-        # if is_train:
-        #     train_data = read_client_data(self.dataset, self.id, is_train=True)
-        #     return DataLoader(train_data, batch_size=self.b, shuffle=True, drop_last=True)
-        # else:
-        #     test_data = read_client_data(self.dataset, self.id, is_train=False)
-        #     return DataLoader(test_data, batch_size=self.b, shuffle=True, drop_last=False)
+    def flip_labels(self, data, ls, lt):
+        flipped_data = []
+        for x, y in data:
+            if y.item() == ls:
+                y = torch.tensor(lt, dtype=torch.int64)
+            flipped_data.append((x, y))
+        return flipped_data
+
+    def load_data(self, is_lf=False, ls=None, lt=None):
         train_data = read_client_data(self.dataset, self.id, is_train=True)
+        # from collections import Counter
+        # print(f"Client {self.id} original label distribution: {Counter([y.item() for _, y in train_data])}")
+        if is_lf and (ls is not None) and (lt is not None):
+            train_data = self.flip_labels(train_data, ls, lt)
+        # print(f"Client {self.id} after label flipping distribution: {Counter([y.item() for _, y in train_data])}")
         self.train_loader =  DataLoader(train_data, batch_size=self.b, shuffle=True, drop_last=True)
+        
         self.num_samples = len(train_data)
+        
         test_data = read_client_data(self.dataset, self.id, is_train=False)
         self.test_loader =  DataLoader(test_data, batch_size=self.b, shuffle=True, drop_last=False)
 
@@ -347,7 +448,29 @@ class Client(object):
                 correct_num += (torch.sum(torch.argmax(output, dim=1) == y)).item()
         return correct_num, test_num
 
-                
+    def test_metrics_with_asr(self):
+        # test_loader = self.load_data(is_train=False)
+        self.model.eval()
+
+        test_num = 0
+        correct_num = 0
+        ls_num = 0
+        ls_to_lt_num = 0
+        with torch.no_grad():
+            for x, y in self.test_loader:
+                x = x.to(self.device)
+                y = y.to(self.device)
+                output = self.model(x)
+                preds = torch.argmax(output, dim=1)
+                test_num += y.shape[0]
+                correct_num += (torch.sum(preds == y)).item()
+
+                ls_mask = (y == self.ls)
+                ls_num += torch.sum(ls_mask).item()
+                ls_to_lt_num += torch.sum(preds[ls_mask] == self.lt).item() 
+
+
+        return correct_num, test_num, ls_num, ls_to_lt_num
 
 
 

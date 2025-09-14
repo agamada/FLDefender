@@ -27,7 +27,7 @@ from dataset_utils import check, separate_data, split_data, save_file
 torch.manual_seed(1)
 random.seed(1)
 np.random.seed(1)
-num_clients = 20
+num_clients = 40
 dir_path = "Cifar10/"
 
 

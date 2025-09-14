@@ -22,12 +22,18 @@ if __name__ == '__main__':
     args = parser.args_parser()
 
     # set result file name and save path
-    # exp1:find good lr
+    # exp1:dpd clipping
     if args.exp == 1:
         args.sp = f'./exp/exp1/{args.dataset}'
-        args.sn = f'{args.mp}_{args.filter}_{args.lr}'
+        args.sn = f'{args.dpd_mode}_{args.s}'
+    elif args.exp == 2:
+        args.sp = f'./exp/exp2/{args.dataset}'
+        args.sn = f'{args.noise_level}'
+    elif args.exp == 3:
+        args.sp = f'./exp/exp3/{args.dataset}'
+        args.sn = f'{args.filter}_{args.mp}'
     else:
-        args.sp = f'./exp/exp0/{args.dataset}'
+        args.sp = f'./exp/exp{args.exp}/{args.dataset}'
         args.sn = f'{args.mp}_{args.filter}_{args.m}'
     
     if not os.path.exists(args.sp):
