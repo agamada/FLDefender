@@ -14,7 +14,7 @@ from pathlib import Path
 from src.model import init_cnn
 from src.utils import read_client_data
 from src.attack_methods import min_max_attack, LIE_attack, sign_flip_attack, random_attack, CAMP_attack, scale_attack
-from src.defend_methods import krum, median, trimmed, multi_krum, selective_mean, dpd
+from src.defend_methods import krum, median, trimmed, multi_krum, selective_mean, dpd, lbfgs_torch, fld_distance, detection, detection1
 
 logger = logging.getLogger('client')
 
@@ -56,6 +56,13 @@ class Server(object):
         self.uploaded_ids = []
         self.uploaded_models = []
         self.uploaded_updates = []
+
+        self.local_updates = []
+        self.old_updates = []
+        self.weight_record = []
+        self.update_record = []
+        self.last_weight = None
+        self.malicious_score = torch.zeros((1, self.k))
 
         self.rs_test_acc = []
         self.rs_train_loss = []
@@ -165,7 +172,7 @@ class Server(object):
         elif self.mp == 'scale':
             self.uploaded_updates = scale_attack(self.uploaded_updates, self.m, self.s)
 
-    def filter_update(self):
+    def filter_update(self, epoch):
         if self.filter == 'krum':
             selected_id = krum(self.uploaded_updates, self.m)
             self.uploaded_ids = [self.uploaded_ids[selected_id]]
@@ -191,11 +198,53 @@ class Server(object):
             self.uploaded_updates = [selected_update]
             self.uploaded_weights = [1]
         elif self.filter == 'dpd':
-            tmp1 = copy.deepcopy(self.uploaded_updates[0])
+            # tmp1 = copy.deepcopy(self.uploaded_updates[0])
             # print("before dpd , update norm:", torch.norm(tmp1))
             dpd(self.uploaded_updates, self.dpd_mode, self.noise_level)
             # print("after dpd , update norm:", torch.norm(self.uploaded_updates[0]))
             # print("different update norm:", torch.norm(tmp1 - self.uploaded_updates[0]))
+        elif self.filter == 'FLDetector':
+            N = 5
+            self.weight = torch.cat([param.data.view(-1) for param in self.global_model.parameters()])
+            self.local_updates = [uploaded_update.cpu() * -1 for uploaded_update in self.uploaded_updates]
+            
+            if epoch > 0:
+                update = self.last_weight - self.weight
+
+            if epoch > 1:
+                self.update_record.append(update.cpu() - self.last_update.cpu())
+            
+            if epoch > N + 1:
+                del self.weight_record[0]
+                del self.update_record[0]
+
+            if epoch > 0:
+                self.last_update = update
+
+
+            if epoch > N + 1:
+                hvp = lbfgs_torch(self.weight_record, self.update_record, self.weight - self.last_weight)
+
+                distance = fld_distance(self.old_updates, self.local_updates, hvp)
+                distance = distance.view(1, -1)
+
+                self.malicious_score = torch.cat((self.malicious_score, distance), dim=0)
+                if self.malicious_score.shape[0] > N + 1:
+                    if detection1(np.sum(self.malicious_score[-N:].numpy(), axis=0)):
+                        label = detection(np.sum(self.malicious_score[-N:].numpy(), axis=0), self.m, self.k)
+                    else:
+                        label = np.ones(self.k)
+                    self.uploaded_ids = [id for id, l in zip(self.uploaded_ids, label) if l == 1]
+                    self.uploaded_updates = [update for update, l in zip(self.uploaded_updates, label) if l == 1]
+                    self.uploaded_weights = [weight for weight, l in zip(self.uploaded_weights, label) if l == 1]
+                    logger.info("FLDetector detect mean clients idx: {}".format([np.where(label==0)[0]]))
+            
+            if epoch > 0:
+                self.weight_record.append(self.weight.cpu() - self.last_weight.cpu())
+            self.last_weight = self.weight
+            self.old_updates = self.local_updates
+
+
 
     def calculate_metrics(self):
         num_train_samples = 0
@@ -314,7 +363,7 @@ class Server(object):
             self.poisoning_attack()
 
             # defending
-            self.filter_update()
+            self.filter_update(epoch=i)
 
             # aggregate
             # self.update_to_model()

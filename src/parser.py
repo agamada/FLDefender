@@ -43,7 +43,7 @@ def args_parser():
 
     # defense related arguments
     parser.add_argument('--filter',
-                        choices=['avg', 'krum', 'median', 'trmean', 'multi-krum', 'sad', 'dpd'],
+                        choices=['avg', 'krum', 'median', 'trmean', 'multi-krum', 'sad', 'dpd', 'FLDetector'],
                         default='avg', help='filter rule used by server'
                         )
 
