@@ -27,7 +27,7 @@ for filter in ${filters}; do
         --m 0 \
         --dp lf \
         --ls 5 \
-        --ls 3 \
+        --lt 3 \
         --filter ${filter} \
         --mp ${mp} \
         --s 4 \
@@ -62,7 +62,7 @@ for filter in ${filters}; do
         --m 16 \
         --dp lf \
         --ls 5 \
-        --ls 3 \
+        --lt 3 \
         --filter ${filter} \
         --mp ${mp} \
         --s 4 \
@@ -84,7 +84,7 @@ for mode in ${dpd_modes}; do
             --m 8 \
             --dp lf \
             --ls 5 \
-            --ls 3 \
+            --lt 3 \
             --filter dpd \
             --dpd_mode ${mode} \
             --noise_level 0 \
@@ -112,7 +112,7 @@ echo "${noise_levels}" | parallel -j 5 \
       --m 8 \
       --dp lf \
       --ls 5 \
-      --ls 3 \
+      --lt 3 \
       --filter dpd \
       --dpd_mode auto \
       --noise_level {} \

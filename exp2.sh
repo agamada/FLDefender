@@ -1,5 +1,5 @@
 # 1) 生成 20 个噪声点（含首尾）
-noise_levels=$(awk 'BEGIN{for(i=20;i<50;i++) printf("%.6f\n", 0.002+i*0.002)}')
+noise_levels=$(awk 'BEGIN{for(i=0;i<25;i++) printf("%.6f\n", 0.002+i*0.002)}')
 
 # 2) 第一次用 GNU parallel 可能会提示引用声明，先执行一次：
 # parallel --will-cite
