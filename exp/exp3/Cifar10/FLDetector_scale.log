@@ -1,0 +1,615 @@
+2025-09-15 06:19:55,249 - *****************EXP-3*****************
+2025-09-15 06:19:55,249 - Exp repeats: 1
+2025-09-15 06:19:55,249 - Communication Rounds: 100
+2025-09-15 06:19:55,249 - Clients: 40
+
+2025-09-15 06:19:55,249 - Attack method: scale
+2025-09-15 06:19:55,249 - Filtering rule: FLDetector
+2025-09-15 06:19:55,249 - Dataset: Cifar10
+2025-09-15 06:19:55,249 - Model: cnn2
+2025-09-15 06:19:55,249 - Learning Rate: 0.04
+2025-09-15 06:19:55,249 - Batch Size: 64
+2025-09-15 06:19:55,250 - Device: cuda
+2025-09-15 06:19:55,250 - Device id: 0
+2025-09-15 06:19:55,250 - Adversaries: 16
+2025-09-15 06:19:55,250 - Targeted Label Flipping: 4-->6
+2025-09-15 06:19:55,250 - *****************EXP-3*****************
+2025-09-15 06:19:55,443 - Running time: 0th ==========================
+2025-09-15 06:19:58,852 - Round number: 0 --------------------------
+2025-09-15 06:19:58,852 - Evaluate global model
+2025-09-15 06:20:01,480 - Averaged Train Loss: 2.3061
+2025-09-15 06:20:01,480 - Test Accurancy: 0.0977
+2025-09-15 06:20:01,480 - Attack Success Rate: 0.0000
+2025-09-15 06:20:08,924 - Round number: 1 --------------------------
+2025-09-15 06:20:08,924 - Evaluate global model
+2025-09-15 06:20:11,834 - Averaged Train Loss: 4.5134
+2025-09-15 06:20:11,834 - Test Accurancy: 0.1084
+2025-09-15 06:20:11,834 - Attack Success Rate: 0.9980
+2025-09-15 06:20:18,443 - Round number: 2 --------------------------
+2025-09-15 06:20:18,443 - Evaluate global model
+2025-09-15 06:20:21,853 - Averaged Train Loss: 2.1885
+2025-09-15 06:20:21,853 - Test Accurancy: 0.1501
+2025-09-15 06:20:21,853 - Attack Success Rate: 0.0287
+2025-09-15 06:20:27,909 - Round number: 3 --------------------------
+2025-09-15 06:20:27,909 - Evaluate global model
+2025-09-15 06:20:31,790 - Averaged Train Loss: 3.4154
+2025-09-15 06:20:31,790 - Test Accurancy: 0.1265
+2025-09-15 06:20:31,790 - Attack Success Rate: 0.9880
+2025-09-15 06:20:37,404 - Round number: 4 --------------------------
+2025-09-15 06:20:37,404 - Evaluate global model
+2025-09-15 06:20:41,646 - Averaged Train Loss: 2.0509
+2025-09-15 06:20:41,646 - Test Accurancy: 0.2369
+2025-09-15 06:20:41,646 - Attack Success Rate: 0.0980
+2025-09-15 06:20:47,298 - Round number: 5 --------------------------
+2025-09-15 06:20:47,298 - Evaluate global model
+2025-09-15 06:20:51,160 - Averaged Train Loss: 3.9026
+2025-09-15 06:20:51,161 - Test Accurancy: 0.1427
+2025-09-15 06:20:51,161 - Attack Success Rate: 0.9787
+2025-09-15 06:20:57,266 - Round number: 6 --------------------------
+2025-09-15 06:20:57,266 - Evaluate global model
+2025-09-15 06:21:00,674 - Averaged Train Loss: 2.0598
+2025-09-15 06:21:00,674 - Test Accurancy: 0.2433
+2025-09-15 06:21:00,674 - Attack Success Rate: 0.0000
+2025-09-15 06:21:07,183 - Round number: 7 --------------------------
+2025-09-15 06:21:07,183 - Evaluate global model
+2025-09-15 06:21:09,986 - Averaged Train Loss: 3.7258
+2025-09-15 06:21:09,986 - Test Accurancy: 0.1357
+2025-09-15 06:21:09,986 - Attack Success Rate: 0.9813
+2025-09-15 06:21:16,988 - Round number: 8 --------------------------
+2025-09-15 06:21:16,988 - Evaluate global model
+2025-09-15 06:21:19,634 - Averaged Train Loss: 1.9730
+2025-09-15 06:21:19,634 - Test Accurancy: 0.2833
+2025-09-15 06:21:19,634 - Attack Success Rate: 0.0020
+2025-09-15 06:21:26,642 - Round number: 9 --------------------------
+2025-09-15 06:21:26,642 - Evaluate global model
+2025-09-15 06:21:29,295 - Averaged Train Loss: 3.7499
+2025-09-15 06:21:29,295 - Test Accurancy: 0.1444
+2025-09-15 06:21:29,295 - Attack Success Rate: 0.9747
+2025-09-15 06:21:36,408 - Round number: 10 --------------------------
+2025-09-15 06:21:36,408 - Evaluate global model
+2025-09-15 06:21:39,310 - Averaged Train Loss: 1.9048
+2025-09-15 06:21:39,310 - Test Accurancy: 0.3118
+2025-09-15 06:21:39,310 - Attack Success Rate: 0.0027
+2025-09-15 06:21:45,914 - Round number: 11 --------------------------
+2025-09-15 06:21:45,914 - Evaluate global model
+2025-09-15 06:21:49,471 - Averaged Train Loss: 3.7629
+2025-09-15 06:21:49,471 - Test Accurancy: 0.1321
+2025-09-15 06:21:49,471 - Attack Success Rate: 0.9913
+2025-09-15 06:21:55,369 - Round number: 12 --------------------------
+2025-09-15 06:21:55,369 - Evaluate global model
+2025-09-15 06:21:58,972 - Averaged Train Loss: 1.9603
+2025-09-15 06:21:58,972 - Test Accurancy: 0.3054
+2025-09-15 06:21:58,972 - Attack Success Rate: 0.0080
+2025-09-15 06:22:06,635 - FLDetector detect mean clients idx: []
+2025-09-15 06:22:06,646 - Round number: 13 --------------------------
+2025-09-15 06:22:06,646 - Evaluate global model
+2025-09-15 06:22:10,144 - Averaged Train Loss: 3.6291
+2025-09-15 06:22:10,144 - Test Accurancy: 0.1430
+2025-09-15 06:22:10,144 - Attack Success Rate: 0.9927
+2025-09-15 06:22:16,561 - FLDetector detect mean clients idx: []
+2025-09-15 06:22:16,571 - Round number: 14 --------------------------
+2025-09-15 06:22:16,571 - Evaluate global model
+2025-09-15 06:22:19,876 - Averaged Train Loss: 2.0614
+2025-09-15 06:22:19,877 - Test Accurancy: 0.3040
+2025-09-15 06:22:19,877 - Attack Success Rate: 0.0233
+2025-09-15 06:22:26,407 - FLDetector detect mean clients idx: []
+2025-09-15 06:22:26,417 - Round number: 15 --------------------------
+2025-09-15 06:22:26,417 - Evaluate global model
+2025-09-15 06:22:29,518 - Averaged Train Loss: 3.4859
+2025-09-15 06:22:29,518 - Test Accurancy: 0.1293
+2025-09-15 06:22:29,518 - Attack Success Rate: 0.9920
+2025-09-15 06:22:36,045 - FLDetector detect mean clients idx: []
+2025-09-15 06:22:36,054 - Round number: 16 --------------------------
+2025-09-15 06:22:36,054 - Evaluate global model
+2025-09-15 06:22:38,893 - Averaged Train Loss: 2.4600
+2025-09-15 06:22:38,893 - Test Accurancy: 0.2637
+2025-09-15 06:22:38,893 - Attack Success Rate: 0.0327
+2025-09-15 06:22:45,750 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:22:45,760 - Round number: 17 --------------------------
+2025-09-15 06:22:45,760 - Evaluate global model
+2025-09-15 06:22:48,884 - Averaged Train Loss: 1.5483
+2025-09-15 06:22:48,884 - Test Accurancy: 0.4338
+2025-09-15 06:22:48,884 - Attack Success Rate: 0.0433
+2025-09-15 06:22:55,605 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:22:55,614 - Round number: 18 --------------------------
+2025-09-15 06:22:55,614 - Evaluate global model
+2025-09-15 06:22:58,715 - Averaged Train Loss: 1.5159
+2025-09-15 06:22:58,715 - Test Accurancy: 0.4528
+2025-09-15 06:22:58,715 - Attack Success Rate: 0.0540
+2025-09-15 06:23:05,864 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:23:05,874 - Round number: 19 --------------------------
+2025-09-15 06:23:05,874 - Evaluate global model
+2025-09-15 06:23:08,852 - Averaged Train Loss: 1.5001
+2025-09-15 06:23:08,852 - Test Accurancy: 0.4587
+2025-09-15 06:23:08,852 - Attack Success Rate: 0.0667
+2025-09-15 06:23:16,515 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:23:16,525 - Round number: 20 --------------------------
+2025-09-15 06:23:16,525 - Evaluate global model
+2025-09-15 06:23:18,814 - Averaged Train Loss: 1.4854
+2025-09-15 06:23:18,814 - Test Accurancy: 0.4653
+2025-09-15 06:23:18,814 - Attack Success Rate: 0.0840
+2025-09-15 06:23:25,932 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:23:25,943 - Round number: 21 --------------------------
+2025-09-15 06:23:25,943 - Evaluate global model
+2025-09-15 06:23:28,607 - Averaged Train Loss: 1.4699
+2025-09-15 06:23:28,607 - Test Accurancy: 0.4748
+2025-09-15 06:23:28,607 - Attack Success Rate: 0.0920
+2025-09-15 06:23:37,054 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:23:37,063 - Round number: 22 --------------------------
+2025-09-15 06:23:37,063 - Evaluate global model
+2025-09-15 06:23:39,879 - Averaged Train Loss: 1.4603
+2025-09-15 06:23:39,880 - Test Accurancy: 0.4791
+2025-09-15 06:23:39,880 - Attack Success Rate: 0.0827
+2025-09-15 06:23:46,805 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:23:46,815 - Round number: 23 --------------------------
+2025-09-15 06:23:46,815 - Evaluate global model
+2025-09-15 06:23:50,653 - Averaged Train Loss: 1.4658
+2025-09-15 06:23:50,654 - Test Accurancy: 0.4784
+2025-09-15 06:23:50,654 - Attack Success Rate: 0.0773
+2025-09-15 06:23:56,766 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:23:56,776 - Round number: 24 --------------------------
+2025-09-15 06:23:56,776 - Evaluate global model
+2025-09-15 06:24:00,762 - Averaged Train Loss: 1.4408
+2025-09-15 06:24:00,763 - Test Accurancy: 0.4860
+2025-09-15 06:24:00,763 - Attack Success Rate: 0.0880
+2025-09-15 06:24:06,763 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:24:06,772 - Round number: 25 --------------------------
+2025-09-15 06:24:06,772 - Evaluate global model
+2025-09-15 06:24:10,185 - Averaged Train Loss: 1.4376
+2025-09-15 06:24:10,185 - Test Accurancy: 0.4898
+2025-09-15 06:24:10,185 - Attack Success Rate: 0.0907
+2025-09-15 06:24:16,350 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:24:16,359 - Round number: 26 --------------------------
+2025-09-15 06:24:16,359 - Evaluate global model
+2025-09-15 06:24:19,677 - Averaged Train Loss: 1.4349
+2025-09-15 06:24:19,678 - Test Accurancy: 0.4891
+2025-09-15 06:24:19,678 - Attack Success Rate: 0.0847
+2025-09-15 06:24:25,788 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:24:25,797 - Round number: 27 --------------------------
+2025-09-15 06:24:25,797 - Evaluate global model
+2025-09-15 06:24:28,476 - Averaged Train Loss: 1.4119
+2025-09-15 06:24:28,476 - Test Accurancy: 0.5002
+2025-09-15 06:24:28,476 - Attack Success Rate: 0.0860
+2025-09-15 06:24:33,990 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:24:34,000 - Round number: 28 --------------------------
+2025-09-15 06:24:34,000 - Evaluate global model
+2025-09-15 06:24:38,181 - Averaged Train Loss: 1.4193
+2025-09-15 06:24:38,181 - Test Accurancy: 0.5002
+2025-09-15 06:24:38,181 - Attack Success Rate: 0.0740
+2025-09-15 06:24:43,482 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:24:43,492 - Round number: 29 --------------------------
+2025-09-15 06:24:43,492 - Evaluate global model
+2025-09-15 06:24:47,806 - Averaged Train Loss: 1.4025
+2025-09-15 06:24:47,806 - Test Accurancy: 0.5055
+2025-09-15 06:24:47,806 - Attack Success Rate: 0.0793
+2025-09-15 06:24:53,084 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:24:53,093 - Round number: 30 --------------------------
+2025-09-15 06:24:53,093 - Evaluate global model
+2025-09-15 06:24:56,974 - Averaged Train Loss: 1.3965
+2025-09-15 06:24:56,974 - Test Accurancy: 0.5091
+2025-09-15 06:24:56,974 - Attack Success Rate: 0.0753
+2025-09-15 06:25:04,201 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:25:04,211 - Round number: 31 --------------------------
+2025-09-15 06:25:04,211 - Evaluate global model
+2025-09-15 06:25:07,705 - Averaged Train Loss: 1.3863
+2025-09-15 06:25:07,706 - Test Accurancy: 0.5095
+2025-09-15 06:25:07,706 - Attack Success Rate: 0.0840
+2025-09-15 06:25:13,952 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:25:13,962 - Round number: 32 --------------------------
+2025-09-15 06:25:13,962 - Evaluate global model
+2025-09-15 06:25:17,563 - Averaged Train Loss: 1.3913
+2025-09-15 06:25:17,563 - Test Accurancy: 0.5151
+2025-09-15 06:25:17,563 - Attack Success Rate: 0.0633
+2025-09-15 06:25:23,852 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:25:23,869 - Round number: 33 --------------------------
+2025-09-15 06:25:23,869 - Evaluate global model
+2025-09-15 06:25:27,650 - Averaged Train Loss: 1.3654
+2025-09-15 06:25:27,650 - Test Accurancy: 0.5191
+2025-09-15 06:25:27,651 - Attack Success Rate: 0.0933
+2025-09-15 06:25:33,703 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:25:33,713 - Round number: 34 --------------------------
+2025-09-15 06:25:33,713 - Evaluate global model
+2025-09-15 06:25:37,378 - Averaged Train Loss: 1.3744
+2025-09-15 06:25:37,379 - Test Accurancy: 0.5231
+2025-09-15 06:25:37,379 - Attack Success Rate: 0.0680
+2025-09-15 06:25:44,094 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:25:44,104 - Round number: 35 --------------------------
+2025-09-15 06:25:44,104 - Evaluate global model
+2025-09-15 06:25:47,543 - Averaged Train Loss: 1.3582
+2025-09-15 06:25:47,543 - Test Accurancy: 0.5217
+2025-09-15 06:25:47,543 - Attack Success Rate: 0.0860
+2025-09-15 06:25:53,561 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:25:53,571 - Round number: 36 --------------------------
+2025-09-15 06:25:53,571 - Evaluate global model
+2025-09-15 06:25:57,238 - Averaged Train Loss: 1.3729
+2025-09-15 06:25:57,238 - Test Accurancy: 0.5211
+2025-09-15 06:25:57,239 - Attack Success Rate: 0.0673
+2025-09-15 06:26:03,375 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:26:03,385 - Round number: 37 --------------------------
+2025-09-15 06:26:03,385 - Evaluate global model
+2025-09-15 06:26:07,115 - Averaged Train Loss: 1.3562
+2025-09-15 06:26:07,115 - Test Accurancy: 0.5287
+2025-09-15 06:26:07,115 - Attack Success Rate: 0.0680
+2025-09-15 06:26:14,113 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:26:14,122 - Round number: 38 --------------------------
+2025-09-15 06:26:14,122 - Evaluate global model
+2025-09-15 06:26:17,816 - Averaged Train Loss: 1.3583
+2025-09-15 06:26:17,817 - Test Accurancy: 0.5254
+2025-09-15 06:26:17,817 - Attack Success Rate: 0.0707
+2025-09-15 06:26:23,675 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:26:23,685 - Round number: 39 --------------------------
+2025-09-15 06:26:23,685 - Evaluate global model
+2025-09-15 06:26:26,985 - Averaged Train Loss: 1.3308
+2025-09-15 06:26:26,985 - Test Accurancy: 0.5325
+2025-09-15 06:26:26,985 - Attack Success Rate: 0.0827
+2025-09-15 06:26:33,469 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:26:33,482 - Round number: 40 --------------------------
+2025-09-15 06:26:33,482 - Evaluate global model
+2025-09-15 06:26:36,748 - Averaged Train Loss: 1.3441
+2025-09-15 06:26:36,748 - Test Accurancy: 0.5325
+2025-09-15 06:26:36,748 - Attack Success Rate: 0.0693
+2025-09-15 06:26:42,768 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:26:42,778 - Round number: 41 --------------------------
+2025-09-15 06:26:42,778 - Evaluate global model
+2025-09-15 06:26:46,259 - Averaged Train Loss: 1.3187
+2025-09-15 06:26:46,259 - Test Accurancy: 0.5373
+2025-09-15 06:26:46,259 - Attack Success Rate: 0.0860
+2025-09-15 06:26:52,321 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:26:52,333 - Round number: 42 --------------------------
+2025-09-15 06:26:52,333 - Evaluate global model
+2025-09-15 06:26:55,828 - Averaged Train Loss: 1.3257
+2025-09-15 06:26:55,828 - Test Accurancy: 0.5383
+2025-09-15 06:26:55,829 - Attack Success Rate: 0.0727
+2025-09-15 06:27:01,916 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:27:01,928 - Round number: 43 --------------------------
+2025-09-15 06:27:01,928 - Evaluate global model
+2025-09-15 06:27:05,182 - Averaged Train Loss: 1.3200
+2025-09-15 06:27:05,183 - Test Accurancy: 0.5417
+2025-09-15 06:27:05,183 - Attack Success Rate: 0.0647
+2025-09-15 06:27:11,746 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:27:11,756 - Round number: 44 --------------------------
+2025-09-15 06:27:11,756 - Evaluate global model
+2025-09-15 06:27:14,813 - Averaged Train Loss: 1.3032
+2025-09-15 06:27:14,814 - Test Accurancy: 0.5461
+2025-09-15 06:27:14,814 - Attack Success Rate: 0.0820
+2025-09-15 06:27:21,457 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:27:21,467 - Round number: 45 --------------------------
+2025-09-15 06:27:21,467 - Evaluate global model
+2025-09-15 06:27:24,680 - Averaged Train Loss: 1.3120
+2025-09-15 06:27:24,680 - Test Accurancy: 0.5445
+2025-09-15 06:27:24,680 - Attack Success Rate: 0.0700
+2025-09-15 06:27:31,308 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:27:31,318 - Round number: 46 --------------------------
+2025-09-15 06:27:31,318 - Evaluate global model
+2025-09-15 06:27:34,730 - Averaged Train Loss: 1.3106
+2025-09-15 06:27:34,730 - Test Accurancy: 0.5437
+2025-09-15 06:27:34,730 - Attack Success Rate: 0.0753
+2025-09-15 06:27:42,006 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:27:42,016 - Round number: 47 --------------------------
+2025-09-15 06:27:42,017 - Evaluate global model
+2025-09-15 06:27:45,226 - Averaged Train Loss: 1.2975
+2025-09-15 06:27:45,226 - Test Accurancy: 0.5504
+2025-09-15 06:27:45,226 - Attack Success Rate: 0.0760
+2025-09-15 06:27:50,972 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:27:50,981 - Round number: 48 --------------------------
+2025-09-15 06:27:50,981 - Evaluate global model
+2025-09-15 06:27:54,721 - Averaged Train Loss: 1.2900
+2025-09-15 06:27:54,721 - Test Accurancy: 0.5523
+2025-09-15 06:27:54,721 - Attack Success Rate: 0.0753
+2025-09-15 06:28:00,307 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:28:00,316 - Round number: 49 --------------------------
+2025-09-15 06:28:00,317 - Evaluate global model
+2025-09-15 06:28:04,633 - Averaged Train Loss: 1.2982
+2025-09-15 06:28:04,633 - Test Accurancy: 0.5522
+2025-09-15 06:28:04,633 - Attack Success Rate: 0.0693
+2025-09-15 06:28:10,256 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:28:10,265 - Round number: 50 --------------------------
+2025-09-15 06:28:10,265 - Evaluate global model
+2025-09-15 06:28:14,323 - Averaged Train Loss: 1.2673
+2025-09-15 06:28:14,323 - Test Accurancy: 0.5618
+2025-09-15 06:28:14,323 - Attack Success Rate: 0.0927
+2025-09-15 06:28:20,232 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:28:20,266 - Round number: 51 --------------------------
+2025-09-15 06:28:20,266 - Evaluate global model
+2025-09-15 06:28:24,407 - Averaged Train Loss: 1.2902
+2025-09-15 06:28:24,408 - Test Accurancy: 0.5555
+2025-09-15 06:28:24,408 - Attack Success Rate: 0.0727
+2025-09-15 06:28:30,977 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:28:30,987 - Round number: 52 --------------------------
+2025-09-15 06:28:30,987 - Evaluate global model
+2025-09-15 06:28:34,423 - Averaged Train Loss: 1.2707
+2025-09-15 06:28:34,423 - Test Accurancy: 0.5588
+2025-09-15 06:28:34,423 - Attack Success Rate: 0.0840
+2025-09-15 06:28:40,098 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:28:40,108 - Round number: 53 --------------------------
+2025-09-15 06:28:40,108 - Evaluate global model
+2025-09-15 06:28:44,141 - Averaged Train Loss: 1.2692
+2025-09-15 06:28:44,142 - Test Accurancy: 0.5604
+2025-09-15 06:28:44,142 - Attack Success Rate: 0.0747
+2025-09-15 06:28:49,356 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:28:49,365 - Round number: 54 --------------------------
+2025-09-15 06:28:49,366 - Evaluate global model
+2025-09-15 06:28:53,897 - Averaged Train Loss: 1.2679
+2025-09-15 06:28:53,897 - Test Accurancy: 0.5632
+2025-09-15 06:28:53,898 - Attack Success Rate: 0.0767
+2025-09-15 06:28:59,483 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:28:59,493 - Round number: 55 --------------------------
+2025-09-15 06:28:59,493 - Evaluate global model
+2025-09-15 06:29:03,789 - Averaged Train Loss: 1.2630
+2025-09-15 06:29:03,789 - Test Accurancy: 0.5651
+2025-09-15 06:29:03,789 - Attack Success Rate: 0.0760
+2025-09-15 06:29:09,257 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:29:09,266 - Round number: 56 --------------------------
+2025-09-15 06:29:09,266 - Evaluate global model
+2025-09-15 06:29:13,180 - Averaged Train Loss: 1.2620
+2025-09-15 06:29:13,180 - Test Accurancy: 0.5659
+2025-09-15 06:29:13,180 - Attack Success Rate: 0.0813
+2025-09-15 06:29:19,698 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:29:19,708 - Round number: 57 --------------------------
+2025-09-15 06:29:19,708 - Evaluate global model
+2025-09-15 06:29:23,596 - Averaged Train Loss: 1.2557
+2025-09-15 06:29:23,597 - Test Accurancy: 0.5681
+2025-09-15 06:29:23,597 - Attack Success Rate: 0.0747
+2025-09-15 06:29:29,821 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:29:29,830 - Round number: 58 --------------------------
+2025-09-15 06:29:29,830 - Evaluate global model
+2025-09-15 06:29:33,500 - Averaged Train Loss: 1.2395
+2025-09-15 06:29:33,500 - Test Accurancy: 0.5709
+2025-09-15 06:29:33,500 - Attack Success Rate: 0.0807
+2025-09-15 06:29:39,330 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:29:39,340 - Round number: 59 --------------------------
+2025-09-15 06:29:39,340 - Evaluate global model
+2025-09-15 06:29:43,404 - Averaged Train Loss: 1.2385
+2025-09-15 06:29:43,404 - Test Accurancy: 0.5738
+2025-09-15 06:29:43,404 - Attack Success Rate: 0.0807
+2025-09-15 06:29:49,286 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:29:49,295 - Round number: 60 --------------------------
+2025-09-15 06:29:49,295 - Evaluate global model
+2025-09-15 06:29:53,113 - Averaged Train Loss: 1.2376
+2025-09-15 06:29:53,113 - Test Accurancy: 0.5726
+2025-09-15 06:29:53,113 - Attack Success Rate: 0.0773
+2025-09-15 06:29:59,138 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:29:59,148 - Round number: 61 --------------------------
+2025-09-15 06:29:59,148 - Evaluate global model
+2025-09-15 06:30:03,109 - Averaged Train Loss: 1.2357
+2025-09-15 06:30:03,110 - Test Accurancy: 0.5734
+2025-09-15 06:30:03,110 - Attack Success Rate: 0.0793
+2025-09-15 06:30:09,025 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:30:09,037 - Round number: 62 --------------------------
+2025-09-15 06:30:09,037 - Evaluate global model
+2025-09-15 06:30:12,681 - Averaged Train Loss: 1.2459
+2025-09-15 06:30:12,682 - Test Accurancy: 0.5738
+2025-09-15 06:30:12,682 - Attack Success Rate: 0.0680
+2025-09-15 06:30:19,277 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:30:19,287 - Round number: 63 --------------------------
+2025-09-15 06:30:19,287 - Evaluate global model
+2025-09-15 06:30:22,649 - Averaged Train Loss: 1.2389
+2025-09-15 06:30:22,649 - Test Accurancy: 0.5782
+2025-09-15 06:30:22,649 - Attack Success Rate: 0.0673
+2025-09-15 06:30:28,334 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:30:28,344 - Round number: 64 --------------------------
+2025-09-15 06:30:28,344 - Evaluate global model
+2025-09-15 06:30:32,335 - Averaged Train Loss: 1.2332
+2025-09-15 06:30:32,336 - Test Accurancy: 0.5764
+2025-09-15 06:30:32,336 - Attack Success Rate: 0.0767
+2025-09-15 06:30:37,395 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:30:37,404 - Round number: 65 --------------------------
+2025-09-15 06:30:37,404 - Evaluate global model
+2025-09-15 06:30:42,109 - Averaged Train Loss: 1.2269
+2025-09-15 06:30:42,109 - Test Accurancy: 0.5786
+2025-09-15 06:30:42,109 - Attack Success Rate: 0.0773
+2025-09-15 06:30:47,349 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:30:47,359 - Round number: 66 --------------------------
+2025-09-15 06:30:47,359 - Evaluate global model
+2025-09-15 06:30:52,009 - Averaged Train Loss: 1.2212
+2025-09-15 06:30:52,009 - Test Accurancy: 0.5782
+2025-09-15 06:30:52,009 - Attack Success Rate: 0.0860
+2025-09-15 06:30:57,325 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:30:57,335 - Round number: 67 --------------------------
+2025-09-15 06:30:57,335 - Evaluate global model
+2025-09-15 06:31:01,814 - Averaged Train Loss: 1.2198
+2025-09-15 06:31:01,815 - Test Accurancy: 0.5803
+2025-09-15 06:31:01,815 - Attack Success Rate: 0.0787
+2025-09-15 06:31:07,289 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:31:07,298 - Round number: 68 --------------------------
+2025-09-15 06:31:07,298 - Evaluate global model
+2025-09-15 06:31:10,927 - Averaged Train Loss: 1.2144
+2025-09-15 06:31:10,927 - Test Accurancy: 0.5810
+2025-09-15 06:31:10,927 - Attack Success Rate: 0.0827
+2025-09-15 06:31:18,432 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:31:18,442 - Round number: 69 --------------------------
+2025-09-15 06:31:18,442 - Evaluate global model
+2025-09-15 06:31:21,777 - Averaged Train Loss: 1.2168
+2025-09-15 06:31:21,777 - Test Accurancy: 0.5833
+2025-09-15 06:31:21,777 - Attack Success Rate: 0.0700
+2025-09-15 06:31:27,983 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:31:27,992 - Round number: 70 --------------------------
+2025-09-15 06:31:27,992 - Evaluate global model
+2025-09-15 06:31:31,564 - Averaged Train Loss: 1.2001
+2025-09-15 06:31:31,564 - Test Accurancy: 0.5867
+2025-09-15 06:31:31,564 - Attack Success Rate: 0.0840
+2025-09-15 06:31:37,913 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:31:37,922 - Round number: 71 --------------------------
+2025-09-15 06:31:37,923 - Evaluate global model
+2025-09-15 06:31:41,669 - Averaged Train Loss: 1.1952
+2025-09-15 06:31:41,669 - Test Accurancy: 0.5867
+2025-09-15 06:31:41,669 - Attack Success Rate: 0.0947
+2025-09-15 06:31:48,716 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:31:48,726 - Round number: 72 --------------------------
+2025-09-15 06:31:48,726 - Evaluate global model
+2025-09-15 06:31:52,195 - Averaged Train Loss: 1.2255
+2025-09-15 06:31:52,195 - Test Accurancy: 0.5815
+2025-09-15 06:31:52,195 - Attack Success Rate: 0.0713
+2025-09-15 06:31:57,945 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:31:57,954 - Round number: 73 --------------------------
+2025-09-15 06:31:57,954 - Evaluate global model
+2025-09-15 06:32:01,721 - Averaged Train Loss: 1.1973
+2025-09-15 06:32:01,721 - Test Accurancy: 0.5889
+2025-09-15 06:32:01,721 - Attack Success Rate: 0.0747
+2025-09-15 06:32:07,259 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:32:07,271 - Round number: 74 --------------------------
+2025-09-15 06:32:07,271 - Evaluate global model
+2025-09-15 06:32:11,211 - Averaged Train Loss: 1.1948
+2025-09-15 06:32:11,212 - Test Accurancy: 0.5915
+2025-09-15 06:32:11,212 - Attack Success Rate: 0.0653
+2025-09-15 06:32:16,224 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:32:16,235 - Round number: 75 --------------------------
+2025-09-15 06:32:16,235 - Evaluate global model
+2025-09-15 06:32:20,892 - Averaged Train Loss: 1.1976
+2025-09-15 06:32:20,892 - Test Accurancy: 0.5915
+2025-09-15 06:32:20,892 - Attack Success Rate: 0.0747
+2025-09-15 06:32:25,879 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:32:25,888 - Round number: 76 --------------------------
+2025-09-15 06:32:25,888 - Evaluate global model
+2025-09-15 06:32:30,438 - Averaged Train Loss: 1.2061
+2025-09-15 06:32:30,438 - Test Accurancy: 0.5897
+2025-09-15 06:32:30,438 - Attack Success Rate: 0.0680
+2025-09-15 06:32:35,884 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:32:35,895 - Round number: 77 --------------------------
+2025-09-15 06:32:35,895 - Evaluate global model
+2025-09-15 06:32:40,029 - Averaged Train Loss: 1.1738
+2025-09-15 06:32:40,029 - Test Accurancy: 0.5965
+2025-09-15 06:32:40,029 - Attack Success Rate: 0.0907
+2025-09-15 06:32:45,699 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:32:45,708 - Round number: 78 --------------------------
+2025-09-15 06:32:45,708 - Evaluate global model
+2025-09-15 06:32:49,365 - Averaged Train Loss: 1.1905
+2025-09-15 06:32:49,365 - Test Accurancy: 0.5914
+2025-09-15 06:32:49,365 - Attack Success Rate: 0.0780
+2025-09-15 06:32:56,867 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:32:56,878 - Round number: 79 --------------------------
+2025-09-15 06:32:56,878 - Evaluate global model
+2025-09-15 06:33:00,413 - Averaged Train Loss: 1.1868
+2025-09-15 06:33:00,414 - Test Accurancy: 0.5965
+2025-09-15 06:33:00,414 - Attack Success Rate: 0.0827
+2025-09-15 06:33:06,499 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:33:06,510 - Round number: 80 --------------------------
+2025-09-15 06:33:06,510 - Evaluate global model
+2025-09-15 06:33:10,255 - Averaged Train Loss: 1.1858
+2025-09-15 06:33:10,255 - Test Accurancy: 0.5943
+2025-09-15 06:33:10,255 - Attack Success Rate: 0.0773
+2025-09-15 06:33:16,320 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:33:16,332 - Round number: 81 --------------------------
+2025-09-15 06:33:16,332 - Evaluate global model
+2025-09-15 06:33:20,024 - Averaged Train Loss: 1.1848
+2025-09-15 06:33:20,024 - Test Accurancy: 0.5949
+2025-09-15 06:33:20,024 - Attack Success Rate: 0.0700
+2025-09-15 06:33:26,440 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:33:26,450 - Round number: 82 --------------------------
+2025-09-15 06:33:26,450 - Evaluate global model
+2025-09-15 06:33:30,145 - Averaged Train Loss: 1.1759
+2025-09-15 06:33:30,145 - Test Accurancy: 0.6004
+2025-09-15 06:33:30,145 - Attack Success Rate: 0.0720
+2025-09-15 06:33:36,054 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:33:36,063 - Round number: 83 --------------------------
+2025-09-15 06:33:36,063 - Evaluate global model
+2025-09-15 06:33:39,558 - Averaged Train Loss: 1.1805
+2025-09-15 06:33:39,559 - Test Accurancy: 0.5953
+2025-09-15 06:33:39,559 - Attack Success Rate: 0.0813
+2025-09-15 06:33:45,457 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:33:45,467 - Round number: 84 --------------------------
+2025-09-15 06:33:45,467 - Evaluate global model
+2025-09-15 06:33:49,150 - Averaged Train Loss: 1.1800
+2025-09-15 06:33:49,150 - Test Accurancy: 0.5983
+2025-09-15 06:33:49,150 - Attack Success Rate: 0.0700
+2025-09-15 06:33:55,667 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:33:55,677 - Round number: 85 --------------------------
+2025-09-15 06:33:55,677 - Evaluate global model
+2025-09-15 06:33:58,882 - Averaged Train Loss: 1.1847
+2025-09-15 06:33:58,882 - Test Accurancy: 0.5995
+2025-09-15 06:33:58,882 - Attack Success Rate: 0.0687
+2025-09-15 06:34:05,208 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:34:05,218 - Round number: 86 --------------------------
+2025-09-15 06:34:05,218 - Evaluate global model
+2025-09-15 06:34:08,813 - Averaged Train Loss: 1.1729
+2025-09-15 06:34:08,813 - Test Accurancy: 0.5981
+2025-09-15 06:34:08,813 - Attack Success Rate: 0.0793
+2025-09-15 06:34:14,541 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:34:14,550 - Round number: 87 --------------------------
+2025-09-15 06:34:14,550 - Evaluate global model
+2025-09-15 06:34:18,277 - Averaged Train Loss: 1.1712
+2025-09-15 06:34:18,278 - Test Accurancy: 0.6018
+2025-09-15 06:34:18,278 - Attack Success Rate: 0.0747
+2025-09-15 06:34:23,319 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:34:23,329 - Round number: 88 --------------------------
+2025-09-15 06:34:23,329 - Evaluate global model
+2025-09-15 06:34:28,011 - Averaged Train Loss: 1.1755
+2025-09-15 06:34:28,011 - Test Accurancy: 0.6009
+2025-09-15 06:34:28,011 - Attack Success Rate: 0.0633
+2025-09-15 06:34:32,929 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:34:32,939 - Round number: 89 --------------------------
+2025-09-15 06:34:32,939 - Evaluate global model
+2025-09-15 06:34:37,845 - Averaged Train Loss: 1.1828
+2025-09-15 06:34:37,846 - Test Accurancy: 0.5995
+2025-09-15 06:34:37,846 - Attack Success Rate: 0.0653
+2025-09-15 06:34:42,475 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:34:42,485 - Round number: 90 --------------------------
+2025-09-15 06:34:42,485 - Evaluate global model
+2025-09-15 06:34:47,337 - Averaged Train Loss: 1.1821
+2025-09-15 06:34:47,337 - Test Accurancy: 0.6013
+2025-09-15 06:34:47,337 - Attack Success Rate: 0.0587
+2025-09-15 06:34:52,558 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:34:52,568 - Round number: 91 --------------------------
+2025-09-15 06:34:52,568 - Evaluate global model
+2025-09-15 06:34:56,928 - Averaged Train Loss: 1.1680
+2025-09-15 06:34:56,928 - Test Accurancy: 0.6035
+2025-09-15 06:34:56,928 - Attack Success Rate: 0.0667
+2025-09-15 06:35:02,595 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:35:02,604 - Round number: 92 --------------------------
+2025-09-15 06:35:02,604 - Evaluate global model
+2025-09-15 06:35:06,601 - Averaged Train Loss: 1.1669
+2025-09-15 06:35:06,602 - Test Accurancy: 0.6043
+2025-09-15 06:35:06,602 - Attack Success Rate: 0.0687
+2025-09-15 06:35:12,599 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:35:12,612 - Round number: 93 --------------------------
+2025-09-15 06:35:12,612 - Evaluate global model
+2025-09-15 06:35:14,606 - Averaged Train Loss: 1.1580
+2025-09-15 06:35:14,607 - Test Accurancy: 0.6052
+2025-09-15 06:35:14,607 - Attack Success Rate: 0.0727
+2025-09-15 06:35:18,492 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:35:18,502 - Round number: 94 --------------------------
+2025-09-15 06:35:18,502 - Evaluate global model
+2025-09-15 06:35:20,316 - Averaged Train Loss: 1.1643
+2025-09-15 06:35:20,316 - Test Accurancy: 0.6039
+2025-09-15 06:35:20,316 - Attack Success Rate: 0.0660
+2025-09-15 06:35:24,078 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:35:24,088 - Round number: 95 --------------------------
+2025-09-15 06:35:24,088 - Evaluate global model
+2025-09-15 06:35:25,736 - Averaged Train Loss: 1.1620
+2025-09-15 06:35:25,736 - Test Accurancy: 0.6053
+2025-09-15 06:35:25,736 - Attack Success Rate: 0.0647
+2025-09-15 06:35:29,591 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:35:29,601 - Round number: 96 --------------------------
+2025-09-15 06:35:29,601 - Evaluate global model
+2025-09-15 06:35:31,393 - Averaged Train Loss: 1.1547
+2025-09-15 06:35:31,394 - Test Accurancy: 0.6054
+2025-09-15 06:35:31,394 - Attack Success Rate: 0.0753
+2025-09-15 06:35:35,252 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:35:35,261 - Round number: 97 --------------------------
+2025-09-15 06:35:35,261 - Evaluate global model
+2025-09-15 06:35:37,040 - Averaged Train Loss: 1.1599
+2025-09-15 06:35:37,040 - Test Accurancy: 0.6056
+2025-09-15 06:35:37,040 - Attack Success Rate: 0.0647
+2025-09-15 06:35:40,797 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:35:40,807 - Round number: 98 --------------------------
+2025-09-15 06:35:40,807 - Evaluate global model
+2025-09-15 06:35:42,562 - Averaged Train Loss: 1.1493
+2025-09-15 06:35:42,562 - Test Accurancy: 0.6058
+2025-09-15 06:35:42,562 - Attack Success Rate: 0.0747
+2025-09-15 06:35:46,301 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:35:46,311 - Round number: 99 --------------------------
+2025-09-15 06:35:46,311 - Evaluate global model
+2025-09-15 06:35:48,031 - Averaged Train Loss: 1.1523
+2025-09-15 06:35:48,031 - Test Accurancy: 0.6060
+2025-09-15 06:35:48,031 - Attack Success Rate: 0.0667
+2025-09-15 06:35:51,898 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:35:51,912 - Round number: 100 --------------------------
+2025-09-15 06:35:51,912 - Evaluate global model
+2025-09-15 06:35:53,684 - Averaged Train Loss: 1.1469
+2025-09-15 06:35:53,685 - Test Accurancy: 0.6087
+2025-09-15 06:35:53,685 - Attack Success Rate: 0.0740
+2025-09-15 06:35:57,331 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+2025-09-15 06:35:57,333 - Run over
+2025-09-15 06:35:57,333 - Saving results to ./exp/exp3/Cifar10/FLDetector_scale.h5
+2025-09-15 06:35:57,336 - Best accuracy: 0.6086580086580087
+2025-09-15 06:35:57,336 - Average time cost per round: 9.484166111946106

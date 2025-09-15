@@ -14,7 +14,7 @@ from pathlib import Path
 from src.model import init_cnn
 from src.utils import read_client_data
 from src.attack_methods import min_max_attack, LIE_attack, sign_flip_attack, random_attack, CAMP_attack, scale_attack
-from src.defend_methods import krum, median, trimmed, multi_krum, selective_mean, dpd, lbfgs_torch, fld_distance, detection, detection1
+from src.defend_methods import krum, median, trimmed, multi_krum, selective_mean, dpd, lbfgs_torch, fld_distance, detection, detection1, flame
 
 logger = logging.getLogger('client')
 
@@ -61,8 +61,12 @@ class Server(object):
         self.old_updates = []
         self.weight_record = []
         self.update_record = []
+        self.last_update = None
+        self.weight = None
         self.last_weight = None
         self.malicious_score = torch.zeros((1, self.k))
+
+        self.C_t = 0 # clipping value
 
         self.rs_test_acc = []
         self.rs_train_loss = []
@@ -142,6 +146,11 @@ class Server(object):
             param_size = param.numel()
             param.data.copy_(global_params[start_idx:start_idx + param_size].view_as(param))
             start_idx += param_size
+        
+        if self.filter == 'flame':
+            for param in self.global_model.parameters():
+                temp = torch.normal(mean=0, std=self.C_t * self.noise_level, size=param.size()).to(self.device)
+                param.data += temp
 
     def poisoning_attack(self):
         if self.mp == 'min-max':
@@ -237,12 +246,19 @@ class Server(object):
                     self.uploaded_ids = [id for id, l in zip(self.uploaded_ids, label) if l == 1]
                     self.uploaded_updates = [update for update, l in zip(self.uploaded_updates, label) if l == 1]
                     self.uploaded_weights = [weight for weight, l in zip(self.uploaded_weights, label) if l == 1]
-                    logger.info("FLDetector detect mean clients idx: {}".format([np.where(label==0)[0]]))
+                    logger.info("FLDetector detect mean clients idx: {}".format(list(np.where(label==0)[0])))
             
             if epoch > 0:
                 self.weight_record.append(self.weight.cpu() - self.last_weight.cpu())
             self.last_weight = self.weight
             self.old_updates = self.local_updates
+        
+        elif self.filter == 'flame':
+            selected_indices, self.C_t = flame(self.uploaded_models, self.uploaded_updates, self.m)
+            self.uploaded_ids = [self.uploaded_ids[i] for i in selected_indices]
+            self.uploaded_updates = [self.uploaded_updates[i] for i in selected_indices]
+            self.uploaded_weights = [self.uploaded_weights[i] for i in selected_indices]
+            logger.info("Flame select clients: {}".format(selected_indices))
 
 
 

@@ -2,6 +2,7 @@ import torch
 import copy
 import math
 import time
+import hdbscan
 import logging
 from scipy.stats import norm
 from sklearn.cluster import KMeans
@@ -260,19 +261,19 @@ def fld_distance(old_update_list, local_update_list, hvp):
 
 
 def detection(score, nobyz, k):
-    estimator = KMeans(n_clusters=2)
+    estimator = KMeans(n_clusters=2, n_init=10)
     estimator.fit(score.reshape(-1, 1))
     label_pred = estimator.labels_
     
     if np.mean(score[label_pred==0])<np.mean(score[label_pred==1]):
         #0 is the label of malicious clients
         label_pred = 1 - label_pred
-    real_label=np.ones(k)
-    real_label[:nobyz]=0
-    acc=len(label_pred[label_pred==real_label])/k
-    recall=1-np.sum(label_pred[:nobyz])/nobyz
-    fpr=1-np.sum(label_pred[nobyz:])/(k-nobyz)
-    fnr=np.sum(label_pred[:nobyz])/nobyz
+    # real_label=np.ones(k)
+    # real_label[:nobyz]=0
+    # acc=len(label_pred[label_pred==real_label])/k
+    # recall=1-np.sum(label_pred[:nobyz])/nobyz
+    # fpr=1-np.sum(label_pred[nobyz:])/(k-nobyz)
+    # fnr=np.sum(label_pred[:nobyz])/nobyz
     # print("acc %0.4f; recall %0.4f; fpr %0.4f; fnr %0.4f;" % (acc, recall, fpr, fnr))
     # print(silhouette_score(score.reshape(-1, 1), label_pred))
     # print('defence.py line233 label_pred (0 = malicious pred)', label_pred)
@@ -320,6 +321,45 @@ def detection1(score):
         print('Attack Detected!')
         return 1
 
-def FLDetector(uploaded_updates, model_record, update_record, global_model, N=5):
-    global_params = torch.cat([param.data.view(-1) for param in global_model.parameters()])
-    pass
+def flame(uploaded_models, uploaded_updates, m):
+    cos = torch.nn.CosineSimilarity(dim=0, eps=1e-6).cuda()
+    cos_list = []
+    model_params = []
+    for model in uploaded_models:
+        model_params.append(torch.cat([param.data.view(-1) for param in model.parameters()]))
+    for i in range(len(model_params)):
+        cos_i = []
+        for j in range(len(model_params)):
+            cos_ij = 1 - cos(model_params[i], model_params[j])
+            cos_i.append(cos_ij.item())
+        cos_list.append(cos_i)
+
+    num_clients = len(uploaded_models)
+    clusterer = hdbscan.HDBSCAN(min_cluster_size=num_clients//2 + 1,min_samples=1,allow_single_cluster=True).fit(cos_list)
+
+    benign_clients = []
+    norm_list = np.array([])
+
+    max_num_in_cluster = 0
+    max_cluster_index = 0
+    if clusterer.labels_.max() < 0:
+        for i in range(len(uploaded_models)):
+            benign_clients.append(i)
+            norm_list = np.append(norm_list, torch.norm(uploaded_updates[i], p=2).item())
+    else:
+        for index_cluster in range(clusterer.labels_.max() + 1):
+            if len(clusterer.labels_[clusterer.labels_ == index_cluster]) > max_num_in_cluster:
+                max_cluster_index = index_cluster
+                max_num_in_cluster = len(clusterer.labels_[clusterer.labels_ == index_cluster])
+        for i in range(len(clusterer.labels_)):
+            if clusterer.labels_[i] == max_cluster_index:
+                benign_clients.append(i)
+                norm_list = np.append(norm_list, torch.norm(uploaded_updates[i], p=2).item())
+    
+    clip_value = np.median(norm_list)
+    for i in range(len(benign_clients)):
+        gama = clip_value / norm_list[i]
+        if gama < 1:
+            uploaded_updates[benign_clients[i]] = uploaded_updates[benign_clients[i]] * gama
+
+    return benign_clients, clip_value
