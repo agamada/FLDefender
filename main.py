@@ -71,10 +71,14 @@ if __name__ == '__main__':
     if args.model == "cnn":
         if args.dataset == "FashionMNIST":
             model = CNN(in_features=1, num_classes=args.nc, dim=1024).to(args.device)
+        elif args.dataset == "MNIST":
+            model = CNN(in_features=1, num_classes=args.nc, dim=1024).to(args.device)
         elif args.dataset == "Cifar10":
             model = CNN(in_features=3, num_classes=args.nc, dim=1600).to(args.device)
     elif args.model == "cnn2":
         if args.dataset == "FashionMNIST":
+            model = CNN2(in_features=1, num_classes=args.nc, dim=1024).to(args.device)
+        elif args.dataset == "MNIST":
             model = CNN2(in_features=1, num_classes=args.nc, dim=1024).to(args.device)
         elif args.dataset == "Cifar10":
             model = CNN2(in_features=3, num_classes=args.nc, dim=2048).to(args.device)
