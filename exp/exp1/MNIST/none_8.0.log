@@ -1,0 +1,730 @@
+2025-09-22 00:04:53,551 - *****************EXP-1*****************
+2025-09-22 00:04:53,556 - Exp repeats: 1
+2025-09-22 00:04:53,556 - Communication Rounds: 100
+2025-09-22 00:04:53,556 - Clients: 40
+
+2025-09-22 00:04:53,556 - Attack method: scale
+2025-09-22 00:04:53,556 - Filtering rule: dpd
+2025-09-22 00:04:53,556 - Dataset: MNIST
+2025-09-22 00:04:53,556 - Model: cnn
+2025-09-22 00:04:53,557 - Learning Rate: 0.1
+2025-09-22 00:04:53,557 - Batch Size: 64
+2025-09-22 00:04:53,557 - Device: cuda
+2025-09-22 00:04:53,557 - Device id: 0
+2025-09-22 00:04:53,557 - DPD clipping strategy: none
+2025-09-22 00:04:53,557 - DPD noise level: 0.0
+2025-09-22 00:04:53,557 - Adversaries: 8
+2025-09-22 00:04:53,557 - Targeted Label Flipping: 4-->6
+2025-09-22 00:04:53,557 - *****************EXP-1*****************
+2025-09-22 00:04:55,766 - Running time: 0th ==========================
+2025-09-22 00:05:09,712 - Round number: 0 --------------------------
+2025-09-22 00:05:09,714 - Evaluate global model
+2025-09-22 00:05:16,545 - Averaged Train Loss: 2.3310
+2025-09-22 00:05:16,547 - Test Accurancy: 0.1060
+2025-09-22 00:05:16,547 - Attack Success Rate: 0.0017
+2025-09-22 00:05:23,118 - DPD clipping bound C_t: 20.55556869506836
+2025-09-22 00:05:23,132 - DPD noise norm:0.0
+2025-09-22 00:05:23,156 - Round number: 1 --------------------------
+2025-09-22 00:05:23,156 - Evaluate global model
+2025-09-22 00:05:25,604 - Averaged Train Loss: 3.4926
+2025-09-22 00:05:25,605 - Test Accurancy: 0.6409
+2025-09-22 00:05:25,605 - Attack Success Rate: 0.8509
+2025-09-22 00:05:32,431 - DPD clipping bound C_t: 28.106595993041992
+2025-09-22 00:05:32,436 - DPD noise norm:0.0
+2025-09-22 00:05:32,450 - Round number: 2 --------------------------
+2025-09-22 00:05:32,450 - Evaluate global model
+2025-09-22 00:05:37,151 - Averaged Train Loss: 1.2190
+2025-09-22 00:05:37,163 - Test Accurancy: 0.6840
+2025-09-22 00:05:37,163 - Attack Success Rate: 0.3115
+2025-09-22 00:05:42,514 - DPD clipping bound C_t: 9.743217468261719
+2025-09-22 00:05:42,518 - DPD noise norm:0.0
+2025-09-22 00:05:42,533 - Round number: 3 --------------------------
+2025-09-22 00:05:42,533 - Evaluate global model
+2025-09-22 00:05:44,532 - Averaged Train Loss: 1.5818
+2025-09-22 00:05:44,532 - Test Accurancy: 0.8056
+2025-09-22 00:05:44,532 - Attack Success Rate: 0.9739
+2025-09-22 00:05:49,060 - DPD clipping bound C_t: 33.356910705566406
+2025-09-22 00:05:49,063 - DPD noise norm:0.0
+2025-09-22 00:05:49,079 - Round number: 4 --------------------------
+2025-09-22 00:05:49,079 - Evaluate global model
+2025-09-22 00:05:51,212 - Averaged Train Loss: 0.8284
+2025-09-22 00:05:51,212 - Test Accurancy: 0.7025
+2025-09-22 00:05:51,212 - Attack Success Rate: 0.7001
+2025-09-22 00:05:55,448 - DPD clipping bound C_t: 8.531699180603027
+2025-09-22 00:05:55,451 - DPD noise norm:0.0
+2025-09-22 00:05:55,461 - Round number: 5 --------------------------
+2025-09-22 00:05:55,461 - Evaluate global model
+2025-09-22 00:05:57,697 - Averaged Train Loss: 0.8134
+2025-09-22 00:05:57,698 - Test Accurancy: 0.8071
+2025-09-22 00:05:57,698 - Attack Success Rate: 0.9733
+2025-09-22 00:06:02,685 - DPD clipping bound C_t: 6.597922325134277
+2025-09-22 00:06:02,688 - DPD noise norm:0.0
+2025-09-22 00:06:02,696 - Round number: 6 --------------------------
+2025-09-22 00:06:02,696 - Evaluate global model
+2025-09-22 00:06:06,017 - Averaged Train Loss: 0.4886
+2025-09-22 00:06:06,032 - Test Accurancy: 0.8417
+2025-09-22 00:06:06,032 - Attack Success Rate: 0.0070
+2025-09-22 00:06:14,269 - DPD clipping bound C_t: 6.191352844238281
+2025-09-22 00:06:14,279 - DPD noise norm:0.0
+2025-09-22 00:06:14,298 - Round number: 7 --------------------------
+2025-09-22 00:06:14,298 - Evaluate global model
+2025-09-22 00:06:19,082 - Averaged Train Loss: 1.7829
+2025-09-22 00:06:19,092 - Test Accurancy: 0.7099
+2025-09-22 00:06:19,092 - Attack Success Rate: 0.9948
+2025-09-22 00:06:27,357 - DPD clipping bound C_t: 8.436964988708496
+2025-09-22 00:06:27,382 - DPD noise norm:0.0
+2025-09-22 00:06:27,405 - Round number: 8 --------------------------
+2025-09-22 00:06:27,405 - Evaluate global model
+2025-09-22 00:06:30,631 - Averaged Train Loss: 0.8657
+2025-09-22 00:06:30,631 - Test Accurancy: 0.7219
+2025-09-22 00:06:30,631 - Attack Success Rate: 0.0023
+2025-09-22 00:06:37,955 - DPD clipping bound C_t: 7.821704864501953
+2025-09-22 00:06:37,971 - DPD noise norm:0.0
+2025-09-22 00:06:37,989 - Round number: 9 --------------------------
+2025-09-22 00:06:37,989 - Evaluate global model
+2025-09-22 00:06:41,362 - Averaged Train Loss: 1.2937
+2025-09-22 00:06:41,364 - Test Accurancy: 0.7100
+2025-09-22 00:06:41,364 - Attack Success Rate: 0.9896
+2025-09-22 00:06:49,352 - DPD clipping bound C_t: 6.768256664276123
+2025-09-22 00:06:49,363 - DPD noise norm:0.0
+2025-09-22 00:06:49,377 - Round number: 10 --------------------------
+2025-09-22 00:06:49,378 - Evaluate global model
+2025-09-22 00:06:54,413 - Averaged Train Loss: 1.2402
+2025-09-22 00:06:54,414 - Test Accurancy: 0.6356
+2025-09-22 00:06:54,414 - Attack Success Rate: 0.0000
+2025-09-22 00:07:02,575 - DPD clipping bound C_t: 11.530112266540527
+2025-09-22 00:07:02,581 - DPD noise norm:0.0
+2025-09-22 00:07:02,599 - Round number: 11 --------------------------
+2025-09-22 00:07:02,599 - Evaluate global model
+2025-09-22 00:07:06,432 - Averaged Train Loss: 1.2455
+2025-09-22 00:07:06,434 - Test Accurancy: 0.6839
+2025-09-22 00:07:06,434 - Attack Success Rate: 0.9913
+2025-09-22 00:07:14,502 - DPD clipping bound C_t: 7.155540943145752
+2025-09-22 00:07:14,514 - DPD noise norm:0.0
+2025-09-22 00:07:14,529 - Round number: 12 --------------------------
+2025-09-22 00:07:14,529 - Evaluate global model
+2025-09-22 00:07:18,936 - Averaged Train Loss: 1.1833
+2025-09-22 00:07:18,944 - Test Accurancy: 0.6646
+2025-09-22 00:07:18,944 - Attack Success Rate: 0.0255
+2025-09-22 00:07:25,530 - DPD clipping bound C_t: 7.992643356323242
+2025-09-22 00:07:25,534 - DPD noise norm:0.0
+2025-09-22 00:07:25,544 - Round number: 13 --------------------------
+2025-09-22 00:07:25,544 - Evaluate global model
+2025-09-22 00:07:28,341 - Averaged Train Loss: 1.0498
+2025-09-22 00:07:28,344 - Test Accurancy: 0.7413
+2025-09-22 00:07:28,345 - Attack Success Rate: 0.9896
+2025-09-22 00:07:33,881 - DPD clipping bound C_t: 6.5762715339660645
+2025-09-22 00:07:33,885 - DPD noise norm:0.0
+2025-09-22 00:07:33,896 - Round number: 14 --------------------------
+2025-09-22 00:07:33,896 - Evaluate global model
+2025-09-22 00:07:36,670 - Averaged Train Loss: 0.6199
+2025-09-22 00:07:36,672 - Test Accurancy: 0.8129
+2025-09-22 00:07:36,672 - Attack Success Rate: 0.0945
+2025-09-22 00:07:41,699 - DPD clipping bound C_t: 6.976303577423096
+2025-09-22 00:07:41,710 - DPD noise norm:0.0
+2025-09-22 00:07:41,730 - Round number: 15 --------------------------
+2025-09-22 00:07:41,730 - Evaluate global model
+2025-09-22 00:07:44,383 - Averaged Train Loss: 0.6250
+2025-09-22 00:07:44,385 - Test Accurancy: 0.8095
+2025-09-22 00:07:44,385 - Attack Success Rate: 0.9745
+2025-09-22 00:07:49,590 - DPD clipping bound C_t: 5.5484538078308105
+2025-09-22 00:07:49,601 - DPD noise norm:0.0
+2025-09-22 00:07:49,615 - Round number: 16 --------------------------
+2025-09-22 00:07:49,615 - Evaluate global model
+2025-09-22 00:07:52,042 - Averaged Train Loss: 0.4535
+2025-09-22 00:07:52,043 - Test Accurancy: 0.8172
+2025-09-22 00:07:52,043 - Attack Success Rate: 0.8039
+2025-09-22 00:07:57,660 - DPD clipping bound C_t: 5.213613510131836
+2025-09-22 00:07:57,670 - DPD noise norm:0.0
+2025-09-22 00:07:57,688 - Round number: 17 --------------------------
+2025-09-22 00:07:57,688 - Evaluate global model
+2025-09-22 00:08:00,213 - Averaged Train Loss: 0.3893
+2025-09-22 00:08:00,214 - Test Accurancy: 0.8427
+2025-09-22 00:08:00,214 - Attack Success Rate: 0.8353
+2025-09-22 00:08:05,274 - DPD clipping bound C_t: 4.620558261871338
+2025-09-22 00:08:05,278 - DPD noise norm:0.0
+2025-09-22 00:08:05,300 - Round number: 18 --------------------------
+2025-09-22 00:08:05,301 - Evaluate global model
+2025-09-22 00:08:07,836 - Averaged Train Loss: 0.4996
+2025-09-22 00:08:07,836 - Test Accurancy: 0.8247
+2025-09-22 00:08:07,837 - Attack Success Rate: 0.9240
+2025-09-22 00:08:13,608 - DPD clipping bound C_t: 4.3946614265441895
+2025-09-22 00:08:13,613 - DPD noise norm:0.0
+2025-09-22 00:08:13,643 - Round number: 19 --------------------------
+2025-09-22 00:08:13,644 - Evaluate global model
+2025-09-22 00:08:16,059 - Averaged Train Loss: 0.3432
+2025-09-22 00:08:16,061 - Test Accurancy: 0.8932
+2025-09-22 00:08:16,061 - Attack Success Rate: 0.3283
+2025-09-22 00:08:22,231 - DPD clipping bound C_t: 4.498302459716797
+2025-09-22 00:08:22,236 - DPD noise norm:0.0
+2025-09-22 00:08:22,247 - Round number: 20 --------------------------
+2025-09-22 00:08:22,248 - Evaluate global model
+2025-09-22 00:08:28,160 - Averaged Train Loss: 0.5999
+2025-09-22 00:08:28,171 - Test Accurancy: 0.8395
+2025-09-22 00:08:28,171 - Attack Success Rate: 0.9577
+2025-09-22 00:08:36,937 - DPD clipping bound C_t: 4.284969806671143
+2025-09-22 00:08:36,951 - DPD noise norm:0.0
+2025-09-22 00:08:36,979 - Round number: 21 --------------------------
+2025-09-22 00:08:36,979 - Evaluate global model
+2025-09-22 00:08:42,371 - Averaged Train Loss: 0.2640
+2025-09-22 00:08:42,377 - Test Accurancy: 0.9186
+2025-09-22 00:08:42,378 - Attack Success Rate: 0.2303
+2025-09-22 00:08:50,783 - DPD clipping bound C_t: 4.08742094039917
+2025-09-22 00:08:50,790 - DPD noise norm:0.0
+2025-09-22 00:08:50,810 - Round number: 22 --------------------------
+2025-09-22 00:08:50,810 - Evaluate global model
+2025-09-22 00:08:54,620 - Averaged Train Loss: 0.4924
+2025-09-22 00:08:54,622 - Test Accurancy: 0.8645
+2025-09-22 00:08:54,622 - Attack Success Rate: 0.9675
+2025-09-22 00:09:01,397 - DPD clipping bound C_t: 3.5751781463623047
+2025-09-22 00:09:01,404 - DPD noise norm:0.0
+2025-09-22 00:09:01,416 - Round number: 23 --------------------------
+2025-09-22 00:09:01,416 - Evaluate global model
+2025-09-22 00:09:04,292 - Averaged Train Loss: 0.2027
+2025-09-22 00:09:04,292 - Test Accurancy: 0.9164
+2025-09-22 00:09:04,293 - Attack Success Rate: 0.4675
+2025-09-22 00:09:11,685 - DPD clipping bound C_t: 3.594435930252075
+2025-09-22 00:09:11,695 - DPD noise norm:0.0
+2025-09-22 00:09:11,704 - Round number: 24 --------------------------
+2025-09-22 00:09:11,705 - Evaluate global model
+2025-09-22 00:09:15,250 - Averaged Train Loss: 0.3461
+2025-09-22 00:09:15,251 - Test Accurancy: 0.8793
+2025-09-22 00:09:15,251 - Attack Success Rate: 0.9617
+2025-09-22 00:09:21,821 - DPD clipping bound C_t: 2.7745120525360107
+2025-09-22 00:09:21,825 - DPD noise norm:0.0
+2025-09-22 00:09:21,846 - Round number: 25 --------------------------
+2025-09-22 00:09:21,846 - Evaluate global model
+2025-09-22 00:09:24,083 - Averaged Train Loss: 0.1495
+2025-09-22 00:09:24,084 - Test Accurancy: 0.9333
+2025-09-22 00:09:24,085 - Attack Success Rate: 0.4176
+2025-09-22 00:09:30,607 - DPD clipping bound C_t: 2.879427194595337
+2025-09-22 00:09:30,616 - DPD noise norm:0.0
+2025-09-22 00:09:30,629 - Round number: 26 --------------------------
+2025-09-22 00:09:30,629 - Evaluate global model
+2025-09-22 00:09:32,798 - Averaged Train Loss: 0.3007
+2025-09-22 00:09:32,799 - Test Accurancy: 0.8869
+2025-09-22 00:09:32,799 - Attack Success Rate: 0.9698
+2025-09-22 00:09:40,462 - DPD clipping bound C_t: 2.0814602375030518
+2025-09-22 00:09:40,474 - DPD noise norm:0.0
+2025-09-22 00:09:40,493 - Round number: 27 --------------------------
+2025-09-22 00:09:40,493 - Evaluate global model
+2025-09-22 00:09:43,470 - Averaged Train Loss: 0.1197
+2025-09-22 00:09:43,471 - Test Accurancy: 0.9461
+2025-09-22 00:09:43,471 - Attack Success Rate: 0.3498
+2025-09-22 00:09:51,411 - DPD clipping bound C_t: 2.4889578819274902
+2025-09-22 00:09:51,419 - DPD noise norm:0.0
+2025-09-22 00:09:51,429 - Round number: 28 --------------------------
+2025-09-22 00:09:51,429 - Evaluate global model
+2025-09-22 00:09:56,399 - Averaged Train Loss: 0.3409
+2025-09-22 00:09:56,407 - Test Accurancy: 0.8876
+2025-09-22 00:09:56,407 - Attack Success Rate: 0.9756
+2025-09-22 00:10:03,613 - DPD clipping bound C_t: 1.731665849685669
+2025-09-22 00:10:03,625 - DPD noise norm:0.0
+2025-09-22 00:10:03,644 - Round number: 29 --------------------------
+2025-09-22 00:10:03,644 - Evaluate global model
+2025-09-22 00:10:07,870 - Averaged Train Loss: 0.0916
+2025-09-22 00:10:07,873 - Test Accurancy: 0.9776
+2025-09-22 00:10:07,873 - Attack Success Rate: 0.0603
+2025-09-22 00:10:15,071 - DPD clipping bound C_t: 3.3163645267486572
+2025-09-22 00:10:15,084 - DPD noise norm:0.0
+2025-09-22 00:10:15,104 - Round number: 30 --------------------------
+2025-09-22 00:10:15,105 - Evaluate global model
+2025-09-22 00:10:18,058 - Averaged Train Loss: 0.6603
+2025-09-22 00:10:18,059 - Test Accurancy: 0.8863
+2025-09-22 00:10:18,059 - Attack Success Rate: 0.9890
+2025-09-22 00:10:25,489 - DPD clipping bound C_t: 1.387650728225708
+2025-09-22 00:10:25,498 - DPD noise norm:0.0
+2025-09-22 00:10:25,516 - Round number: 31 --------------------------
+2025-09-22 00:10:25,516 - Evaluate global model
+2025-09-22 00:10:29,463 - Averaged Train Loss: 0.0889
+2025-09-22 00:10:29,471 - Test Accurancy: 0.9836
+2025-09-22 00:10:29,471 - Attack Success Rate: 0.0133
+2025-09-22 00:10:38,036 - DPD clipping bound C_t: 4.256492614746094
+2025-09-22 00:10:38,049 - DPD noise norm:0.0
+2025-09-22 00:10:38,066 - Round number: 32 --------------------------
+2025-09-22 00:10:38,066 - Evaluate global model
+2025-09-22 00:10:41,983 - Averaged Train Loss: 0.8652
+2025-09-22 00:10:41,984 - Test Accurancy: 0.8816
+2025-09-22 00:10:41,985 - Attack Success Rate: 0.9936
+2025-09-22 00:10:50,391 - DPD clipping bound C_t: 1.4115288257598877
+2025-09-22 00:10:50,402 - DPD noise norm:0.0
+2025-09-22 00:10:50,419 - Round number: 33 --------------------------
+2025-09-22 00:10:50,420 - Evaluate global model
+2025-09-22 00:10:55,013 - Averaged Train Loss: 0.0868
+2025-09-22 00:10:55,024 - Test Accurancy: 0.9820
+2025-09-22 00:10:55,025 - Attack Success Rate: 0.0133
+2025-09-22 00:11:03,926 - DPD clipping bound C_t: 3.134188413619995
+2025-09-22 00:11:03,940 - DPD noise norm:0.0
+2025-09-22 00:11:03,963 - Round number: 34 --------------------------
+2025-09-22 00:11:03,963 - Evaluate global model
+2025-09-22 00:11:09,262 - Averaged Train Loss: 0.7509
+2025-09-22 00:11:09,265 - Test Accurancy: 0.8784
+2025-09-22 00:11:09,265 - Attack Success Rate: 0.9942
+2025-09-22 00:11:18,814 - DPD clipping bound C_t: 1.5314816236495972
+2025-09-22 00:11:18,824 - DPD noise norm:0.0
+2025-09-22 00:11:18,836 - Round number: 35 --------------------------
+2025-09-22 00:11:18,837 - Evaluate global model
+2025-09-22 00:11:23,439 - Averaged Train Loss: 0.0882
+2025-09-22 00:11:23,450 - Test Accurancy: 0.9825
+2025-09-22 00:11:23,450 - Attack Success Rate: 0.0087
+2025-09-22 00:11:30,244 - DPD clipping bound C_t: 4.1155171394348145
+2025-09-22 00:11:30,249 - DPD noise norm:0.0
+2025-09-22 00:11:30,262 - Round number: 36 --------------------------
+2025-09-22 00:11:30,262 - Evaluate global model
+2025-09-22 00:11:32,162 - Averaged Train Loss: 0.7724
+2025-09-22 00:11:32,162 - Test Accurancy: 0.8781
+2025-09-22 00:11:32,162 - Attack Success Rate: 0.9930
+2025-09-22 00:11:38,848 - DPD clipping bound C_t: 1.6060384511947632
+2025-09-22 00:11:38,855 - DPD noise norm:0.0
+2025-09-22 00:11:38,870 - Round number: 37 --------------------------
+2025-09-22 00:11:38,871 - Evaluate global model
+2025-09-22 00:11:41,357 - Averaged Train Loss: 0.0888
+2025-09-22 00:11:41,358 - Test Accurancy: 0.9795
+2025-09-22 00:11:41,358 - Attack Success Rate: 0.0296
+2025-09-22 00:11:46,469 - DPD clipping bound C_t: 2.7522976398468018
+2025-09-22 00:11:46,476 - DPD noise norm:0.0
+2025-09-22 00:11:46,489 - Round number: 38 --------------------------
+2025-09-22 00:11:46,490 - Evaluate global model
+2025-09-22 00:11:51,437 - Averaged Train Loss: 0.5689
+2025-09-22 00:11:51,438 - Test Accurancy: 0.8798
+2025-09-22 00:11:51,438 - Attack Success Rate: 0.9907
+2025-09-22 00:11:56,635 - DPD clipping bound C_t: 1.4785079956054688
+2025-09-22 00:11:56,641 - DPD noise norm:0.0
+2025-09-22 00:11:56,657 - Round number: 39 --------------------------
+2025-09-22 00:11:56,657 - Evaluate global model
+2025-09-22 00:12:00,817 - Averaged Train Loss: 0.0875
+2025-09-22 00:12:00,818 - Test Accurancy: 0.9805
+2025-09-22 00:12:00,818 - Attack Success Rate: 0.0238
+2025-09-22 00:12:08,407 - DPD clipping bound C_t: 2.8392980098724365
+2025-09-22 00:12:08,422 - DPD noise norm:0.0
+2025-09-22 00:12:08,438 - Round number: 40 --------------------------
+2025-09-22 00:12:08,438 - Evaluate global model
+2025-09-22 00:12:13,096 - Averaged Train Loss: 0.5776
+2025-09-22 00:12:13,109 - Test Accurancy: 0.8820
+2025-09-22 00:12:13,110 - Attack Success Rate: 0.9907
+2025-09-22 00:12:21,661 - DPD clipping bound C_t: 1.3723008632659912
+2025-09-22 00:12:21,665 - DPD noise norm:0.0
+2025-09-22 00:12:21,674 - Round number: 41 --------------------------
+2025-09-22 00:12:21,674 - Evaluate global model
+2025-09-22 00:12:24,258 - Averaged Train Loss: 0.0871
+2025-09-22 00:12:24,259 - Test Accurancy: 0.9796
+2025-09-22 00:12:24,259 - Attack Success Rate: 0.0371
+2025-09-22 00:12:30,220 - DPD clipping bound C_t: 2.555485963821411
+2025-09-22 00:12:30,226 - DPD noise norm:0.0
+2025-09-22 00:12:30,242 - Round number: 42 --------------------------
+2025-09-22 00:12:30,242 - Evaluate global model
+2025-09-22 00:12:32,737 - Averaged Train Loss: 0.5078
+2025-09-22 00:12:32,737 - Test Accurancy: 0.8841
+2025-09-22 00:12:32,738 - Attack Success Rate: 0.9884
+2025-09-22 00:12:38,508 - DPD clipping bound C_t: 1.2085189819335938
+2025-09-22 00:12:38,513 - DPD noise norm:0.0
+2025-09-22 00:12:38,526 - Round number: 43 --------------------------
+2025-09-22 00:12:38,526 - Evaluate global model
+2025-09-22 00:12:41,578 - Averaged Train Loss: 0.0834
+2025-09-22 00:12:41,580 - Test Accurancy: 0.9795
+2025-09-22 00:12:41,580 - Attack Success Rate: 0.0447
+2025-09-22 00:12:49,332 - DPD clipping bound C_t: 2.694404363632202
+2025-09-22 00:12:49,352 - DPD noise norm:0.0
+2025-09-22 00:12:49,379 - Round number: 44 --------------------------
+2025-09-22 00:12:49,380 - Evaluate global model
+2025-09-22 00:12:53,155 - Averaged Train Loss: 0.4869
+2025-09-22 00:12:53,161 - Test Accurancy: 0.8856
+2025-09-22 00:12:53,161 - Attack Success Rate: 0.9878
+2025-09-22 00:13:01,711 - DPD clipping bound C_t: 1.0441458225250244
+2025-09-22 00:13:01,714 - DPD noise norm:0.0
+2025-09-22 00:13:01,723 - Round number: 45 --------------------------
+2025-09-22 00:13:01,723 - Evaluate global model
+2025-09-22 00:13:04,310 - Averaged Train Loss: 0.0813
+2025-09-22 00:13:04,311 - Test Accurancy: 0.9793
+2025-09-22 00:13:04,311 - Attack Success Rate: 0.0644
+2025-09-22 00:13:10,303 - DPD clipping bound C_t: 2.245095729827881
+2025-09-22 00:13:10,316 - DPD noise norm:0.0
+2025-09-22 00:13:10,328 - Round number: 46 --------------------------
+2025-09-22 00:13:10,328 - Evaluate global model
+2025-09-22 00:13:13,269 - Averaged Train Loss: 0.4365
+2025-09-22 00:13:13,272 - Test Accurancy: 0.8874
+2025-09-22 00:13:13,272 - Attack Success Rate: 0.9872
+2025-09-22 00:13:19,095 - DPD clipping bound C_t: 0.9281818866729736
+2025-09-22 00:13:19,102 - DPD noise norm:0.0
+2025-09-22 00:13:19,115 - Round number: 47 --------------------------
+2025-09-22 00:13:19,115 - Evaluate global model
+2025-09-22 00:13:24,279 - Averaged Train Loss: 0.0768
+2025-09-22 00:13:24,290 - Test Accurancy: 0.9814
+2025-09-22 00:13:24,290 - Attack Success Rate: 0.0551
+2025-09-22 00:13:32,617 - DPD clipping bound C_t: 2.2516560554504395
+2025-09-22 00:13:32,637 - DPD noise norm:0.0
+2025-09-22 00:13:32,659 - Round number: 48 --------------------------
+2025-09-22 00:13:32,660 - Evaluate global model
+2025-09-22 00:13:37,726 - Averaged Train Loss: 0.4515
+2025-09-22 00:13:37,739 - Test Accurancy: 0.8888
+2025-09-22 00:13:37,739 - Attack Success Rate: 0.9878
+2025-09-22 00:13:46,481 - DPD clipping bound C_t: 0.8385955691337585
+2025-09-22 00:13:46,492 - DPD noise norm:0.0
+2025-09-22 00:13:46,506 - Round number: 49 --------------------------
+2025-09-22 00:13:46,506 - Evaluate global model
+2025-09-22 00:13:52,523 - Averaged Train Loss: 0.0759
+2025-09-22 00:13:52,532 - Test Accurancy: 0.9797
+2025-09-22 00:13:52,532 - Attack Success Rate: 0.0725
+2025-09-22 00:14:00,951 - DPD clipping bound C_t: 2.1203293800354004
+2025-09-22 00:14:00,957 - DPD noise norm:0.0
+2025-09-22 00:14:00,976 - Round number: 50 --------------------------
+2025-09-22 00:14:00,976 - Evaluate global model
+2025-09-22 00:14:03,693 - Averaged Train Loss: 0.4354
+2025-09-22 00:14:03,693 - Test Accurancy: 0.8898
+2025-09-22 00:14:03,693 - Attack Success Rate: 0.9872
+2025-09-22 00:14:10,332 - DPD clipping bound C_t: 0.7563959360122681
+2025-09-22 00:14:10,337 - DPD noise norm:0.0
+2025-09-22 00:14:10,351 - Round number: 51 --------------------------
+2025-09-22 00:14:10,351 - Evaluate global model
+2025-09-22 00:14:13,220 - Averaged Train Loss: 0.0744
+2025-09-22 00:14:13,222 - Test Accurancy: 0.9809
+2025-09-22 00:14:13,222 - Attack Success Rate: 0.0650
+2025-09-22 00:14:21,407 - DPD clipping bound C_t: 2.3057854175567627
+2025-09-22 00:14:21,415 - DPD noise norm:0.0
+2025-09-22 00:14:21,430 - Round number: 52 --------------------------
+2025-09-22 00:14:21,431 - Evaluate global model
+2025-09-22 00:14:25,685 - Averaged Train Loss: 0.4454
+2025-09-22 00:14:25,692 - Test Accurancy: 0.8901
+2025-09-22 00:14:25,692 - Attack Success Rate: 0.9867
+2025-09-22 00:14:31,644 - DPD clipping bound C_t: 0.7063132524490356
+2025-09-22 00:14:31,652 - DPD noise norm:0.0
+2025-09-22 00:14:31,675 - Round number: 53 --------------------------
+2025-09-22 00:14:31,676 - Evaluate global model
+2025-09-22 00:14:34,572 - Averaged Train Loss: 0.0765
+2025-09-22 00:14:34,573 - Test Accurancy: 0.9781
+2025-09-22 00:14:34,573 - Attack Success Rate: 0.0963
+2025-09-22 00:14:39,826 - DPD clipping bound C_t: 1.8652398586273193
+2025-09-22 00:14:39,834 - DPD noise norm:0.0
+2025-09-22 00:14:39,850 - Round number: 54 --------------------------
+2025-09-22 00:14:39,851 - Evaluate global model
+2025-09-22 00:14:42,648 - Averaged Train Loss: 0.4002
+2025-09-22 00:14:42,649 - Test Accurancy: 0.8903
+2025-09-22 00:14:42,649 - Attack Success Rate: 0.9855
+2025-09-22 00:14:48,277 - DPD clipping bound C_t: 0.7627472281455994
+2025-09-22 00:14:48,285 - DPD noise norm:0.0
+2025-09-22 00:14:48,299 - Round number: 55 --------------------------
+2025-09-22 00:14:48,299 - Evaluate global model
+2025-09-22 00:14:52,785 - Averaged Train Loss: 0.0717
+2025-09-22 00:14:52,786 - Test Accurancy: 0.9825
+2025-09-22 00:14:52,786 - Attack Success Rate: 0.0539
+2025-09-22 00:15:00,045 - DPD clipping bound C_t: 2.0625741481781006
+2025-09-22 00:15:00,063 - DPD noise norm:0.0
+2025-09-22 00:15:00,084 - Round number: 56 --------------------------
+2025-09-22 00:15:00,084 - Evaluate global model
+2025-09-22 00:15:03,619 - Averaged Train Loss: 0.4469
+2025-09-22 00:15:03,621 - Test Accurancy: 0.8902
+2025-09-22 00:15:03,621 - Attack Success Rate: 0.9867
+2025-09-22 00:15:11,639 - DPD clipping bound C_t: 0.7105896472930908
+2025-09-22 00:15:11,648 - DPD noise norm:0.0
+2025-09-22 00:15:11,674 - Round number: 57 --------------------------
+2025-09-22 00:15:11,675 - Evaluate global model
+2025-09-22 00:15:17,012 - Averaged Train Loss: 0.0727
+2025-09-22 00:15:17,020 - Test Accurancy: 0.9800
+2025-09-22 00:15:17,020 - Attack Success Rate: 0.0783
+2025-09-22 00:15:23,231 - DPD clipping bound C_t: 1.8853679895401
+2025-09-22 00:15:23,242 - DPD noise norm:0.0
+2025-09-22 00:15:23,258 - Round number: 58 --------------------------
+2025-09-22 00:15:23,258 - Evaluate global model
+2025-09-22 00:15:28,015 - Averaged Train Loss: 0.4183
+2025-09-22 00:15:28,019 - Test Accurancy: 0.8904
+2025-09-22 00:15:28,019 - Attack Success Rate: 0.9867
+2025-09-22 00:15:34,528 - DPD clipping bound C_t: 0.6544085144996643
+2025-09-22 00:15:34,532 - DPD noise norm:0.0
+2025-09-22 00:15:34,544 - Round number: 59 --------------------------
+2025-09-22 00:15:34,545 - Evaluate global model
+2025-09-22 00:15:36,781 - Averaged Train Loss: 0.0709
+2025-09-22 00:15:36,781 - Test Accurancy: 0.9816
+2025-09-22 00:15:36,781 - Attack Success Rate: 0.0632
+2025-09-22 00:15:42,400 - DPD clipping bound C_t: 1.7738299369812012
+2025-09-22 00:15:42,405 - DPD noise norm:0.0
+2025-09-22 00:15:42,420 - Round number: 60 --------------------------
+2025-09-22 00:15:42,421 - Evaluate global model
+2025-09-22 00:15:44,641 - Averaged Train Loss: 0.4127
+2025-09-22 00:15:44,642 - Test Accurancy: 0.8904
+2025-09-22 00:15:44,642 - Attack Success Rate: 0.9861
+2025-09-22 00:15:50,705 - DPD clipping bound C_t: 0.6773576140403748
+2025-09-22 00:15:50,710 - DPD noise norm:0.0
+2025-09-22 00:15:50,721 - Round number: 61 --------------------------
+2025-09-22 00:15:50,721 - Evaluate global model
+2025-09-22 00:15:52,932 - Averaged Train Loss: 0.0740
+2025-09-22 00:15:52,933 - Test Accurancy: 0.9776
+2025-09-22 00:15:52,933 - Attack Success Rate: 0.1038
+2025-09-22 00:16:00,041 - DPD clipping bound C_t: 1.8260420560836792
+2025-09-22 00:16:00,045 - DPD noise norm:0.0
+2025-09-22 00:16:00,055 - Round number: 62 --------------------------
+2025-09-22 00:16:00,055 - Evaluate global model
+2025-09-22 00:16:02,183 - Averaged Train Loss: 0.4004
+2025-09-22 00:16:02,183 - Test Accurancy: 0.8907
+2025-09-22 00:16:02,184 - Attack Success Rate: 0.9855
+2025-09-22 00:16:09,266 - DPD clipping bound C_t: 0.5858110189437866
+2025-09-22 00:16:09,272 - DPD noise norm:0.0
+2025-09-22 00:16:09,288 - Round number: 63 --------------------------
+2025-09-22 00:16:09,288 - Evaluate global model
+2025-09-22 00:16:11,829 - Averaged Train Loss: 0.0734
+2025-09-22 00:16:11,831 - Test Accurancy: 0.9774
+2025-09-22 00:16:11,831 - Attack Success Rate: 0.1044
+2025-09-22 00:16:17,413 - DPD clipping bound C_t: 1.8713995218276978
+2025-09-22 00:16:17,417 - DPD noise norm:0.0
+2025-09-22 00:16:17,426 - Round number: 64 --------------------------
+2025-09-22 00:16:17,426 - Evaluate global model
+2025-09-22 00:16:19,859 - Averaged Train Loss: 0.3947
+2025-09-22 00:16:19,859 - Test Accurancy: 0.8908
+2025-09-22 00:16:19,859 - Attack Success Rate: 0.9855
+2025-09-22 00:16:24,608 - DPD clipping bound C_t: 0.5914197564125061
+2025-09-22 00:16:24,611 - DPD noise norm:0.0
+2025-09-22 00:16:24,621 - Round number: 65 --------------------------
+2025-09-22 00:16:24,621 - Evaluate global model
+2025-09-22 00:16:26,548 - Averaged Train Loss: 0.0748
+2025-09-22 00:16:26,548 - Test Accurancy: 0.9751
+2025-09-22 00:16:26,548 - Attack Success Rate: 0.1294
+2025-09-22 00:16:30,781 - DPD clipping bound C_t: 1.6779624223709106
+2025-09-22 00:16:30,784 - DPD noise norm:0.0
+2025-09-22 00:16:30,792 - Round number: 66 --------------------------
+2025-09-22 00:16:30,792 - Evaluate global model
+2025-09-22 00:16:32,938 - Averaged Train Loss: 0.3728
+2025-09-22 00:16:32,939 - Test Accurancy: 0.8913
+2025-09-22 00:16:32,939 - Attack Success Rate: 0.9849
+2025-09-22 00:16:37,233 - DPD clipping bound C_t: 0.5992761254310608
+2025-09-22 00:16:37,236 - DPD noise norm:0.0
+2025-09-22 00:16:37,245 - Round number: 67 --------------------------
+2025-09-22 00:16:37,245 - Evaluate global model
+2025-09-22 00:16:39,220 - Averaged Train Loss: 0.0744
+2025-09-22 00:16:39,220 - Test Accurancy: 0.9758
+2025-09-22 00:16:39,220 - Attack Success Rate: 0.1235
+2025-09-22 00:16:45,324 - DPD clipping bound C_t: 1.5351815223693848
+2025-09-22 00:16:45,331 - DPD noise norm:0.0
+2025-09-22 00:16:45,342 - Round number: 68 --------------------------
+2025-09-22 00:16:45,342 - Evaluate global model
+2025-09-22 00:16:47,731 - Averaged Train Loss: 0.3639
+2025-09-22 00:16:47,732 - Test Accurancy: 0.8913
+2025-09-22 00:16:47,732 - Attack Success Rate: 0.9849
+2025-09-22 00:16:52,331 - DPD clipping bound C_t: 0.5640993714332581
+2025-09-22 00:16:52,334 - DPD noise norm:0.0
+2025-09-22 00:16:52,342 - Round number: 69 --------------------------
+2025-09-22 00:16:52,342 - Evaluate global model
+2025-09-22 00:16:54,336 - Averaged Train Loss: 0.0788
+2025-09-22 00:16:54,337 - Test Accurancy: 0.9657
+2025-09-22 00:16:54,337 - Attack Success Rate: 0.2256
+2025-09-22 00:16:58,875 - DPD clipping bound C_t: 1.4857743978500366
+2025-09-22 00:16:58,879 - DPD noise norm:0.0
+2025-09-22 00:16:58,889 - Round number: 70 --------------------------
+2025-09-22 00:16:58,889 - Evaluate global model
+2025-09-22 00:17:01,640 - Averaged Train Loss: 0.3394
+2025-09-22 00:17:01,641 - Test Accurancy: 0.8915
+2025-09-22 00:17:01,641 - Attack Success Rate: 0.9826
+2025-09-22 00:17:06,163 - DPD clipping bound C_t: 0.5793171525001526
+2025-09-22 00:17:06,166 - DPD noise norm:0.0
+2025-09-22 00:17:06,176 - Round number: 71 --------------------------
+2025-09-22 00:17:06,176 - Evaluate global model
+2025-09-22 00:17:10,933 - Averaged Train Loss: 0.0770
+2025-09-22 00:17:10,941 - Test Accurancy: 0.9689
+2025-09-22 00:17:10,941 - Attack Success Rate: 0.1955
+2025-09-22 00:17:17,294 - DPD clipping bound C_t: 1.4807777404785156
+2025-09-22 00:17:17,307 - DPD noise norm:0.0
+2025-09-22 00:17:17,333 - Round number: 72 --------------------------
+2025-09-22 00:17:17,340 - Evaluate global model
+2025-09-22 00:17:21,810 - Averaged Train Loss: 0.3492
+2025-09-22 00:17:21,811 - Test Accurancy: 0.8915
+2025-09-22 00:17:21,811 - Attack Success Rate: 0.9832
+2025-09-22 00:17:29,338 - DPD clipping bound C_t: 0.5483356714248657
+2025-09-22 00:17:29,348 - DPD noise norm:0.0
+2025-09-22 00:17:29,366 - Round number: 73 --------------------------
+2025-09-22 00:17:29,366 - Evaluate global model
+2025-09-22 00:17:31,609 - Averaged Train Loss: 0.0793
+2025-09-22 00:17:31,610 - Test Accurancy: 0.9633
+2025-09-22 00:17:31,610 - Attack Success Rate: 0.2529
+2025-09-22 00:17:39,247 - DPD clipping bound C_t: 1.4249078035354614
+2025-09-22 00:17:39,258 - DPD noise norm:0.0
+2025-09-22 00:17:39,270 - Round number: 74 --------------------------
+2025-09-22 00:17:39,270 - Evaluate global model
+2025-09-22 00:17:42,101 - Averaged Train Loss: 0.3392
+2025-09-22 00:17:42,102 - Test Accurancy: 0.8916
+2025-09-22 00:17:42,102 - Attack Success Rate: 0.9838
+2025-09-22 00:17:47,015 - DPD clipping bound C_t: 0.5481559038162231
+2025-09-22 00:17:47,018 - DPD noise norm:0.0
+2025-09-22 00:17:47,028 - Round number: 75 --------------------------
+2025-09-22 00:17:47,028 - Evaluate global model
+2025-09-22 00:17:49,170 - Averaged Train Loss: 0.0750
+2025-09-22 00:17:49,171 - Test Accurancy: 0.9700
+2025-09-22 00:17:49,171 - Attack Success Rate: 0.1850
+2025-09-22 00:17:54,061 - DPD clipping bound C_t: 1.46512770652771
+2025-09-22 00:17:54,064 - DPD noise norm:0.0
+2025-09-22 00:17:54,071 - Round number: 76 --------------------------
+2025-09-22 00:17:54,072 - Evaluate global model
+2025-09-22 00:17:56,003 - Averaged Train Loss: 0.3501
+2025-09-22 00:17:56,003 - Test Accurancy: 0.8916
+2025-09-22 00:17:56,003 - Attack Success Rate: 0.9838
+2025-09-22 00:18:02,113 - DPD clipping bound C_t: 0.5082316994667053
+2025-09-22 00:18:02,122 - DPD noise norm:0.0
+2025-09-22 00:18:02,134 - Round number: 77 --------------------------
+2025-09-22 00:18:02,134 - Evaluate global model
+2025-09-22 00:18:04,297 - Averaged Train Loss: 0.0740
+2025-09-22 00:18:04,297 - Test Accurancy: 0.9717
+2025-09-22 00:18:04,297 - Attack Success Rate: 0.1665
+2025-09-22 00:18:11,820 - DPD clipping bound C_t: 1.4293444156646729
+2025-09-22 00:18:11,830 - DPD noise norm:0.0
+2025-09-22 00:18:11,843 - Round number: 78 --------------------------
+2025-09-22 00:18:11,843 - Evaluate global model
+2025-09-22 00:18:14,891 - Averaged Train Loss: 0.3608
+2025-09-22 00:18:14,898 - Test Accurancy: 0.8917
+2025-09-22 00:18:14,898 - Attack Success Rate: 0.9838
+2025-09-22 00:18:22,584 - DPD clipping bound C_t: 0.5273134708404541
+2025-09-22 00:18:22,596 - DPD noise norm:0.0
+2025-09-22 00:18:22,616 - Round number: 79 --------------------------
+2025-09-22 00:18:22,616 - Evaluate global model
+2025-09-22 00:18:25,808 - Averaged Train Loss: 0.0739
+2025-09-22 00:18:25,814 - Test Accurancy: 0.9706
+2025-09-22 00:18:25,814 - Attack Success Rate: 0.1792
+2025-09-22 00:18:31,920 - DPD clipping bound C_t: 1.3572853803634644
+2025-09-22 00:18:31,927 - DPD noise norm:0.0
+2025-09-22 00:18:31,945 - Round number: 80 --------------------------
+2025-09-22 00:18:31,945 - Evaluate global model
+2025-09-22 00:18:34,950 - Averaged Train Loss: 0.3422
+2025-09-22 00:18:34,954 - Test Accurancy: 0.8917
+2025-09-22 00:18:34,954 - Attack Success Rate: 0.9826
+2025-09-22 00:18:42,676 - DPD clipping bound C_t: 0.5087996125221252
+2025-09-22 00:18:42,684 - DPD noise norm:0.0
+2025-09-22 00:18:42,707 - Round number: 81 --------------------------
+2025-09-22 00:18:42,707 - Evaluate global model
+2025-09-22 00:18:47,270 - Averaged Train Loss: 0.0746
+2025-09-22 00:18:47,275 - Test Accurancy: 0.9686
+2025-09-22 00:18:47,275 - Attack Success Rate: 0.2013
+2025-09-22 00:18:56,888 - DPD clipping bound C_t: 1.3484084606170654
+2025-09-22 00:18:56,902 - DPD noise norm:0.0
+2025-09-22 00:18:56,920 - Round number: 82 --------------------------
+2025-09-22 00:18:56,921 - Evaluate global model
+2025-09-22 00:19:01,985 - Averaged Train Loss: 0.3372
+2025-09-22 00:19:01,992 - Test Accurancy: 0.8917
+2025-09-22 00:19:01,992 - Attack Success Rate: 0.9826
+2025-09-22 00:19:09,584 - DPD clipping bound C_t: 0.4886678457260132
+2025-09-22 00:19:09,596 - DPD noise norm:0.0
+2025-09-22 00:19:09,612 - Round number: 83 --------------------------
+2025-09-22 00:19:09,612 - Evaluate global model
+2025-09-22 00:19:12,981 - Averaged Train Loss: 0.0756
+2025-09-22 00:19:12,982 - Test Accurancy: 0.9654
+2025-09-22 00:19:12,982 - Attack Success Rate: 0.2338
+2025-09-22 00:19:21,057 - DPD clipping bound C_t: 1.52436101436615
+2025-09-22 00:19:21,060 - DPD noise norm:0.0
+2025-09-22 00:19:21,071 - Round number: 84 --------------------------
+2025-09-22 00:19:21,071 - Evaluate global model
+2025-09-22 00:19:23,980 - Averaged Train Loss: 0.3452
+2025-09-22 00:19:23,981 - Test Accurancy: 0.8919
+2025-09-22 00:19:23,981 - Attack Success Rate: 0.9826
+2025-09-22 00:19:31,202 - DPD clipping bound C_t: 0.488383412361145
+2025-09-22 00:19:31,206 - DPD noise norm:0.0
+2025-09-22 00:19:31,215 - Round number: 85 --------------------------
+2025-09-22 00:19:31,215 - Evaluate global model
+2025-09-22 00:19:35,777 - Averaged Train Loss: 0.0741
+2025-09-22 00:19:35,786 - Test Accurancy: 0.9687
+2025-09-22 00:19:35,786 - Attack Success Rate: 0.2019
+2025-09-22 00:19:42,822 - DPD clipping bound C_t: 1.518200159072876
+2025-09-22 00:19:42,840 - DPD noise norm:0.0
+2025-09-22 00:19:42,861 - Round number: 86 --------------------------
+2025-09-22 00:19:42,862 - Evaluate global model
+2025-09-22 00:19:47,878 - Averaged Train Loss: 0.3487
+2025-09-22 00:19:47,880 - Test Accurancy: 0.8918
+2025-09-22 00:19:47,880 - Attack Success Rate: 0.9826
+2025-09-22 00:19:56,303 - DPD clipping bound C_t: 0.45476895570755005
+2025-09-22 00:19:56,316 - DPD noise norm:0.0
+2025-09-22 00:19:56,349 - Round number: 87 --------------------------
+2025-09-22 00:19:56,349 - Evaluate global model
+2025-09-22 00:20:01,873 - Averaged Train Loss: 0.0755
+2025-09-22 00:20:01,880 - Test Accurancy: 0.9646
+2025-09-22 00:20:01,880 - Attack Success Rate: 0.2425
+2025-09-22 00:20:09,617 - DPD clipping bound C_t: 1.2691073417663574
+2025-09-22 00:20:09,630 - DPD noise norm:0.0
+2025-09-22 00:20:09,648 - Round number: 88 --------------------------
+2025-09-22 00:20:09,649 - Evaluate global model
+2025-09-22 00:20:13,708 - Averaged Train Loss: 0.3218
+2025-09-22 00:20:13,714 - Test Accurancy: 0.8919
+2025-09-22 00:20:13,714 - Attack Success Rate: 0.9826
+2025-09-22 00:20:21,537 - DPD clipping bound C_t: 0.47876670956611633
+2025-09-22 00:20:21,546 - DPD noise norm:0.0
+2025-09-22 00:20:21,563 - Round number: 89 --------------------------
+2025-09-22 00:20:21,563 - Evaluate global model
+2025-09-22 00:20:26,915 - Averaged Train Loss: 0.0788
+2025-09-22 00:20:26,917 - Test Accurancy: 0.9591
+2025-09-22 00:20:26,918 - Attack Success Rate: 0.3005
+2025-09-22 00:20:35,194 - DPD clipping bound C_t: 1.2147891521453857
+2025-09-22 00:20:35,201 - DPD noise norm:0.0
+2025-09-22 00:20:35,218 - Round number: 90 --------------------------
+2025-09-22 00:20:35,218 - Evaluate global model
+2025-09-22 00:20:39,971 - Averaged Train Loss: 0.3024
+2025-09-22 00:20:39,977 - Test Accurancy: 0.8919
+2025-09-22 00:20:39,977 - Attack Success Rate: 0.9820
+2025-09-22 00:20:49,159 - DPD clipping bound C_t: 0.5026755928993225
+2025-09-22 00:20:49,177 - DPD noise norm:0.0
+2025-09-22 00:20:49,197 - Round number: 91 --------------------------
+2025-09-22 00:20:49,197 - Evaluate global model
+2025-09-22 00:20:53,403 - Averaged Train Loss: 0.0788
+2025-09-22 00:20:53,407 - Test Accurancy: 0.9584
+2025-09-22 00:20:53,407 - Attack Success Rate: 0.3068
+2025-09-22 00:20:59,792 - DPD clipping bound C_t: 1.1800795793533325
+2025-09-22 00:20:59,806 - DPD noise norm:0.0
+2025-09-22 00:20:59,823 - Round number: 92 --------------------------
+2025-09-22 00:20:59,823 - Evaluate global model
+2025-09-22 00:21:03,649 - Averaged Train Loss: 0.3022
+2025-09-22 00:21:03,652 - Test Accurancy: 0.8919
+2025-09-22 00:21:03,652 - Attack Success Rate: 0.9820
+2025-09-22 00:21:11,374 - DPD clipping bound C_t: 0.4877706468105316
+2025-09-22 00:21:11,389 - DPD noise norm:0.0
+2025-09-22 00:21:11,405 - Round number: 93 --------------------------
+2025-09-22 00:21:11,406 - Evaluate global model
+2025-09-22 00:21:17,084 - Averaged Train Loss: 0.0856
+2025-09-22 00:21:17,094 - Test Accurancy: 0.9463
+2025-09-22 00:21:17,094 - Attack Success Rate: 0.4298
+2025-09-22 00:21:25,256 - DPD clipping bound C_t: 1.1251174211502075
+2025-09-22 00:21:25,267 - DPD noise norm:0.0
+2025-09-22 00:21:25,285 - Round number: 94 --------------------------
+2025-09-22 00:21:25,286 - Evaluate global model
+2025-09-22 00:21:29,668 - Averaged Train Loss: 0.2775
+2025-09-22 00:21:29,669 - Test Accurancy: 0.8920
+2025-09-22 00:21:29,669 - Attack Success Rate: 0.9809
+2025-09-22 00:21:37,801 - DPD clipping bound C_t: 0.5265952348709106
+2025-09-22 00:21:37,814 - DPD noise norm:0.0
+2025-09-22 00:21:37,838 - Round number: 95 --------------------------
+2025-09-22 00:21:37,839 - Evaluate global model
+2025-09-22 00:21:42,928 - Averaged Train Loss: 0.0822
+2025-09-22 00:21:42,933 - Test Accurancy: 0.9524
+2025-09-22 00:21:42,933 - Attack Success Rate: 0.3683
+2025-09-22 00:21:48,949 - DPD clipping bound C_t: 1.0907851457595825
+2025-09-22 00:21:48,956 - DPD noise norm:0.0
+2025-09-22 00:21:48,967 - Round number: 96 --------------------------
+2025-09-22 00:21:48,967 - Evaluate global model
+2025-09-22 00:21:50,929 - Averaged Train Loss: 0.2844
+2025-09-22 00:21:50,930 - Test Accurancy: 0.8919
+2025-09-22 00:21:50,930 - Attack Success Rate: 0.9820
+2025-09-22 00:21:56,243 - DPD clipping bound C_t: 0.5017256736755371
+2025-09-22 00:21:56,247 - DPD noise norm:0.0
+2025-09-22 00:21:56,259 - Round number: 97 --------------------------
+2025-09-22 00:21:56,259 - Evaluate global model
+2025-09-22 00:21:58,677 - Averaged Train Loss: 0.0816
+2025-09-22 00:21:58,678 - Test Accurancy: 0.9511
+2025-09-22 00:21:58,678 - Attack Success Rate: 0.3817
+2025-09-22 00:22:03,266 - DPD clipping bound C_t: 1.0755500793457031
+2025-09-22 00:22:03,271 - DPD noise norm:0.0
+2025-09-22 00:22:03,285 - Round number: 98 --------------------------
+2025-09-22 00:22:03,285 - Evaluate global model
+2025-09-22 00:22:05,848 - Averaged Train Loss: 0.2823
+2025-09-22 00:22:05,850 - Test Accurancy: 0.8920
+2025-09-22 00:22:05,850 - Attack Success Rate: 0.9814
+2025-09-22 00:22:10,830 - DPD clipping bound C_t: 0.49485501646995544
+2025-09-22 00:22:10,833 - DPD noise norm:0.0
+2025-09-22 00:22:10,842 - Round number: 99 --------------------------
+2025-09-22 00:22:10,842 - Evaluate global model
+2025-09-22 00:22:14,016 - Averaged Train Loss: 0.0861
+2025-09-22 00:22:14,022 - Test Accurancy: 0.9450
+2025-09-22 00:22:14,022 - Attack Success Rate: 0.4437
+2025-09-22 00:22:19,096 - DPD clipping bound C_t: 1.0834605693817139
+2025-09-22 00:22:19,101 - DPD noise norm:0.0
+2025-09-22 00:22:19,111 - Round number: 100 --------------------------
+2025-09-22 00:22:19,111 - Evaluate global model
+2025-09-22 00:22:21,858 - Averaged Train Loss: 0.2708
+2025-09-22 00:22:21,865 - Test Accurancy: 0.8922
+2025-09-22 00:22:21,865 - Attack Success Rate: 0.9803
+2025-09-22 00:22:26,916 - DPD clipping bound C_t: 0.5069939494132996
+2025-09-22 00:22:26,919 - DPD noise norm:0.0
+2025-09-22 00:22:26,921 - Run over
+2025-09-22 00:22:26,921 - Saving results to ./exp/exp1/MNIST/none_8.0.h5
+2025-09-22 00:22:26,988 - Best accuracy: 0.9836131095123901
+2025-09-22 00:22:26,988 - Average time cost per round: 10.237841517925263

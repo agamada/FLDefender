@@ -1,0 +1,728 @@
+2025-09-21 21:31:01,886 - *****************EXP-3*****************
+2025-09-21 21:31:01,886 - Exp repeats: 1
+2025-09-21 21:31:01,886 - Communication Rounds: 100
+2025-09-21 21:31:01,886 - Clients: 40
+
+2025-09-21 21:31:01,886 - Attack method: min-max
+2025-09-21 21:31:01,887 - Filtering rule: krum
+2025-09-21 21:31:01,887 - Dataset: MNIST
+2025-09-21 21:31:01,887 - Model: cnn
+2025-09-21 21:31:01,887 - Learning Rate: 0.1
+2025-09-21 21:31:01,887 - Batch Size: 64
+2025-09-21 21:31:01,887 - Device: cuda
+2025-09-21 21:31:01,887 - Device id: 0
+2025-09-21 21:31:01,887 - Adversaries: 16
+2025-09-21 21:31:01,887 - Model Poisoning: Min-max attack
+2025-09-21 21:31:01,887 - *****************EXP-3*****************
+2025-09-21 21:31:02,626 - Running time: 0th ==========================
+2025-09-21 21:31:05,529 - Round number: 0 --------------------------
+2025-09-21 21:31:05,530 - Evaluate global model
+2025-09-21 21:31:08,208 - Averaged Train Loss: 2.3312
+2025-09-21 21:31:08,210 - Test Accurancy: 0.1060
+2025-09-21 21:31:13,537 - min_max_attack try_count: 19
+2025-09-21 21:31:13,541 - min_max_attack lamda: 1.804952621459961, max_d: 9.351506233215332
+2025-09-21 21:31:13,687 - Krum select client: 0
+2025-09-21 21:31:13,705 - Round number: 1 --------------------------
+2025-09-21 21:31:13,706 - Evaluate global model
+2025-09-21 21:31:15,183 - Averaged Train Loss: 2.3862
+2025-09-21 21:31:15,184 - Test Accurancy: 0.0304
+2025-09-21 21:31:19,259 - min_max_attack try_count: 19
+2025-09-21 21:31:19,260 - min_max_attack lamda: 2.1385860443115234, max_d: 11.626277923583984
+2025-09-21 21:31:19,463 - Krum select client: 0
+2025-09-21 21:31:19,474 - Round number: 2 --------------------------
+2025-09-21 21:31:19,474 - Evaluate global model
+2025-09-21 21:31:21,282 - Averaged Train Loss: 3.5339
+2025-09-21 21:31:21,283 - Test Accurancy: 0.1133
+2025-09-21 21:31:25,345 - min_max_attack try_count: 19
+2025-09-21 21:31:25,346 - min_max_attack lamda: 2.3003482818603516, max_d: 14.950284004211426
+2025-09-21 21:31:25,557 - Krum select client: 0
+2025-09-21 21:31:25,565 - Round number: 3 --------------------------
+2025-09-21 21:31:25,565 - Evaluate global model
+2025-09-21 21:31:26,888 - Averaged Train Loss: 15.6454
+2025-09-21 21:31:26,889 - Test Accurancy: 0.1133
+2025-09-21 21:31:30,833 - min_max_attack try_count: 19
+2025-09-21 21:31:30,834 - min_max_attack lamda: 3.6450672149658203, max_d: 35.353919982910156
+2025-09-21 21:31:31,027 - Krum select client: 0
+2025-09-21 21:31:31,038 - Round number: 4 --------------------------
+2025-09-21 21:31:31,039 - Evaluate global model
+2025-09-21 21:31:32,642 - Averaged Train Loss: 2.5288
+2025-09-21 21:31:32,643 - Test Accurancy: 0.0980
+2025-09-21 21:31:36,795 - min_max_attack try_count: 19
+2025-09-21 21:31:36,796 - min_max_attack lamda: 1.9082927703857422, max_d: 8.825258255004883
+2025-09-21 21:31:36,973 - Krum select client: 0
+2025-09-21 21:31:36,981 - Round number: 5 --------------------------
+2025-09-21 21:31:36,981 - Evaluate global model
+2025-09-21 21:31:38,294 - Averaged Train Loss: 3.3315
+2025-09-21 21:31:38,294 - Test Accurancy: 0.0980
+2025-09-21 21:31:42,255 - min_max_attack try_count: 19
+2025-09-21 21:31:42,257 - min_max_attack lamda: 1.790933609008789, max_d: 11.711243629455566
+2025-09-21 21:31:42,429 - Krum select client: 0
+2025-09-21 21:31:42,439 - Round number: 6 --------------------------
+2025-09-21 21:31:42,440 - Evaluate global model
+2025-09-21 21:31:43,859 - Averaged Train Loss: 16.7214
+2025-09-21 21:31:43,859 - Test Accurancy: 0.0980
+2025-09-21 21:31:47,593 - min_max_attack try_count: 19
+2025-09-21 21:31:47,595 - min_max_attack lamda: 3.193235397338867, max_d: 54.15630340576172
+2025-09-21 21:31:47,771 - Krum select client: 0
+2025-09-21 21:31:47,780 - Round number: 7 --------------------------
+2025-09-21 21:31:47,780 - Evaluate global model
+2025-09-21 21:31:49,633 - Averaged Train Loss: 2.3513
+2025-09-21 21:31:49,634 - Test Accurancy: 0.0469
+2025-09-21 21:31:53,541 - min_max_attack try_count: 19
+2025-09-21 21:31:53,541 - min_max_attack lamda: 1.9206905364990234, max_d: 8.983765602111816
+2025-09-21 21:31:53,707 - Krum select client: 0
+2025-09-21 21:31:53,715 - Round number: 8 --------------------------
+2025-09-21 21:31:53,715 - Evaluate global model
+2025-09-21 21:31:55,072 - Averaged Train Loss: 2.3988
+2025-09-21 21:31:55,072 - Test Accurancy: 0.0198
+2025-09-21 21:31:58,876 - min_max_attack try_count: 19
+2025-09-21 21:31:58,877 - min_max_attack lamda: 1.7268848419189453, max_d: 9.466008186340332
+2025-09-21 21:31:59,043 - Krum select client: 0
+2025-09-21 21:31:59,051 - Round number: 9 --------------------------
+2025-09-21 21:31:59,051 - Evaluate global model
+2025-09-21 21:32:00,449 - Averaged Train Loss: 2.5087
+2025-09-21 21:32:00,450 - Test Accurancy: 0.0496
+2025-09-21 21:32:04,438 - min_max_attack try_count: 19
+2025-09-21 21:32:04,440 - min_max_attack lamda: 1.8978214263916016, max_d: 10.669028282165527
+2025-09-21 21:32:04,626 - Krum select client: 0
+2025-09-21 21:32:04,634 - Round number: 10 --------------------------
+2025-09-21 21:32:04,634 - Evaluate global model
+2025-09-21 21:32:06,361 - Averaged Train Loss: 3.1761
+2025-09-21 21:32:06,361 - Test Accurancy: 0.0589
+2025-09-21 21:32:10,018 - min_max_attack try_count: 19
+2025-09-21 21:32:10,018 - min_max_attack lamda: 2.0120906829833984, max_d: 10.483492851257324
+2025-09-21 21:32:10,281 - Krum select client: 0
+2025-09-21 21:32:10,288 - Round number: 11 --------------------------
+2025-09-21 21:32:10,288 - Evaluate global model
+2025-09-21 21:32:11,719 - Averaged Train Loss: 8.0011
+2025-09-21 21:32:11,720 - Test Accurancy: 0.0674
+2025-09-21 21:32:15,712 - min_max_attack try_count: 19
+2025-09-21 21:32:15,714 - min_max_attack lamda: 1.853933334350586, max_d: 13.043447494506836
+2025-09-21 21:32:16,018 - Krum select client: 0
+2025-09-21 21:32:16,026 - Round number: 12 --------------------------
+2025-09-21 21:32:16,026 - Evaluate global model
+2025-09-21 21:32:17,438 - Averaged Train Loss: 11.9198
+2025-09-21 21:32:17,438 - Test Accurancy: 0.0964
+2025-09-21 21:32:21,353 - min_max_attack try_count: 19
+2025-09-21 21:32:21,356 - min_max_attack lamda: 1.8138408660888672, max_d: 15.133106231689453
+2025-09-21 21:32:21,624 - Krum select client: 0
+2025-09-21 21:32:21,637 - Round number: 13 --------------------------
+2025-09-21 21:32:21,637 - Evaluate global model
+2025-09-21 21:32:23,474 - Averaged Train Loss: 8.2988
+2025-09-21 21:32:23,474 - Test Accurancy: 0.0357
+2025-09-21 21:32:27,166 - min_max_attack try_count: 19
+2025-09-21 21:32:27,167 - min_max_attack lamda: 1.964120864868164, max_d: 12.131558418273926
+2025-09-21 21:32:27,478 - Krum select client: 0
+2025-09-21 21:32:27,488 - Round number: 14 --------------------------
+2025-09-21 21:32:27,488 - Evaluate global model
+2025-09-21 21:32:28,884 - Averaged Train Loss: 13.8667
+2025-09-21 21:32:28,884 - Test Accurancy: 0.0457
+2025-09-21 21:32:32,405 - min_max_attack try_count: 19
+2025-09-21 21:32:32,406 - min_max_attack lamda: 1.6550922393798828, max_d: 13.923774719238281
+2025-09-21 21:32:32,700 - Krum select client: 0
+2025-09-21 21:32:32,709 - Round number: 15 --------------------------
+2025-09-21 21:32:32,709 - Evaluate global model
+2025-09-21 21:32:34,206 - Averaged Train Loss: 7.0477
+2025-09-21 21:32:34,206 - Test Accurancy: 0.0122
+2025-09-21 21:32:38,005 - min_max_attack try_count: 19
+2025-09-21 21:32:38,006 - min_max_attack lamda: 1.7070293426513672, max_d: 11.080870628356934
+2025-09-21 21:32:38,309 - Krum select client: 0
+2025-09-21 21:32:38,317 - Round number: 16 --------------------------
+2025-09-21 21:32:38,317 - Evaluate global model
+2025-09-21 21:32:39,730 - Averaged Train Loss: 9.7174
+2025-09-21 21:32:39,733 - Test Accurancy: 0.0102
+2025-09-21 21:32:44,159 - min_max_attack try_count: 19
+2025-09-21 21:32:44,160 - min_max_attack lamda: 1.772928237915039, max_d: 12.556486129760742
+2025-09-21 21:32:44,431 - Krum select client: 0
+2025-09-21 21:32:44,440 - Round number: 17 --------------------------
+2025-09-21 21:32:44,440 - Evaluate global model
+2025-09-21 21:32:45,860 - Averaged Train Loss: 10.3487
+2025-09-21 21:32:45,860 - Test Accurancy: 0.0096
+2025-09-21 21:32:49,712 - min_max_attack try_count: 19
+2025-09-21 21:32:49,713 - min_max_attack lamda: 1.7046451568603516, max_d: 12.431290626525879
+2025-09-21 21:32:50,002 - Krum select client: 0
+2025-09-21 21:32:50,010 - Round number: 18 --------------------------
+2025-09-21 21:32:50,010 - Evaluate global model
+2025-09-21 21:32:51,350 - Averaged Train Loss: 9.9585
+2025-09-21 21:32:51,351 - Test Accurancy: 0.0100
+2025-09-21 21:32:55,657 - min_max_attack try_count: 19
+2025-09-21 21:32:55,658 - min_max_attack lamda: 1.8274211883544922, max_d: 12.521448135375977
+2025-09-21 21:32:55,895 - Krum select client: 0
+2025-09-21 21:32:55,906 - Round number: 19 --------------------------
+2025-09-21 21:32:55,906 - Evaluate global model
+2025-09-21 21:32:57,467 - Averaged Train Loss: 11.7844
+2025-09-21 21:32:57,468 - Test Accurancy: 0.0095
+2025-09-21 21:33:01,690 - min_max_attack try_count: 19
+2025-09-21 21:33:01,691 - min_max_attack lamda: 1.7368030548095703, max_d: 12.474711418151855
+2025-09-21 21:33:01,879 - Krum select client: 0
+2025-09-21 21:33:01,887 - Round number: 20 --------------------------
+2025-09-21 21:33:01,887 - Evaluate global model
+2025-09-21 21:33:03,402 - Averaged Train Loss: 10.3683
+2025-09-21 21:33:03,404 - Test Accurancy: 0.0100
+2025-09-21 21:33:07,636 - min_max_attack try_count: 19
+2025-09-21 21:33:07,637 - min_max_attack lamda: 1.7932987213134766, max_d: 11.067676544189453
+2025-09-21 21:33:07,881 - Krum select client: 0
+2025-09-21 21:33:07,889 - Round number: 21 --------------------------
+2025-09-21 21:33:07,890 - Evaluate global model
+2025-09-21 21:33:09,295 - Averaged Train Loss: 11.9367
+2025-09-21 21:33:09,295 - Test Accurancy: 0.0096
+2025-09-21 21:33:13,187 - min_max_attack try_count: 19
+2025-09-21 21:33:13,188 - min_max_attack lamda: 1.5184688568115234, max_d: 12.01917839050293
+2025-09-21 21:33:13,400 - Krum select client: 0
+2025-09-21 21:33:13,408 - Round number: 22 --------------------------
+2025-09-21 21:33:13,408 - Evaluate global model
+2025-09-21 21:33:14,749 - Averaged Train Loss: 8.0441
+2025-09-21 21:33:14,749 - Test Accurancy: 0.0125
+2025-09-21 21:33:18,714 - min_max_attack try_count: 19
+2025-09-21 21:33:18,717 - min_max_attack lamda: 1.750955581665039, max_d: 9.591320991516113
+2025-09-21 21:33:18,895 - Krum select client: 0
+2025-09-21 21:33:18,905 - Round number: 23 --------------------------
+2025-09-21 21:33:18,909 - Evaluate global model
+2025-09-21 21:33:20,565 - Averaged Train Loss: 11.2858
+2025-09-21 21:33:20,565 - Test Accurancy: 0.0108
+2025-09-21 21:33:24,334 - min_max_attack try_count: 19
+2025-09-21 21:33:24,334 - min_max_attack lamda: 1.5836048126220703, max_d: 11.60645580291748
+2025-09-21 21:33:24,551 - Krum select client: 0
+2025-09-21 21:33:24,559 - Round number: 24 --------------------------
+2025-09-21 21:33:24,559 - Evaluate global model
+2025-09-21 21:33:25,845 - Averaged Train Loss: 9.1534
+2025-09-21 21:33:25,845 - Test Accurancy: 0.0123
+2025-09-21 21:33:29,676 - min_max_attack try_count: 19
+2025-09-21 21:33:29,677 - min_max_attack lamda: 1.8366718292236328, max_d: 9.662850379943848
+2025-09-21 21:33:29,928 - Krum select client: 0
+2025-09-21 21:33:29,936 - Round number: 25 --------------------------
+2025-09-21 21:33:29,936 - Evaluate global model
+2025-09-21 21:33:31,306 - Averaged Train Loss: 13.1726
+2025-09-21 21:33:31,307 - Test Accurancy: 0.0116
+2025-09-21 21:33:35,354 - min_max_attack try_count: 19
+2025-09-21 21:33:35,356 - min_max_attack lamda: 1.9124507904052734, max_d: 11.200485229492188
+2025-09-21 21:33:35,561 - Krum select client: 0
+2025-09-21 21:33:35,573 - Round number: 26 --------------------------
+2025-09-21 21:33:35,573 - Evaluate global model
+2025-09-21 21:33:37,119 - Averaged Train Loss: 14.4469
+2025-09-21 21:33:37,119 - Test Accurancy: 0.0120
+2025-09-21 21:33:40,907 - min_max_attack try_count: 19
+2025-09-21 21:33:40,908 - min_max_attack lamda: 1.7320728302001953, max_d: 11.49984359741211
+2025-09-21 21:33:41,168 - Krum select client: 0
+2025-09-21 21:33:41,177 - Round number: 27 --------------------------
+2025-09-21 21:33:41,177 - Evaluate global model
+2025-09-21 21:33:42,539 - Averaged Train Loss: 11.1553
+2025-09-21 21:33:42,540 - Test Accurancy: 0.0122
+2025-09-21 21:33:46,540 - min_max_attack try_count: 19
+2025-09-21 21:33:46,541 - min_max_attack lamda: 1.8516826629638672, max_d: 9.261591911315918
+2025-09-21 21:33:46,791 - Krum select client: 0
+2025-09-21 21:33:46,802 - Round number: 28 --------------------------
+2025-09-21 21:33:46,802 - Evaluate global model
+2025-09-21 21:33:48,214 - Averaged Train Loss: 13.8831
+2025-09-21 21:33:48,216 - Test Accurancy: 0.0122
+2025-09-21 21:33:52,724 - min_max_attack try_count: 19
+2025-09-21 21:33:52,725 - min_max_attack lamda: 1.6959667205810547, max_d: 10.6891450881958
+2025-09-21 21:33:52,981 - Krum select client: 0
+2025-09-21 21:33:52,993 - Round number: 29 --------------------------
+2025-09-21 21:33:52,993 - Evaluate global model
+2025-09-21 21:33:54,441 - Averaged Train Loss: 11.2165
+2025-09-21 21:33:54,443 - Test Accurancy: 0.0123
+2025-09-21 21:33:58,457 - min_max_attack try_count: 19
+2025-09-21 21:33:58,459 - min_max_attack lamda: 1.7387866973876953, max_d: 8.809915542602539
+2025-09-21 21:33:58,681 - Krum select client: 0
+2025-09-21 21:33:58,690 - Round number: 30 --------------------------
+2025-09-21 21:33:58,690 - Evaluate global model
+2025-09-21 21:34:00,478 - Averaged Train Loss: 12.2665
+2025-09-21 21:34:00,479 - Test Accurancy: 0.0122
+2025-09-21 21:34:04,676 - min_max_attack try_count: 19
+2025-09-21 21:34:04,678 - min_max_attack lamda: 1.746988296508789, max_d: 9.192058563232422
+2025-09-21 21:34:04,912 - Krum select client: 0
+2025-09-21 21:34:04,921 - Round number: 31 --------------------------
+2025-09-21 21:34:04,921 - Evaluate global model
+2025-09-21 21:34:06,388 - Averaged Train Loss: 12.4723
+2025-09-21 21:34:06,388 - Test Accurancy: 0.0122
+2025-09-21 21:34:10,137 - min_max_attack try_count: 19
+2025-09-21 21:34:10,140 - min_max_attack lamda: 1.609945297241211, max_d: 9.957344055175781
+2025-09-21 21:34:10,342 - Krum select client: 0
+2025-09-21 21:34:10,351 - Round number: 32 --------------------------
+2025-09-21 21:34:10,351 - Evaluate global model
+2025-09-21 21:34:12,017 - Averaged Train Loss: 10.5912
+2025-09-21 21:34:12,017 - Test Accurancy: 0.0123
+2025-09-21 21:34:15,925 - min_max_attack try_count: 19
+2025-09-21 21:34:15,926 - min_max_attack lamda: 1.7302799224853516, max_d: 8.34494686126709
+2025-09-21 21:34:16,172 - Krum select client: 0
+2025-09-21 21:34:16,179 - Round number: 33 --------------------------
+2025-09-21 21:34:16,179 - Evaluate global model
+2025-09-21 21:34:17,582 - Averaged Train Loss: 12.4882
+2025-09-21 21:34:17,582 - Test Accurancy: 0.0123
+2025-09-21 21:34:21,285 - min_max_attack try_count: 19
+2025-09-21 21:34:21,286 - min_max_attack lamda: 1.6704845428466797, max_d: 8.76400375366211
+2025-09-21 21:34:21,539 - Krum select client: 0
+2025-09-21 21:34:21,547 - Round number: 34 --------------------------
+2025-09-21 21:34:21,547 - Evaluate global model
+2025-09-21 21:34:23,208 - Averaged Train Loss: 11.7806
+2025-09-21 21:34:23,210 - Test Accurancy: 0.0123
+2025-09-21 21:34:27,175 - min_max_attack try_count: 19
+2025-09-21 21:34:27,175 - min_max_attack lamda: 1.5920162200927734, max_d: 8.182217597961426
+2025-09-21 21:34:27,385 - Krum select client: 0
+2025-09-21 21:34:27,391 - Round number: 35 --------------------------
+2025-09-21 21:34:27,392 - Evaluate global model
+2025-09-21 21:34:28,803 - Averaged Train Loss: 10.7088
+2025-09-21 21:34:28,804 - Test Accurancy: 0.0124
+2025-09-21 21:34:32,837 - min_max_attack try_count: 19
+2025-09-21 21:34:32,838 - min_max_attack lamda: 1.6256046295166016, max_d: 7.4631028175354
+2025-09-21 21:34:33,090 - Krum select client: 0
+2025-09-21 21:34:33,098 - Round number: 36 --------------------------
+2025-09-21 21:34:33,099 - Evaluate global model
+2025-09-21 21:34:34,538 - Averaged Train Loss: 11.4166
+2025-09-21 21:34:34,538 - Test Accurancy: 0.0124
+2025-09-21 21:34:38,649 - min_max_attack try_count: 19
+2025-09-21 21:34:38,650 - min_max_attack lamda: 1.6166973114013672, max_d: 7.729228496551514
+2025-09-21 21:34:38,874 - Krum select client: 0
+2025-09-21 21:34:38,883 - Round number: 37 --------------------------
+2025-09-21 21:34:38,883 - Evaluate global model
+2025-09-21 21:34:40,579 - Averaged Train Loss: 11.2875
+2025-09-21 21:34:40,580 - Test Accurancy: 0.0124
+2025-09-21 21:34:44,351 - min_max_attack try_count: 19
+2025-09-21 21:34:44,354 - min_max_attack lamda: 1.5190792083740234, max_d: 7.5395355224609375
+2025-09-21 21:34:44,611 - Krum select client: 0
+2025-09-21 21:34:44,620 - Round number: 38 --------------------------
+2025-09-21 21:34:44,620 - Evaluate global model
+2025-09-21 21:34:46,050 - Averaged Train Loss: 10.1988
+2025-09-21 21:34:46,051 - Test Accurancy: 0.0124
+2025-09-21 21:34:49,883 - min_max_attack try_count: 19
+2025-09-21 21:34:49,884 - min_max_attack lamda: 1.6476726531982422, max_d: 7.198598384857178
+2025-09-21 21:34:50,158 - Krum select client: 0
+2025-09-21 21:34:50,170 - Round number: 39 --------------------------
+2025-09-21 21:34:50,170 - Evaluate global model
+2025-09-21 21:34:51,968 - Averaged Train Loss: 12.0605
+2025-09-21 21:34:51,968 - Test Accurancy: 0.0127
+2025-09-21 21:34:55,697 - min_max_attack try_count: 19
+2025-09-21 21:34:55,697 - min_max_attack lamda: 1.5701007843017578, max_d: 7.3103861808776855
+2025-09-21 21:34:55,965 - Krum select client: 0
+2025-09-21 21:34:55,973 - Round number: 40 --------------------------
+2025-09-21 21:34:55,973 - Evaluate global model
+2025-09-21 21:34:57,296 - Averaged Train Loss: 11.1181
+2025-09-21 21:34:57,296 - Test Accurancy: 0.0126
+2025-09-21 21:35:01,000 - min_max_attack try_count: 19
+2025-09-21 21:35:01,001 - min_max_attack lamda: 1.6015148162841797, max_d: 6.853045463562012
+2025-09-21 21:35:01,260 - Krum select client: 0
+2025-09-21 21:35:01,268 - Round number: 41 --------------------------
+2025-09-21 21:35:01,268 - Evaluate global model
+2025-09-21 21:35:02,813 - Averaged Train Loss: 11.6658
+2025-09-21 21:35:02,815 - Test Accurancy: 0.0126
+2025-09-21 21:35:07,185 - min_max_attack try_count: 19
+2025-09-21 21:35:07,185 - min_max_attack lamda: 1.619272232055664, max_d: 7.025000095367432
+2025-09-21 21:35:07,427 - Krum select client: 0
+2025-09-21 21:35:07,435 - Round number: 42 --------------------------
+2025-09-21 21:35:07,435 - Evaluate global model
+2025-09-21 21:35:08,873 - Averaged Train Loss: 12.0650
+2025-09-21 21:35:08,873 - Test Accurancy: 0.0127
+2025-09-21 21:35:12,865 - min_max_attack try_count: 19
+2025-09-21 21:35:12,865 - min_max_attack lamda: 1.6325664520263672, max_d: 6.834309101104736
+2025-09-21 21:35:13,105 - Krum select client: 0
+2025-09-21 21:35:13,114 - Round number: 43 --------------------------
+2025-09-21 21:35:13,115 - Evaluate global model
+2025-09-21 21:35:14,465 - Averaged Train Loss: 12.5186
+2025-09-21 21:35:14,465 - Test Accurancy: 0.0128
+2025-09-21 21:35:18,805 - min_max_attack try_count: 19
+2025-09-21 21:35:18,806 - min_max_attack lamda: 1.4837360382080078, max_d: 7.1333441734313965
+2025-09-21 21:35:18,992 - Krum select client: 0
+2025-09-21 21:35:19,001 - Round number: 44 --------------------------
+2025-09-21 21:35:19,002 - Evaluate global model
+2025-09-21 21:35:20,577 - Averaged Train Loss: 10.4239
+2025-09-21 21:35:20,577 - Test Accurancy: 0.0124
+2025-09-21 21:35:24,867 - min_max_attack try_count: 19
+2025-09-21 21:35:24,868 - min_max_attack lamda: 1.5904903411865234, max_d: 6.29140043258667
+2025-09-21 21:35:25,078 - Krum select client: 0
+2025-09-21 21:35:25,089 - Round number: 45 --------------------------
+2025-09-21 21:35:25,089 - Evaluate global model
+2025-09-21 21:35:26,862 - Averaged Train Loss: 11.8877
+2025-09-21 21:35:26,864 - Test Accurancy: 0.0126
+2025-09-21 21:35:32,204 - min_max_attack try_count: 19
+2025-09-21 21:35:32,204 - min_max_attack lamda: 1.5435314178466797, max_d: 6.479834079742432
+2025-09-21 21:35:32,425 - Krum select client: 0
+2025-09-21 21:35:32,432 - Round number: 46 --------------------------
+2025-09-21 21:35:32,432 - Evaluate global model
+2025-09-21 21:35:33,933 - Averaged Train Loss: 11.4063
+2025-09-21 21:35:33,934 - Test Accurancy: 0.0126
+2025-09-21 21:35:38,182 - min_max_attack try_count: 19
+2025-09-21 21:35:38,183 - min_max_attack lamda: 1.612710952758789, max_d: 6.403221130371094
+2025-09-21 21:35:38,360 - Krum select client: 0
+2025-09-21 21:35:38,368 - Round number: 47 --------------------------
+2025-09-21 21:35:38,368 - Evaluate global model
+2025-09-21 21:35:39,796 - Averaged Train Loss: 12.5589
+2025-09-21 21:35:39,797 - Test Accurancy: 0.0128
+2025-09-21 21:35:43,679 - min_max_attack try_count: 19
+2025-09-21 21:35:43,680 - min_max_attack lamda: 1.5769672393798828, max_d: 6.415161609649658
+2025-09-21 21:35:43,906 - Krum select client: 0
+2025-09-21 21:35:43,916 - Round number: 48 --------------------------
+2025-09-21 21:35:43,917 - Evaluate global model
+2025-09-21 21:35:45,374 - Averaged Train Loss: 12.1704
+2025-09-21 21:35:45,375 - Test Accurancy: 0.0127
+2025-09-21 21:35:49,737 - min_max_attack try_count: 19
+2025-09-21 21:35:49,738 - min_max_attack lamda: 1.5759754180908203, max_d: 6.217840671539307
+2025-09-21 21:35:49,965 - Krum select client: 0
+2025-09-21 21:35:49,975 - Round number: 49 --------------------------
+2025-09-21 21:35:49,975 - Evaluate global model
+2025-09-21 21:35:51,393 - Averaged Train Loss: 12.2359
+2025-09-21 21:35:51,394 - Test Accurancy: 0.0127
+2025-09-21 21:35:56,067 - min_max_attack try_count: 19
+2025-09-21 21:35:56,070 - min_max_attack lamda: 1.517019271850586, max_d: 6.099457263946533
+2025-09-21 21:35:56,294 - Krum select client: 0
+2025-09-21 21:35:56,308 - Round number: 50 --------------------------
+2025-09-21 21:35:56,308 - Evaluate global model
+2025-09-21 21:35:59,162 - Averaged Train Loss: 11.4135
+2025-09-21 21:35:59,163 - Test Accurancy: 0.0126
+2025-09-21 21:36:03,019 - min_max_attack try_count: 19
+2025-09-21 21:36:03,020 - min_max_attack lamda: 1.5330791473388672, max_d: 5.895560264587402
+2025-09-21 21:36:03,200 - Krum select client: 0
+2025-09-21 21:36:03,210 - Round number: 51 --------------------------
+2025-09-21 21:36:03,210 - Evaluate global model
+2025-09-21 21:36:04,592 - Averaged Train Loss: 11.7504
+2025-09-21 21:36:04,592 - Test Accurancy: 0.0126
+2025-09-21 21:36:08,288 - min_max_attack try_count: 19
+2025-09-21 21:36:08,289 - min_max_attack lamda: 1.5573406219482422, max_d: 5.909373760223389
+2025-09-21 21:36:08,543 - Krum select client: 0
+2025-09-21 21:36:08,551 - Round number: 52 --------------------------
+2025-09-21 21:36:08,551 - Evaluate global model
+2025-09-21 21:36:09,898 - Averaged Train Loss: 12.2594
+2025-09-21 21:36:09,898 - Test Accurancy: 0.0125
+2025-09-21 21:36:13,530 - min_max_attack try_count: 19
+2025-09-21 21:36:13,531 - min_max_attack lamda: 1.6267871856689453, max_d: 6.0652971267700195
+2025-09-21 21:36:13,794 - Krum select client: 0
+2025-09-21 21:36:13,802 - Round number: 53 --------------------------
+2025-09-21 21:36:13,802 - Evaluate global model
+2025-09-21 21:36:15,410 - Averaged Train Loss: 13.5914
+2025-09-21 21:36:15,412 - Test Accurancy: 0.0131
+2025-09-21 21:36:19,146 - min_max_attack try_count: 19
+2025-09-21 21:36:19,146 - min_max_attack lamda: 1.6656017303466797, max_d: 6.113973617553711
+2025-09-21 21:36:19,395 - Krum select client: 0
+2025-09-21 21:36:19,403 - Round number: 54 --------------------------
+2025-09-21 21:36:19,403 - Evaluate global model
+2025-09-21 21:36:20,825 - Averaged Train Loss: 14.5723
+2025-09-21 21:36:20,826 - Test Accurancy: 0.0134
+2025-09-21 21:36:25,081 - min_max_attack try_count: 19
+2025-09-21 21:36:25,082 - min_max_attack lamda: 1.6481876373291016, max_d: 6.157773017883301
+2025-09-21 21:36:25,366 - Krum select client: 0
+2025-09-21 21:36:25,375 - Round number: 55 --------------------------
+2025-09-21 21:36:25,375 - Evaluate global model
+2025-09-21 21:36:26,655 - Averaged Train Loss: 14.4048
+2025-09-21 21:36:26,655 - Test Accurancy: 0.0134
+2025-09-21 21:36:30,694 - min_max_attack try_count: 19
+2025-09-21 21:36:30,694 - min_max_attack lamda: 1.549692153930664, max_d: 6.114255428314209
+2025-09-21 21:36:30,996 - Krum select client: 0
+2025-09-21 21:36:31,004 - Round number: 56 --------------------------
+2025-09-21 21:36:31,004 - Evaluate global model
+2025-09-21 21:36:32,398 - Averaged Train Loss: 12.6525
+2025-09-21 21:36:32,399 - Test Accurancy: 0.0126
+2025-09-21 21:36:36,171 - min_max_attack try_count: 19
+2025-09-21 21:36:36,172 - min_max_attack lamda: 1.631002426147461, max_d: 5.765528202056885
+2025-09-21 21:36:36,454 - Krum select client: 0
+2025-09-21 21:36:36,461 - Round number: 57 --------------------------
+2025-09-21 21:36:36,462 - Evaluate global model
+2025-09-21 21:36:37,791 - Averaged Train Loss: 14.1002
+2025-09-21 21:36:37,792 - Test Accurancy: 0.0132
+2025-09-21 21:36:42,403 - min_max_attack try_count: 19
+2025-09-21 21:36:42,406 - min_max_attack lamda: 1.6721248626708984, max_d: 5.924187660217285
+2025-09-21 21:36:42,647 - Krum select client: 0
+2025-09-21 21:36:42,657 - Round number: 58 --------------------------
+2025-09-21 21:36:42,657 - Evaluate global model
+2025-09-21 21:36:44,250 - Averaged Train Loss: 15.2247
+2025-09-21 21:36:44,250 - Test Accurancy: 0.0137
+2025-09-21 21:36:48,812 - min_max_attack try_count: 19
+2025-09-21 21:36:48,813 - min_max_attack lamda: 1.6915416717529297, max_d: 6.042666435241699
+2025-09-21 21:36:49,037 - Krum select client: 0
+2025-09-21 21:36:49,044 - Round number: 59 --------------------------
+2025-09-21 21:36:49,044 - Evaluate global model
+2025-09-21 21:36:50,438 - Averaged Train Loss: 15.8440
+2025-09-21 21:36:50,439 - Test Accurancy: 0.0141
+2025-09-21 21:36:55,161 - min_max_attack try_count: 19
+2025-09-21 21:36:55,162 - min_max_attack lamda: 1.632699966430664, max_d: 5.830201625823975
+2025-09-21 21:36:55,380 - Krum select client: 0
+2025-09-21 21:36:55,390 - Round number: 60 --------------------------
+2025-09-21 21:36:55,390 - Evaluate global model
+2025-09-21 21:36:56,867 - Averaged Train Loss: 14.8065
+2025-09-21 21:36:56,867 - Test Accurancy: 0.0135
+2025-09-21 21:37:00,805 - min_max_attack try_count: 19
+2025-09-21 21:37:00,806 - min_max_attack lamda: 1.634054183959961, max_d: 5.799132347106934
+2025-09-21 21:37:01,036 - Krum select client: 0
+2025-09-21 21:37:01,049 - Round number: 61 --------------------------
+2025-09-21 21:37:01,049 - Evaluate global model
+2025-09-21 21:37:04,408 - Averaged Train Loss: 14.9070
+2025-09-21 21:37:04,409 - Test Accurancy: 0.0135
+2025-09-21 21:37:08,870 - min_max_attack try_count: 19
+2025-09-21 21:37:08,871 - min_max_attack lamda: 1.5828609466552734, max_d: 5.44922399520874
+2025-09-21 21:37:09,087 - Krum select client: 0
+2025-09-21 21:37:09,098 - Round number: 62 --------------------------
+2025-09-21 21:37:09,098 - Evaluate global model
+2025-09-21 21:37:11,338 - Averaged Train Loss: 14.0722
+2025-09-21 21:37:11,339 - Test Accurancy: 0.0132
+2025-09-21 21:37:15,902 - min_max_attack try_count: 19
+2025-09-21 21:37:15,903 - min_max_attack lamda: 1.565847396850586, max_d: 5.360669136047363
+2025-09-21 21:37:16,081 - Krum select client: 0
+2025-09-21 21:37:16,093 - Round number: 63 --------------------------
+2025-09-21 21:37:16,093 - Evaluate global model
+2025-09-21 21:37:17,414 - Averaged Train Loss: 13.7809
+2025-09-21 21:37:17,415 - Test Accurancy: 0.0131
+2025-09-21 21:37:21,412 - min_max_attack try_count: 19
+2025-09-21 21:37:21,413 - min_max_attack lamda: 1.5972042083740234, max_d: 5.411754608154297
+2025-09-21 21:37:21,611 - Krum select client: 0
+2025-09-21 21:37:21,622 - Round number: 64 --------------------------
+2025-09-21 21:37:21,623 - Evaluate global model
+2025-09-21 21:37:23,070 - Averaged Train Loss: 14.4712
+2025-09-21 21:37:23,070 - Test Accurancy: 0.0132
+2025-09-21 21:37:27,005 - min_max_attack try_count: 19
+2025-09-21 21:37:27,006 - min_max_attack lamda: 1.6423320770263672, max_d: 5.454699516296387
+2025-09-21 21:37:27,293 - Krum select client: 0
+2025-09-21 21:37:27,303 - Round number: 65 --------------------------
+2025-09-21 21:37:27,303 - Evaluate global model
+2025-09-21 21:37:28,606 - Averaged Train Loss: 15.5234
+2025-09-21 21:37:28,607 - Test Accurancy: 0.0138
+2025-09-21 21:37:32,338 - min_max_attack try_count: 19
+2025-09-21 21:37:32,339 - min_max_attack lamda: 1.625833511352539, max_d: 5.350035190582275
+2025-09-21 21:37:32,576 - Krum select client: 0
+2025-09-21 21:37:32,585 - Round number: 66 --------------------------
+2025-09-21 21:37:32,586 - Evaluate global model
+2025-09-21 21:37:34,355 - Averaged Train Loss: 15.4062
+2025-09-21 21:37:34,355 - Test Accurancy: 0.0138
+2025-09-21 21:37:38,492 - min_max_attack try_count: 19
+2025-09-21 21:37:38,493 - min_max_attack lamda: 1.6739749908447266, max_d: 5.538325309753418
+2025-09-21 21:37:38,712 - Krum select client: 0
+2025-09-21 21:37:38,720 - Round number: 67 --------------------------
+2025-09-21 21:37:38,720 - Evaluate global model
+2025-09-21 21:37:40,117 - Averaged Train Loss: 16.5557
+2025-09-21 21:37:40,117 - Test Accurancy: 0.0143
+2025-09-21 21:37:45,120 - min_max_attack try_count: 19
+2025-09-21 21:37:45,120 - min_max_attack lamda: 1.592702865600586, max_d: 5.277047634124756
+2025-09-21 21:37:45,381 - Krum select client: 0
+2025-09-21 21:37:45,392 - Round number: 68 --------------------------
+2025-09-21 21:37:45,393 - Evaluate global model
+2025-09-21 21:37:47,335 - Averaged Train Loss: 15.0386
+2025-09-21 21:37:47,335 - Test Accurancy: 0.0135
+2025-09-21 21:37:51,751 - min_max_attack try_count: 19
+2025-09-21 21:37:51,751 - min_max_attack lamda: 1.607198715209961, max_d: 5.233776092529297
+2025-09-21 21:37:52,052 - Krum select client: 0
+2025-09-21 21:37:52,061 - Round number: 69 --------------------------
+2025-09-21 21:37:52,061 - Evaluate global model
+2025-09-21 21:37:53,618 - Averaged Train Loss: 15.3657
+2025-09-21 21:37:53,619 - Test Accurancy: 0.0136
+2025-09-21 21:37:57,513 - min_max_attack try_count: 19
+2025-09-21 21:37:57,514 - min_max_attack lamda: 1.6327953338623047, max_d: 5.224685192108154
+2025-09-21 21:37:57,795 - Krum select client: 0
+2025-09-21 21:37:57,807 - Round number: 70 --------------------------
+2025-09-21 21:37:57,808 - Evaluate global model
+2025-09-21 21:37:59,283 - Averaged Train Loss: 16.0727
+2025-09-21 21:37:59,283 - Test Accurancy: 0.0140
+2025-09-21 21:38:03,302 - min_max_attack try_count: 19
+2025-09-21 21:38:03,303 - min_max_attack lamda: 1.579141616821289, max_d: 5.093791484832764
+2025-09-21 21:38:03,576 - Krum select client: 0
+2025-09-21 21:38:03,586 - Round number: 71 --------------------------
+2025-09-21 21:38:03,586 - Evaluate global model
+2025-09-21 21:38:04,974 - Averaged Train Loss: 15.1369
+2025-09-21 21:38:04,975 - Test Accurancy: 0.0135
+2025-09-21 21:38:08,540 - min_max_attack try_count: 19
+2025-09-21 21:38:08,542 - min_max_attack lamda: 1.613779067993164, max_d: 5.071007251739502
+2025-09-21 21:38:08,835 - Krum select client: 0
+2025-09-21 21:38:08,843 - Round number: 72 --------------------------
+2025-09-21 21:38:08,843 - Evaluate global model
+2025-09-21 21:38:10,371 - Averaged Train Loss: 15.9019
+2025-09-21 21:38:10,371 - Test Accurancy: 0.0139
+2025-09-21 21:38:14,033 - min_max_attack try_count: 19
+2025-09-21 21:38:14,034 - min_max_attack lamda: 1.6159725189208984, max_d: 5.090910911560059
+2025-09-21 21:38:14,344 - Krum select client: 0
+2025-09-21 21:38:14,351 - Round number: 73 --------------------------
+2025-09-21 21:38:14,351 - Evaluate global model
+2025-09-21 21:38:15,660 - Averaged Train Loss: 16.1264
+2025-09-21 21:38:15,661 - Test Accurancy: 0.0139
+2025-09-21 21:38:20,285 - min_max_attack try_count: 19
+2025-09-21 21:38:20,285 - min_max_attack lamda: 1.6428089141845703, max_d: 5.196840763092041
+2025-09-21 21:38:20,503 - Krum select client: 0
+2025-09-21 21:38:20,511 - Round number: 74 --------------------------
+2025-09-21 21:38:20,511 - Evaluate global model
+2025-09-21 21:38:21,884 - Averaged Train Loss: 16.8784
+2025-09-21 21:38:21,884 - Test Accurancy: 0.0144
+2025-09-21 21:38:25,662 - min_max_attack try_count: 19
+2025-09-21 21:38:25,664 - min_max_attack lamda: 1.5971088409423828, max_d: 4.979672908782959
+2025-09-21 21:38:25,862 - Krum select client: 0
+2025-09-21 21:38:25,870 - Round number: 75 --------------------------
+2025-09-21 21:38:25,870 - Evaluate global model
+2025-09-21 21:38:27,390 - Averaged Train Loss: 16.0642
+2025-09-21 21:38:27,391 - Test Accurancy: 0.0139
+2025-09-21 21:38:31,970 - min_max_attack try_count: 19
+2025-09-21 21:38:31,972 - min_max_attack lamda: 1.6351985931396484, max_d: 4.996528148651123
+2025-09-21 21:38:32,150 - Krum select client: 0
+2025-09-21 21:38:32,158 - Round number: 76 --------------------------
+2025-09-21 21:38:32,158 - Evaluate global model
+2025-09-21 21:38:33,643 - Averaged Train Loss: 16.9317
+2025-09-21 21:38:33,644 - Test Accurancy: 0.0144
+2025-09-21 21:38:37,650 - min_max_attack try_count: 19
+2025-09-21 21:38:37,653 - min_max_attack lamda: 1.639261245727539, max_d: 5.015659332275391
+2025-09-21 21:38:37,859 - Krum select client: 0
+2025-09-21 21:38:37,868 - Round number: 77 --------------------------
+2025-09-21 21:38:37,869 - Evaluate global model
+2025-09-21 21:38:39,678 - Averaged Train Loss: 17.2548
+2025-09-21 21:38:39,679 - Test Accurancy: 0.0147
+2025-09-21 21:38:43,852 - min_max_attack try_count: 19
+2025-09-21 21:38:43,853 - min_max_attack lamda: 1.6056156158447266, max_d: 4.947851657867432
+2025-09-21 21:38:44,051 - Krum select client: 0
+2025-09-21 21:38:44,059 - Round number: 78 --------------------------
+2025-09-21 21:38:44,059 - Evaluate global model
+2025-09-21 21:38:45,338 - Averaged Train Loss: 16.6751
+2025-09-21 21:38:45,339 - Test Accurancy: 0.0143
+2025-09-21 21:38:52,138 - min_max_attack try_count: 19
+2025-09-21 21:38:52,141 - min_max_attack lamda: 1.6063213348388672, max_d: 4.849316120147705
+2025-09-21 21:38:52,296 - Krum select client: 0
+2025-09-21 21:38:52,305 - Round number: 79 --------------------------
+2025-09-21 21:38:52,306 - Evaluate global model
+2025-09-21 21:38:54,244 - Averaged Train Loss: 16.8015
+2025-09-21 21:38:54,244 - Test Accurancy: 0.0143
+2025-09-21 21:39:00,093 - min_max_attack try_count: 19
+2025-09-21 21:39:00,097 - min_max_attack lamda: 1.5802288055419922, max_d: 4.734272003173828
+2025-09-21 21:39:00,251 - Krum select client: 0
+2025-09-21 21:39:00,271 - Round number: 80 --------------------------
+2025-09-21 21:39:00,271 - Evaluate global model
+2025-09-21 21:39:02,485 - Averaged Train Loss: 16.2607
+2025-09-21 21:39:02,485 - Test Accurancy: 0.0140
+2025-09-21 21:39:09,438 - min_max_attack try_count: 19
+2025-09-21 21:39:09,440 - min_max_attack lamda: 1.569662094116211, max_d: 4.693928241729736
+2025-09-21 21:39:09,602 - Krum select client: 0
+2025-09-21 21:39:09,613 - Round number: 81 --------------------------
+2025-09-21 21:39:09,613 - Evaluate global model
+2025-09-21 21:39:11,281 - Averaged Train Loss: 16.1926
+2025-09-21 21:39:11,281 - Test Accurancy: 0.0140
+2025-09-21 21:39:14,998 - min_max_attack try_count: 19
+2025-09-21 21:39:14,998 - min_max_attack lamda: 1.5696430206298828, max_d: 4.596246719360352
+2025-09-21 21:39:15,252 - Krum select client: 0
+2025-09-21 21:39:15,260 - Round number: 82 --------------------------
+2025-09-21 21:39:15,260 - Evaluate global model
+2025-09-21 21:39:16,844 - Averaged Train Loss: 16.2864
+2025-09-21 21:39:16,844 - Test Accurancy: 0.0140
+2025-09-21 21:39:20,464 - min_max_attack try_count: 19
+2025-09-21 21:39:20,464 - min_max_attack lamda: 1.566610336303711, max_d: 4.564611434936523
+2025-09-21 21:39:20,706 - Krum select client: 0
+2025-09-21 21:39:20,714 - Round number: 83 --------------------------
+2025-09-21 21:39:20,714 - Evaluate global model
+2025-09-21 21:39:22,032 - Averaged Train Loss: 16.3892
+2025-09-21 21:39:22,033 - Test Accurancy: 0.0142
+2025-09-21 21:39:25,951 - min_max_attack try_count: 19
+2025-09-21 21:39:25,952 - min_max_attack lamda: 1.5718364715576172, max_d: 4.5664381980896
+2025-09-21 21:39:26,187 - Krum select client: 0
+2025-09-21 21:39:26,196 - Round number: 84 --------------------------
+2025-09-21 21:39:26,196 - Evaluate global model
+2025-09-21 21:39:27,722 - Averaged Train Loss: 16.6299
+2025-09-21 21:39:27,722 - Test Accurancy: 0.0143
+2025-09-21 21:39:31,696 - min_max_attack try_count: 19
+2025-09-21 21:39:31,697 - min_max_attack lamda: 1.5577030181884766, max_d: 4.50514554977417
+2025-09-21 21:39:31,967 - Krum select client: 0
+2025-09-21 21:39:31,976 - Round number: 85 --------------------------
+2025-09-21 21:39:31,977 - Evaluate global model
+2025-09-21 21:39:33,795 - Averaged Train Loss: 16.4721
+2025-09-21 21:39:33,795 - Test Accurancy: 0.0143
+2025-09-21 21:39:38,920 - min_max_attack try_count: 19
+2025-09-21 21:39:38,922 - min_max_attack lamda: 1.5025615692138672, max_d: 4.371109962463379
+2025-09-21 21:39:39,157 - Krum select client: 0
+2025-09-21 21:39:39,170 - Round number: 86 --------------------------
+2025-09-21 21:39:39,170 - Evaluate global model
+2025-09-21 21:39:41,661 - Averaged Train Loss: 15.3631
+2025-09-21 21:39:41,663 - Test Accurancy: 0.0136
+2025-09-21 21:39:47,814 - min_max_attack try_count: 19
+2025-09-21 21:39:47,815 - min_max_attack lamda: 1.5059757232666016, max_d: 4.307448863983154
+2025-09-21 21:39:48,025 - Krum select client: 0
+2025-09-21 21:39:48,043 - Round number: 87 --------------------------
+2025-09-21 21:39:48,043 - Evaluate global model
+2025-09-21 21:39:50,598 - Averaged Train Loss: 15.4462
+2025-09-21 21:39:50,598 - Test Accurancy: 0.0136
+2025-09-21 21:39:55,460 - min_max_attack try_count: 19
+2025-09-21 21:39:55,461 - min_max_attack lamda: 1.486520767211914, max_d: 4.239506721496582
+2025-09-21 21:39:55,643 - Krum select client: 0
+2025-09-21 21:39:55,652 - Round number: 88 --------------------------
+2025-09-21 21:39:55,653 - Evaluate global model
+2025-09-21 21:39:57,232 - Averaged Train Loss: 15.1854
+2025-09-21 21:39:57,232 - Test Accurancy: 0.0136
+2025-09-21 21:40:01,173 - min_max_attack try_count: 19
+2025-09-21 21:40:01,176 - min_max_attack lamda: 1.4232540130615234, max_d: 4.080201625823975
+2025-09-21 21:40:01,400 - Krum select client: 0
+2025-09-21 21:40:01,408 - Round number: 89 --------------------------
+2025-09-21 21:40:01,408 - Evaluate global model
+2025-09-21 21:40:02,929 - Averaged Train Loss: 14.0240
+2025-09-21 21:40:02,930 - Test Accurancy: 0.0132
+2025-09-21 21:40:07,168 - min_max_attack try_count: 19
+2025-09-21 21:40:07,169 - min_max_attack lamda: 1.335592269897461, max_d: 3.768494129180908
+2025-09-21 21:40:07,388 - Krum select client: 0
+2025-09-21 21:40:07,396 - Round number: 90 --------------------------
+2025-09-21 21:40:07,396 - Evaluate global model
+2025-09-21 21:40:08,706 - Averaged Train Loss: 12.4150
+2025-09-21 21:40:08,707 - Test Accurancy: 0.0128
+2025-09-21 21:40:12,443 - min_max_attack try_count: 19
+2025-09-21 21:40:12,443 - min_max_attack lamda: 1.2323856353759766, max_d: 3.3981645107269287
+2025-09-21 21:40:12,643 - Krum select client: 0
+2025-09-21 21:40:12,651 - Round number: 91 --------------------------
+2025-09-21 21:40:12,651 - Evaluate global model
+2025-09-21 21:40:14,562 - Averaged Train Loss: 10.7158
+2025-09-21 21:40:14,562 - Test Accurancy: 0.0130
+2025-09-21 21:40:18,300 - min_max_attack try_count: 19
+2025-09-21 21:40:18,301 - min_max_attack lamda: 1.0022258758544922, max_d: 2.6173312664031982
+2025-09-21 21:40:18,522 - Krum select client: 0
+2025-09-21 21:40:18,531 - Round number: 92 --------------------------
+2025-09-21 21:40:18,532 - Evaluate global model
+2025-09-21 21:40:19,826 - Averaged Train Loss: 7.7253
+2025-09-21 21:40:19,826 - Test Accurancy: 0.0147
+2025-09-21 21:40:24,140 - min_max_attack try_count: 19
+2025-09-21 21:40:24,141 - min_max_attack lamda: 0.8571147918701172, max_d: 1.978012204170227
+2025-09-21 21:40:24,296 - Krum select client: 0
+2025-09-21 21:40:24,309 - Round number: 93 --------------------------
+2025-09-21 21:40:24,309 - Evaluate global model
+2025-09-21 21:40:26,318 - Averaged Train Loss: 6.1416
+2025-09-21 21:40:26,318 - Test Accurancy: 0.0182
+2025-09-21 21:40:30,480 - min_max_attack try_count: 19
+2025-09-21 21:40:30,481 - min_max_attack lamda: 0.8052539825439453, max_d: 1.7112144231796265
+2025-09-21 21:40:30,725 - Krum select client: 0
+2025-09-21 21:40:30,732 - Round number: 94 --------------------------
+2025-09-21 21:40:30,733 - Evaluate global model
+2025-09-21 21:40:32,294 - Averaged Train Loss: 5.5735
+2025-09-21 21:40:32,296 - Test Accurancy: 0.0198
+2025-09-21 21:40:36,289 - min_max_attack try_count: 19
+2025-09-21 21:40:36,289 - min_max_attack lamda: 0.8082103729248047, max_d: 1.6463826894760132
+2025-09-21 21:40:36,549 - Krum select client: 0
+2025-09-21 21:40:36,561 - Round number: 95 --------------------------
+2025-09-21 21:40:36,561 - Evaluate global model
+2025-09-21 21:40:37,863 - Averaged Train Loss: 5.5279
+2025-09-21 21:40:37,866 - Test Accurancy: 0.0199
+2025-09-21 21:40:41,552 - min_max_attack try_count: 19
+2025-09-21 21:40:41,554 - min_max_attack lamda: 0.7811069488525391, max_d: 1.5819300413131714
+2025-09-21 21:40:41,681 - Krum select client: 0
+2025-09-21 21:40:41,695 - Round number: 96 --------------------------
+2025-09-21 21:40:41,695 - Evaluate global model
+2025-09-21 21:40:43,622 - Averaged Train Loss: 5.3669
+2025-09-21 21:40:43,622 - Test Accurancy: 0.0210
+2025-09-21 21:40:47,650 - min_max_attack try_count: 19
+2025-09-21 21:40:47,651 - min_max_attack lamda: 0.7806873321533203, max_d: 1.5395252704620361
+2025-09-21 21:40:47,761 - Krum select client: 0
+2025-09-21 21:40:47,770 - Round number: 97 --------------------------
+2025-09-21 21:40:47,770 - Evaluate global model
+2025-09-21 21:40:48,798 - Averaged Train Loss: 5.3614
+2025-09-21 21:40:48,799 - Test Accurancy: 0.0210
+2025-09-21 21:40:53,570 - min_max_attack try_count: 19
+2025-09-21 21:40:53,571 - min_max_attack lamda: 0.7650089263916016, max_d: 1.493414282798767
+2025-09-21 21:40:53,641 - Krum select client: 0
+2025-09-21 21:40:53,651 - Round number: 98 --------------------------
+2025-09-21 21:40:53,652 - Evaluate global model
+2025-09-21 21:40:54,923 - Averaged Train Loss: 5.2936
+2025-09-21 21:40:54,924 - Test Accurancy: 0.0215
+2025-09-21 21:40:58,795 - min_max_attack try_count: 19
+2025-09-21 21:40:58,796 - min_max_attack lamda: 0.7471752166748047, max_d: 1.4357540607452393
+2025-09-21 21:40:58,867 - Krum select client: 0
+2025-09-21 21:40:58,875 - Round number: 99 --------------------------
+2025-09-21 21:40:58,875 - Evaluate global model
+2025-09-21 21:40:59,953 - Averaged Train Loss: 5.1926
+2025-09-21 21:40:59,953 - Test Accurancy: 0.0222
+2025-09-21 21:41:02,897 - min_max_attack try_count: 19
+2025-09-21 21:41:02,898 - min_max_attack lamda: 0.7440280914306641, max_d: 1.4091482162475586
+2025-09-21 21:41:02,969 - Krum select client: 0
+2025-09-21 21:41:02,978 - Round number: 100 --------------------------
+2025-09-21 21:41:02,978 - Evaluate global model
+2025-09-21 21:41:03,951 - Averaged Train Loss: 5.1758
+2025-09-21 21:41:03,951 - Test Accurancy: 0.0223
+2025-09-21 21:41:07,134 - min_max_attack try_count: 19
+2025-09-21 21:41:07,135 - min_max_attack lamda: 0.7322788238525391, max_d: 1.3671725988388062
+2025-09-21 21:41:07,209 - Krum select client: 0
+2025-09-21 21:41:07,210 - Run over
+2025-09-21 21:41:07,211 - Saving results to ./exp/exp3/MNIST/krum_min-max.h5
+2025-09-21 21:41:07,237 - Best accuracy: 0.11328080392828595
+2025-09-21 21:41:07,238 - Average time cost per round: 5.9352016401290895

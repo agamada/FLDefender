@@ -1,0 +1,716 @@
+2025-09-21 21:39:47,985 - *****************EXP-3*****************
+2025-09-21 21:39:47,986 - Exp repeats: 1
+2025-09-21 21:39:47,986 - Communication Rounds: 100
+2025-09-21 21:39:47,986 - Clients: 40
+
+2025-09-21 21:39:47,986 - Attack method: min-max
+2025-09-21 21:39:47,986 - Filtering rule: FLDetector
+2025-09-21 21:39:47,986 - Dataset: MNIST
+2025-09-21 21:39:47,986 - Model: cnn
+2025-09-21 21:39:47,986 - Learning Rate: 0.1
+2025-09-21 21:39:47,986 - Batch Size: 64
+2025-09-21 21:39:47,986 - Device: cuda
+2025-09-21 21:39:47,986 - Device id: 0
+2025-09-21 21:39:47,986 - Adversaries: 16
+2025-09-21 21:39:47,986 - Model Poisoning: Min-max attack
+2025-09-21 21:39:47,986 - *****************EXP-3*****************
+2025-09-21 21:39:48,196 - Running time: 0th ==========================
+2025-09-21 21:39:49,592 - Round number: 0 --------------------------
+2025-09-21 21:39:49,592 - Evaluate global model
+2025-09-21 21:39:51,777 - Averaged Train Loss: 2.3312
+2025-09-21 21:39:51,777 - Test Accurancy: 0.1060
+2025-09-21 21:39:55,272 - min_max_attack try_count: 19
+2025-09-21 21:39:55,272 - min_max_attack lamda: 1.8078327178955078, max_d: 9.511309623718262
+2025-09-21 21:39:55,675 - Round number: 1 --------------------------
+2025-09-21 21:39:55,676 - Evaluate global model
+2025-09-21 21:39:56,976 - Averaged Train Loss: 2.1472
+2025-09-21 21:39:56,976 - Test Accurancy: 0.3841
+2025-09-21 21:39:59,498 - min_max_attack try_count: 19
+2025-09-21 21:39:59,498 - min_max_attack lamda: 1.6700458526611328, max_d: 7.977766990661621
+2025-09-21 21:39:59,994 - Round number: 2 --------------------------
+2025-09-21 21:39:59,994 - Evaluate global model
+2025-09-21 21:40:00,823 - Averaged Train Loss: 1.6024
+2025-09-21 21:40:00,824 - Test Accurancy: 0.6301
+2025-09-21 21:40:03,249 - min_max_attack try_count: 19
+2025-09-21 21:40:03,250 - min_max_attack lamda: 1.240682601928711, max_d: 4.447549819946289
+2025-09-21 21:40:03,485 - Round number: 3 --------------------------
+2025-09-21 21:40:03,485 - Evaluate global model
+2025-09-21 21:40:04,317 - Averaged Train Loss: 0.9232
+2025-09-21 21:40:04,318 - Test Accurancy: 0.7625
+2025-09-21 21:40:06,745 - min_max_attack try_count: 19
+2025-09-21 21:40:06,745 - min_max_attack lamda: 1.265115737915039, max_d: 4.4651312828063965
+2025-09-21 21:40:06,785 - Round number: 4 --------------------------
+2025-09-21 21:40:06,785 - Evaluate global model
+2025-09-21 21:40:07,684 - Averaged Train Loss: 0.7094
+2025-09-21 21:40:07,684 - Test Accurancy: 0.7964
+2025-09-21 21:40:10,550 - min_max_attack try_count: 19
+2025-09-21 21:40:10,551 - min_max_attack lamda: 1.071462631225586, max_d: 5.413096904754639
+2025-09-21 21:40:10,917 - Round number: 5 --------------------------
+2025-09-21 21:40:10,917 - Evaluate global model
+2025-09-21 21:40:11,911 - Averaged Train Loss: 0.5660
+2025-09-21 21:40:11,911 - Test Accurancy: 0.8331
+2025-09-21 21:40:14,394 - min_max_attack try_count: 19
+2025-09-21 21:40:14,394 - min_max_attack lamda: 0.7293987274169922, max_d: 3.1898880004882812
+2025-09-21 21:40:14,459 - Round number: 6 --------------------------
+2025-09-21 21:40:14,459 - Evaluate global model
+2025-09-21 21:40:15,295 - Averaged Train Loss: 0.4200
+2025-09-21 21:40:15,295 - Test Accurancy: 0.8744
+2025-09-21 21:40:17,714 - min_max_attack try_count: 19
+2025-09-21 21:40:17,715 - min_max_attack lamda: 0.7213878631591797, max_d: 5.0785136222839355
+2025-09-21 21:40:17,757 - Round number: 7 --------------------------
+2025-09-21 21:40:17,757 - Evaluate global model
+2025-09-21 21:40:18,850 - Averaged Train Loss: 0.3634
+2025-09-21 21:40:18,851 - Test Accurancy: 0.8876
+2025-09-21 21:40:21,992 - min_max_attack try_count: 19
+2025-09-21 21:40:21,993 - min_max_attack lamda: 0.8252429962158203, max_d: 3.7900326251983643
+2025-09-21 21:40:25,243 - Round number: 8 --------------------------
+2025-09-21 21:40:25,244 - Evaluate global model
+2025-09-21 21:40:26,323 - Averaged Train Loss: 0.3465
+2025-09-21 21:40:26,323 - Test Accurancy: 0.8905
+2025-09-21 21:40:28,592 - min_max_attack try_count: 19
+2025-09-21 21:40:28,593 - min_max_attack lamda: 0.5683994293212891, max_d: 3.7389073371887207
+2025-09-21 21:40:28,819 - Round number: 9 --------------------------
+2025-09-21 21:40:28,819 - Evaluate global model
+2025-09-21 21:40:29,795 - Averaged Train Loss: 0.2973
+2025-09-21 21:40:29,795 - Test Accurancy: 0.9080
+2025-09-21 21:40:33,289 - min_max_attack try_count: 19
+2025-09-21 21:40:33,290 - min_max_attack lamda: 0.5562305450439453, max_d: 4.460308074951172
+2025-09-21 21:40:36,519 - Round number: 10 --------------------------
+2025-09-21 21:40:36,520 - Evaluate global model
+2025-09-21 21:40:37,498 - Averaged Train Loss: 0.2676
+2025-09-21 21:40:37,499 - Test Accurancy: 0.9178
+2025-09-21 21:40:39,938 - min_max_attack try_count: 19
+2025-09-21 21:40:39,940 - min_max_attack lamda: 0.5070209503173828, max_d: 5.154476165771484
+2025-09-21 21:40:40,202 - Round number: 11 --------------------------
+2025-09-21 21:40:40,202 - Evaluate global model
+2025-09-21 21:40:41,074 - Averaged Train Loss: 0.2467
+2025-09-21 21:40:41,075 - Test Accurancy: 0.9232
+2025-09-21 21:40:43,617 - min_max_attack try_count: 19
+2025-09-21 21:40:43,619 - min_max_attack lamda: 0.8510112762451172, max_d: 5.23211145401001
+2025-09-21 21:40:43,873 - Round number: 12 --------------------------
+2025-09-21 21:40:43,874 - Evaluate global model
+2025-09-21 21:40:45,862 - Averaged Train Loss: 0.2725
+2025-09-21 21:40:45,863 - Test Accurancy: 0.9101
+2025-09-21 21:40:48,356 - min_max_attack try_count: 19
+2025-09-21 21:40:48,356 - min_max_attack lamda: 0.5403995513916016, max_d: 7.306354999542236
+2025-09-21 21:40:52,090 - FLDetector detect mean clients idx: []
+2025-09-21 21:40:52,102 - Round number: 13 --------------------------
+2025-09-21 21:40:52,102 - Evaluate global model
+2025-09-21 21:40:53,075 - Averaged Train Loss: 0.2301
+2025-09-21 21:40:53,075 - Test Accurancy: 0.9270
+2025-09-21 21:40:55,976 - min_max_attack try_count: 19
+2025-09-21 21:40:55,977 - min_max_attack lamda: 0.5010509490966797, max_d: 8.01877212524414
+2025-09-21 21:40:57,599 - FLDetector detect mean clients idx: []
+2025-09-21 21:40:57,649 - Round number: 14 --------------------------
+2025-09-21 21:40:57,649 - Evaluate global model
+2025-09-21 21:40:59,132 - Averaged Train Loss: 0.2120
+2025-09-21 21:40:59,133 - Test Accurancy: 0.9339
+2025-09-21 21:41:01,515 - min_max_attack try_count: 19
+2025-09-21 21:41:01,515 - min_max_attack lamda: 0.5476474761962891, max_d: 4.911205768585205
+2025-09-21 21:41:03,985 - FLDetector detect mean clients idx: []
+2025-09-21 21:41:03,991 - Round number: 15 --------------------------
+2025-09-21 21:41:03,991 - Evaluate global model
+2025-09-21 21:41:04,891 - Averaged Train Loss: 0.2160
+2025-09-21 21:41:04,891 - Test Accurancy: 0.9309
+2025-09-21 21:41:07,490 - min_max_attack try_count: 19
+2025-09-21 21:41:07,491 - min_max_attack lamda: 0.46319007873535156, max_d: 7.346182346343994
+2025-09-21 21:41:09,117 - FLDetector detect mean clients idx: []
+2025-09-21 21:41:09,141 - Round number: 16 --------------------------
+2025-09-21 21:41:09,141 - Evaluate global model
+2025-09-21 21:41:10,946 - Averaged Train Loss: 0.1964
+2025-09-21 21:41:10,946 - Test Accurancy: 0.9377
+2025-09-21 21:41:13,390 - min_max_attack try_count: 19
+2025-09-21 21:41:13,390 - min_max_attack lamda: 0.5578708648681641, max_d: 5.846690654754639
+2025-09-21 21:41:15,812 - FLDetector detect mean clients idx: []
+2025-09-21 21:41:15,819 - Round number: 17 --------------------------
+2025-09-21 21:41:15,819 - Evaluate global model
+2025-09-21 21:41:16,711 - Averaged Train Loss: 0.1919
+2025-09-21 21:41:16,712 - Test Accurancy: 0.9382
+2025-09-21 21:41:19,116 - min_max_attack try_count: 19
+2025-09-21 21:41:19,118 - min_max_attack lamda: 0.4064655303955078, max_d: 6.070035457611084
+2025-09-21 21:41:20,464 - FLDetector detect mean clients idx: []
+2025-09-21 21:41:20,529 - Round number: 18 --------------------------
+2025-09-21 21:41:20,529 - Evaluate global model
+2025-09-21 21:41:22,803 - Averaged Train Loss: 0.1858
+2025-09-21 21:41:22,804 - Test Accurancy: 0.9400
+2025-09-21 21:41:25,272 - min_max_attack try_count: 19
+2025-09-21 21:41:25,272 - min_max_attack lamda: 0.6593227386474609, max_d: 5.525942325592041
+2025-09-21 21:41:29,517 - FLDetector detect mean clients idx: []
+2025-09-21 21:41:29,560 - Round number: 19 --------------------------
+2025-09-21 21:41:29,560 - Evaluate global model
+2025-09-21 21:41:31,128 - Averaged Train Loss: 0.1941
+2025-09-21 21:41:31,129 - Test Accurancy: 0.9371
+2025-09-21 21:41:34,572 - min_max_attack try_count: 19
+2025-09-21 21:41:34,573 - min_max_attack lamda: 0.6528949737548828, max_d: 5.053852081298828
+2025-09-21 21:41:38,652 - FLDetector detect mean clients idx: []
+2025-09-21 21:41:38,673 - Round number: 20 --------------------------
+2025-09-21 21:41:38,673 - Evaluate global model
+2025-09-21 21:41:39,608 - Averaged Train Loss: 0.1896
+2025-09-21 21:41:39,608 - Test Accurancy: 0.9379
+2025-09-21 21:41:41,945 - min_max_attack try_count: 19
+2025-09-21 21:41:41,947 - min_max_attack lamda: 0.6917095184326172, max_d: 7.433032989501953
+2025-09-21 21:41:43,177 - FLDetector detect mean clients idx: []
+2025-09-21 21:41:43,225 - Round number: 21 --------------------------
+2025-09-21 21:41:43,226 - Evaluate global model
+2025-09-21 21:41:45,232 - Averaged Train Loss: 0.1837
+2025-09-21 21:41:45,232 - Test Accurancy: 0.9398
+2025-09-21 21:41:48,139 - min_max_attack try_count: 19
+2025-09-21 21:41:48,140 - min_max_attack lamda: 0.5904102325439453, max_d: 9.262944221496582
+2025-09-21 21:41:51,870 - FLDetector detect mean clients idx: []
+2025-09-21 21:41:51,878 - Round number: 22 --------------------------
+2025-09-21 21:41:51,878 - Evaluate global model
+2025-09-21 21:41:52,760 - Averaged Train Loss: 0.1680
+2025-09-21 21:41:52,762 - Test Accurancy: 0.9464
+2025-09-21 21:41:55,420 - min_max_attack try_count: 19
+2025-09-21 21:41:55,420 - min_max_attack lamda: 0.3831195831298828, max_d: 9.019369125366211
+2025-09-21 21:41:56,796 - FLDetector detect mean clients idx: []
+2025-09-21 21:41:56,802 - Round number: 23 --------------------------
+2025-09-21 21:41:56,803 - Evaluate global model
+2025-09-21 21:41:57,962 - Averaged Train Loss: 0.1548
+2025-09-21 21:41:57,962 - Test Accurancy: 0.9508
+2025-09-21 21:42:00,295 - min_max_attack try_count: 19
+2025-09-21 21:42:00,295 - min_max_attack lamda: 0.7472705841064453, max_d: 10.20258903503418
+2025-09-21 21:42:04,076 - FLDetector detect mean clients idx: [18, 29, 30, 33, 35, 38]
+2025-09-21 21:42:04,098 - Round number: 24 --------------------------
+2025-09-21 21:42:04,098 - Evaluate global model
+2025-09-21 21:42:04,919 - Averaged Train Loss: 0.1715
+2025-09-21 21:42:04,920 - Test Accurancy: 0.9446
+2025-09-21 21:42:07,397 - min_max_attack try_count: 19
+2025-09-21 21:42:07,399 - min_max_attack lamda: 0.6121349334716797, max_d: 11.081194877624512
+2025-09-21 21:42:08,763 - FLDetector detect mean clients idx: [18, 29, 30, 33, 35, 38]
+2025-09-21 21:42:08,782 - Round number: 25 --------------------------
+2025-09-21 21:42:08,782 - Evaluate global model
+2025-09-21 21:42:09,890 - Averaged Train Loss: 0.1590
+2025-09-21 21:42:09,890 - Test Accurancy: 0.9484
+2025-09-21 21:42:12,354 - min_max_attack try_count: 19
+2025-09-21 21:42:12,354 - min_max_attack lamda: 0.5661487579345703, max_d: 10.147063255310059
+2025-09-21 21:42:15,884 - FLDetector detect mean clients idx: [29, 30, 33, 35, 36, 38]
+2025-09-21 21:42:15,890 - Round number: 26 --------------------------
+2025-09-21 21:42:15,891 - Evaluate global model
+2025-09-21 21:42:16,768 - Averaged Train Loss: 0.1483
+2025-09-21 21:42:16,769 - Test Accurancy: 0.9519
+2025-09-21 21:42:19,377 - min_max_attack try_count: 19
+2025-09-21 21:42:19,381 - min_max_attack lamda: 0.4273509979248047, max_d: 4.15394401550293
+2025-09-21 21:42:20,868 - FLDetector detect mean clients idx: [27, 29, 30, 33, 35, 36, 38]
+2025-09-21 21:42:20,875 - Round number: 27 --------------------------
+2025-09-21 21:42:20,876 - Evaluate global model
+2025-09-21 21:42:22,668 - Averaged Train Loss: 0.1448
+2025-09-21 21:42:22,668 - Test Accurancy: 0.9538
+2025-09-21 21:42:25,086 - min_max_attack try_count: 19
+2025-09-21 21:42:25,087 - min_max_attack lamda: 1.0559558868408203, max_d: 9.257640838623047
+2025-09-21 21:42:29,076 - FLDetector detect mean clients idx: [22, 27, 29, 30, 35, 36, 38]
+2025-09-21 21:42:29,100 - Round number: 28 --------------------------
+2025-09-21 21:42:29,101 - Evaluate global model
+2025-09-21 21:42:30,034 - Averaged Train Loss: 0.2169
+2025-09-21 21:42:30,036 - Test Accurancy: 0.9243
+2025-09-21 21:42:33,436 - min_max_attack try_count: 19
+2025-09-21 21:42:33,438 - min_max_attack lamda: 1.6924190521240234, max_d: 29.969472885131836
+2025-09-21 21:42:34,753 - FLDetector detect mean clients idx: [22, 27, 29, 30, 36, 38]
+2025-09-21 21:42:34,761 - Round number: 29 --------------------------
+2025-09-21 21:42:34,761 - Evaluate global model
+2025-09-21 21:42:35,964 - Averaged Train Loss: 0.3671
+2025-09-21 21:42:35,964 - Test Accurancy: 0.8868
+2025-09-21 21:42:38,336 - min_max_attack try_count: 19
+2025-09-21 21:42:38,336 - min_max_attack lamda: 1.056070327758789, max_d: 56.64545822143555
+2025-09-21 21:42:39,464 - FLDetector detect mean clients idx: []
+2025-09-21 21:42:39,469 - Round number: 30 --------------------------
+2025-09-21 21:42:39,472 - Evaluate global model
+2025-09-21 21:42:40,355 - Averaged Train Loss: 0.4126
+2025-09-21 21:42:40,356 - Test Accurancy: 0.8740
+2025-09-21 21:42:43,088 - min_max_attack try_count: 19
+2025-09-21 21:42:43,090 - min_max_attack lamda: 0.43158531188964844, max_d: 3.1369359493255615
+2025-09-21 21:42:44,681 - FLDetector detect mean clients idx: []
+2025-09-21 21:42:44,697 - Round number: 31 --------------------------
+2025-09-21 21:42:44,697 - Evaluate global model
+2025-09-21 21:42:46,557 - Averaged Train Loss: 0.3555
+2025-09-21 21:42:46,558 - Test Accurancy: 0.8874
+2025-09-21 21:42:48,978 - min_max_attack try_count: 19
+2025-09-21 21:42:48,978 - min_max_attack lamda: 0.4008007049560547, max_d: 3.7515673637390137
+2025-09-21 21:42:50,199 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 36, 38]
+2025-09-21 21:42:50,205 - Round number: 32 --------------------------
+2025-09-21 21:42:50,205 - Evaluate global model
+2025-09-21 21:42:51,024 - Averaged Train Loss: 0.3686
+2025-09-21 21:42:51,024 - Test Accurancy: 0.8814
+2025-09-21 21:42:53,478 - min_max_attack try_count: 19
+2025-09-21 21:42:53,478 - min_max_attack lamda: 0.3430652618408203, max_d: 3.3671936988830566
+2025-09-21 21:42:54,377 - FLDetector detect mean clients idx: [18, 23, 29, 30, 36, 38]
+2025-09-21 21:42:54,393 - Round number: 33 --------------------------
+2025-09-21 21:42:54,393 - Evaluate global model
+2025-09-21 21:42:55,677 - Averaged Train Loss: 0.2934
+2025-09-21 21:42:55,678 - Test Accurancy: 0.9048
+2025-09-21 21:42:59,124 - min_max_attack try_count: 19
+2025-09-21 21:42:59,125 - min_max_attack lamda: 0.3586864471435547, max_d: 7.676526069641113
+2025-09-21 21:43:02,571 - FLDetector detect mean clients idx: []
+2025-09-21 21:43:02,577 - Round number: 34 --------------------------
+2025-09-21 21:43:02,578 - Evaluate global model
+2025-09-21 21:43:03,602 - Averaged Train Loss: 0.2140
+2025-09-21 21:43:03,603 - Test Accurancy: 0.9305
+2025-09-21 21:43:05,984 - min_max_attack try_count: 19
+2025-09-21 21:43:05,985 - min_max_attack lamda: 0.2993297576904297, max_d: 4.680906772613525
+2025-09-21 21:43:07,127 - FLDetector detect mean clients idx: []
+2025-09-21 21:43:07,137 - Round number: 35 --------------------------
+2025-09-21 21:43:07,137 - Evaluate global model
+2025-09-21 21:43:08,453 - Averaged Train Loss: 0.1699
+2025-09-21 21:43:08,453 - Test Accurancy: 0.9448
+2025-09-21 21:43:11,420 - min_max_attack try_count: 19
+2025-09-21 21:43:11,420 - min_max_attack lamda: 0.3111553192138672, max_d: 5.27441930770874
+2025-09-21 21:43:15,416 - FLDetector detect mean clients idx: []
+2025-09-21 21:43:15,439 - Round number: 36 --------------------------
+2025-09-21 21:43:15,439 - Evaluate global model
+2025-09-21 21:43:16,469 - Averaged Train Loss: 0.1486
+2025-09-21 21:43:16,469 - Test Accurancy: 0.9518
+2025-09-21 21:43:18,833 - min_max_attack try_count: 19
+2025-09-21 21:43:18,835 - min_max_attack lamda: 0.41924476623535156, max_d: 4.442032814025879
+2025-09-21 21:43:20,219 - FLDetector detect mean clients idx: []
+2025-09-21 21:43:20,248 - Round number: 37 --------------------------
+2025-09-21 21:43:20,248 - Evaluate global model
+2025-09-21 21:43:21,717 - Averaged Train Loss: 0.1490
+2025-09-21 21:43:21,717 - Test Accurancy: 0.9513
+2025-09-21 21:43:24,102 - min_max_attack try_count: 19
+2025-09-21 21:43:24,102 - min_max_attack lamda: 0.38329124450683594, max_d: 7.616703510284424
+2025-09-21 21:43:27,958 - FLDetector detect mean clients idx: [18, 22, 23, 30]
+2025-09-21 21:43:27,977 - Round number: 38 --------------------------
+2025-09-21 21:43:27,977 - Evaluate global model
+2025-09-21 21:43:28,839 - Averaged Train Loss: 0.1453
+2025-09-21 21:43:28,839 - Test Accurancy: 0.9523
+2025-09-21 21:43:31,539 - min_max_attack try_count: 19
+2025-09-21 21:43:31,542 - min_max_attack lamda: 0.7203769683837891, max_d: 5.3091936111450195
+2025-09-21 21:43:33,466 - FLDetector detect mean clients idx: []
+2025-09-21 21:43:33,538 - Round number: 39 --------------------------
+2025-09-21 21:43:33,538 - Evaluate global model
+2025-09-21 21:43:35,563 - Averaged Train Loss: 0.1643
+2025-09-21 21:43:35,564 - Test Accurancy: 0.9457
+2025-09-21 21:43:37,991 - min_max_attack try_count: 19
+2025-09-21 21:43:37,992 - min_max_attack lamda: 0.44867515563964844, max_d: 10.099264144897461
+2025-09-21 21:43:42,360 - FLDetector detect mean clients idx: []
+2025-09-21 21:43:42,427 - Round number: 40 --------------------------
+2025-09-21 21:43:42,427 - Evaluate global model
+2025-09-21 21:43:43,917 - Averaged Train Loss: 0.1466
+2025-09-21 21:43:43,917 - Test Accurancy: 0.9522
+2025-09-21 21:43:46,506 - min_max_attack try_count: 19
+2025-09-21 21:43:46,506 - min_max_attack lamda: 0.31332969665527344, max_d: 3.984257459640503
+2025-09-21 21:43:47,451 - FLDetector detect mean clients idx: []
+2025-09-21 21:43:47,457 - Round number: 41 --------------------------
+2025-09-21 21:43:47,457 - Evaluate global model
+2025-09-21 21:43:48,249 - Averaged Train Loss: 0.1438
+2025-09-21 21:43:48,249 - Test Accurancy: 0.9542
+2025-09-21 21:43:50,698 - min_max_attack try_count: 19
+2025-09-21 21:43:50,699 - min_max_attack lamda: 0.3452587127685547, max_d: 4.658282279968262
+2025-09-21 21:43:51,710 - FLDetector detect mean clients idx: [18, 30, 36]
+2025-09-21 21:43:51,719 - Round number: 42 --------------------------
+2025-09-21 21:43:51,720 - Evaluate global model
+2025-09-21 21:43:52,600 - Averaged Train Loss: 0.1407
+2025-09-21 21:43:52,601 - Test Accurancy: 0.9547
+2025-09-21 21:43:55,279 - min_max_attack try_count: 19
+2025-09-21 21:43:55,279 - min_max_attack lamda: 0.3377056121826172, max_d: 3.181612014770508
+2025-09-21 21:43:56,626 - FLDetector detect mean clients idx: [18, 29, 30, 36]
+2025-09-21 21:43:56,638 - Round number: 43 --------------------------
+2025-09-21 21:43:56,638 - Evaluate global model
+2025-09-21 21:43:57,888 - Averaged Train Loss: 0.1358
+2025-09-21 21:43:57,888 - Test Accurancy: 0.9562
+2025-09-21 21:44:00,170 - min_max_attack try_count: 19
+2025-09-21 21:44:00,170 - min_max_attack lamda: 0.3286457061767578, max_d: 6.0302934646606445
+2025-09-21 21:44:01,204 - FLDetector detect mean clients idx: [18, 30, 36]
+2025-09-21 21:44:01,210 - Round number: 44 --------------------------
+2025-09-21 21:44:01,210 - Evaluate global model
+2025-09-21 21:44:02,130 - Averaged Train Loss: 0.1271
+2025-09-21 21:44:02,130 - Test Accurancy: 0.9587
+2025-09-21 21:44:04,670 - min_max_attack try_count: 19
+2025-09-21 21:44:04,672 - min_max_attack lamda: 0.3390216827392578, max_d: 7.040164470672607
+2025-09-21 21:44:05,809 - FLDetector detect mean clients idx: [18, 30, 36]
+2025-09-21 21:44:05,833 - Round number: 45 --------------------------
+2025-09-21 21:44:05,833 - Evaluate global model
+2025-09-21 21:44:07,222 - Averaged Train Loss: 0.1308
+2025-09-21 21:44:07,222 - Test Accurancy: 0.9577
+2025-09-21 21:44:09,993 - min_max_attack try_count: 19
+2025-09-21 21:44:09,994 - min_max_attack lamda: 0.2976512908935547, max_d: 4.600595474243164
+2025-09-21 21:44:13,012 - FLDetector detect mean clients idx: [18, 30, 36]
+2025-09-21 21:44:13,019 - Round number: 46 --------------------------
+2025-09-21 21:44:13,019 - Evaluate global model
+2025-09-21 21:44:13,850 - Averaged Train Loss: 0.1261
+2025-09-21 21:44:13,851 - Test Accurancy: 0.9594
+2025-09-21 21:44:16,385 - min_max_attack try_count: 19
+2025-09-21 21:44:16,389 - min_max_attack lamda: 0.2925586700439453, max_d: 4.937286853790283
+2025-09-21 21:44:17,884 - FLDetector detect mean clients idx: [18, 23, 29, 30, 36]
+2025-09-21 21:44:17,892 - Round number: 47 --------------------------
+2025-09-21 21:44:17,892 - Evaluate global model
+2025-09-21 21:44:18,900 - Averaged Train Loss: 0.1243
+2025-09-21 21:44:18,900 - Test Accurancy: 0.9600
+2025-09-21 21:44:21,392 - min_max_attack try_count: 19
+2025-09-21 21:44:21,392 - min_max_attack lamda: 0.2794361114501953, max_d: 3.3042330741882324
+2025-09-21 21:44:22,313 - FLDetector detect mean clients idx: [18, 23, 29, 30, 36]
+2025-09-21 21:44:22,318 - Round number: 48 --------------------------
+2025-09-21 21:44:22,318 - Evaluate global model
+2025-09-21 21:44:23,249 - Averaged Train Loss: 0.1233
+2025-09-21 21:44:23,250 - Test Accurancy: 0.9600
+2025-09-21 21:44:25,658 - min_max_attack try_count: 19
+2025-09-21 21:44:25,659 - min_max_attack lamda: 0.4682636260986328, max_d: 5.54071569442749
+2025-09-21 21:44:26,671 - FLDetector detect mean clients idx: [18, 23, 29, 30, 36]
+2025-09-21 21:44:26,676 - Round number: 49 --------------------------
+2025-09-21 21:44:26,676 - Evaluate global model
+2025-09-21 21:44:27,633 - Averaged Train Loss: 0.1380
+2025-09-21 21:44:27,633 - Test Accurancy: 0.9559
+2025-09-21 21:44:30,015 - min_max_attack try_count: 19
+2025-09-21 21:44:30,015 - min_max_attack lamda: 0.5748271942138672, max_d: 5.702815055847168
+2025-09-21 21:44:30,949 - FLDetector detect mean clients idx: [18, 23, 29, 30, 36]
+2025-09-21 21:44:30,955 - Round number: 50 --------------------------
+2025-09-21 21:44:30,955 - Evaluate global model
+2025-09-21 21:44:32,043 - Averaged Train Loss: 0.1419
+2025-09-21 21:44:32,043 - Test Accurancy: 0.9552
+2025-09-21 21:44:34,477 - min_max_attack try_count: 19
+2025-09-21 21:44:34,478 - min_max_attack lamda: 0.7321262359619141, max_d: 7.85270881652832
+2025-09-21 21:44:35,507 - FLDetector detect mean clients idx: [18, 23, 29, 30, 36]
+2025-09-21 21:44:35,512 - Round number: 51 --------------------------
+2025-09-21 21:44:35,512 - Evaluate global model
+2025-09-21 21:44:36,364 - Averaged Train Loss: 0.1266
+2025-09-21 21:44:36,364 - Test Accurancy: 0.9592
+2025-09-21 21:44:38,806 - min_max_attack try_count: 19
+2025-09-21 21:44:38,806 - min_max_attack lamda: 0.8065319061279297, max_d: 7.816085338592529
+2025-09-21 21:44:39,706 - FLDetector detect mean clients idx: [18, 23, 29, 30, 36]
+2025-09-21 21:44:39,713 - Round number: 52 --------------------------
+2025-09-21 21:44:39,713 - Evaluate global model
+2025-09-21 21:44:40,550 - Averaged Train Loss: 0.1403
+2025-09-21 21:44:40,551 - Test Accurancy: 0.9560
+2025-09-21 21:44:42,980 - min_max_attack try_count: 19
+2025-09-21 21:44:42,981 - min_max_attack lamda: 0.6212329864501953, max_d: 7.361945152282715
+2025-09-21 21:44:43,895 - FLDetector detect mean clients idx: [18, 23, 29, 30, 33, 36]
+2025-09-21 21:44:43,906 - Round number: 53 --------------------------
+2025-09-21 21:44:43,906 - Evaluate global model
+2025-09-21 21:44:45,110 - Averaged Train Loss: 0.1277
+2025-09-21 21:44:45,110 - Test Accurancy: 0.9591
+2025-09-21 21:44:47,480 - min_max_attack try_count: 19
+2025-09-21 21:44:47,481 - min_max_attack lamda: 0.7102298736572266, max_d: 7.786728858947754
+2025-09-21 21:44:49,680 - FLDetector detect mean clients idx: [18, 23, 29, 30, 33, 36]
+2025-09-21 21:44:49,686 - Round number: 54 --------------------------
+2025-09-21 21:44:49,686 - Evaluate global model
+2025-09-21 21:44:50,574 - Averaged Train Loss: 0.1285
+2025-09-21 21:44:50,574 - Test Accurancy: 0.9589
+2025-09-21 21:44:52,929 - min_max_attack try_count: 19
+2025-09-21 21:44:52,932 - min_max_attack lamda: 0.6516170501708984, max_d: 9.636884689331055
+2025-09-21 21:44:54,024 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:44:54,069 - Round number: 55 --------------------------
+2025-09-21 21:44:54,070 - Evaluate global model
+2025-09-21 21:44:55,633 - Averaged Train Loss: 0.1258
+2025-09-21 21:44:55,633 - Test Accurancy: 0.9602
+2025-09-21 21:44:58,929 - min_max_attack try_count: 19
+2025-09-21 21:44:58,930 - min_max_attack lamda: 0.8550357818603516, max_d: 10.516799926757812
+2025-09-21 21:45:02,770 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:45:02,776 - Round number: 56 --------------------------
+2025-09-21 21:45:02,776 - Evaluate global model
+2025-09-21 21:45:03,684 - Averaged Train Loss: 0.1445
+2025-09-21 21:45:03,684 - Test Accurancy: 0.9548
+2025-09-21 21:45:06,074 - min_max_attack try_count: 19
+2025-09-21 21:45:06,075 - min_max_attack lamda: 1.0411548614501953, max_d: 9.969818115234375
+2025-09-21 21:45:07,180 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:45:07,188 - Round number: 57 --------------------------
+2025-09-21 21:45:07,188 - Evaluate global model
+2025-09-21 21:45:08,326 - Averaged Train Loss: 0.2264
+2025-09-21 21:45:08,326 - Test Accurancy: 0.9298
+2025-09-21 21:45:11,226 - min_max_attack try_count: 19
+2025-09-21 21:45:11,226 - min_max_attack lamda: 0.8642482757568359, max_d: 8.902878761291504
+2025-09-21 21:45:14,853 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36, 38]
+2025-09-21 21:45:14,888 - Round number: 58 --------------------------
+2025-09-21 21:45:14,888 - Evaluate global model
+2025-09-21 21:45:15,751 - Averaged Train Loss: 0.1453
+2025-09-21 21:45:15,751 - Test Accurancy: 0.9533
+2025-09-21 21:45:18,232 - min_max_attack try_count: 19
+2025-09-21 21:45:18,234 - min_max_attack lamda: 0.5938243865966797, max_d: 6.897095203399658
+2025-09-21 21:45:19,222 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36, 38]
+2025-09-21 21:45:19,229 - Round number: 59 --------------------------
+2025-09-21 21:45:19,229 - Evaluate global model
+2025-09-21 21:45:20,229 - Averaged Train Loss: 0.1308
+2025-09-21 21:45:20,229 - Test Accurancy: 0.9585
+2025-09-21 21:45:22,842 - min_max_attack try_count: 19
+2025-09-21 21:45:22,843 - min_max_attack lamda: 0.7015323638916016, max_d: 13.798815727233887
+2025-09-21 21:45:25,518 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:45:25,546 - Round number: 60 --------------------------
+2025-09-21 21:45:25,547 - Evaluate global model
+2025-09-21 21:45:26,408 - Averaged Train Loss: 0.1255
+2025-09-21 21:45:26,408 - Test Accurancy: 0.9597
+2025-09-21 21:45:28,884 - min_max_attack try_count: 19
+2025-09-21 21:45:28,886 - min_max_attack lamda: 0.6066799163818359, max_d: 8.123737335205078
+2025-09-21 21:45:29,977 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:45:29,987 - Round number: 61 --------------------------
+2025-09-21 21:45:29,987 - Evaluate global model
+2025-09-21 21:45:30,950 - Averaged Train Loss: 0.1249
+2025-09-21 21:45:30,951 - Test Accurancy: 0.9604
+2025-09-21 21:45:33,503 - min_max_attack try_count: 19
+2025-09-21 21:45:33,504 - min_max_attack lamda: 0.7582950592041016, max_d: 7.261801242828369
+2025-09-21 21:45:34,725 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:45:34,738 - Round number: 62 --------------------------
+2025-09-21 21:45:34,739 - Evaluate global model
+2025-09-21 21:45:35,765 - Averaged Train Loss: 0.1230
+2025-09-21 21:45:35,766 - Test Accurancy: 0.9615
+2025-09-21 21:45:38,075 - min_max_attack try_count: 19
+2025-09-21 21:45:38,075 - min_max_attack lamda: 0.8575725555419922, max_d: 9.395355224609375
+2025-09-21 21:45:40,823 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:45:40,859 - Round number: 63 --------------------------
+2025-09-21 21:45:40,859 - Evaluate global model
+2025-09-21 21:45:41,749 - Averaged Train Loss: 0.1174
+2025-09-21 21:45:41,749 - Test Accurancy: 0.9626
+2025-09-21 21:45:44,642 - min_max_attack try_count: 19
+2025-09-21 21:45:44,643 - min_max_attack lamda: 0.8772563934326172, max_d: 11.031905174255371
+2025-09-21 21:45:47,070 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:45:47,115 - Round number: 64 --------------------------
+2025-09-21 21:45:47,115 - Evaluate global model
+2025-09-21 21:45:48,091 - Averaged Train Loss: 0.1275
+2025-09-21 21:45:48,091 - Test Accurancy: 0.9588
+2025-09-21 21:45:50,458 - min_max_attack try_count: 19
+2025-09-21 21:45:50,458 - min_max_attack lamda: 0.6393527984619141, max_d: 7.7798991203308105
+2025-09-21 21:45:51,443 - FLDetector detect mean clients idx: [18, 22, 23, 27, 29, 30, 33, 36]
+2025-09-21 21:45:51,452 - Round number: 65 --------------------------
+2025-09-21 21:45:51,452 - Evaluate global model
+2025-09-21 21:45:52,291 - Averaged Train Loss: 0.1201
+2025-09-21 21:45:52,292 - Test Accurancy: 0.9615
+2025-09-21 21:45:54,839 - min_max_attack try_count: 19
+2025-09-21 21:45:54,840 - min_max_attack lamda: 0.7321071624755859, max_d: 8.58362102508545
+2025-09-21 21:45:55,745 - FLDetector detect mean clients idx: [18, 22, 23, 27, 29, 30, 33, 36]
+2025-09-21 21:45:55,751 - Round number: 66 --------------------------
+2025-09-21 21:45:55,751 - Evaluate global model
+2025-09-21 21:45:56,940 - Averaged Train Loss: 0.1174
+2025-09-21 21:45:56,940 - Test Accurancy: 0.9629
+2025-09-21 21:45:59,407 - min_max_attack try_count: 19
+2025-09-21 21:45:59,407 - min_max_attack lamda: 0.7382488250732422, max_d: 7.153561115264893
+2025-09-21 21:46:00,902 - FLDetector detect mean clients idx: [18, 23, 29, 30, 33, 36]
+2025-09-21 21:46:00,908 - Round number: 67 --------------------------
+2025-09-21 21:46:00,908 - Evaluate global model
+2025-09-21 21:46:01,743 - Averaged Train Loss: 0.1038
+2025-09-21 21:46:01,743 - Test Accurancy: 0.9663
+2025-09-21 21:46:04,114 - min_max_attack try_count: 19
+2025-09-21 21:46:04,115 - min_max_attack lamda: 0.6945133209228516, max_d: 9.692869186401367
+2025-09-21 21:46:05,098 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:46:05,104 - Round number: 68 --------------------------
+2025-09-21 21:46:05,104 - Evaluate global model
+2025-09-21 21:46:06,030 - Averaged Train Loss: 0.1119
+2025-09-21 21:46:06,031 - Test Accurancy: 0.9638
+2025-09-21 21:46:08,556 - min_max_attack try_count: 19
+2025-09-21 21:46:08,556 - min_max_attack lamda: 0.7359981536865234, max_d: 7.182807922363281
+2025-09-21 21:46:09,502 - FLDetector detect mean clients idx: [18, 23, 29, 30, 33, 36]
+2025-09-21 21:46:09,508 - Round number: 69 --------------------------
+2025-09-21 21:46:09,509 - Evaluate global model
+2025-09-21 21:46:10,505 - Averaged Train Loss: 0.1068
+2025-09-21 21:46:10,505 - Test Accurancy: 0.9655
+2025-09-21 21:46:12,883 - min_max_attack try_count: 19
+2025-09-21 21:46:12,884 - min_max_attack lamda: 0.6158351898193359, max_d: 6.728827953338623
+2025-09-21 21:46:13,915 - FLDetector detect mean clients idx: [18, 23, 29, 30, 33, 36]
+2025-09-21 21:46:13,922 - Round number: 70 --------------------------
+2025-09-21 21:46:13,922 - Evaluate global model
+2025-09-21 21:46:14,826 - Averaged Train Loss: 0.1105
+2025-09-21 21:46:14,826 - Test Accurancy: 0.9642
+2025-09-21 21:46:17,242 - min_max_attack try_count: 19
+2025-09-21 21:46:17,242 - min_max_attack lamda: 0.6007289886474609, max_d: 7.2457146644592285
+2025-09-21 21:46:18,140 - FLDetector detect mean clients idx: [18, 23, 29, 30, 33, 36]
+2025-09-21 21:46:18,146 - Round number: 71 --------------------------
+2025-09-21 21:46:18,146 - Evaluate global model
+2025-09-21 21:46:19,181 - Averaged Train Loss: 0.1118
+2025-09-21 21:46:19,181 - Test Accurancy: 0.9636
+2025-09-21 21:46:21,904 - min_max_attack try_count: 19
+2025-09-21 21:46:21,904 - min_max_attack lamda: 0.5093860626220703, max_d: 4.505496978759766
+2025-09-21 21:46:22,851 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:46:22,860 - Round number: 72 --------------------------
+2025-09-21 21:46:22,860 - Evaluate global model
+2025-09-21 21:46:23,793 - Averaged Train Loss: 0.1074
+2025-09-21 21:46:23,793 - Test Accurancy: 0.9657
+2025-09-21 21:46:26,197 - min_max_attack try_count: 19
+2025-09-21 21:46:26,197 - min_max_attack lamda: 0.8248996734619141, max_d: 6.119302749633789
+2025-09-21 21:46:27,272 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:46:27,278 - Round number: 73 --------------------------
+2025-09-21 21:46:27,278 - Evaluate global model
+2025-09-21 21:46:28,120 - Averaged Train Loss: 0.0934
+2025-09-21 21:46:28,121 - Test Accurancy: 0.9692
+2025-09-21 21:46:30,669 - min_max_attack try_count: 19
+2025-09-21 21:46:30,669 - min_max_attack lamda: 0.7172107696533203, max_d: 8.868280410766602
+2025-09-21 21:46:31,586 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:46:31,599 - Round number: 74 --------------------------
+2025-09-21 21:46:31,599 - Evaluate global model
+2025-09-21 21:46:32,938 - Averaged Train Loss: 0.1103
+2025-09-21 21:46:32,938 - Test Accurancy: 0.9655
+2025-09-21 21:46:35,017 - min_max_attack try_count: 19
+2025-09-21 21:46:35,017 - min_max_attack lamda: 0.6120967864990234, max_d: 6.979294776916504
+2025-09-21 21:46:36,734 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:46:36,746 - Round number: 75 --------------------------
+2025-09-21 21:46:36,746 - Evaluate global model
+2025-09-21 21:46:37,429 - Averaged Train Loss: 0.1096
+2025-09-21 21:46:37,430 - Test Accurancy: 0.9649
+2025-09-21 21:46:39,509 - min_max_attack try_count: 19
+2025-09-21 21:46:39,510 - min_max_attack lamda: 0.5637645721435547, max_d: 6.58778715133667
+2025-09-21 21:46:40,517 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:46:40,523 - Round number: 76 --------------------------
+2025-09-21 21:46:40,523 - Evaluate global model
+2025-09-21 21:46:41,268 - Averaged Train Loss: 0.1092
+2025-09-21 21:46:41,268 - Test Accurancy: 0.9650
+2025-09-21 21:46:43,446 - min_max_attack try_count: 19
+2025-09-21 21:46:43,447 - min_max_attack lamda: 0.6435871124267578, max_d: 6.570843696594238
+2025-09-21 21:46:44,438 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:46:44,445 - Round number: 77 --------------------------
+2025-09-21 21:46:44,445 - Evaluate global model
+2025-09-21 21:46:45,231 - Averaged Train Loss: 0.1069
+2025-09-21 21:46:45,231 - Test Accurancy: 0.9649
+2025-09-21 21:46:47,306 - min_max_attack try_count: 19
+2025-09-21 21:46:47,306 - min_max_attack lamda: 0.5883312225341797, max_d: 4.965030193328857
+2025-09-21 21:46:48,514 - FLDetector detect mean clients idx: [18, 20, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:46:48,522 - Round number: 78 --------------------------
+2025-09-21 21:46:48,522 - Evaluate global model
+2025-09-21 21:46:49,335 - Averaged Train Loss: 0.1093
+2025-09-21 21:46:49,335 - Test Accurancy: 0.9649
+2025-09-21 21:46:51,403 - min_max_attack try_count: 19
+2025-09-21 21:46:51,403 - min_max_attack lamda: 0.5623149871826172, max_d: 5.207455635070801
+2025-09-21 21:46:52,349 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:46:52,354 - Round number: 79 --------------------------
+2025-09-21 21:46:52,355 - Evaluate global model
+2025-09-21 21:46:53,072 - Averaged Train Loss: 0.1084
+2025-09-21 21:46:53,072 - Test Accurancy: 0.9646
+2025-09-21 21:46:55,140 - min_max_attack try_count: 19
+2025-09-21 21:46:55,140 - min_max_attack lamda: 0.5293369293212891, max_d: 5.489907741546631
+2025-09-21 21:46:56,049 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:46:56,055 - Round number: 80 --------------------------
+2025-09-21 21:46:56,055 - Evaluate global model
+2025-09-21 21:46:56,761 - Averaged Train Loss: 0.1082
+2025-09-21 21:46:56,762 - Test Accurancy: 0.9648
+2025-09-21 21:46:58,826 - min_max_attack try_count: 19
+2025-09-21 21:46:58,826 - min_max_attack lamda: 0.6643390655517578, max_d: 3.8739233016967773
+2025-09-21 21:46:59,800 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:46:59,826 - Round number: 81 --------------------------
+2025-09-21 21:46:59,826 - Evaluate global model
+2025-09-21 21:47:00,894 - Averaged Train Loss: 0.1056
+2025-09-21 21:47:00,894 - Test Accurancy: 0.9661
+2025-09-21 21:47:03,068 - min_max_attack try_count: 19
+2025-09-21 21:47:03,069 - min_max_attack lamda: 0.6267070770263672, max_d: 6.114051342010498
+2025-09-21 21:47:04,019 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:47:04,026 - Round number: 82 --------------------------
+2025-09-21 21:47:04,026 - Evaluate global model
+2025-09-21 21:47:04,759 - Averaged Train Loss: 0.1024
+2025-09-21 21:47:04,759 - Test Accurancy: 0.9672
+2025-09-21 21:47:06,836 - min_max_attack try_count: 19
+2025-09-21 21:47:06,837 - min_max_attack lamda: 0.5846691131591797, max_d: 5.634588241577148
+2025-09-21 21:47:07,849 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:47:07,856 - Round number: 83 --------------------------
+2025-09-21 21:47:07,856 - Evaluate global model
+2025-09-21 21:47:08,366 - Averaged Train Loss: 0.1023
+2025-09-21 21:47:08,366 - Test Accurancy: 0.9668
+2025-09-21 21:47:10,320 - min_max_attack try_count: 19
+2025-09-21 21:47:10,320 - min_max_attack lamda: 0.5308628082275391, max_d: 5.405702590942383
+2025-09-21 21:47:11,314 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:47:11,321 - Round number: 84 --------------------------
+2025-09-21 21:47:11,321 - Evaluate global model
+2025-09-21 21:47:11,842 - Averaged Train Loss: 0.1038
+2025-09-21 21:47:11,842 - Test Accurancy: 0.9665
+2025-09-21 21:47:13,773 - min_max_attack try_count: 19
+2025-09-21 21:47:13,774 - min_max_attack lamda: 0.6079578399658203, max_d: 5.321442127227783
+2025-09-21 21:47:14,842 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:47:14,848 - Round number: 85 --------------------------
+2025-09-21 21:47:14,848 - Evaluate global model
+2025-09-21 21:47:15,416 - Averaged Train Loss: 0.1174
+2025-09-21 21:47:15,416 - Test Accurancy: 0.9623
+2025-09-21 21:47:17,412 - min_max_attack try_count: 19
+2025-09-21 21:47:17,412 - min_max_attack lamda: 0.5180835723876953, max_d: 6.19235897064209
+2025-09-21 21:47:18,502 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:47:18,509 - Round number: 86 --------------------------
+2025-09-21 21:47:18,509 - Evaluate global model
+2025-09-21 21:47:19,127 - Averaged Train Loss: 0.1121
+2025-09-21 21:47:19,127 - Test Accurancy: 0.9642
+2025-09-21 21:47:21,075 - min_max_attack try_count: 19
+2025-09-21 21:47:21,076 - min_max_attack lamda: 0.5561923980712891, max_d: 5.388794898986816
+2025-09-21 21:47:22,039 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:47:22,044 - Round number: 87 --------------------------
+2025-09-21 21:47:22,045 - Evaluate global model
+2025-09-21 21:47:22,580 - Averaged Train Loss: 0.1077
+2025-09-21 21:47:22,581 - Test Accurancy: 0.9653
+2025-09-21 21:47:24,529 - min_max_attack try_count: 19
+2025-09-21 21:47:24,529 - min_max_attack lamda: 0.5614185333251953, max_d: 4.245532989501953
+2025-09-21 21:47:25,415 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:47:25,421 - Round number: 88 --------------------------
+2025-09-21 21:47:25,421 - Evaluate global model
+2025-09-21 21:47:25,956 - Averaged Train Loss: 0.1069
+2025-09-21 21:47:25,956 - Test Accurancy: 0.9660
+2025-09-21 21:47:27,892 - min_max_attack try_count: 19
+2025-09-21 21:47:27,892 - min_max_attack lamda: 0.5082416534423828, max_d: 5.05095911026001
+2025-09-21 21:47:28,800 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:47:28,806 - Round number: 89 --------------------------
+2025-09-21 21:47:28,806 - Evaluate global model
+2025-09-21 21:47:29,316 - Averaged Train Loss: 0.1037
+2025-09-21 21:47:29,316 - Test Accurancy: 0.9665
+2025-09-21 21:47:31,241 - min_max_attack try_count: 19
+2025-09-21 21:47:31,241 - min_max_attack lamda: 0.5105304718017578, max_d: 4.064241886138916
+2025-09-21 21:47:32,153 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 36]
+2025-09-21 21:47:32,159 - Round number: 90 --------------------------
+2025-09-21 21:47:32,159 - Evaluate global model
+2025-09-21 21:47:32,699 - Averaged Train Loss: 0.1037
+2025-09-21 21:47:32,699 - Test Accurancy: 0.9664
+2025-09-21 21:47:34,676 - min_max_attack try_count: 19
+2025-09-21 21:47:34,676 - min_max_attack lamda: 0.4929065704345703, max_d: 3.3204004764556885
+2025-09-21 21:47:35,587 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 36]
+2025-09-21 21:47:35,594 - Round number: 91 --------------------------
+2025-09-21 21:47:35,595 - Evaluate global model
+2025-09-21 21:47:36,257 - Averaged Train Loss: 0.1079
+2025-09-21 21:47:36,257 - Test Accurancy: 0.9651
+2025-09-21 21:47:38,157 - min_max_attack try_count: 19
+2025-09-21 21:47:38,158 - min_max_attack lamda: 0.4559040069580078, max_d: 3.843787431716919
+2025-09-21 21:47:39,121 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:47:39,128 - Round number: 92 --------------------------
+2025-09-21 21:47:39,128 - Evaluate global model
+2025-09-21 21:47:39,655 - Averaged Train Loss: 0.1076
+2025-09-21 21:47:39,655 - Test Accurancy: 0.9652
+2025-09-21 21:47:41,554 - min_max_attack try_count: 19
+2025-09-21 21:47:41,554 - min_max_attack lamda: 0.41045188903808594, max_d: 4.293970584869385
+2025-09-21 21:47:42,526 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:47:42,533 - Round number: 93 --------------------------
+2025-09-21 21:47:42,533 - Evaluate global model
+2025-09-21 21:47:43,043 - Averaged Train Loss: 0.1061
+2025-09-21 21:47:43,043 - Test Accurancy: 0.9660
+2025-09-21 21:47:44,983 - min_max_attack try_count: 19
+2025-09-21 21:47:44,983 - min_max_attack lamda: 0.47202110290527344, max_d: 4.388396739959717
+2025-09-21 21:47:45,874 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 33, 36]
+2025-09-21 21:47:45,879 - Round number: 94 --------------------------
+2025-09-21 21:47:45,879 - Evaluate global model
+2025-09-21 21:47:46,394 - Averaged Train Loss: 0.1036
+2025-09-21 21:47:46,394 - Test Accurancy: 0.9667
+2025-09-21 21:47:48,296 - min_max_attack try_count: 19
+2025-09-21 21:47:48,296 - min_max_attack lamda: 0.3854656219482422, max_d: 3.9547922611236572
+2025-09-21 21:47:49,227 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 36]
+2025-09-21 21:47:49,233 - Round number: 95 --------------------------
+2025-09-21 21:47:49,233 - Evaluate global model
+2025-09-21 21:47:49,757 - Averaged Train Loss: 0.1001
+2025-09-21 21:47:49,757 - Test Accurancy: 0.9676
+2025-09-21 21:47:51,713 - min_max_attack try_count: 19
+2025-09-21 21:47:51,713 - min_max_attack lamda: 0.41144371032714844, max_d: 3.4521477222442627
+2025-09-21 21:47:52,565 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 36]
+2025-09-21 21:47:52,571 - Round number: 96 --------------------------
+2025-09-21 21:47:52,571 - Evaluate global model
+2025-09-21 21:47:53,078 - Averaged Train Loss: 0.1002
+2025-09-21 21:47:53,078 - Test Accurancy: 0.9673
+2025-09-21 21:47:55,076 - min_max_attack try_count: 19
+2025-09-21 21:47:55,077 - min_max_attack lamda: 0.37858009338378906, max_d: 3.1892008781433105
+2025-09-21 21:47:55,973 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 36]
+2025-09-21 21:47:55,981 - Round number: 97 --------------------------
+2025-09-21 21:47:55,981 - Evaluate global model
+2025-09-21 21:47:56,647 - Averaged Train Loss: 0.0999
+2025-09-21 21:47:56,647 - Test Accurancy: 0.9674
+2025-09-21 21:47:58,591 - min_max_attack try_count: 19
+2025-09-21 21:47:58,591 - min_max_attack lamda: 0.43198585510253906, max_d: 3.7015769481658936
+2025-09-21 21:47:59,470 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 36]
+2025-09-21 21:47:59,476 - Round number: 98 --------------------------
+2025-09-21 21:47:59,476 - Evaluate global model
+2025-09-21 21:48:00,001 - Averaged Train Loss: 0.1005
+2025-09-21 21:48:00,001 - Test Accurancy: 0.9677
+2025-09-21 21:48:01,898 - min_max_attack try_count: 19
+2025-09-21 21:48:01,899 - min_max_attack lamda: 0.3688335418701172, max_d: 2.9537811279296875
+2025-09-21 21:48:03,026 - FLDetector detect mean clients idx: [18, 22, 23, 29, 36]
+2025-09-21 21:48:03,033 - Round number: 99 --------------------------
+2025-09-21 21:48:03,033 - Evaluate global model
+2025-09-21 21:48:03,549 - Averaged Train Loss: 0.0995
+2025-09-21 21:48:03,550 - Test Accurancy: 0.9682
+2025-09-21 21:48:05,563 - min_max_attack try_count: 19
+2025-09-21 21:48:05,563 - min_max_attack lamda: 0.3558063507080078, max_d: 2.903264284133911
+2025-09-21 21:48:06,586 - FLDetector detect mean clients idx: [18, 22, 23, 29, 36]
+2025-09-21 21:48:06,597 - Round number: 100 --------------------------
+2025-09-21 21:48:06,597 - Evaluate global model
+2025-09-21 21:48:07,165 - Averaged Train Loss: 0.0971
+2025-09-21 21:48:07,165 - Test Accurancy: 0.9684
+2025-09-21 21:48:09,039 - min_max_attack try_count: 19
+2025-09-21 21:48:09,040 - min_max_attack lamda: 0.3651905059814453, max_d: 3.597537040710449
+2025-09-21 21:48:09,933 - FLDetector detect mean clients idx: [18, 22, 23, 29, 30, 36]
+2025-09-21 21:48:09,935 - Run over
+2025-09-21 21:48:09,935 - Saving results to ./exp/exp3/MNIST/FLDetector_min-max.h5
+2025-09-21 21:48:09,941 - Best accuracy: 0.969224620303757
+2025-09-21 21:48:09,941 - Average time cost per round: 4.942655670642853
