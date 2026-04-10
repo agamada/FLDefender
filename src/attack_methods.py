@@ -1,9 +1,10 @@
 import torch
 import copy
+import numpy as np
 import math
 import logging
-from scipy.stats import norm
-from src.defend_methods import krum, median, trimmed
+from scipy.stats import norm, binom
+from src.defend_methods import krum, median, trimmed, flame, multi_krum
 
 logger = logging.getLogger(__name__)
 
@@ -90,7 +91,9 @@ def LIE_attack(updates, weights, num_attackers, num_clients):
 
     # 3. calculate malicious update and model
     s = math.floor(num_clients / 2 + 1) - num_attackers
-    z = norm.ppf((num_clients - num_attackers - s) / (num_clients - num_attackers))
+    p = (num_clients - num_attackers - s) / (num_clients - num_attackers)
+    p = min(max(p, 1e-6), 1 - 1e-6)
+    z = norm.ppf(p)
     # print("z is", z)
 
     # 4. return the malicious update
@@ -116,7 +119,7 @@ def sign_flip_attack(updates, weights, num_attackers):
     
     return updates, weights
 
-def enhenced_sign_flip_attack(updates, weights, num_attackers):
+def enhanced_sign_flip_attack(updates, weights, num_attackers):
     """
     enhenced_sign_flip_attack first computes weighted average of controlled clients' updates,
     then flips the sign of this aggregate and uses it for all malicious clients.
@@ -163,7 +166,8 @@ def random_attack(updates, weights, num_attackers):
         
     return updates, weights
 
-def CAMP_attack(updates, weights, num_attacks, mode, filter, vector_s, lamda, pk='all'):
+def CAMP_attack(updates, weights, num_attacks, mode, filter, vector_s, lamda, pk='all',
+                uploaded_models=None, noise_level=0.0, m=None):
     """
     Implements the CAMP (Clipping and Perturbation) attack for federated learning.
     Args:
@@ -187,13 +191,17 @@ def CAMP_attack(updates, weights, num_attacks, mode, filter, vector_s, lamda, pk
     """
     # 1. calculate the global update
     if pk == 'all':
-        ideal_update = calculate_ideal_update(updates, filter, num_attacks)
+        ideal_update = calculate_ideal_update(updates, filter, num_attacks, weights=weights, 
+                                               uploaded_models=uploaded_models, noise_level=noise_level, m=m)
     elif pk == 'updates':
-        ideal_update = calculate_ideal_update(updates, 'avg', num_attacks)
+        ideal_update = calculate_ideal_update(updates, 'avg', num_attacks, weights=weights, 
+                                               uploaded_models=uploaded_models, noise_level=noise_level, m=m)
     elif pk == 'agr':
-        ideal_update = calculate_ideal_update(updates[:num_attacks], filter, num_attacks)
+        ideal_update = calculate_ideal_update(updates[:num_attacks], filter, num_attacks, weights=weights[:num_attacks], 
+                                               uploaded_models=uploaded_models, noise_level=noise_level, m=m)
     elif pk == 'none':
-        ideal_update = calculate_ideal_update(updates[:num_attacks], 'avg', num_attacks)
+        ideal_update = calculate_ideal_update(updates[:num_attacks], 'avg', num_attacks, weights=weights[:num_attacks], 
+                                               uploaded_models=uploaded_models, noise_level=noise_level, m=m)
     else:
         raise ValueError(f"Unknown prior knowledge type: {pk}")
     
@@ -212,17 +220,56 @@ def CAMP_attack(updates, weights, num_attacks, mode, filter, vector_s, lamda, pk
     else:
         raise ValueError(f"Unknown CAMP mode: {mode}")
     
-    # 3. update the malicious clients' updates
+    # 3. adaptive clipping by median norm
+    if pk in ['all', 'updates']:
+        ref_updates = updates
+    else:
+        ref_updates = updates[:num_attacks]
+    norms = [torch.norm(u, p=2).item() for u in ref_updates]
+    C = float(np.max(np.array(norms)))  if len(norms) > 0 else 0.0
+
+    if C > 0 :
+        malicious_update = malicious_update / torch.norm(malicious_update, p=2) * C
+    
+    # 4. update the malicious clients' updates
     for i in range(num_attacks):
-        updates[i] = malicious_update
+        jitter = torch.randn_like(malicious_update) * 0.01 * torch.norm(malicious_update)
+        updates[i] = (malicious_update + jitter).clone()
     
     return updates, weights
 
 
+def ideal_update_flame(uploaded_models, uploaded_updates, uploaded_weights=None, m=0, noise_level=0.0):
+    # 1) copy updates to avoid in-place side effects
+    tmp_updates = [u.clone() for u in uploaded_updates]
+    weights = None if uploaded_weights is None else list(uploaded_weights)
+
+    # 2) run your flame (clusters on model params + clips benign updates in-place)
+    benign_idx, C_t = flame(uploaded_models, tmp_updates, m)
+
+    # 3) FedAvg over benign
+    sel_updates = [tmp_updates[i] for i in benign_idx]
+    if weights is None:
+        ideal = torch.zeros_like(sel_updates[0])
+        for u in sel_updates:
+            ideal += u / len(sel_updates)
+    else:
+        sel_weights = [weights[i] for i in benign_idx]
+        total_w = float(sum(sel_weights))
+        ideal = torch.zeros_like(sel_updates[0])
+        for w, u in zip(sel_weights, sel_updates):
+            ideal += (float(w) / total_w) * u
+
+    # 4) optional noise (mimic roles.py: std = C_t * noise_level)
+    if noise_level is not None and noise_level > 0 and C_t > 0:
+        ideal = ideal + torch.normal(mean=0.0, std=float(C_t) * float(noise_level), size=ideal.size()).to(ideal.device)
+
+    return ideal, benign_idx, float(C_t)
 
 
 
-def calculate_ideal_update(updates, agregation_method, num_attackers):
+def calculate_ideal_update(updates, agregation_method, num_attackers,
+                           weights=None, uploaded_models=None, noise_level=0.0, m=None):
     """
     Calculate the ideal update based on the aggregation method.
     
@@ -233,17 +280,34 @@ def calculate_ideal_update(updates, agregation_method, num_attackers):
     Returns:
         torch.Tensor: The aggregated ideal update.
     """
-    if agregation_method == 'krum':
-        selected_id = krum(updates, num_attackers)
-        return updates[selected_id]
+    if agregation_method == 'multi-krum':
+        selected_indices = multi_krum(updates, num_attackers)
+        selected_updates = [updates[i] for i in selected_indices]
+        ideal_update = torch.zeros_like(selected_updates[0])
+        for update in selected_updates:
+            ideal_update += update / len(selected_updates)
+        return ideal_update
+        # ideal_update = torch.zeros_like(updates[0])
+        # for update in updates:
+        #     ideal_update += update / len(updates)
+        # return ideal_update
     elif agregation_method == 'median':
         return median(updates)
-    elif agregation_method == 'trimmed':
+    elif agregation_method == 'trmean':
         return trimmed(updates, ratio=0.2)
     elif agregation_method == 'avg':
         ideal_update = torch.zeros_like(updates[0])
         for update in updates:
             ideal_update += update / len(updates)
+        return ideal_update
+    elif agregation_method == 'flame':
+        ideal_update, _, _ = ideal_update_flame(
+            uploaded_models=uploaded_models,
+            uploaded_updates=updates,
+            uploaded_weights=weights,
+            m=m,
+            noise_level=noise_level
+        )
         return ideal_update
     else:
         raise ValueError(f"Unknown aggregation method: {agregation_method}")
@@ -253,3 +317,162 @@ def scale_attack(updates, num_attackers, scale):
     for i in range(num_attackers):
         updates[i] = updates[i] * scale
     return updates
+
+
+def init_MPAF_model(global_model):
+    MPAF_model = copy.deepcopy(global_model)
+    for param in MPAF_model.parameters():
+        torch.nn.init.normal_(param, mean=0.0, std=0.01)
+    return MPAF_model
+
+
+def _binom_k(d: int, q: float = 0.99, p: float = 0.5) -> int:
+    """
+    Binomial(d, p) quantile threshold used to judge sign-alignment feedback.
+    The official repo hard-codes k_99 for several d; here we generalize via binom.ppf. :contentReference[oaicite:5]{index=5}
+    """
+    d = int(d)
+    if d <= 0:
+        return 0
+    return int(binom.ppf(q, d, p))
+
+def _ensure_pm_one(vec: torch.Tensor) -> torch.Tensor:
+    """
+    Convert a tensor to +/-1 (no zeros). Zero entries are mapped to +1.
+    """
+    s = torch.sign(vec)
+    s[s == 0] = 1
+    return s
+
+
+def poisonedfl_attack(
+    updates,
+    weights,
+    num_attackers,
+    state: dict,
+    round_idx: int,
+    scaling_factor: float = 1e5,
+    adjust_period: int = 50,
+    # optional "feedback" signals for dynamic magnitude adjustment:
+    global_model_vec: torch.Tensor = None,
+    global_model_vec_prev_period: torch.Tensor = None,
+    # optional: server aggregated update/grad from last round
+    last_global_grad: torch.Tensor = None,
+    jitter_ratio: float = 0.0,
+    eps: float = 1e-9,
+):
+    """
+    PoisonedFL attack (PyTorch version) with:
+      1) multi-round consistency via a persistent direction (fixed_rand) and history
+      2) dynamic attack magnitude adjustment via sign-alignment feedback (optional)
+
+    Args:
+        updates: list[torch.Tensor], each is a flattened update vector (same shape)
+        weights: list[float]
+        num_attackers: int, number of malicious clients (assumed to be the first num_attackers)
+        state: dict, must be persisted across rounds. This function will read/write:
+            - state["fixed_rand"]: torch.Tensor in {+1,-1}^d
+            - state["history"]: torch.Tensor (malicious update history) or None
+            - state["sf"]: float, current scaling factor
+        round_idx: int, current FL round index (0-based or 1-based ok; only affects modulo)
+        scaling_factor: float, base magnitude (PoisonedFL uses large sf and adapts it) :contentReference[oaicite:6]{index=6}
+        adjust_period: int, how often to apply feedback adjustment (official code uses 50) :contentReference[oaicite:7]{index=7}
+        global_model_vec / global_model_vec_prev_period:
+            flattened model params at current round and (round_idx-adjust_period) round.
+            If provided, enable dynamic magnitude adjustment.
+        last_global_grad:
+            optional last-round aggregated update direction for scale shaping (like official "last_grad"). :contentReference[oaicite:8]{index=8}
+        jitter_ratio:
+            add tiny noise: jitter_ratio * ||mal_update|| * N(0,1). Default 0 for exact consistency.
+
+    Returns:
+        (updates, weights, state)
+    """
+    if num_attackers <= 0:
+        return updates, weights, state
+
+    device = updates[0].device
+    d = int(updates[0].numel())
+
+    # ---- init state ----
+    if state is None:
+        state = {}
+
+    if "fixed_rand" not in state:
+        # persistent sign pattern (multi-round consistency anchor)
+        fixed_rand = _ensure_pm_one(torch.randn(d, device=device))
+        state["fixed_rand"] = fixed_rand
+    else:
+        state["fixed_rand"] = state["fixed_rand"].to(device)
+
+    if "sf" not in state:
+        state["sf"] = float(scaling_factor)
+
+    fixed_rand = state["fixed_rand"]
+    sf = float(state["sf"])
+
+    # ---- dynamic magnitude adjustment (optional feedback) ----
+    # Official code checks every 50 rounds and may shrink sf by 0.7 under certain alignment conditions. :contentReference[oaicite:9]{index=9}
+    if (
+        adjust_period is not None
+        and adjust_period > 0
+        and (round_idx % adjust_period == 0)
+        and (global_model_vec is not None)
+        and (global_model_vec_prev_period is not None)
+    ):
+        total_update = global_model_vec.to(device) - global_model_vec_prev_period.to(device)
+        total_update = total_update.view(-1)
+        # avoid all-zero diff corner case
+        if torch.all(total_update == 0):
+            total_update = global_model_vec.to(device).view(-1)
+
+        current_sign = _ensure_pm_one(torch.sign(total_update))
+        aligned_dim_cnt = int((current_sign == fixed_rand).sum().item())
+
+        k_99 = _binom_k(d, q=0.99, p=0.5)
+        if aligned_dim_cnt < k_99 and sf * 0.7 >= 0.5:
+            sf = sf * 0.7
+
+        logger.info(f"[PoisonedFL] round={round_idx} aligned={aligned_dim_cnt}/{d}, k_99={k_99}, sf={sf:.6g}")
+
+    # ---- multi-round consistency core ----
+    history = state.get("history", None)
+
+    if history is None:
+        # "Start from round 2" in official code; here we bootstrap history from current malicious mean. :contentReference[oaicite:10]{index=10}
+        mal_seed = torch.mean(torch.stack(updates[:num_attackers]), dim=0).detach()
+        if torch.norm(mal_seed) < eps:
+            mal_seed = torch.mean(torch.stack(updates), dim=0).detach()
+        history = mal_seed.view(-1).clone()
+
+    history = history.view(-1).detach()
+    history_norm = torch.norm(history) + eps
+
+    # official code shapes per-dim scale using last_grad; if missing, fall back to |history| shaping. :contentReference[oaicite:11]{index=11}
+    if last_global_grad is not None:
+        last_g = last_global_grad.view(-1).to(device).detach()
+        last_g_norm = torch.norm(last_g) + eps
+        # scale_i = || history_i - last_g_i * ||history||/||last_g|| || (since it's 1-dim per entry)
+        scale = torch.abs(history - last_g * (history_norm / last_g_norm))
+    else:
+        scale = torch.abs(history)
+
+    # deviation = scale * fixed_rand / ||scale||
+    scale_norm = torch.norm(scale) + eps
+    deviation = (scale * fixed_rand) / scale_norm
+
+    lam = sf * float(history_norm.item())
+    malicious_update = (lam * deviation).view_as(updates[0])
+
+    if jitter_ratio is not None and jitter_ratio > 0:
+        malicious_update = malicious_update + torch.randn_like(malicious_update) * (jitter_ratio * torch.norm(malicious_update))
+
+    # inject
+    for i in range(num_attackers):
+        updates[i] = malicious_update.clone()
+
+    # update history for next round (keep it aligned across rounds)
+    state["history"] = malicious_update.view(-1).detach().clone()
+    state["sf"] = float(sf)
+
+    return updates, weights, state

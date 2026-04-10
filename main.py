@@ -32,6 +32,13 @@ if __name__ == '__main__':
     elif args.exp == 3:
         args.sp = f'./exp/exp3/{args.dataset}'
         args.sn = f'{args.filter}_{args.mp}'
+    elif args.exp == 4:
+        if args.mp == 'CAMP':
+            args.sp = f'./exp/exp4/{args.dataset}'
+            args.sn = f'{args.filter}_{args.mp}_{args.CAMP_mode}'
+        else:
+            args.sp = f'./exp/exp4/{args.dataset}'
+            args.sn = f'{args.filter}_{args.mp}'
     else:
         args.sp = f'./exp/exp{args.exp}/{args.dataset}'
         args.sn = f'{args.mp}_{args.filter}_{args.m}'

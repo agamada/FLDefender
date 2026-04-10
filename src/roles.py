@@ -13,7 +13,7 @@ from pathlib import Path
 
 from src.model import init_cnn
 from src.utils import read_client_data
-from src.attack_methods import min_max_attack, LIE_attack, sign_flip_attack, random_attack, CAMP_attack, scale_attack
+from src.attack_methods import min_max_attack, LIE_attack, sign_flip_attack, random_attack, CAMP_attack, scale_attack, init_MPAF_model, poisonedfl_attack
 from src.defend_methods import krum, median, trimmed, multi_krum, selective_mean, dpd, lbfgs_torch, fld_distance, detection, detection1, flame
 
 logger = logging.getLogger('client')
@@ -45,6 +45,7 @@ class Server(object):
         self.vector_s = None # for CAMP attack
         self.dpd_mode = args.dpd_mode
         self.noise_level = args.noise_level
+        self.MPAF_model = None
 
         self.test_data = None
         self.loss = nn.CrossEntropyLoss()
@@ -65,6 +66,8 @@ class Server(object):
         self.weight = None
         self.last_weight = None
         self.malicious_score = torch.zeros((1, self.k))
+        self.poisonedfl_state = {}
+        self._round_idx = 0
 
         self.C_t = 0 # clipping value
 
@@ -82,6 +85,9 @@ class Server(object):
 
     def init_model(self):
         self.global_model.apply(init_cnn)
+        if self.mp == 'MPAF':
+            self.MPAF_model = init_MPAF_model(self.global_model)
+            logger.info("Initialized MPAF model") 
 
     def send_model(self):
         for client in self.clients:
@@ -159,7 +165,7 @@ class Server(object):
             )
         elif self.mp == 'LIE':
             self.uploaded_updates, self.uploaded_weights = LIE_attack(
-                self.uploaded_updates, self.uploaded_weights, self.m, self.nc
+                self.uploaded_updates, self.uploaded_weights, self.m, self.k
             )
         elif self.mp == 'sign_flip':
             self.uploaded_updates, self.uploaded_weights = sign_flip_attack(
@@ -176,13 +182,41 @@ class Server(object):
                 self.vector_s[self.vector_s == 0] = 1 # to avoid zero vectors
             self.uploaded_updates, self.uploaded_weights = CAMP_attack(
                 self.uploaded_updates, self.uploaded_weights, self.m, 
-                self.args.CAMP_mode, self.filter, self.vector_s, self.args.lamda, self.args.pk
+                self.args.CAMP_mode, self.filter, self.vector_s, self.args.lamda, self.args.pk,
+                self.uploaded_models, self.noise_level, self.m
+            )
+        elif self.mp == 'PoisonedFL':
+            self.uploaded_updates, self.uploaded_weights, self.poisonedfl_state = poisonedfl_attack(
+                updates=self.uploaded_updates,
+                weights=self.uploaded_weights,
+                num_attackers=self.m,
+                state=self.poisonedfl_state,
+                round_idx=self._round_idx,
+                scaling_factor=1e5,     # 你也可以做成 args
+                adjust_period=50,       # 同上
+                global_model_vec=None,
+                global_model_vec_prev_period=None,
+                last_global_grad=None,
+                jitter_ratio=0.0
             )
         elif self.mp == 'scale':
             self.uploaded_updates = scale_attack(self.uploaded_updates, self.m, self.s)
 
     def filter_update(self, epoch):
-        if self.filter == 'krum':
+        if self.filter == 'avg':
+            pass
+            # update_norms = [torch.norm(update) for update in self.uploaded_updates]
+            # median_norm = torch.median(torch.stack(update_norms))
+            # clipped_updates = []
+            # for update in self.uploaded_updates:
+            #     current_norm = torch.norm(update)
+            #     if current_norm > median_norm:
+            #         clipped_update = update * (median_norm / current_norm)
+            #         clipped_updates.append(clipped_update)
+            #     else:
+            #         clipped_updates.append(update)
+            # self.uploaded_updates = clipped_updates
+        elif self.filter == 'krum':
             selected_id = krum(self.uploaded_updates, self.m)
             self.uploaded_ids = [self.uploaded_ids[selected_id]]
             self.uploaded_updates = [self.uploaded_updates[selected_id]]
@@ -373,8 +407,15 @@ class Server(object):
             for client in self.selected_clients:
                 client.train()
             self.receive_model()
+
+            if self.mp == 'MPAF':
+                assert self.MPAF_model is not None
+                for j in range(self.m):
+                    self.uploaded_models[j] = self.MPAF_model
+
             self.model_to_update()
 
+            self._round_idx = i
             # poisoning 
             self.poisoning_attack()
 

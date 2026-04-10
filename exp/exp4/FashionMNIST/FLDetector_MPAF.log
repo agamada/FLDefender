@@ -1,0 +1,514 @@
+2025-12-18 00:04:40,484 - *****************EXP-4*****************
+2025-12-18 00:04:40,485 - Exp repeats: 1
+2025-12-18 00:04:40,485 - Communication Rounds: 100
+2025-12-18 00:04:40,485 - Clients: 40
+
+2025-12-18 00:04:40,485 - Attack method: MPAF
+2025-12-18 00:04:40,485 - Filtering rule: FLDetector
+2025-12-18 00:04:40,485 - Dataset: FashionMNIST
+2025-12-18 00:04:40,485 - Model: cnn
+2025-12-18 00:04:40,485 - Learning Rate: 0.02
+2025-12-18 00:04:40,485 - Batch Size: 64
+2025-12-18 00:04:40,485 - Device: cuda
+2025-12-18 00:04:40,485 - Device id: 0
+2025-12-18 00:04:40,485 - Adversaries: 8
+2025-12-18 00:04:40,485 - *****************EXP-4*****************
+2025-12-18 00:04:40,691 - Running time: 0th ==========================
+2025-12-18 00:04:40,697 - Initialized MPAF model
+2025-12-18 00:04:41,895 - Round number: 0 --------------------------
+2025-12-18 00:04:41,895 - Evaluate global model
+2025-12-18 00:04:43,194 - Averaged Train Loss: 2.3031
+2025-12-18 00:04:43,195 - Test Accurancy: 0.1321
+2025-12-18 00:04:47,270 - Round number: 1 --------------------------
+2025-12-18 00:04:47,276 - Evaluate global model
+2025-12-18 00:04:48,322 - Averaged Train Loss: 2.0513
+2025-12-18 00:04:48,322 - Test Accurancy: 0.4267
+2025-12-18 00:04:52,037 - Round number: 2 --------------------------
+2025-12-18 00:04:52,037 - Evaluate global model
+2025-12-18 00:04:53,075 - Averaged Train Loss: 1.7918
+2025-12-18 00:04:53,075 - Test Accurancy: 0.5453
+2025-12-18 00:04:56,749 - Round number: 3 --------------------------
+2025-12-18 00:04:56,750 - Evaluate global model
+2025-12-18 00:04:57,859 - Averaged Train Loss: 1.6480
+2025-12-18 00:04:57,859 - Test Accurancy: 0.5920
+2025-12-18 00:05:01,559 - Round number: 4 --------------------------
+2025-12-18 00:05:01,559 - Evaluate global model
+2025-12-18 00:05:02,700 - Averaged Train Loss: 1.5851
+2025-12-18 00:05:02,700 - Test Accurancy: 0.6119
+2025-12-18 00:05:06,373 - Round number: 5 --------------------------
+2025-12-18 00:05:06,373 - Evaluate global model
+2025-12-18 00:05:07,508 - Averaged Train Loss: 1.5550
+2025-12-18 00:05:07,508 - Test Accurancy: 0.6149
+2025-12-18 00:05:11,147 - Round number: 6 --------------------------
+2025-12-18 00:05:11,147 - Evaluate global model
+2025-12-18 00:05:12,283 - Averaged Train Loss: 1.5464
+2025-12-18 00:05:12,283 - Test Accurancy: 0.6152
+2025-12-18 00:05:15,931 - Round number: 7 --------------------------
+2025-12-18 00:05:15,931 - Evaluate global model
+2025-12-18 00:05:17,078 - Averaged Train Loss: 1.5434
+2025-12-18 00:05:17,078 - Test Accurancy: 0.6137
+2025-12-18 00:05:20,788 - Round number: 8 --------------------------
+2025-12-18 00:05:20,789 - Evaluate global model
+2025-12-18 00:05:21,838 - Averaged Train Loss: 1.5401
+2025-12-18 00:05:21,838 - Test Accurancy: 0.6111
+2025-12-18 00:05:25,564 - Round number: 9 --------------------------
+2025-12-18 00:05:25,564 - Evaluate global model
+2025-12-18 00:05:26,657 - Averaged Train Loss: 1.5390
+2025-12-18 00:05:26,657 - Test Accurancy: 0.6150
+2025-12-18 00:05:30,307 - Round number: 10 --------------------------
+2025-12-18 00:05:30,308 - Evaluate global model
+2025-12-18 00:05:31,431 - Averaged Train Loss: 1.5355
+2025-12-18 00:05:31,431 - Test Accurancy: 0.6202
+2025-12-18 00:05:35,053 - Round number: 11 --------------------------
+2025-12-18 00:05:35,054 - Evaluate global model
+2025-12-18 00:05:36,192 - Averaged Train Loss: 1.5339
+2025-12-18 00:05:36,192 - Test Accurancy: 0.6099
+2025-12-18 00:05:39,804 - Round number: 12 --------------------------
+2025-12-18 00:05:39,805 - Evaluate global model
+2025-12-18 00:05:40,953 - Averaged Train Loss: 1.5320
+2025-12-18 00:05:40,953 - Test Accurancy: 0.6026
+2025-12-18 00:06:00,558 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:06:00,586 - Round number: 13 --------------------------
+2025-12-18 00:06:00,586 - Evaluate global model
+2025-12-18 00:06:01,226 - Averaged Train Loss: 1.1586
+2025-12-18 00:06:01,226 - Test Accurancy: 0.6065
+2025-12-18 00:06:05,396 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:06:05,404 - Round number: 14 --------------------------
+2025-12-18 00:06:05,404 - Evaluate global model
+2025-12-18 00:06:06,862 - Averaged Train Loss: 0.9993
+2025-12-18 00:06:06,862 - Test Accurancy: 0.6342
+2025-12-18 00:06:23,384 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:06:23,391 - Round number: 15 --------------------------
+2025-12-18 00:06:23,391 - Evaluate global model
+2025-12-18 00:06:24,542 - Averaged Train Loss: 0.9291
+2025-12-18 00:06:24,543 - Test Accurancy: 0.6468
+2025-12-18 00:06:29,878 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:06:29,885 - Round number: 16 --------------------------
+2025-12-18 00:06:29,885 - Evaluate global model
+2025-12-18 00:06:30,851 - Averaged Train Loss: 0.8866
+2025-12-18 00:06:30,852 - Test Accurancy: 0.6576
+2025-12-18 00:06:48,009 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:06:48,020 - Round number: 17 --------------------------
+2025-12-18 00:06:48,020 - Evaluate global model
+2025-12-18 00:06:48,833 - Averaged Train Loss: 0.8508
+2025-12-18 00:06:48,833 - Test Accurancy: 0.6789
+2025-12-18 00:07:08,424 - FLDetector detect mean clients idx: []
+2025-12-18 00:07:08,451 - Round number: 18 --------------------------
+2025-12-18 00:07:08,451 - Evaluate global model
+2025-12-18 00:07:09,224 - Averaged Train Loss: 1.1050
+2025-12-18 00:07:09,224 - Test Accurancy: 0.6818
+2025-12-18 00:07:23,154 - FLDetector detect mean clients idx: []
+2025-12-18 00:07:23,162 - Round number: 19 --------------------------
+2025-12-18 00:07:23,167 - Evaluate global model
+2025-12-18 00:07:23,931 - Averaged Train Loss: 1.3081
+2025-12-18 00:07:23,931 - Test Accurancy: 0.6637
+2025-12-18 00:07:30,529 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 14, 23]
+2025-12-18 00:07:30,536 - Round number: 20 --------------------------
+2025-12-18 00:07:30,536 - Evaluate global model
+2025-12-18 00:07:31,358 - Averaged Train Loss: 1.0163
+2025-12-18 00:07:31,359 - Test Accurancy: 0.6373
+2025-12-18 00:07:49,553 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 14, 23, 26, 35]
+2025-12-18 00:07:49,564 - Round number: 21 --------------------------
+2025-12-18 00:07:49,565 - Evaluate global model
+2025-12-18 00:07:50,295 - Averaged Train Loss: 0.9049
+2025-12-18 00:07:50,295 - Test Accurancy: 0.6600
+2025-12-18 00:08:07,301 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:08:07,323 - Round number: 22 --------------------------
+2025-12-18 00:08:07,323 - Evaluate global model
+2025-12-18 00:08:08,122 - Averaged Train Loss: 0.8613
+2025-12-18 00:08:08,122 - Test Accurancy: 0.6763
+2025-12-18 00:08:26,263 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 26]
+2025-12-18 00:08:26,278 - Round number: 23 --------------------------
+2025-12-18 00:08:26,282 - Evaluate global model
+2025-12-18 00:08:27,131 - Averaged Train Loss: 0.8302
+2025-12-18 00:08:27,131 - Test Accurancy: 0.6873
+2025-12-18 00:08:31,086 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 14, 15, 23, 26]
+2025-12-18 00:08:31,094 - Round number: 24 --------------------------
+2025-12-18 00:08:31,094 - Evaluate global model
+2025-12-18 00:08:32,186 - Averaged Train Loss: 0.8155
+2025-12-18 00:08:32,187 - Test Accurancy: 0.6867
+2025-12-18 00:08:48,764 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 12, 14, 15, 18, 23, 26, 31]
+2025-12-18 00:08:48,778 - Round number: 25 --------------------------
+2025-12-18 00:08:48,779 - Evaluate global model
+2025-12-18 00:08:49,661 - Averaged Train Loss: 0.7979
+2025-12-18 00:08:49,661 - Test Accurancy: 0.6988
+2025-12-18 00:09:09,364 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 12, 14, 15, 18, 23, 26, 27, 31]
+2025-12-18 00:09:09,388 - Round number: 26 --------------------------
+2025-12-18 00:09:09,392 - Evaluate global model
+2025-12-18 00:09:10,561 - Averaged Train Loss: 0.7877
+2025-12-18 00:09:10,561 - Test Accurancy: 0.7071
+2025-12-18 00:09:24,014 - FLDetector detect mean clients idx: []
+2025-12-18 00:09:24,030 - Round number: 27 --------------------------
+2025-12-18 00:09:24,031 - Evaluate global model
+2025-12-18 00:09:24,641 - Averaged Train Loss: 1.0245
+2025-12-18 00:09:24,642 - Test Accurancy: 0.7094
+2025-12-18 00:09:30,262 - FLDetector detect mean clients idx: []
+2025-12-18 00:09:30,269 - Round number: 28 --------------------------
+2025-12-18 00:09:30,270 - Evaluate global model
+2025-12-18 00:09:31,415 - Averaged Train Loss: 1.2641
+2025-12-18 00:09:31,415 - Test Accurancy: 0.6798
+2025-12-18 00:09:35,615 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 15, 18, 23, 27, 31]
+2025-12-18 00:09:35,627 - Round number: 29 --------------------------
+2025-12-18 00:09:35,631 - Evaluate global model
+2025-12-18 00:09:36,678 - Averaged Train Loss: 0.9849
+2025-12-18 00:09:36,679 - Test Accurancy: 0.6682
+2025-12-18 00:09:51,641 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 15, 23, 27, 31]
+2025-12-18 00:09:51,671 - Round number: 30 --------------------------
+2025-12-18 00:09:51,671 - Evaluate global model
+2025-12-18 00:09:52,616 - Averaged Train Loss: 0.8944
+2025-12-18 00:09:52,617 - Test Accurancy: 0.6745
+2025-12-18 00:10:05,817 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 23]
+2025-12-18 00:10:05,833 - Round number: 31 --------------------------
+2025-12-18 00:10:05,833 - Evaluate global model
+2025-12-18 00:10:06,453 - Averaged Train Loss: 0.8391
+2025-12-18 00:10:06,454 - Test Accurancy: 0.6902
+2025-12-18 00:10:24,517 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 23]
+2025-12-18 00:10:24,534 - Round number: 32 --------------------------
+2025-12-18 00:10:24,534 - Evaluate global model
+2025-12-18 00:10:25,243 - Averaged Train Loss: 0.8211
+2025-12-18 00:10:25,243 - Test Accurancy: 0.6945
+2025-12-18 00:10:41,943 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 23]
+2025-12-18 00:10:41,965 - Round number: 33 --------------------------
+2025-12-18 00:10:41,970 - Evaluate global model
+2025-12-18 00:10:42,619 - Averaged Train Loss: 0.8043
+2025-12-18 00:10:42,620 - Test Accurancy: 0.6988
+2025-12-18 00:10:46,197 - FLDetector detect mean clients idx: []
+2025-12-18 00:10:46,203 - Round number: 34 --------------------------
+2025-12-18 00:10:46,203 - Evaluate global model
+2025-12-18 00:10:47,729 - Averaged Train Loss: 1.0528
+2025-12-18 00:10:47,729 - Test Accurancy: 0.7065
+2025-12-18 00:11:06,009 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 17, 23, 31]
+2025-12-18 00:11:06,025 - Round number: 35 --------------------------
+2025-12-18 00:11:06,035 - Evaluate global model
+2025-12-18 00:11:06,652 - Averaged Train Loss: 0.9182
+2025-12-18 00:11:06,652 - Test Accurancy: 0.6684
+2025-12-18 00:11:10,725 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 12, 14, 15, 17, 18, 22, 23, 26, 27, 30, 31]
+2025-12-18 00:11:10,733 - Round number: 36 --------------------------
+2025-12-18 00:11:10,733 - Evaluate global model
+2025-12-18 00:11:11,642 - Averaged Train Loss: 0.8412
+2025-12-18 00:11:11,642 - Test Accurancy: 0.6935
+2025-12-18 00:11:31,231 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 14, 15, 18, 23, 31]
+2025-12-18 00:11:31,239 - Round number: 37 --------------------------
+2025-12-18 00:11:31,239 - Evaluate global model
+2025-12-18 00:11:32,430 - Averaged Train Loss: 0.8078
+2025-12-18 00:11:32,430 - Test Accurancy: 0.6959
+2025-12-18 00:11:46,388 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 10, 14, 15, 18, 23, 31]
+2025-12-18 00:11:46,409 - Round number: 38 --------------------------
+2025-12-18 00:11:46,413 - Evaluate global model
+2025-12-18 00:11:47,090 - Averaged Train Loss: 0.8018
+2025-12-18 00:11:47,090 - Test Accurancy: 0.6924
+2025-12-18 00:12:06,201 - FLDetector detect mean clients idx: []
+2025-12-18 00:12:06,219 - Round number: 39 --------------------------
+2025-12-18 00:12:06,223 - Evaluate global model
+2025-12-18 00:12:06,930 - Averaged Train Loss: 1.0517
+2025-12-18 00:12:06,931 - Test Accurancy: 0.7073
+2025-12-18 00:12:17,331 - FLDetector detect mean clients idx: []
+2025-12-18 00:12:17,350 - Round number: 40 --------------------------
+2025-12-18 00:12:17,357 - Evaluate global model
+2025-12-18 00:12:18,101 - Averaged Train Loss: 1.3120
+2025-12-18 00:12:18,101 - Test Accurancy: 0.6851
+2025-12-18 00:12:31,970 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 31]
+2025-12-18 00:12:31,995 - Round number: 41 --------------------------
+2025-12-18 00:12:31,995 - Evaluate global model
+2025-12-18 00:12:32,823 - Averaged Train Loss: 1.0417
+2025-12-18 00:12:32,823 - Test Accurancy: 0.6611
+2025-12-18 00:12:47,865 - FLDetector detect mean clients idx: []
+2025-12-18 00:12:47,888 - Round number: 42 --------------------------
+2025-12-18 00:12:47,888 - Evaluate global model
+2025-12-18 00:12:48,745 - Averaged Train Loss: 1.3032
+2025-12-18 00:12:48,745 - Test Accurancy: 0.6705
+2025-12-18 00:13:03,781 - FLDetector detect mean clients idx: []
+2025-12-18 00:13:03,819 - Round number: 43 --------------------------
+2025-12-18 00:13:03,819 - Evaluate global model
+2025-12-18 00:13:04,598 - Averaged Train Loss: 1.4704
+2025-12-18 00:13:04,598 - Test Accurancy: 0.6517
+2025-12-18 00:13:20,794 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:13:20,816 - Round number: 44 --------------------------
+2025-12-18 00:13:20,816 - Evaluate global model
+2025-12-18 00:13:21,475 - Averaged Train Loss: 1.1536
+2025-12-18 00:13:21,476 - Test Accurancy: 0.6358
+2025-12-18 00:13:31,206 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:13:31,241 - Round number: 45 --------------------------
+2025-12-18 00:13:31,242 - Evaluate global model
+2025-12-18 00:13:32,002 - Averaged Train Loss: 1.0021
+2025-12-18 00:13:32,002 - Test Accurancy: 0.6498
+2025-12-18 00:13:49,734 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:13:49,748 - Round number: 46 --------------------------
+2025-12-18 00:13:49,765 - Evaluate global model
+2025-12-18 00:13:50,615 - Averaged Train Loss: 0.9221
+2025-12-18 00:13:50,615 - Test Accurancy: 0.6611
+2025-12-18 00:14:02,824 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:14:02,838 - Round number: 47 --------------------------
+2025-12-18 00:14:02,839 - Evaluate global model
+2025-12-18 00:14:03,645 - Averaged Train Loss: 0.8797
+2025-12-18 00:14:03,646 - Test Accurancy: 0.6733
+2025-12-18 00:14:17,726 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:14:17,733 - Round number: 48 --------------------------
+2025-12-18 00:14:17,733 - Evaluate global model
+2025-12-18 00:14:18,441 - Averaged Train Loss: 0.8532
+2025-12-18 00:14:18,441 - Test Accurancy: 0.6808
+2025-12-18 00:14:31,834 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 31]
+2025-12-18 00:14:31,841 - Round number: 49 --------------------------
+2025-12-18 00:14:31,842 - Evaluate global model
+2025-12-18 00:14:32,915 - Averaged Train Loss: 0.8390
+2025-12-18 00:14:32,916 - Test Accurancy: 0.6828
+2025-12-18 00:14:47,088 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 31]
+2025-12-18 00:14:47,105 - Round number: 50 --------------------------
+2025-12-18 00:14:47,110 - Evaluate global model
+2025-12-18 00:14:47,756 - Averaged Train Loss: 0.8132
+2025-12-18 00:14:47,761 - Test Accurancy: 0.6950
+2025-12-18 00:14:56,624 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 23, 31]
+2025-12-18 00:14:56,630 - Round number: 51 --------------------------
+2025-12-18 00:14:56,631 - Evaluate global model
+2025-12-18 00:14:57,574 - Averaged Train Loss: 0.8083
+2025-12-18 00:14:57,574 - Test Accurancy: 0.6929
+2025-12-18 00:15:13,105 - FLDetector detect mean clients idx: []
+2025-12-18 00:15:13,141 - Round number: 52 --------------------------
+2025-12-18 00:15:13,141 - Evaluate global model
+2025-12-18 00:15:13,804 - Averaged Train Loss: 1.0394
+2025-12-18 00:15:13,805 - Test Accurancy: 0.7009
+2025-12-18 00:15:28,317 - FLDetector detect mean clients idx: []
+2025-12-18 00:15:28,337 - Round number: 53 --------------------------
+2025-12-18 00:15:28,344 - Evaluate global model
+2025-12-18 00:15:29,201 - Averaged Train Loss: 1.3229
+2025-12-18 00:15:29,205 - Test Accurancy: 0.6789
+2025-12-18 00:15:43,631 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 14, 19, 23]
+2025-12-18 00:15:43,653 - Round number: 54 --------------------------
+2025-12-18 00:15:43,659 - Evaluate global model
+2025-12-18 00:15:44,523 - Averaged Train Loss: 1.0812
+2025-12-18 00:15:44,523 - Test Accurancy: 0.6595
+2025-12-18 00:16:05,529 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 14, 19, 23, 32]
+2025-12-18 00:16:05,560 - Round number: 55 --------------------------
+2025-12-18 00:16:05,560 - Evaluate global model
+2025-12-18 00:16:06,289 - Averaged Train Loss: 0.9646
+2025-12-18 00:16:06,289 - Test Accurancy: 0.6709
+2025-12-18 00:16:22,355 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:16:22,375 - Round number: 56 --------------------------
+2025-12-18 00:16:22,375 - Evaluate global model
+2025-12-18 00:16:23,110 - Averaged Train Loss: 0.9013
+2025-12-18 00:16:23,111 - Test Accurancy: 0.6762
+2025-12-18 00:16:40,501 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:16:40,522 - Round number: 57 --------------------------
+2025-12-18 00:16:40,523 - Evaluate global model
+2025-12-18 00:16:41,403 - Averaged Train Loss: 0.8634
+2025-12-18 00:16:41,403 - Test Accurancy: 0.6825
+2025-12-18 00:16:49,975 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:16:49,995 - Round number: 58 --------------------------
+2025-12-18 00:16:50,000 - Evaluate global model
+2025-12-18 00:16:50,615 - Averaged Train Loss: 0.8403
+2025-12-18 00:16:50,616 - Test Accurancy: 0.6898
+2025-12-18 00:17:08,224 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:17:08,254 - Round number: 59 --------------------------
+2025-12-18 00:17:08,258 - Evaluate global model
+2025-12-18 00:17:09,079 - Averaged Train Loss: 0.8220
+2025-12-18 00:17:09,079 - Test Accurancy: 0.6966
+2025-12-18 00:17:24,114 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:17:24,121 - Round number: 60 --------------------------
+2025-12-18 00:17:24,127 - Evaluate global model
+2025-12-18 00:17:24,905 - Averaged Train Loss: 0.8160
+2025-12-18 00:17:24,906 - Test Accurancy: 0.6973
+2025-12-18 00:17:30,305 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 26, 27, 31]
+2025-12-18 00:17:30,311 - Round number: 61 --------------------------
+2025-12-18 00:17:30,311 - Evaluate global model
+2025-12-18 00:17:31,061 - Averaged Train Loss: 0.8007
+2025-12-18 00:17:31,061 - Test Accurancy: 0.7065
+2025-12-18 00:17:44,854 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 26, 27, 31]
+2025-12-18 00:17:44,869 - Round number: 62 --------------------------
+2025-12-18 00:17:44,869 - Evaluate global model
+2025-12-18 00:17:45,560 - Averaged Train Loss: 0.7974
+2025-12-18 00:17:45,566 - Test Accurancy: 0.7086
+2025-12-18 00:17:57,106 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 18, 23, 26, 27, 31]
+2025-12-18 00:17:57,136 - Round number: 63 --------------------------
+2025-12-18 00:17:57,137 - Evaluate global model
+2025-12-18 00:17:57,910 - Averaged Train Loss: 0.7789
+2025-12-18 00:17:57,911 - Test Accurancy: 0.7147
+2025-12-18 00:18:12,317 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 14, 18, 23, 25, 26, 27, 31]
+2025-12-18 00:18:12,323 - Round number: 64 --------------------------
+2025-12-18 00:18:12,337 - Evaluate global model
+2025-12-18 00:18:13,364 - Averaged Train Loss: 0.7623
+2025-12-18 00:18:13,365 - Test Accurancy: 0.7204
+2025-12-18 00:18:28,317 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 12, 18, 23, 25, 26, 27, 31]
+2025-12-18 00:18:28,335 - Round number: 65 --------------------------
+2025-12-18 00:18:28,339 - Evaluate global model
+2025-12-18 00:18:28,992 - Averaged Train Loss: 0.7591
+2025-12-18 00:18:28,992 - Test Accurancy: 0.7228
+2025-12-18 00:18:35,986 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 9, 12, 14, 18, 23, 25, 26, 27, 31]
+2025-12-18 00:18:35,993 - Round number: 66 --------------------------
+2025-12-18 00:18:35,993 - Evaluate global model
+2025-12-18 00:18:36,814 - Averaged Train Loss: 0.7617
+2025-12-18 00:18:36,814 - Test Accurancy: 0.7235
+2025-12-18 00:18:52,345 - FLDetector detect mean clients idx: []
+2025-12-18 00:18:52,351 - Round number: 67 --------------------------
+2025-12-18 00:18:52,352 - Evaluate global model
+2025-12-18 00:18:53,695 - Averaged Train Loss: 0.9827
+2025-12-18 00:18:53,695 - Test Accurancy: 0.7151
+2025-12-18 00:19:10,875 - FLDetector detect mean clients idx: []
+2025-12-18 00:19:10,885 - Round number: 68 --------------------------
+2025-12-18 00:19:10,886 - Evaluate global model
+2025-12-18 00:19:11,735 - Averaged Train Loss: 1.3021
+2025-12-18 00:19:11,736 - Test Accurancy: 0.6977
+2025-12-18 00:19:16,554 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 12, 14, 23, 27]
+2025-12-18 00:19:16,568 - Round number: 69 --------------------------
+2025-12-18 00:19:16,568 - Evaluate global model
+2025-12-18 00:19:17,544 - Averaged Train Loss: 1.0972
+2025-12-18 00:19:17,544 - Test Accurancy: 0.6785
+2025-12-18 00:19:33,815 - FLDetector detect mean clients idx: []
+2025-12-18 00:19:33,823 - Round number: 70 --------------------------
+2025-12-18 00:19:33,824 - Evaluate global model
+2025-12-18 00:19:34,583 - Averaged Train Loss: 1.3905
+2025-12-18 00:19:34,584 - Test Accurancy: 0.6759
+2025-12-18 00:19:39,855 - FLDetector detect mean clients idx: []
+2025-12-18 00:19:39,862 - Round number: 71 --------------------------
+2025-12-18 00:19:39,862 - Evaluate global model
+2025-12-18 00:19:40,901 - Averaged Train Loss: 1.5928
+2025-12-18 00:19:40,901 - Test Accurancy: 0.6559
+2025-12-18 00:20:01,710 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:20:01,738 - Round number: 72 --------------------------
+2025-12-18 00:20:01,740 - Evaluate global model
+2025-12-18 00:20:02,490 - Averaged Train Loss: 1.3236
+2025-12-18 00:20:02,490 - Test Accurancy: 0.6427
+2025-12-18 00:20:14,853 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 10]
+2025-12-18 00:20:14,876 - Round number: 73 --------------------------
+2025-12-18 00:20:14,876 - Evaluate global model
+2025-12-18 00:20:15,546 - Averaged Train Loss: 1.1502
+2025-12-18 00:20:15,546 - Test Accurancy: 0.6376
+2025-12-18 00:20:19,398 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:20:19,405 - Round number: 74 --------------------------
+2025-12-18 00:20:19,405 - Evaluate global model
+2025-12-18 00:20:20,596 - Averaged Train Loss: 1.0422
+2025-12-18 00:20:20,596 - Test Accurancy: 0.6536
+2025-12-18 00:20:25,238 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:20:25,245 - Round number: 75 --------------------------
+2025-12-18 00:20:25,245 - Evaluate global model
+2025-12-18 00:20:26,115 - Averaged Train Loss: 0.9742
+2025-12-18 00:20:26,115 - Test Accurancy: 0.6562
+2025-12-18 00:20:45,167 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:20:45,183 - Round number: 76 --------------------------
+2025-12-18 00:20:45,187 - Evaluate global model
+2025-12-18 00:20:45,955 - Averaged Train Loss: 0.9295
+2025-12-18 00:20:45,955 - Test Accurancy: 0.6591
+2025-12-18 00:20:49,937 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:20:49,944 - Round number: 77 --------------------------
+2025-12-18 00:20:49,944 - Evaluate global model
+2025-12-18 00:20:51,159 - Averaged Train Loss: 0.8949
+2025-12-18 00:20:51,160 - Test Accurancy: 0.6670
+2025-12-18 00:21:07,402 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:21:07,422 - Round number: 78 --------------------------
+2025-12-18 00:21:07,429 - Evaluate global model
+2025-12-18 00:21:08,282 - Averaged Train Loss: 0.8723
+2025-12-18 00:21:08,282 - Test Accurancy: 0.6726
+2025-12-18 00:21:30,725 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:21:30,751 - Round number: 79 --------------------------
+2025-12-18 00:21:30,751 - Evaluate global model
+2025-12-18 00:21:31,544 - Averaged Train Loss: 0.8585
+2025-12-18 00:21:31,545 - Test Accurancy: 0.6779
+2025-12-18 00:21:47,323 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:21:47,343 - Round number: 80 --------------------------
+2025-12-18 00:21:47,343 - Evaluate global model
+2025-12-18 00:21:48,046 - Averaged Train Loss: 0.8416
+2025-12-18 00:21:48,046 - Test Accurancy: 0.6861
+2025-12-18 00:22:05,873 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:22:05,892 - Round number: 81 --------------------------
+2025-12-18 00:22:05,902 - Evaluate global model
+2025-12-18 00:22:06,779 - Averaged Train Loss: 0.8313
+2025-12-18 00:22:06,783 - Test Accurancy: 0.6888
+2025-12-18 00:22:11,577 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:22:11,584 - Round number: 82 --------------------------
+2025-12-18 00:22:11,584 - Evaluate global model
+2025-12-18 00:22:12,584 - Averaged Train Loss: 0.8208
+2025-12-18 00:22:12,584 - Test Accurancy: 0.6922
+2025-12-18 00:22:26,690 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 23, 26, 31]
+2025-12-18 00:22:26,710 - Round number: 83 --------------------------
+2025-12-18 00:22:26,711 - Evaluate global model
+2025-12-18 00:22:27,490 - Averaged Train Loss: 0.8117
+2025-12-18 00:22:27,490 - Test Accurancy: 0.6945
+2025-12-18 00:22:31,503 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 13, 23, 26, 31]
+2025-12-18 00:22:31,510 - Round number: 84 --------------------------
+2025-12-18 00:22:31,510 - Evaluate global model
+2025-12-18 00:22:32,424 - Averaged Train Loss: 0.8050
+2025-12-18 00:22:32,425 - Test Accurancy: 0.6937
+2025-12-18 00:22:51,477 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 13, 22, 23, 26, 31]
+2025-12-18 00:22:51,502 - Round number: 85 --------------------------
+2025-12-18 00:22:51,509 - Evaluate global model
+2025-12-18 00:22:52,636 - Averaged Train Loss: 0.7910
+2025-12-18 00:22:52,637 - Test Accurancy: 0.6989
+2025-12-18 00:23:10,287 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 13, 22, 23, 26, 31]
+2025-12-18 00:23:10,316 - Round number: 86 --------------------------
+2025-12-18 00:23:10,316 - Evaluate global model
+2025-12-18 00:23:11,127 - Averaged Train Loss: 0.7923
+2025-12-18 00:23:11,128 - Test Accurancy: 0.6949
+2025-12-18 00:23:26,920 - FLDetector detect mean clients idx: []
+2025-12-18 00:23:26,945 - Round number: 87 --------------------------
+2025-12-18 00:23:26,949 - Evaluate global model
+2025-12-18 00:23:27,651 - Averaged Train Loss: 1.0165
+2025-12-18 00:23:27,652 - Test Accurancy: 0.7036
+2025-12-18 00:23:34,397 - FLDetector detect mean clients idx: []
+2025-12-18 00:23:34,408 - Round number: 88 --------------------------
+2025-12-18 00:23:34,408 - Evaluate global model
+2025-12-18 00:23:35,656 - Averaged Train Loss: 1.3508
+2025-12-18 00:23:35,657 - Test Accurancy: 0.6850
+2025-12-18 00:23:48,735 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 23, 31]
+2025-12-18 00:23:48,749 - Round number: 89 --------------------------
+2025-12-18 00:23:48,755 - Evaluate global model
+2025-12-18 00:23:49,404 - Averaged Train Loss: 1.1807
+2025-12-18 00:23:49,404 - Test Accurancy: 0.6622
+2025-12-18 00:23:58,499 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7, 23, 31]
+2025-12-18 00:23:58,506 - Round number: 90 --------------------------
+2025-12-18 00:23:58,506 - Evaluate global model
+2025-12-18 00:23:59,690 - Averaged Train Loss: 1.0727
+2025-12-18 00:23:59,690 - Test Accurancy: 0.6595
+2025-12-18 00:24:17,335 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:24:17,373 - Round number: 91 --------------------------
+2025-12-18 00:24:17,373 - Evaluate global model
+2025-12-18 00:24:18,153 - Averaged Train Loss: 0.9998
+2025-12-18 00:24:18,154 - Test Accurancy: 0.6671
+2025-12-18 00:24:22,347 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:24:22,354 - Round number: 92 --------------------------
+2025-12-18 00:24:22,354 - Evaluate global model
+2025-12-18 00:24:23,519 - Averaged Train Loss: 0.9506
+2025-12-18 00:24:23,520 - Test Accurancy: 0.6703
+2025-12-18 00:24:39,303 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:24:39,310 - Round number: 93 --------------------------
+2025-12-18 00:24:39,310 - Evaluate global model
+2025-12-18 00:24:40,604 - Averaged Train Loss: 0.9147
+2025-12-18 00:24:40,605 - Test Accurancy: 0.6745
+2025-12-18 00:24:54,720 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:24:54,727 - Round number: 94 --------------------------
+2025-12-18 00:24:54,741 - Evaluate global model
+2025-12-18 00:24:55,504 - Averaged Train Loss: 0.8888
+2025-12-18 00:24:55,505 - Test Accurancy: 0.6778
+2025-12-18 00:25:07,675 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:25:07,698 - Round number: 95 --------------------------
+2025-12-18 00:25:07,699 - Evaluate global model
+2025-12-18 00:25:08,482 - Averaged Train Loss: 0.8687
+2025-12-18 00:25:08,483 - Test Accurancy: 0.6827
+2025-12-18 00:25:17,867 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:25:17,874 - Round number: 96 --------------------------
+2025-12-18 00:25:17,874 - Evaluate global model
+2025-12-18 00:25:18,689 - Averaged Train Loss: 0.8527
+2025-12-18 00:25:18,689 - Test Accurancy: 0.6869
+2025-12-18 00:25:24,832 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:25:24,856 - Round number: 97 --------------------------
+2025-12-18 00:25:24,857 - Evaluate global model
+2025-12-18 00:25:25,475 - Averaged Train Loss: 0.8418
+2025-12-18 00:25:25,476 - Test Accurancy: 0.6893
+2025-12-18 00:25:38,475 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:25:38,481 - Round number: 98 --------------------------
+2025-12-18 00:25:38,481 - Evaluate global model
+2025-12-18 00:25:39,232 - Averaged Train Loss: 0.8329
+2025-12-18 00:25:39,233 - Test Accurancy: 0.6941
+2025-12-18 00:25:56,556 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:25:56,579 - Round number: 99 --------------------------
+2025-12-18 00:25:56,579 - Evaluate global model
+2025-12-18 00:25:57,242 - Averaged Train Loss: 0.8229
+2025-12-18 00:25:57,243 - Test Accurancy: 0.6968
+2025-12-18 00:26:14,000 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:26:14,021 - Round number: 100 --------------------------
+2025-12-18 00:26:14,037 - Evaluate global model
+2025-12-18 00:26:14,688 - Averaged Train Loss: 0.8150
+2025-12-18 00:26:14,688 - Test Accurancy: 0.7009
+2025-12-18 00:26:18,284 - FLDetector detect mean clients idx: [0, 1, 2, 3, 4, 5, 6, 7]
+2025-12-18 00:26:18,286 - Run over
+2025-12-18 00:26:18,286 - Saving results to ./exp/exp4/FashionMNIST/FLDetector_MPAF.h5
+2025-12-18 00:26:18,289 - Best accuracy: 0.7234783601690077
+2025-12-18 00:26:18,290 - Average time cost per round: 12.91019966363907

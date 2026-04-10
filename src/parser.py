@@ -60,13 +60,13 @@ def args_parser():
     parser.add_argument('--dp', choices=['none', 'lf', 'rlf'], default='none', help='data poisoning method')
     parser.add_argument('--ls', type=int, default=5, help='source label to flip')
     parser.add_argument('--lt', type=int, default=3, help='targeted label after flipping')
-    parser.add_argument('--mp', choices=['none', 'min-max', 'LIE', 'random', 'sign_flip', 'CAMP', 'scale'], default='none',
+    parser.add_argument('--mp', choices=['none', 'min-max', 'LIE', 'random', 'sign_flip', 'CAMP', 'scale', 'MPAF', 'PoisonedFL'], default='none',
                         help='model poisoning method')
     parser.add_argument('--dpd_mode', choices=['none', 'low', 'high', 'auto'], default='auto',
                         help='clipping strategy')
     parser.add_argument('--noise_level', type=float, default=0, help='noise level for dpd')
     parser.add_argument('--s', type=float, default=1, help='scaling factor')
-    parser.add_argument('--lamda', type=float, default=0.05, help='hyper parameter')
+    parser.add_argument('--lamda', type=float, default=2, help='hyper parameter')
     parser.add_argument('--trmean_ratio', type=float, default=0.2, help='ratio for trimmed mean')
     parser.add_argument('--pk', choices=['none', 'agr', 'updates', 'all'], default='all', help='prior knowledge')
     parser.add_argument('--CAMP_mode', choices=['clipping', 'perturbation'], default='perturbation', help='CAMP mode')
