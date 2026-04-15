@@ -1,0 +1,627 @@
+2026-04-11 15:58:11,788 - *****************EXP-3*****************
+2026-04-11 15:58:11,788 - Exp repeats: 1
+2026-04-11 15:58:11,788 - Communication Rounds: 100
+2026-04-11 15:58:11,789 - Clients: 40
+
+2026-04-11 15:58:11,789 - Attack method: min-max
+2026-04-11 15:58:11,789 - Filtering rule: median
+2026-04-11 15:58:11,789 - Dataset: UCIHAR
+2026-04-11 15:58:11,789 - Model: cnn2
+2026-04-11 15:58:11,789 - Learning Rate: 0.2
+2026-04-11 15:58:11,789 - Batch Size: 64
+2026-04-11 15:58:11,789 - Device: cuda
+2026-04-11 15:58:11,789 - Device id: 0
+2026-04-11 15:58:11,789 - Adversaries: 16
+2026-04-11 15:58:11,789 - Model Poisoning: Min-max attack
+2026-04-11 15:58:11,789 - *****************EXP-3*****************
+2026-04-11 15:58:11,933 - Running time: 0th ==========================
+2026-04-11 15:58:12,261 - Round number: 0 --------------------------
+2026-04-11 15:58:12,261 - Evaluate global model
+2026-04-11 15:58:12,703 - Averaged Train Loss: 1.8122
+2026-04-11 15:58:12,703 - Test Accurancy: 0.1850
+2026-04-11 15:58:13,458 - min_max_attack try_count: 19
+2026-04-11 15:58:13,458 - min_max_attack lamda: 3.7234973907470703, max_d: 2431.833251953125
+2026-04-11 15:58:13,499 - Round number: 1 --------------------------
+2026-04-11 15:58:13,499 - Evaluate global model
+2026-04-11 15:58:13,645 - Averaged Train Loss: 1.7795
+2026-04-11 15:58:13,646 - Test Accurancy: 0.2441
+2026-04-11 15:58:14,023 - min_max_attack try_count: 19
+2026-04-11 15:58:14,024 - min_max_attack lamda: 2.074460983276367, max_d: 34.399993896484375
+2026-04-11 15:58:14,029 - Round number: 2 --------------------------
+2026-04-11 15:58:14,029 - Evaluate global model
+2026-04-11 15:58:14,208 - Averaged Train Loss: 1.7998
+2026-04-11 15:58:14,208 - Test Accurancy: 0.1850
+2026-04-11 15:58:14,583 - min_max_attack try_count: 19
+2026-04-11 15:58:14,583 - min_max_attack lamda: 1.4523983001708984, max_d: 17.42056655883789
+2026-04-11 15:58:14,588 - Round number: 3 --------------------------
+2026-04-11 15:58:14,588 - Evaluate global model
+2026-04-11 15:58:14,768 - Averaged Train Loss: 1.8722
+2026-04-11 15:58:14,768 - Test Accurancy: 0.1804
+2026-04-11 15:58:15,143 - min_max_attack try_count: 19
+2026-04-11 15:58:15,143 - min_max_attack lamda: 1.8918132781982422, max_d: 22.456483840942383
+2026-04-11 15:58:15,149 - Round number: 4 --------------------------
+2026-04-11 15:58:15,149 - Evaluate global model
+2026-04-11 15:58:15,320 - Averaged Train Loss: 1.8166
+2026-04-11 15:58:15,320 - Test Accurancy: 0.1765
+2026-04-11 15:58:15,707 - min_max_attack try_count: 19
+2026-04-11 15:58:15,708 - min_max_attack lamda: 0.8365917205810547, max_d: 168.0803985595703
+2026-04-11 15:58:15,713 - Round number: 5 --------------------------
+2026-04-11 15:58:15,713 - Evaluate global model
+2026-04-11 15:58:15,871 - Averaged Train Loss: 1.8398
+2026-04-11 15:58:15,871 - Test Accurancy: 0.0467
+2026-04-11 15:58:16,253 - min_max_attack try_count: 19
+2026-04-11 15:58:16,253 - min_max_attack lamda: 1.6100025177001953, max_d: 36.96671676635742
+2026-04-11 15:58:16,258 - Round number: 6 --------------------------
+2026-04-11 15:58:16,258 - Evaluate global model
+2026-04-11 15:58:16,431 - Averaged Train Loss: 1.8227
+2026-04-11 15:58:16,431 - Test Accurancy: 0.1850
+2026-04-11 15:58:16,812 - min_max_attack try_count: 19
+2026-04-11 15:58:16,812 - min_max_attack lamda: 1.1197185516357422, max_d: 40.31721115112305
+2026-04-11 15:58:16,818 - Round number: 7 --------------------------
+2026-04-11 15:58:16,818 - Evaluate global model
+2026-04-11 15:58:16,983 - Averaged Train Loss: 1.8577
+2026-04-11 15:58:16,983 - Test Accurancy: 0.1850
+2026-04-11 15:58:17,368 - min_max_attack try_count: 19
+2026-04-11 15:58:17,368 - min_max_attack lamda: 1.358957290649414, max_d: 29.080768585205078
+2026-04-11 15:58:17,373 - Round number: 8 --------------------------
+2026-04-11 15:58:17,373 - Evaluate global model
+2026-04-11 15:58:17,513 - Averaged Train Loss: 1.7978
+2026-04-11 15:58:17,514 - Test Accurancy: 0.1850
+2026-04-11 15:58:17,908 - min_max_attack try_count: 19
+2026-04-11 15:58:17,908 - min_max_attack lamda: 1.6489887237548828, max_d: 44.93798828125
+2026-04-11 15:58:17,913 - Round number: 9 --------------------------
+2026-04-11 15:58:17,913 - Evaluate global model
+2026-04-11 15:58:18,062 - Averaged Train Loss: 1.9126
+2026-04-11 15:58:18,062 - Test Accurancy: 0.1850
+2026-04-11 15:58:18,433 - min_max_attack try_count: 19
+2026-04-11 15:58:18,434 - min_max_attack lamda: 1.3641643524169922, max_d: 15.3663330078125
+2026-04-11 15:58:18,438 - Round number: 10 --------------------------
+2026-04-11 15:58:18,438 - Evaluate global model
+2026-04-11 15:58:18,608 - Averaged Train Loss: 1.9442
+2026-04-11 15:58:18,608 - Test Accurancy: 0.1850
+2026-04-11 15:58:18,965 - min_max_attack try_count: 19
+2026-04-11 15:58:18,965 - min_max_attack lamda: 1.7730045318603516, max_d: 24.31673812866211
+2026-04-11 15:58:18,970 - Round number: 11 --------------------------
+2026-04-11 15:58:18,970 - Evaluate global model
+2026-04-11 15:58:19,136 - Averaged Train Loss: 2.0620
+2026-04-11 15:58:19,137 - Test Accurancy: 0.1850
+2026-04-11 15:58:19,513 - min_max_attack try_count: 19
+2026-04-11 15:58:19,513 - min_max_attack lamda: 2.2205066680908203, max_d: 17.49213218688965
+2026-04-11 15:58:19,518 - Round number: 12 --------------------------
+2026-04-11 15:58:19,518 - Evaluate global model
+2026-04-11 15:58:19,686 - Averaged Train Loss: 1.9182
+2026-04-11 15:58:19,687 - Test Accurancy: 0.1904
+2026-04-11 15:58:20,057 - min_max_attack try_count: 19
+2026-04-11 15:58:20,058 - min_max_attack lamda: 1.1330318450927734, max_d: 199.05857849121094
+2026-04-11 15:58:20,063 - Round number: 13 --------------------------
+2026-04-11 15:58:20,063 - Evaluate global model
+2026-04-11 15:58:20,260 - Averaged Train Loss: 1.8625
+2026-04-11 15:58:20,261 - Test Accurancy: 0.1024
+2026-04-11 15:58:20,631 - min_max_attack try_count: 19
+2026-04-11 15:58:20,631 - min_max_attack lamda: 1.2196063995361328, max_d: 14.42287826538086
+2026-04-11 15:58:20,636 - Round number: 14 --------------------------
+2026-04-11 15:58:20,636 - Evaluate global model
+2026-04-11 15:58:20,817 - Averaged Train Loss: 1.9781
+2026-04-11 15:58:20,817 - Test Accurancy: 0.1004
+2026-04-11 15:58:21,205 - min_max_attack try_count: 19
+2026-04-11 15:58:21,205 - min_max_attack lamda: 1.0398006439208984, max_d: 42.29496765136719
+2026-04-11 15:58:21,210 - Round number: 15 --------------------------
+2026-04-11 15:58:21,210 - Evaluate global model
+2026-04-11 15:58:21,373 - Averaged Train Loss: 1.8876
+2026-04-11 15:58:21,373 - Test Accurancy: 0.1854
+2026-04-11 15:58:21,757 - min_max_attack try_count: 19
+2026-04-11 15:58:21,757 - min_max_attack lamda: 1.4937496185302734, max_d: 12.13182258605957
+2026-04-11 15:58:21,763 - Round number: 16 --------------------------
+2026-04-11 15:58:21,763 - Evaluate global model
+2026-04-11 15:58:21,922 - Averaged Train Loss: 2.1128
+2026-04-11 15:58:21,922 - Test Accurancy: 0.1850
+2026-04-11 15:58:22,288 - min_max_attack try_count: 19
+2026-04-11 15:58:22,288 - min_max_attack lamda: 0.9380245208740234, max_d: 4.8982367515563965
+2026-04-11 15:58:22,293 - Round number: 17 --------------------------
+2026-04-11 15:58:22,293 - Evaluate global model
+2026-04-11 15:58:22,472 - Averaged Train Loss: 1.9632
+2026-04-11 15:58:22,472 - Test Accurancy: 0.1904
+2026-04-11 15:58:22,825 - min_max_attack try_count: 19
+2026-04-11 15:58:22,825 - min_max_attack lamda: 0.7310962677001953, max_d: 27.99091148376465
+2026-04-11 15:58:22,830 - Round number: 18 --------------------------
+2026-04-11 15:58:22,830 - Evaluate global model
+2026-04-11 15:58:22,993 - Averaged Train Loss: 2.0914
+2026-04-11 15:58:22,993 - Test Accurancy: 0.1904
+2026-04-11 15:58:23,386 - min_max_attack try_count: 19
+2026-04-11 15:58:23,386 - min_max_attack lamda: 1.0354900360107422, max_d: 7.717345714569092
+2026-04-11 15:58:23,390 - Round number: 19 --------------------------
+2026-04-11 15:58:23,391 - Evaluate global model
+2026-04-11 15:58:23,530 - Averaged Train Loss: 2.0043
+2026-04-11 15:58:23,530 - Test Accurancy: 0.1904
+2026-04-11 15:58:23,919 - min_max_attack try_count: 19
+2026-04-11 15:58:23,919 - min_max_attack lamda: 0.7225513458251953, max_d: 15.439159393310547
+2026-04-11 15:58:23,924 - Round number: 20 --------------------------
+2026-04-11 15:58:23,924 - Evaluate global model
+2026-04-11 15:58:24,085 - Averaged Train Loss: 2.0544
+2026-04-11 15:58:24,085 - Test Accurancy: 0.1904
+2026-04-11 15:58:24,465 - min_max_attack try_count: 19
+2026-04-11 15:58:24,465 - min_max_attack lamda: 1.1551380157470703, max_d: 4.742644309997559
+2026-04-11 15:58:24,470 - Round number: 21 --------------------------
+2026-04-11 15:58:24,471 - Evaluate global model
+2026-04-11 15:58:24,629 - Averaged Train Loss: 2.1667
+2026-04-11 15:58:24,629 - Test Accurancy: 0.1904
+2026-04-11 15:58:25,016 - min_max_attack try_count: 19
+2026-04-11 15:58:25,016 - min_max_attack lamda: 0.6573581695556641, max_d: 6.741105079650879
+2026-04-11 15:58:25,022 - Round number: 22 --------------------------
+2026-04-11 15:58:25,022 - Evaluate global model
+2026-04-11 15:58:25,180 - Averaged Train Loss: 2.0868
+2026-04-11 15:58:25,180 - Test Accurancy: 0.1904
+2026-04-11 15:58:25,576 - min_max_attack try_count: 19
+2026-04-11 15:58:25,576 - min_max_attack lamda: 1.4241695404052734, max_d: 7.799386501312256
+2026-04-11 15:58:25,582 - Round number: 23 --------------------------
+2026-04-11 15:58:25,582 - Evaluate global model
+2026-04-11 15:58:25,764 - Averaged Train Loss: 2.3601
+2026-04-11 15:58:25,764 - Test Accurancy: 0.1904
+2026-04-11 15:58:26,162 - min_max_attack try_count: 19
+2026-04-11 15:58:26,162 - min_max_attack lamda: 1.4232921600341797, max_d: 12.563061714172363
+2026-04-11 15:58:26,168 - Round number: 24 --------------------------
+2026-04-11 15:58:26,168 - Evaluate global model
+2026-04-11 15:58:26,361 - Averaged Train Loss: 2.3599
+2026-04-11 15:58:26,361 - Test Accurancy: 0.1904
+2026-04-11 15:58:26,716 - min_max_attack try_count: 19
+2026-04-11 15:58:26,716 - min_max_attack lamda: 1.3713741302490234, max_d: 62.89794921875
+2026-04-11 15:58:26,722 - Round number: 25 --------------------------
+2026-04-11 15:58:26,722 - Evaluate global model
+2026-04-11 15:58:26,908 - Averaged Train Loss: 2.2326
+2026-04-11 15:58:26,908 - Test Accurancy: 0.1908
+2026-04-11 15:58:27,274 - min_max_attack try_count: 19
+2026-04-11 15:58:27,274 - min_max_attack lamda: 0.7238101959228516, max_d: 16.598936080932617
+2026-04-11 15:58:27,279 - Round number: 26 --------------------------
+2026-04-11 15:58:27,279 - Evaluate global model
+2026-04-11 15:58:27,440 - Averaged Train Loss: 2.2492
+2026-04-11 15:58:27,440 - Test Accurancy: 0.1970
+2026-04-11 15:58:27,812 - min_max_attack try_count: 19
+2026-04-11 15:58:27,812 - min_max_attack lamda: 1.1565494537353516, max_d: 6.583044528961182
+2026-04-11 15:58:27,817 - Round number: 27 --------------------------
+2026-04-11 15:58:27,817 - Evaluate global model
+2026-04-11 15:58:27,996 - Averaged Train Loss: 2.4075
+2026-04-11 15:58:27,996 - Test Accurancy: 0.2905
+2026-04-11 15:58:28,357 - min_max_attack try_count: 19
+2026-04-11 15:58:28,357 - min_max_attack lamda: 1.0273075103759766, max_d: 7.0186686515808105
+2026-04-11 15:58:28,362 - Round number: 28 --------------------------
+2026-04-11 15:58:28,362 - Evaluate global model
+2026-04-11 15:58:28,539 - Averaged Train Loss: 2.2445
+2026-04-11 15:58:28,539 - Test Accurancy: 0.2723
+2026-04-11 15:58:28,905 - min_max_attack try_count: 19
+2026-04-11 15:58:28,905 - min_max_attack lamda: 0.7225322723388672, max_d: 5.178692817687988
+2026-04-11 15:58:28,910 - Round number: 29 --------------------------
+2026-04-11 15:58:28,910 - Evaluate global model
+2026-04-11 15:58:29,057 - Averaged Train Loss: 2.3262
+2026-04-11 15:58:29,057 - Test Accurancy: 0.3237
+2026-04-11 15:58:29,456 - min_max_attack try_count: 19
+2026-04-11 15:58:29,456 - min_max_attack lamda: 1.0985088348388672, max_d: 4.679813385009766
+2026-04-11 15:58:29,460 - Round number: 30 --------------------------
+2026-04-11 15:58:29,461 - Evaluate global model
+2026-04-11 15:58:29,607 - Averaged Train Loss: 2.6001
+2026-04-11 15:58:29,607 - Test Accurancy: 0.3380
+2026-04-11 15:58:29,981 - min_max_attack try_count: 19
+2026-04-11 15:58:29,981 - min_max_attack lamda: 0.8419704437255859, max_d: 4.775767803192139
+2026-04-11 15:58:29,986 - Round number: 31 --------------------------
+2026-04-11 15:58:29,986 - Evaluate global model
+2026-04-11 15:58:30,144 - Averaged Train Loss: 2.6673
+2026-04-11 15:58:30,144 - Test Accurancy: 0.3561
+2026-04-11 15:58:30,525 - min_max_attack try_count: 19
+2026-04-11 15:58:30,526 - min_max_attack lamda: 0.8341121673583984, max_d: 4.894400119781494
+2026-04-11 15:58:30,531 - Round number: 32 --------------------------
+2026-04-11 15:58:30,531 - Evaluate global model
+2026-04-11 15:58:30,673 - Averaged Train Loss: 2.8353
+2026-04-11 15:58:30,673 - Test Accurancy: 0.3573
+2026-04-11 15:58:31,066 - min_max_attack try_count: 19
+2026-04-11 15:58:31,066 - min_max_attack lamda: 0.8314800262451172, max_d: 5.24442720413208
+2026-04-11 15:58:31,071 - Round number: 33 --------------------------
+2026-04-11 15:58:31,071 - Evaluate global model
+2026-04-11 15:58:31,224 - Averaged Train Loss: 2.7182
+2026-04-11 15:58:31,224 - Test Accurancy: 0.3573
+2026-04-11 15:58:31,603 - min_max_attack try_count: 19
+2026-04-11 15:58:31,603 - min_max_attack lamda: 0.6881427764892578, max_d: 4.441816806793213
+2026-04-11 15:58:31,608 - Round number: 34 --------------------------
+2026-04-11 15:58:31,608 - Evaluate global model
+2026-04-11 15:58:31,790 - Averaged Train Loss: 2.7859
+2026-04-11 15:58:31,790 - Test Accurancy: 0.3592
+2026-04-11 15:58:32,142 - min_max_attack try_count: 19
+2026-04-11 15:58:32,142 - min_max_attack lamda: 0.8502864837646484, max_d: 4.911816596984863
+2026-04-11 15:58:32,147 - Round number: 35 --------------------------
+2026-04-11 15:58:32,147 - Evaluate global model
+2026-04-11 15:58:32,327 - Averaged Train Loss: 2.9921
+2026-04-11 15:58:32,327 - Test Accurancy: 0.3596
+2026-04-11 15:58:32,689 - min_max_attack try_count: 19
+2026-04-11 15:58:32,690 - min_max_attack lamda: 1.0164165496826172, max_d: 5.269110202789307
+2026-04-11 15:58:32,694 - Round number: 36 --------------------------
+2026-04-11 15:58:32,694 - Evaluate global model
+2026-04-11 15:58:32,853 - Averaged Train Loss: 2.7859
+2026-04-11 15:58:32,853 - Test Accurancy: 0.3581
+2026-04-11 15:58:33,222 - min_max_attack try_count: 19
+2026-04-11 15:58:33,222 - min_max_attack lamda: 0.7121944427490234, max_d: 4.261122226715088
+2026-04-11 15:58:33,227 - Round number: 37 --------------------------
+2026-04-11 15:58:33,227 - Evaluate global model
+2026-04-11 15:58:33,401 - Averaged Train Loss: 2.8648
+2026-04-11 15:58:33,401 - Test Accurancy: 0.3581
+2026-04-11 15:58:33,755 - min_max_attack try_count: 19
+2026-04-11 15:58:33,755 - min_max_attack lamda: 0.7879161834716797, max_d: 4.3360514640808105
+2026-04-11 15:58:33,760 - Round number: 38 --------------------------
+2026-04-11 15:58:33,760 - Evaluate global model
+2026-04-11 15:58:33,937 - Averaged Train Loss: 2.9055
+2026-04-11 15:58:33,937 - Test Accurancy: 0.3631
+2026-04-11 15:58:34,310 - min_max_attack try_count: 19
+2026-04-11 15:58:34,310 - min_max_attack lamda: 0.6998157501220703, max_d: 3.902218818664551
+2026-04-11 15:58:34,315 - Round number: 39 --------------------------
+2026-04-11 15:58:34,315 - Evaluate global model
+2026-04-11 15:58:34,480 - Averaged Train Loss: 2.7888
+2026-04-11 15:58:34,480 - Test Accurancy: 0.3631
+2026-04-11 15:58:34,855 - min_max_attack try_count: 19
+2026-04-11 15:58:34,855 - min_max_attack lamda: 0.7108020782470703, max_d: 3.6445350646972656
+2026-04-11 15:58:34,860 - Round number: 40 --------------------------
+2026-04-11 15:58:34,860 - Evaluate global model
+2026-04-11 15:58:35,014 - Averaged Train Loss: 2.9221
+2026-04-11 15:58:35,014 - Test Accurancy: 0.3619
+2026-04-11 15:58:35,381 - min_max_attack try_count: 19
+2026-04-11 15:58:35,381 - min_max_attack lamda: 0.7513141632080078, max_d: 3.8174312114715576
+2026-04-11 15:58:35,386 - Round number: 41 --------------------------
+2026-04-11 15:58:35,386 - Evaluate global model
+2026-04-11 15:58:35,558 - Averaged Train Loss: 2.9015
+2026-04-11 15:58:35,558 - Test Accurancy: 0.3600
+2026-04-11 15:58:35,916 - min_max_attack try_count: 19
+2026-04-11 15:58:35,917 - min_max_attack lamda: 0.7711315155029297, max_d: 3.7568798065185547
+2026-04-11 15:58:35,921 - Round number: 42 --------------------------
+2026-04-11 15:58:35,921 - Evaluate global model
+2026-04-11 15:58:36,076 - Averaged Train Loss: 2.9437
+2026-04-11 15:58:36,077 - Test Accurancy: 0.3588
+2026-04-11 15:58:36,468 - min_max_attack try_count: 19
+2026-04-11 15:58:36,468 - min_max_attack lamda: 0.6904315948486328, max_d: 3.584496259689331
+2026-04-11 15:58:36,473 - Round number: 43 --------------------------
+2026-04-11 15:58:36,474 - Evaluate global model
+2026-04-11 15:58:36,610 - Averaged Train Loss: 2.7693
+2026-04-11 15:58:36,610 - Test Accurancy: 0.3604
+2026-04-11 15:58:37,010 - min_max_attack try_count: 19
+2026-04-11 15:58:37,011 - min_max_attack lamda: 0.6654262542724609, max_d: 3.334611177444458
+2026-04-11 15:58:37,015 - Round number: 44 --------------------------
+2026-04-11 15:58:37,015 - Evaluate global model
+2026-04-11 15:58:37,174 - Averaged Train Loss: 2.9127
+2026-04-11 15:58:37,174 - Test Accurancy: 0.3615
+2026-04-11 15:58:37,531 - min_max_attack try_count: 19
+2026-04-11 15:58:37,531 - min_max_attack lamda: 0.6689167022705078, max_d: 3.3935208320617676
+2026-04-11 15:58:37,536 - Round number: 45 --------------------------
+2026-04-11 15:58:37,536 - Evaluate global model
+2026-04-11 15:58:37,703 - Averaged Train Loss: 2.8365
+2026-04-11 15:58:37,703 - Test Accurancy: 0.3604
+2026-04-11 15:58:38,066 - min_max_attack try_count: 19
+2026-04-11 15:58:38,066 - min_max_attack lamda: 0.6167125701904297, max_d: 3.128160238265991
+2026-04-11 15:58:38,071 - Round number: 46 --------------------------
+2026-04-11 15:58:38,071 - Evaluate global model
+2026-04-11 15:58:38,227 - Averaged Train Loss: 2.7698
+2026-04-11 15:58:38,227 - Test Accurancy: 0.3627
+2026-04-11 15:58:38,599 - min_max_attack try_count: 19
+2026-04-11 15:58:38,599 - min_max_attack lamda: 0.5933475494384766, max_d: 2.8440632820129395
+2026-04-11 15:58:38,604 - Round number: 47 --------------------------
+2026-04-11 15:58:38,604 - Evaluate global model
+2026-04-11 15:58:38,787 - Averaged Train Loss: 2.7165
+2026-04-11 15:58:38,787 - Test Accurancy: 0.3646
+2026-04-11 15:58:39,141 - min_max_attack try_count: 19
+2026-04-11 15:58:39,141 - min_max_attack lamda: 0.6441211700439453, max_d: 2.9174225330352783
+2026-04-11 15:58:39,146 - Round number: 48 --------------------------
+2026-04-11 15:58:39,146 - Evaluate global model
+2026-04-11 15:58:39,318 - Averaged Train Loss: 2.8080
+2026-04-11 15:58:39,318 - Test Accurancy: 0.3608
+2026-04-11 15:58:39,673 - min_max_attack try_count: 19
+2026-04-11 15:58:39,673 - min_max_attack lamda: 0.6576633453369141, max_d: 3.0390827655792236
+2026-04-11 15:58:39,678 - Round number: 49 --------------------------
+2026-04-11 15:58:39,678 - Evaluate global model
+2026-04-11 15:58:39,846 - Averaged Train Loss: 2.8117
+2026-04-11 15:58:39,847 - Test Accurancy: 0.3627
+2026-04-11 15:58:40,212 - min_max_attack try_count: 19
+2026-04-11 15:58:40,212 - min_max_attack lamda: 0.6074237823486328, max_d: 2.924914836883545
+2026-04-11 15:58:40,217 - Round number: 50 --------------------------
+2026-04-11 15:58:40,217 - Evaluate global model
+2026-04-11 15:58:40,370 - Averaged Train Loss: 2.8437
+2026-04-11 15:58:40,370 - Test Accurancy: 0.3631
+2026-04-11 15:58:40,738 - min_max_attack try_count: 19
+2026-04-11 15:58:40,738 - min_max_attack lamda: 0.6212520599365234, max_d: 2.8995678424835205
+2026-04-11 15:58:40,743 - Round number: 51 --------------------------
+2026-04-11 15:58:40,743 - Evaluate global model
+2026-04-11 15:58:40,924 - Averaged Train Loss: 2.8207
+2026-04-11 15:58:40,924 - Test Accurancy: 0.3723
+2026-04-11 15:58:41,291 - min_max_attack try_count: 19
+2026-04-11 15:58:41,291 - min_max_attack lamda: 0.8622455596923828, max_d: 3.1633810997009277
+2026-04-11 15:58:41,296 - Round number: 52 --------------------------
+2026-04-11 15:58:41,296 - Evaluate global model
+2026-04-11 15:58:41,458 - Averaged Train Loss: 2.8791
+2026-04-11 15:58:41,458 - Test Accurancy: 0.3774
+2026-04-11 15:58:41,832 - min_max_attack try_count: 19
+2026-04-11 15:58:41,832 - min_max_attack lamda: 0.8586406707763672, max_d: 3.308258056640625
+2026-04-11 15:58:41,837 - Round number: 53 --------------------------
+2026-04-11 15:58:41,837 - Evaluate global model
+2026-04-11 15:58:41,976 - Averaged Train Loss: 2.8304
+2026-04-11 15:58:41,977 - Test Accurancy: 0.3832
+2026-04-11 15:58:42,366 - min_max_attack try_count: 19
+2026-04-11 15:58:42,366 - min_max_attack lamda: 0.7621860504150391, max_d: 3.0033395290374756
+2026-04-11 15:58:42,371 - Round number: 54 --------------------------
+2026-04-11 15:58:42,371 - Evaluate global model
+2026-04-11 15:58:42,515 - Averaged Train Loss: 2.8985
+2026-04-11 15:58:42,515 - Test Accurancy: 0.3824
+2026-04-11 15:58:42,879 - min_max_attack try_count: 19
+2026-04-11 15:58:42,879 - min_max_attack lamda: 0.5622577667236328, max_d: 2.8119046688079834
+2026-04-11 15:58:42,884 - Round number: 55 --------------------------
+2026-04-11 15:58:42,884 - Evaluate global model
+2026-04-11 15:58:43,051 - Averaged Train Loss: 2.6795
+2026-04-11 15:58:43,051 - Test Accurancy: 0.3774
+2026-04-11 15:58:43,407 - min_max_attack try_count: 19
+2026-04-11 15:58:43,407 - min_max_attack lamda: 0.5499935150146484, max_d: 2.5278403759002686
+2026-04-11 15:58:43,412 - Round number: 56 --------------------------
+2026-04-11 15:58:43,412 - Evaluate global model
+2026-04-11 15:58:43,571 - Averaged Train Loss: 2.8246
+2026-04-11 15:58:43,571 - Test Accurancy: 0.3785
+2026-04-11 15:58:43,947 - min_max_attack try_count: 19
+2026-04-11 15:58:43,947 - min_max_attack lamda: 0.5326366424560547, max_d: 2.6348233222961426
+2026-04-11 15:58:43,952 - Round number: 57 --------------------------
+2026-04-11 15:58:43,952 - Evaluate global model
+2026-04-11 15:58:44,117 - Averaged Train Loss: 2.7642
+2026-04-11 15:58:44,117 - Test Accurancy: 0.3812
+2026-04-11 15:58:44,490 - min_max_attack try_count: 19
+2026-04-11 15:58:44,490 - min_max_attack lamda: 0.6532001495361328, max_d: 2.734872341156006
+2026-04-11 15:58:44,495 - Round number: 58 --------------------------
+2026-04-11 15:58:44,495 - Evaluate global model
+2026-04-11 15:58:44,683 - Averaged Train Loss: 2.8046
+2026-04-11 15:58:44,683 - Test Accurancy: 0.3886
+2026-04-11 15:58:45,042 - min_max_attack try_count: 19
+2026-04-11 15:58:45,042 - min_max_attack lamda: 0.6413555145263672, max_d: 2.686448097229004
+2026-04-11 15:58:45,048 - Round number: 59 --------------------------
+2026-04-11 15:58:45,048 - Evaluate global model
+2026-04-11 15:58:45,241 - Averaged Train Loss: 2.7231
+2026-04-11 15:58:45,241 - Test Accurancy: 0.3812
+2026-04-11 15:58:45,615 - min_max_attack try_count: 19
+2026-04-11 15:58:45,615 - min_max_attack lamda: 0.5522441864013672, max_d: 2.437288999557495
+2026-04-11 15:58:45,620 - Round number: 60 --------------------------
+2026-04-11 15:58:45,620 - Evaluate global model
+2026-04-11 15:58:45,775 - Averaged Train Loss: 2.7541
+2026-04-11 15:58:45,775 - Test Accurancy: 0.3901
+2026-04-11 15:58:46,167 - min_max_attack try_count: 19
+2026-04-11 15:58:46,167 - min_max_attack lamda: 0.5654621124267578, max_d: 2.516162157058716
+2026-04-11 15:58:46,172 - Round number: 61 --------------------------
+2026-04-11 15:58:46,173 - Evaluate global model
+2026-04-11 15:58:46,332 - Averaged Train Loss: 2.7629
+2026-04-11 15:58:46,332 - Test Accurancy: 0.3781
+2026-04-11 15:58:46,704 - min_max_attack try_count: 19
+2026-04-11 15:58:46,704 - min_max_attack lamda: 0.6172847747802734, max_d: 2.557001829147339
+2026-04-11 15:58:46,710 - Round number: 62 --------------------------
+2026-04-11 15:58:46,710 - Evaluate global model
+2026-04-11 15:58:46,890 - Averaged Train Loss: 2.7399
+2026-04-11 15:58:46,890 - Test Accurancy: 0.3963
+2026-04-11 15:58:47,260 - min_max_attack try_count: 19
+2026-04-11 15:58:47,260 - min_max_attack lamda: 0.6708240509033203, max_d: 2.658155679702759
+2026-04-11 15:58:47,266 - Round number: 63 --------------------------
+2026-04-11 15:58:47,267 - Evaluate global model
+2026-04-11 15:58:47,428 - Averaged Train Loss: 2.7376
+2026-04-11 15:58:47,428 - Test Accurancy: 0.4237
+2026-04-11 15:58:47,819 - min_max_attack try_count: 19
+2026-04-11 15:58:47,819 - min_max_attack lamda: 0.6361293792724609, max_d: 2.439642906188965
+2026-04-11 15:58:47,823 - Round number: 64 --------------------------
+2026-04-11 15:58:47,823 - Evaluate global model
+2026-04-11 15:58:47,958 - Averaged Train Loss: 2.6389
+2026-04-11 15:58:47,958 - Test Accurancy: 0.4276
+2026-04-11 15:58:48,343 - min_max_attack try_count: 19
+2026-04-11 15:58:48,343 - min_max_attack lamda: 0.5455493927001953, max_d: 2.177751302719116
+2026-04-11 15:58:48,348 - Round number: 65 --------------------------
+2026-04-11 15:58:48,348 - Evaluate global model
+2026-04-11 15:58:48,509 - Averaged Train Loss: 2.6578
+2026-04-11 15:58:48,509 - Test Accurancy: 0.4229
+2026-04-11 15:58:48,869 - min_max_attack try_count: 19
+2026-04-11 15:58:48,869 - min_max_attack lamda: 0.5997371673583984, max_d: 2.215061902999878
+2026-04-11 15:58:48,874 - Round number: 66 --------------------------
+2026-04-11 15:58:48,874 - Evaluate global model
+2026-04-11 15:58:49,039 - Averaged Train Loss: 2.5963
+2026-04-11 15:58:49,039 - Test Accurancy: 0.4260
+2026-04-11 15:58:49,420 - min_max_attack try_count: 19
+2026-04-11 15:58:49,421 - min_max_attack lamda: 0.45571327209472656, max_d: 1.946233868598938
+2026-04-11 15:58:49,426 - Round number: 67 --------------------------
+2026-04-11 15:58:49,426 - Evaluate global model
+2026-04-11 15:58:49,584 - Averaged Train Loss: 2.5965
+2026-04-11 15:58:49,584 - Test Accurancy: 0.4604
+2026-04-11 15:58:49,972 - min_max_attack try_count: 19
+2026-04-11 15:58:49,973 - min_max_attack lamda: 0.5425739288330078, max_d: 2.1536684036254883
+2026-04-11 15:58:49,978 - Round number: 68 --------------------------
+2026-04-11 15:58:49,978 - Evaluate global model
+2026-04-11 15:58:50,162 - Averaged Train Loss: 2.6570
+2026-04-11 15:58:50,162 - Test Accurancy: 0.4890
+2026-04-11 15:58:50,524 - min_max_attack try_count: 19
+2026-04-11 15:58:50,524 - min_max_attack lamda: 0.5271434783935547, max_d: 2.045828104019165
+2026-04-11 15:58:50,530 - Round number: 69 --------------------------
+2026-04-11 15:58:50,530 - Evaluate global model
+2026-04-11 15:58:50,713 - Averaged Train Loss: 2.6128
+2026-04-11 15:58:50,713 - Test Accurancy: 0.5052
+2026-04-11 15:58:51,077 - min_max_attack try_count: 19
+2026-04-11 15:58:51,077 - min_max_attack lamda: 0.4761028289794922, max_d: 1.9307175874710083
+2026-04-11 15:58:51,082 - Round number: 70 --------------------------
+2026-04-11 15:58:51,082 - Evaluate global model
+2026-04-11 15:58:51,245 - Averaged Train Loss: 2.5436
+2026-04-11 15:58:51,246 - Test Accurancy: 0.4998
+2026-04-11 15:58:51,628 - min_max_attack try_count: 19
+2026-04-11 15:58:51,628 - min_max_attack lamda: 0.5082607269287109, max_d: 1.8821042776107788
+2026-04-11 15:58:51,633 - Round number: 71 --------------------------
+2026-04-11 15:58:51,633 - Evaluate global model
+2026-04-11 15:58:51,791 - Averaged Train Loss: 2.5468
+2026-04-11 15:58:51,791 - Test Accurancy: 0.5126
+2026-04-11 15:58:52,167 - min_max_attack try_count: 19
+2026-04-11 15:58:52,167 - min_max_attack lamda: 0.4721355438232422, max_d: 1.8080272674560547
+2026-04-11 15:58:52,173 - Round number: 72 --------------------------
+2026-04-11 15:58:52,173 - Evaluate global model
+2026-04-11 15:58:52,359 - Averaged Train Loss: 2.5538
+2026-04-11 15:58:52,359 - Test Accurancy: 0.5079
+2026-04-11 15:58:52,718 - min_max_attack try_count: 19
+2026-04-11 15:58:52,719 - min_max_attack lamda: 0.5202198028564453, max_d: 1.833682656288147
+2026-04-11 15:58:52,724 - Round number: 73 --------------------------
+2026-04-11 15:58:52,724 - Evaluate global model
+2026-04-11 15:58:52,903 - Averaged Train Loss: 2.5285
+2026-04-11 15:58:52,903 - Test Accurancy: 0.5222
+2026-04-11 15:58:53,294 - min_max_attack try_count: 19
+2026-04-11 15:58:53,295 - min_max_attack lamda: 0.4537677764892578, max_d: 1.7356501817703247
+2026-04-11 15:58:53,300 - Round number: 74 --------------------------
+2026-04-11 15:58:53,300 - Evaluate global model
+2026-04-11 15:58:53,447 - Averaged Train Loss: 2.5166
+2026-04-11 15:58:53,447 - Test Accurancy: 0.5203
+2026-04-11 15:58:53,851 - min_max_attack try_count: 19
+2026-04-11 15:58:53,852 - min_max_attack lamda: 0.4208850860595703, max_d: 1.7085996866226196
+2026-04-11 15:58:53,857 - Round number: 75 --------------------------
+2026-04-11 15:58:53,857 - Evaluate global model
+2026-04-11 15:58:54,015 - Averaged Train Loss: 2.5399
+2026-04-11 15:58:54,015 - Test Accurancy: 0.5268
+2026-04-11 15:58:54,392 - min_max_attack try_count: 19
+2026-04-11 15:58:54,393 - min_max_attack lamda: 0.4543590545654297, max_d: 1.7200345993041992
+2026-04-11 15:58:54,398 - Round number: 76 --------------------------
+2026-04-11 15:58:54,398 - Evaluate global model
+2026-04-11 15:58:54,546 - Averaged Train Loss: 2.4571
+2026-04-11 15:58:54,546 - Test Accurancy: 0.5218
+2026-04-11 15:58:54,916 - min_max_attack try_count: 19
+2026-04-11 15:58:54,916 - min_max_attack lamda: 0.4285907745361328, max_d: 1.6323492527008057
+2026-04-11 15:58:54,921 - Round number: 77 --------------------------
+2026-04-11 15:58:54,921 - Evaluate global model
+2026-04-11 15:58:55,073 - Averaged Train Loss: 2.4841
+2026-04-11 15:58:55,073 - Test Accurancy: 0.5272
+2026-04-11 15:58:55,475 - min_max_attack try_count: 19
+2026-04-11 15:58:55,475 - min_max_attack lamda: 0.4540538787841797, max_d: 1.7544084787368774
+2026-04-11 15:58:55,480 - Round number: 78 --------------------------
+2026-04-11 15:58:55,480 - Evaluate global model
+2026-04-11 15:58:55,648 - Averaged Train Loss: 2.4117
+2026-04-11 15:58:55,648 - Test Accurancy: 0.5091
+2026-04-11 15:58:56,036 - min_max_attack try_count: 19
+2026-04-11 15:58:56,036 - min_max_attack lamda: 0.4312610626220703, max_d: 1.6194775104522705
+2026-04-11 15:58:56,042 - Round number: 79 --------------------------
+2026-04-11 15:58:56,042 - Evaluate global model
+2026-04-11 15:58:56,233 - Averaged Train Loss: 2.4471
+2026-04-11 15:58:56,234 - Test Accurancy: 0.5211
+2026-04-11 15:58:56,587 - min_max_attack try_count: 19
+2026-04-11 15:58:56,587 - min_max_attack lamda: 0.42618751525878906, max_d: 1.612177848815918
+2026-04-11 15:58:56,593 - Round number: 80 --------------------------
+2026-04-11 15:58:56,593 - Evaluate global model
+2026-04-11 15:58:56,779 - Averaged Train Loss: 2.4060
+2026-04-11 15:58:56,779 - Test Accurancy: 0.5315
+2026-04-11 15:58:57,142 - min_max_attack try_count: 19
+2026-04-11 15:58:57,142 - min_max_attack lamda: 0.4398059844970703, max_d: 1.5624958276748657
+2026-04-11 15:58:57,147 - Round number: 81 --------------------------
+2026-04-11 15:58:57,147 - Evaluate global model
+2026-04-11 15:58:57,299 - Averaged Train Loss: 2.4538
+2026-04-11 15:58:57,299 - Test Accurancy: 0.5326
+2026-04-11 15:58:57,670 - min_max_attack try_count: 19
+2026-04-11 15:58:57,670 - min_max_attack lamda: 0.42181968688964844, max_d: 1.5146836042404175
+2026-04-11 15:58:57,675 - Round number: 82 --------------------------
+2026-04-11 15:58:57,675 - Evaluate global model
+2026-04-11 15:58:57,851 - Averaged Train Loss: 2.4493
+2026-04-11 15:58:57,851 - Test Accurancy: 0.5323
+2026-04-11 15:58:58,207 - min_max_attack try_count: 19
+2026-04-11 15:58:58,208 - min_max_attack lamda: 0.4304027557373047, max_d: 1.4954826831817627
+2026-04-11 15:58:58,212 - Round number: 83 --------------------------
+2026-04-11 15:58:58,212 - Evaluate global model
+2026-04-11 15:58:58,384 - Averaged Train Loss: 2.3982
+2026-04-11 15:58:58,384 - Test Accurancy: 0.5307
+2026-04-11 15:58:58,744 - min_max_attack try_count: 19
+2026-04-11 15:58:58,744 - min_max_attack lamda: 0.40627479553222656, max_d: 1.4799518585205078
+2026-04-11 15:58:58,749 - Round number: 84 --------------------------
+2026-04-11 15:58:58,749 - Evaluate global model
+2026-04-11 15:58:58,903 - Averaged Train Loss: 2.4412
+2026-04-11 15:58:58,903 - Test Accurancy: 0.5323
+2026-04-11 15:58:59,290 - min_max_attack try_count: 19
+2026-04-11 15:58:59,290 - min_max_attack lamda: 0.4163837432861328, max_d: 1.4223055839538574
+2026-04-11 15:58:59,295 - Round number: 85 --------------------------
+2026-04-11 15:58:59,295 - Evaluate global model
+2026-04-11 15:58:59,437 - Averaged Train Loss: 2.4134
+2026-04-11 15:58:59,437 - Test Accurancy: 0.5353
+2026-04-11 15:58:59,820 - min_max_attack try_count: 19
+2026-04-11 15:58:59,821 - min_max_attack lamda: 0.43549537658691406, max_d: 1.4398994445800781
+2026-04-11 15:58:59,826 - Round number: 86 --------------------------
+2026-04-11 15:58:59,826 - Evaluate global model
+2026-04-11 15:58:59,986 - Averaged Train Loss: 2.4115
+2026-04-11 15:58:59,986 - Test Accurancy: 0.5350
+2026-04-11 15:59:00,362 - min_max_attack try_count: 19
+2026-04-11 15:59:00,362 - min_max_attack lamda: 0.40442466735839844, max_d: 1.3737750053405762
+2026-04-11 15:59:00,367 - Round number: 87 --------------------------
+2026-04-11 15:59:00,367 - Evaluate global model
+2026-04-11 15:59:00,518 - Averaged Train Loss: 2.4203
+2026-04-11 15:59:00,519 - Test Accurancy: 0.5346
+2026-04-11 15:59:00,911 - min_max_attack try_count: 19
+2026-04-11 15:59:00,911 - min_max_attack lamda: 0.39933204650878906, max_d: 1.3385580778121948
+2026-04-11 15:59:00,917 - Round number: 88 --------------------------
+2026-04-11 15:59:00,917 - Evaluate global model
+2026-04-11 15:59:01,073 - Averaged Train Loss: 2.3360
+2026-04-11 15:59:01,074 - Test Accurancy: 0.5361
+2026-04-11 15:59:01,466 - min_max_attack try_count: 19
+2026-04-11 15:59:01,467 - min_max_attack lamda: 0.4084491729736328, max_d: 1.2783139944076538
+2026-04-11 15:59:01,472 - Round number: 89 --------------------------
+2026-04-11 15:59:01,472 - Evaluate global model
+2026-04-11 15:59:01,655 - Averaged Train Loss: 2.3784
+2026-04-11 15:59:01,655 - Test Accurancy: 0.5365
+2026-04-11 15:59:02,012 - min_max_attack try_count: 19
+2026-04-11 15:59:02,012 - min_max_attack lamda: 0.40541648864746094, max_d: 1.2392648458480835
+2026-04-11 15:59:02,018 - Round number: 90 --------------------------
+2026-04-11 15:59:02,018 - Evaluate global model
+2026-04-11 15:59:02,203 - Averaged Train Loss: 2.3478
+2026-04-11 15:59:02,203 - Test Accurancy: 0.5350
+2026-04-11 15:59:02,562 - min_max_attack try_count: 19
+2026-04-11 15:59:02,562 - min_max_attack lamda: 0.3858470916748047, max_d: 1.122501254081726
+2026-04-11 15:59:02,568 - Round number: 91 --------------------------
+2026-04-11 15:59:02,568 - Evaluate global model
+2026-04-11 15:59:02,727 - Averaged Train Loss: 2.3972
+2026-04-11 15:59:02,727 - Test Accurancy: 0.5353
+2026-04-11 15:59:03,105 - min_max_attack try_count: 19
+2026-04-11 15:59:03,105 - min_max_attack lamda: 0.3923511505126953, max_d: 1.1358710527420044
+2026-04-11 15:59:03,109 - Round number: 92 --------------------------
+2026-04-11 15:59:03,110 - Evaluate global model
+2026-04-11 15:59:03,269 - Averaged Train Loss: 2.3920
+2026-04-11 15:59:03,269 - Test Accurancy: 0.5365
+2026-04-11 15:59:03,624 - min_max_attack try_count: 19
+2026-04-11 15:59:03,624 - min_max_attack lamda: 0.40724754333496094, max_d: 1.1761915683746338
+2026-04-11 15:59:03,629 - Round number: 93 --------------------------
+2026-04-11 15:59:03,629 - Evaluate global model
+2026-04-11 15:59:03,815 - Averaged Train Loss: 2.3905
+2026-04-11 15:59:03,815 - Test Accurancy: 0.5342
+2026-04-11 15:59:04,172 - min_max_attack try_count: 19
+2026-04-11 15:59:04,172 - min_max_attack lamda: 0.4040813446044922, max_d: 1.1170306205749512
+2026-04-11 15:59:04,177 - Round number: 94 --------------------------
+2026-04-11 15:59:04,177 - Evaluate global model
+2026-04-11 15:59:04,348 - Averaged Train Loss: 2.3951
+2026-04-11 15:59:04,348 - Test Accurancy: 0.5346
+2026-04-11 15:59:04,733 - min_max_attack try_count: 19
+2026-04-11 15:59:04,734 - min_max_attack lamda: 0.3897380828857422, max_d: 1.0787245035171509
+2026-04-11 15:59:04,738 - Round number: 95 --------------------------
+2026-04-11 15:59:04,738 - Evaluate global model
+2026-04-11 15:59:04,881 - Averaged Train Loss: 2.4291
+2026-04-11 15:59:04,881 - Test Accurancy: 0.5361
+2026-04-11 15:59:05,274 - min_max_attack try_count: 19
+2026-04-11 15:59:05,274 - min_max_attack lamda: 0.3843212127685547, max_d: 1.0729937553405762
+2026-04-11 15:59:05,279 - Round number: 96 --------------------------
+2026-04-11 15:59:05,279 - Evaluate global model
+2026-04-11 15:59:05,436 - Averaged Train Loss: 2.4118
+2026-04-11 15:59:05,436 - Test Accurancy: 0.5365
+2026-04-11 15:59:05,810 - min_max_attack try_count: 19
+2026-04-11 15:59:05,810 - min_max_attack lamda: 0.38207054138183594, max_d: 1.0574475526809692
+2026-04-11 15:59:05,815 - Round number: 97 --------------------------
+2026-04-11 15:59:05,815 - Evaluate global model
+2026-04-11 15:59:05,966 - Averaged Train Loss: 2.4247
+2026-04-11 15:59:05,966 - Test Accurancy: 0.5369
+2026-04-11 15:59:06,340 - min_max_attack try_count: 19
+2026-04-11 15:59:06,340 - min_max_attack lamda: 0.3754138946533203, max_d: 1.046294093132019
+2026-04-11 15:59:06,345 - Round number: 98 --------------------------
+2026-04-11 15:59:06,345 - Evaluate global model
+2026-04-11 15:59:06,495 - Averaged Train Loss: 2.4265
+2026-04-11 15:59:06,495 - Test Accurancy: 0.5357
+2026-04-11 15:59:06,899 - min_max_attack try_count: 19
+2026-04-11 15:59:06,899 - min_max_attack lamda: 0.3831195831298828, max_d: 1.042136311531067
+2026-04-11 15:59:06,904 - Round number: 99 --------------------------
+2026-04-11 15:59:06,904 - Evaluate global model
+2026-04-11 15:59:07,064 - Averaged Train Loss: 2.4291
+2026-04-11 15:59:07,064 - Test Accurancy: 0.5350
+2026-04-11 15:59:07,427 - min_max_attack try_count: 19
+2026-04-11 15:59:07,427 - min_max_attack lamda: 0.3812122344970703, max_d: 1.0377681255340576
+2026-04-11 15:59:07,432 - Round number: 100 --------------------------
+2026-04-11 15:59:07,432 - Evaluate global model
+2026-04-11 15:59:07,628 - Averaged Train Loss: 2.4569
+2026-04-11 15:59:07,628 - Test Accurancy: 0.5342
+2026-04-11 15:59:07,969 - min_max_attack try_count: 19
+2026-04-11 15:59:07,969 - min_max_attack lamda: 0.3711986541748047, max_d: 0.9706494212150574
+2026-04-11 15:59:07,970 - Run over
+2026-04-11 15:59:07,970 - Saving results to ./exp/exp3/UCIHAR/median_min-max.h5
+2026-04-11 15:59:07,974 - Best accuracy: 0.5368868288914639
+2026-04-11 15:59:07,974 - Average time cost per round: 0.544754707813263

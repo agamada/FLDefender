@@ -1,0 +1,425 @@
+2026-04-14 15:12:46,417 - *****************EXP-4*****************
+2026-04-14 15:12:46,418 - Exp repeats: 1
+2026-04-14 15:12:46,418 - Communication Rounds: 100
+2026-04-14 15:12:46,418 - Clients: 40
+
+2026-04-14 15:12:46,418 - Attack method: CAMP
+2026-04-14 15:12:46,418 - Filtering rule: trmean
+2026-04-14 15:12:46,418 - Dataset: Cifar10
+2026-04-14 15:12:46,418 - Model: cnn2
+2026-04-14 15:12:46,418 - Learning Rate: 0.04
+2026-04-14 15:12:46,418 - Batch Size: 64
+2026-04-14 15:12:46,418 - Device: cuda
+2026-04-14 15:12:46,418 - Device id: 0
+2026-04-14 15:12:46,418 - Adversaries: 8
+2026-04-14 15:12:46,418 - Model Poisoning: CAMP attack, mode clipping_v7
+2026-04-14 15:12:46,418 - *****************EXP-4*****************
+2026-04-14 15:12:46,845 - Running time: 0th ==========================
+2026-04-14 15:12:51,923 - Round number: 0 --------------------------
+2026-04-14 15:12:51,923 - Evaluate global model
+2026-04-14 15:12:54,721 - Averaged Train Loss: 2.3021
+2026-04-14 15:12:54,721 - Test Accurancy: 0.1016
+2026-04-14 15:13:04,901 - Round number: 1 --------------------------
+2026-04-14 15:13:04,902 - Evaluate global model
+2026-04-14 15:13:06,894 - Averaged Train Loss: 2.2856
+2026-04-14 15:13:06,894 - Test Accurancy: 0.1116
+2026-04-14 15:13:15,788 - Round number: 2 --------------------------
+2026-04-14 15:13:15,788 - Evaluate global model
+2026-04-14 15:13:18,493 - Averaged Train Loss: 2.2394
+2026-04-14 15:13:18,493 - Test Accurancy: 0.1875
+2026-04-14 15:13:26,329 - Round number: 3 --------------------------
+2026-04-14 15:13:26,329 - Evaluate global model
+2026-04-14 15:13:29,344 - Averaged Train Loss: 2.1608
+2026-04-14 15:13:29,345 - Test Accurancy: 0.2075
+2026-04-14 15:13:37,594 - Round number: 4 --------------------------
+2026-04-14 15:13:37,595 - Evaluate global model
+2026-04-14 15:13:40,274 - Averaged Train Loss: 2.0686
+2026-04-14 15:13:40,275 - Test Accurancy: 0.2306
+2026-04-14 15:13:48,534 - Round number: 5 --------------------------
+2026-04-14 15:13:48,534 - Evaluate global model
+2026-04-14 15:13:51,511 - Averaged Train Loss: 2.0047
+2026-04-14 15:13:51,511 - Test Accurancy: 0.2490
+2026-04-14 15:13:59,203 - Round number: 6 --------------------------
+2026-04-14 15:13:59,204 - Evaluate global model
+2026-04-14 15:14:02,119 - Averaged Train Loss: 1.9566
+2026-04-14 15:14:02,119 - Test Accurancy: 0.2754
+2026-04-14 15:14:10,691 - Round number: 7 --------------------------
+2026-04-14 15:14:10,691 - Evaluate global model
+2026-04-14 15:14:12,848 - Averaged Train Loss: 1.9100
+2026-04-14 15:14:12,848 - Test Accurancy: 0.3030
+2026-04-14 15:14:22,145 - Round number: 8 --------------------------
+2026-04-14 15:14:22,145 - Evaluate global model
+2026-04-14 15:14:24,335 - Averaged Train Loss: 1.8658
+2026-04-14 15:14:24,335 - Test Accurancy: 0.3264
+2026-04-14 15:14:32,509 - Round number: 9 --------------------------
+2026-04-14 15:14:32,509 - Evaluate global model
+2026-04-14 15:14:35,777 - Averaged Train Loss: 1.8385
+2026-04-14 15:14:35,777 - Test Accurancy: 0.3311
+2026-04-14 15:14:43,219 - Round number: 10 --------------------------
+2026-04-14 15:14:43,219 - Evaluate global model
+2026-04-14 15:14:46,416 - Averaged Train Loss: 1.8165
+2026-04-14 15:14:46,417 - Test Accurancy: 0.3380
+2026-04-14 15:14:54,536 - Round number: 11 --------------------------
+2026-04-14 15:14:54,536 - Evaluate global model
+2026-04-14 15:14:57,196 - Averaged Train Loss: 1.7907
+2026-04-14 15:14:57,196 - Test Accurancy: 0.3429
+2026-04-14 15:15:05,563 - Round number: 12 --------------------------
+2026-04-14 15:15:05,563 - Evaluate global model
+2026-04-14 15:15:08,379 - Averaged Train Loss: 1.7587
+2026-04-14 15:15:08,380 - Test Accurancy: 0.3572
+2026-04-14 15:15:16,578 - Round number: 13 --------------------------
+2026-04-14 15:15:16,578 - Evaluate global model
+2026-04-14 15:15:19,229 - Averaged Train Loss: 1.7317
+2026-04-14 15:15:19,229 - Test Accurancy: 0.3638
+2026-04-14 15:15:28,157 - Round number: 14 --------------------------
+2026-04-14 15:15:28,157 - Evaluate global model
+2026-04-14 15:15:30,313 - Averaged Train Loss: 1.7076
+2026-04-14 15:15:30,313 - Test Accurancy: 0.3742
+2026-04-14 15:15:39,245 - Round number: 15 --------------------------
+2026-04-14 15:15:39,245 - Evaluate global model
+2026-04-14 15:15:41,986 - Averaged Train Loss: 1.6909
+2026-04-14 15:15:41,986 - Test Accurancy: 0.3774
+2026-04-14 15:15:49,531 - Round number: 16 --------------------------
+2026-04-14 15:15:49,531 - Evaluate global model
+2026-04-14 15:15:53,153 - Averaged Train Loss: 1.6688
+2026-04-14 15:15:53,153 - Test Accurancy: 0.3860
+2026-04-14 15:16:00,715 - Round number: 17 --------------------------
+2026-04-14 15:16:00,715 - Evaluate global model
+2026-04-14 15:16:03,686 - Averaged Train Loss: 1.6523
+2026-04-14 15:16:03,686 - Test Accurancy: 0.3905
+2026-04-14 15:16:12,419 - Round number: 18 --------------------------
+2026-04-14 15:16:12,420 - Evaluate global model
+2026-04-14 15:16:14,653 - Averaged Train Loss: 1.6305
+2026-04-14 15:16:14,654 - Test Accurancy: 0.3959
+2026-04-14 15:16:23,102 - Round number: 19 --------------------------
+2026-04-14 15:16:23,103 - Evaluate global model
+2026-04-14 15:16:25,900 - Averaged Train Loss: 1.6171
+2026-04-14 15:16:25,900 - Test Accurancy: 0.4019
+2026-04-14 15:16:34,097 - Round number: 20 --------------------------
+2026-04-14 15:16:34,097 - Evaluate global model
+2026-04-14 15:16:36,715 - Averaged Train Loss: 1.6016
+2026-04-14 15:16:36,716 - Test Accurancy: 0.4073
+2026-04-14 15:16:45,345 - Round number: 21 --------------------------
+2026-04-14 15:16:45,345 - Evaluate global model
+2026-04-14 15:16:47,891 - Averaged Train Loss: 1.5890
+2026-04-14 15:16:47,891 - Test Accurancy: 0.4116
+2026-04-14 15:16:55,629 - Round number: 22 --------------------------
+2026-04-14 15:16:55,629 - Evaluate global model
+2026-04-14 15:16:59,092 - Averaged Train Loss: 1.5742
+2026-04-14 15:16:59,092 - Test Accurancy: 0.4180
+2026-04-14 15:17:06,446 - Round number: 23 --------------------------
+2026-04-14 15:17:06,446 - Evaluate global model
+2026-04-14 15:17:09,842 - Averaged Train Loss: 1.5663
+2026-04-14 15:17:09,842 - Test Accurancy: 0.4206
+2026-04-14 15:17:17,991 - Round number: 24 --------------------------
+2026-04-14 15:17:17,991 - Evaluate global model
+2026-04-14 15:17:20,354 - Averaged Train Loss: 1.5430
+2026-04-14 15:17:20,354 - Test Accurancy: 0.4300
+2026-04-14 15:17:29,556 - Round number: 25 --------------------------
+2026-04-14 15:17:29,556 - Evaluate global model
+2026-04-14 15:17:31,707 - Averaged Train Loss: 1.5367
+2026-04-14 15:17:31,707 - Test Accurancy: 0.4287
+2026-04-14 15:17:39,859 - Round number: 26 --------------------------
+2026-04-14 15:17:39,859 - Evaluate global model
+2026-04-14 15:17:42,826 - Averaged Train Loss: 1.5316
+2026-04-14 15:17:42,826 - Test Accurancy: 0.4297
+2026-04-14 15:17:50,763 - Round number: 27 --------------------------
+2026-04-14 15:17:50,764 - Evaluate global model
+2026-04-14 15:17:53,701 - Averaged Train Loss: 1.5149
+2026-04-14 15:17:53,701 - Test Accurancy: 0.4372
+2026-04-14 15:18:02,016 - Round number: 28 --------------------------
+2026-04-14 15:18:02,016 - Evaluate global model
+2026-04-14 15:18:04,828 - Averaged Train Loss: 1.5039
+2026-04-14 15:18:04,828 - Test Accurancy: 0.4418
+2026-04-14 15:18:12,543 - Round number: 29 --------------------------
+2026-04-14 15:18:12,543 - Evaluate global model
+2026-04-14 15:18:15,830 - Averaged Train Loss: 1.4943
+2026-04-14 15:18:15,830 - Test Accurancy: 0.4450
+2026-04-14 15:18:23,518 - Round number: 30 --------------------------
+2026-04-14 15:18:23,518 - Evaluate global model
+2026-04-14 15:18:26,038 - Averaged Train Loss: 1.4807
+2026-04-14 15:18:26,039 - Test Accurancy: 0.4533
+2026-04-14 15:18:35,241 - Round number: 31 --------------------------
+2026-04-14 15:18:35,242 - Evaluate global model
+2026-04-14 15:18:37,358 - Averaged Train Loss: 1.4718
+2026-04-14 15:18:37,359 - Test Accurancy: 0.4573
+2026-04-14 15:18:45,907 - Round number: 32 --------------------------
+2026-04-14 15:18:45,907 - Evaluate global model
+2026-04-14 15:18:48,962 - Averaged Train Loss: 1.4683
+2026-04-14 15:18:48,962 - Test Accurancy: 0.4567
+2026-04-14 15:18:56,330 - Round number: 33 --------------------------
+2026-04-14 15:18:56,330 - Evaluate global model
+2026-04-14 15:18:59,954 - Averaged Train Loss: 1.4551
+2026-04-14 15:18:59,954 - Test Accurancy: 0.4631
+2026-04-14 15:19:07,574 - Round number: 34 --------------------------
+2026-04-14 15:19:07,574 - Evaluate global model
+2026-04-14 15:19:10,530 - Averaged Train Loss: 1.4520
+2026-04-14 15:19:10,530 - Test Accurancy: 0.4659
+2026-04-14 15:19:18,794 - Round number: 35 --------------------------
+2026-04-14 15:19:18,794 - Evaluate global model
+2026-04-14 15:19:21,681 - Averaged Train Loss: 1.4441
+2026-04-14 15:19:21,681 - Test Accurancy: 0.4638
+2026-04-14 15:19:29,470 - Round number: 36 --------------------------
+2026-04-14 15:19:29,471 - Evaluate global model
+2026-04-14 15:19:32,430 - Averaged Train Loss: 1.4378
+2026-04-14 15:19:32,430 - Test Accurancy: 0.4675
+2026-04-14 15:19:40,768 - Round number: 37 --------------------------
+2026-04-14 15:19:40,768 - Evaluate global model
+2026-04-14 15:19:42,995 - Averaged Train Loss: 1.4344
+2026-04-14 15:19:42,996 - Test Accurancy: 0.4693
+2026-04-14 15:19:51,847 - Round number: 38 --------------------------
+2026-04-14 15:19:51,848 - Evaluate global model
+2026-04-14 15:19:54,572 - Averaged Train Loss: 1.4236
+2026-04-14 15:19:54,572 - Test Accurancy: 0.4736
+2026-04-14 15:20:02,093 - Round number: 39 --------------------------
+2026-04-14 15:20:02,093 - Evaluate global model
+2026-04-14 15:20:05,865 - Averaged Train Loss: 1.4184
+2026-04-14 15:20:05,865 - Test Accurancy: 0.4757
+2026-04-14 15:20:12,943 - Round number: 40 --------------------------
+2026-04-14 15:20:12,943 - Evaluate global model
+2026-04-14 15:20:16,189 - Averaged Train Loss: 1.4048
+2026-04-14 15:20:16,189 - Test Accurancy: 0.4796
+2026-04-14 15:20:24,493 - Round number: 41 --------------------------
+2026-04-14 15:20:24,493 - Evaluate global model
+2026-04-14 15:20:26,880 - Averaged Train Loss: 1.4016
+2026-04-14 15:20:26,880 - Test Accurancy: 0.4819
+2026-04-14 15:20:35,109 - Round number: 42 --------------------------
+2026-04-14 15:20:35,109 - Evaluate global model
+2026-04-14 15:20:38,164 - Averaged Train Loss: 1.3964
+2026-04-14 15:20:38,164 - Test Accurancy: 0.4834
+2026-04-14 15:20:45,851 - Round number: 43 --------------------------
+2026-04-14 15:20:45,852 - Evaluate global model
+2026-04-14 15:20:48,795 - Averaged Train Loss: 1.3801
+2026-04-14 15:20:48,795 - Test Accurancy: 0.4889
+2026-04-14 15:20:57,005 - Round number: 44 --------------------------
+2026-04-14 15:20:57,006 - Evaluate global model
+2026-04-14 15:20:59,970 - Averaged Train Loss: 1.3786
+2026-04-14 15:20:59,971 - Test Accurancy: 0.4914
+2026-04-14 15:21:07,671 - Round number: 45 --------------------------
+2026-04-14 15:21:07,671 - Evaluate global model
+2026-04-14 15:21:11,198 - Averaged Train Loss: 1.3744
+2026-04-14 15:21:11,199 - Test Accurancy: 0.4932
+2026-04-14 15:21:18,126 - Round number: 46 --------------------------
+2026-04-14 15:21:18,126 - Evaluate global model
+2026-04-14 15:21:21,604 - Averaged Train Loss: 1.3667
+2026-04-14 15:21:21,604 - Test Accurancy: 0.4942
+2026-04-14 15:21:29,590 - Round number: 47 --------------------------
+2026-04-14 15:21:29,591 - Evaluate global model
+2026-04-14 15:21:32,326 - Averaged Train Loss: 1.3590
+2026-04-14 15:21:32,326 - Test Accurancy: 0.4964
+2026-04-14 15:21:41,085 - Round number: 48 --------------------------
+2026-04-14 15:21:41,085 - Evaluate global model
+2026-04-14 15:21:43,724 - Averaged Train Loss: 1.3613
+2026-04-14 15:21:43,724 - Test Accurancy: 0.4958
+2026-04-14 15:21:51,516 - Round number: 49 --------------------------
+2026-04-14 15:21:51,516 - Evaluate global model
+2026-04-14 15:21:54,889 - Averaged Train Loss: 1.3571
+2026-04-14 15:21:54,889 - Test Accurancy: 0.4959
+2026-04-14 15:22:02,360 - Round number: 50 --------------------------
+2026-04-14 15:22:02,360 - Evaluate global model
+2026-04-14 15:22:05,651 - Averaged Train Loss: 1.3463
+2026-04-14 15:22:05,652 - Test Accurancy: 0.5008
+2026-04-14 15:22:13,676 - Round number: 51 --------------------------
+2026-04-14 15:22:13,676 - Evaluate global model
+2026-04-14 15:22:16,763 - Averaged Train Loss: 1.3414
+2026-04-14 15:22:16,763 - Test Accurancy: 0.5028
+2026-04-14 15:22:24,107 - Round number: 52 --------------------------
+2026-04-14 15:22:24,107 - Evaluate global model
+2026-04-14 15:22:27,816 - Averaged Train Loss: 1.3405
+2026-04-14 15:22:27,816 - Test Accurancy: 0.5024
+2026-04-14 15:22:35,003 - Round number: 53 --------------------------
+2026-04-14 15:22:35,003 - Evaluate global model
+2026-04-14 15:22:38,150 - Averaged Train Loss: 1.3370
+2026-04-14 15:22:38,151 - Test Accurancy: 0.5063
+2026-04-14 15:22:46,546 - Round number: 54 --------------------------
+2026-04-14 15:22:46,547 - Evaluate global model
+2026-04-14 15:22:48,967 - Averaged Train Loss: 1.3161
+2026-04-14 15:22:48,967 - Test Accurancy: 0.5127
+2026-04-14 15:22:56,802 - Round number: 55 --------------------------
+2026-04-14 15:22:56,802 - Evaluate global model
+2026-04-14 15:23:00,458 - Averaged Train Loss: 1.3143
+2026-04-14 15:23:00,459 - Test Accurancy: 0.5132
+2026-04-14 15:23:07,261 - Round number: 56 --------------------------
+2026-04-14 15:23:07,261 - Evaluate global model
+2026-04-14 15:23:11,062 - Averaged Train Loss: 1.3105
+2026-04-14 15:23:11,062 - Test Accurancy: 0.5154
+2026-04-14 15:23:18,382 - Round number: 57 --------------------------
+2026-04-14 15:23:18,382 - Evaluate global model
+2026-04-14 15:23:21,642 - Averaged Train Loss: 1.3090
+2026-04-14 15:23:21,642 - Test Accurancy: 0.5152
+2026-04-14 15:23:29,349 - Round number: 58 --------------------------
+2026-04-14 15:23:29,350 - Evaluate global model
+2026-04-14 15:23:32,738 - Averaged Train Loss: 1.3006
+2026-04-14 15:23:32,738 - Test Accurancy: 0.5171
+2026-04-14 15:23:39,950 - Round number: 59 --------------------------
+2026-04-14 15:23:39,951 - Evaluate global model
+2026-04-14 15:23:43,462 - Averaged Train Loss: 1.3000
+2026-04-14 15:23:43,463 - Test Accurancy: 0.5170
+2026-04-14 15:23:51,523 - Round number: 60 --------------------------
+2026-04-14 15:23:51,524 - Evaluate global model
+2026-04-14 15:23:54,201 - Averaged Train Loss: 1.2927
+2026-04-14 15:23:54,201 - Test Accurancy: 0.5199
+2026-04-14 15:24:02,369 - Round number: 61 --------------------------
+2026-04-14 15:24:02,369 - Evaluate global model
+2026-04-14 15:24:05,755 - Averaged Train Loss: 1.2812
+2026-04-14 15:24:05,755 - Test Accurancy: 0.5265
+2026-04-14 15:24:12,686 - Round number: 62 --------------------------
+2026-04-14 15:24:12,687 - Evaluate global model
+2026-04-14 15:24:16,812 - Averaged Train Loss: 1.2701
+2026-04-14 15:24:16,813 - Test Accurancy: 0.5307
+2026-04-14 15:24:23,664 - Round number: 63 --------------------------
+2026-04-14 15:24:23,665 - Evaluate global model
+2026-04-14 15:24:27,289 - Averaged Train Loss: 1.2797
+2026-04-14 15:24:27,289 - Test Accurancy: 0.5247
+2026-04-14 15:24:35,329 - Round number: 64 --------------------------
+2026-04-14 15:24:35,329 - Evaluate global model
+2026-04-14 15:24:38,205 - Averaged Train Loss: 1.2689
+2026-04-14 15:24:38,205 - Test Accurancy: 0.5280
+2026-04-14 15:24:45,924 - Round number: 65 --------------------------
+2026-04-14 15:24:45,925 - Evaluate global model
+2026-04-14 15:24:49,655 - Averaged Train Loss: 1.2576
+2026-04-14 15:24:49,655 - Test Accurancy: 0.5315
+2026-04-14 15:24:57,001 - Round number: 66 --------------------------
+2026-04-14 15:24:57,001 - Evaluate global model
+2026-04-14 15:25:00,179 - Averaged Train Loss: 1.2632
+2026-04-14 15:25:00,179 - Test Accurancy: 0.5311
+2026-04-14 15:25:08,056 - Round number: 67 --------------------------
+2026-04-14 15:25:08,057 - Evaluate global model
+2026-04-14 15:25:11,492 - Averaged Train Loss: 1.2589
+2026-04-14 15:25:11,492 - Test Accurancy: 0.5316
+2026-04-14 15:25:18,877 - Round number: 68 --------------------------
+2026-04-14 15:25:18,877 - Evaluate global model
+2026-04-14 15:25:22,854 - Averaged Train Loss: 1.2544
+2026-04-14 15:25:22,855 - Test Accurancy: 0.5315
+2026-04-14 15:25:29,136 - Round number: 69 --------------------------
+2026-04-14 15:25:29,136 - Evaluate global model
+2026-04-14 15:25:33,274 - Averaged Train Loss: 1.2535
+2026-04-14 15:25:33,275 - Test Accurancy: 0.5325
+2026-04-14 15:25:40,851 - Round number: 70 --------------------------
+2026-04-14 15:25:40,851 - Evaluate global model
+2026-04-14 15:25:43,987 - Averaged Train Loss: 1.2461
+2026-04-14 15:25:43,988 - Test Accurancy: 0.5341
+2026-04-14 15:25:52,468 - Round number: 71 --------------------------
+2026-04-14 15:25:52,468 - Evaluate global model
+2026-04-14 15:25:55,413 - Averaged Train Loss: 1.2411
+2026-04-14 15:25:55,413 - Test Accurancy: 0.5355
+2026-04-14 15:26:03,183 - Round number: 72 --------------------------
+2026-04-14 15:26:03,183 - Evaluate global model
+2026-04-14 15:26:06,720 - Averaged Train Loss: 1.2321
+2026-04-14 15:26:06,720 - Test Accurancy: 0.5399
+2026-04-14 15:26:13,944 - Round number: 73 --------------------------
+2026-04-14 15:26:13,944 - Evaluate global model
+2026-04-14 15:26:17,623 - Averaged Train Loss: 1.2328
+2026-04-14 15:26:17,623 - Test Accurancy: 0.5381
+2026-04-14 15:26:25,237 - Round number: 74 --------------------------
+2026-04-14 15:26:25,237 - Evaluate global model
+2026-04-14 15:26:29,140 - Averaged Train Loss: 1.2323
+2026-04-14 15:26:29,140 - Test Accurancy: 0.5389
+2026-04-14 15:26:36,024 - Round number: 75 --------------------------
+2026-04-14 15:26:36,024 - Evaluate global model
+2026-04-14 15:26:40,299 - Averaged Train Loss: 1.2231
+2026-04-14 15:26:40,300 - Test Accurancy: 0.5421
+2026-04-14 15:26:46,950 - Round number: 76 --------------------------
+2026-04-14 15:26:46,950 - Evaluate global model
+2026-04-14 15:26:50,842 - Averaged Train Loss: 1.2241
+2026-04-14 15:26:50,842 - Test Accurancy: 0.5429
+2026-04-14 15:26:58,533 - Round number: 77 --------------------------
+2026-04-14 15:26:58,533 - Evaluate global model
+2026-04-14 15:27:01,534 - Averaged Train Loss: 1.2194
+2026-04-14 15:27:01,534 - Test Accurancy: 0.5435
+2026-04-14 15:27:09,765 - Round number: 78 --------------------------
+2026-04-14 15:27:09,765 - Evaluate global model
+2026-04-14 15:27:12,955 - Averaged Train Loss: 1.2181
+2026-04-14 15:27:12,955 - Test Accurancy: 0.5442
+2026-04-14 15:27:19,848 - Round number: 79 --------------------------
+2026-04-14 15:27:19,848 - Evaluate global model
+2026-04-14 15:27:23,777 - Averaged Train Loss: 1.2066
+2026-04-14 15:27:23,777 - Test Accurancy: 0.5496
+2026-04-14 15:27:30,707 - Round number: 80 --------------------------
+2026-04-14 15:27:30,708 - Evaluate global model
+2026-04-14 15:27:34,552 - Averaged Train Loss: 1.2147
+2026-04-14 15:27:34,552 - Test Accurancy: 0.5453
+2026-04-14 15:27:42,095 - Round number: 81 --------------------------
+2026-04-14 15:27:42,096 - Evaluate global model
+2026-04-14 15:27:45,912 - Averaged Train Loss: 1.2038
+2026-04-14 15:27:45,913 - Test Accurancy: 0.5476
+2026-04-14 15:27:52,874 - Round number: 82 --------------------------
+2026-04-14 15:27:52,874 - Evaluate global model
+2026-04-14 15:27:57,181 - Averaged Train Loss: 1.1967
+2026-04-14 15:27:57,181 - Test Accurancy: 0.5502
+2026-04-14 15:28:04,119 - Round number: 83 --------------------------
+2026-04-14 15:28:04,119 - Evaluate global model
+2026-04-14 15:28:07,784 - Averaged Train Loss: 1.1981
+2026-04-14 15:28:07,784 - Test Accurancy: 0.5500
+2026-04-14 15:28:15,896 - Round number: 84 --------------------------
+2026-04-14 15:28:15,897 - Evaluate global model
+2026-04-14 15:28:18,886 - Averaged Train Loss: 1.1911
+2026-04-14 15:28:18,886 - Test Accurancy: 0.5507
+2026-04-14 15:28:26,798 - Round number: 85 --------------------------
+2026-04-14 15:28:26,798 - Evaluate global model
+2026-04-14 15:28:30,342 - Averaged Train Loss: 1.1985
+2026-04-14 15:28:30,342 - Test Accurancy: 0.5502
+2026-04-14 15:28:37,043 - Round number: 86 --------------------------
+2026-04-14 15:28:37,043 - Evaluate global model
+2026-04-14 15:28:41,280 - Averaged Train Loss: 1.1904
+2026-04-14 15:28:41,281 - Test Accurancy: 0.5525
+2026-04-14 15:28:48,152 - Round number: 87 --------------------------
+2026-04-14 15:28:48,152 - Evaluate global model
+2026-04-14 15:28:52,208 - Averaged Train Loss: 1.1910
+2026-04-14 15:28:52,208 - Test Accurancy: 0.5533
+2026-04-14 15:28:59,415 - Round number: 88 --------------------------
+2026-04-14 15:28:59,415 - Evaluate global model
+2026-04-14 15:29:03,015 - Averaged Train Loss: 1.1852
+2026-04-14 15:29:03,015 - Test Accurancy: 0.5540
+2026-04-14 15:29:09,972 - Round number: 89 --------------------------
+2026-04-14 15:29:09,972 - Evaluate global model
+2026-04-14 15:29:13,937 - Averaged Train Loss: 1.1825
+2026-04-14 15:29:13,937 - Test Accurancy: 0.5550
+2026-04-14 15:29:21,482 - Round number: 90 --------------------------
+2026-04-14 15:29:21,483 - Evaluate global model
+2026-04-14 15:29:24,528 - Averaged Train Loss: 1.1776
+2026-04-14 15:29:24,528 - Test Accurancy: 0.5569
+2026-04-14 15:29:33,110 - Round number: 91 --------------------------
+2026-04-14 15:29:33,110 - Evaluate global model
+2026-04-14 15:29:35,947 - Averaged Train Loss: 1.1743
+2026-04-14 15:29:35,947 - Test Accurancy: 0.5576
+2026-04-14 15:29:43,546 - Round number: 92 --------------------------
+2026-04-14 15:29:43,547 - Evaluate global model
+2026-04-14 15:29:47,751 - Averaged Train Loss: 1.1714
+2026-04-14 15:29:47,751 - Test Accurancy: 0.5584
+2026-04-14 15:29:54,422 - Round number: 93 --------------------------
+2026-04-14 15:29:54,422 - Evaluate global model
+2026-04-14 15:29:58,572 - Averaged Train Loss: 1.1643
+2026-04-14 15:29:58,572 - Test Accurancy: 0.5608
+2026-04-14 15:30:05,796 - Round number: 94 --------------------------
+2026-04-14 15:30:05,796 - Evaluate global model
+2026-04-14 15:30:09,497 - Averaged Train Loss: 1.1671
+2026-04-14 15:30:09,497 - Test Accurancy: 0.5592
+2026-04-14 15:30:16,980 - Round number: 95 --------------------------
+2026-04-14 15:30:16,980 - Evaluate global model
+2026-04-14 15:30:20,617 - Averaged Train Loss: 1.1641
+2026-04-14 15:30:20,617 - Test Accurancy: 0.5590
+2026-04-14 15:30:27,713 - Round number: 96 --------------------------
+2026-04-14 15:30:27,714 - Evaluate global model
+2026-04-14 15:30:31,607 - Averaged Train Loss: 1.1580
+2026-04-14 15:30:31,607 - Test Accurancy: 0.5621
+2026-04-14 15:30:39,071 - Round number: 97 --------------------------
+2026-04-14 15:30:39,071 - Evaluate global model
+2026-04-14 15:30:42,158 - Averaged Train Loss: 1.1580
+2026-04-14 15:30:42,158 - Test Accurancy: 0.5615
+2026-04-14 15:30:50,222 - Round number: 98 --------------------------
+2026-04-14 15:30:50,222 - Evaluate global model
+2026-04-14 15:30:53,747 - Averaged Train Loss: 1.1586
+2026-04-14 15:30:53,747 - Test Accurancy: 0.5619
+2026-04-14 15:31:00,573 - Round number: 99 --------------------------
+2026-04-14 15:31:00,574 - Evaluate global model
+2026-04-14 15:31:05,197 - Averaged Train Loss: 1.1546
+2026-04-14 15:31:05,197 - Test Accurancy: 0.5630
+2026-04-14 15:31:11,637 - Round number: 100 --------------------------
+2026-04-14 15:31:11,638 - Evaluate global model
+2026-04-14 15:31:15,814 - Averaged Train Loss: 1.1525
+2026-04-14 15:31:15,814 - Test Accurancy: 0.5635
+2026-04-14 15:31:23,036 - Run over
+2026-04-14 15:31:23,037 - Saving results to ./exp/exp4/Cifar10/trmean_CAMP_clipping_v7.h5
+2026-04-14 15:31:23,043 - Best accuracy: 0.5635031635031635
+2026-04-14 15:31:23,043 - Average time cost per round: 10.981463878154754

@@ -1,0 +1,39 @@
+2026-04-15 16:47:14,876 - *****************EXP-5*****************
+2026-04-15 16:47:14,877 - Exp repeats: 1
+2026-04-15 16:47:14,877 - Communication Rounds: 100
+2026-04-15 16:47:14,877 - Clients: 40
+
+2026-04-15 16:47:14,877 - Attack method: LIE
+2026-04-15 16:47:14,877 - Filtering rule: trmean
+2026-04-15 16:47:14,877 - Dataset: FashionMNIST
+2026-04-15 16:47:14,877 - Model: cnn
+2026-04-15 16:47:14,877 - Learning Rate: 0.02
+2026-04-15 16:47:14,877 - Batch Size: 64
+2026-04-15 16:47:14,877 - Device: cuda
+2026-04-15 16:47:14,877 - Device id: 0
+2026-04-15 16:47:14,877 - Adversaries: 4
+2026-04-15 16:47:14,877 - Model Poisoning: A Little Is Enough attack
+2026-04-15 16:47:14,877 - *****************EXP-5*****************
+2026-04-15 16:47:15,365 - Running time: 0th ==========================
+2026-04-15 16:47:17,577 - Round number: 0 --------------------------
+2026-04-15 16:47:17,577 - Evaluate global model
+2026-04-15 16:47:19,684 - Averaged Train Loss: 2.3011
+2026-04-15 16:47:19,685 - Test Accurancy: 0.0974
+2026-04-15 16:47:24,380 - [trmean] attacker trim ratios: ['0.115', '0.122', '0.133', '0.146']
+2026-04-15 16:47:24,380 - [trmean] attacker avg trim: 0.1291, benign avg trim: 0.4301
+2026-04-15 16:47:24,387 - Round number: 1 --------------------------
+2026-04-15 16:47:24,387 - Evaluate global model
+2026-04-15 16:47:25,649 - Averaged Train Loss: 1.8631
+2026-04-15 16:47:25,649 - Test Accurancy: 0.4786
+2026-04-15 16:47:29,910 - [trmean] attacker trim ratios: ['0.090', '0.091', '0.096', '0.102']
+2026-04-15 16:47:29,910 - [trmean] attacker avg trim: 0.0947, benign avg trim: 0.4339
+2026-04-15 16:47:29,918 - Round number: 2 --------------------------
+2026-04-15 16:47:29,919 - Evaluate global model
+2026-04-15 16:47:31,446 - Averaged Train Loss: 1.2927
+2026-04-15 16:47:31,447 - Test Accurancy: 0.5798
+2026-04-15 16:47:35,703 - [trmean] attacker trim ratios: ['0.074', '0.077', '0.079', '0.082']
+2026-04-15 16:47:35,703 - [trmean] attacker avg trim: 0.0778, benign avg trim: 0.4358
+2026-04-15 16:47:35,710 - Round number: 3 --------------------------
+2026-04-15 16:47:35,711 - Evaluate global model
+2026-04-15 16:47:37,143 - Averaged Train Loss: 0.9954
+2026-04-15 16:47:37,143 - Test Accurancy: 0.6621

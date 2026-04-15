@@ -87,3 +87,33 @@ class CNN2(nn.Module):
         out = self.fc1(out)
         out = self.fc2(out)
         return out
+
+class HARCNN(nn.Module):
+    def __init__(self, in_channels=1, num_classes=6):
+        super().__init__()
+        self.conv1 = nn.Sequential(
+            nn.Conv1d(in_channels, 32, kernel_size=5, padding=0, stride=1, bias=True),
+            nn.ReLU(inplace=True),
+            nn.MaxPool1d(kernel_size=2)
+        )
+        self.conv2 = nn.Sequential(
+            nn.Conv1d(32, 64, kernel_size=5, padding=0, stride=1, bias=True),
+            nn.ReLU(inplace=True),
+            nn.MaxPool1d(kernel_size=2)
+        )
+        self.fc1 = nn.Sequential(
+            nn.Linear(64 * 137, 128),
+            nn.ReLU(inplace=True)
+        )
+        self.fc = nn.Linear(128, num_classes)
+
+    def forward(self, x):
+        # x: (batch, 561) -> (batch, 1, 561)
+        if x.dim() == 2:
+            x = x.unsqueeze(1)
+        out = self.conv1(x)
+        out = self.conv2(out)
+        out = torch.flatten(out, 1)
+        out = self.fc1(out)
+        out = self.fc(out)
+        return out

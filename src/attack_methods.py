@@ -67,6 +67,56 @@ def min_max_attack(updates, weights, num_attackers):
 
     return updates, weights
 
+def vector_s_minmax_update(updates, num_attackers, vector_s, use_benign_prior=False, init_scale=5.0, threshold_diff=1e-5):
+    """
+    Min-max style binary search using vector_s as direction.
+    Distance constraint uses attacker updates only (updates[:num_attackers]).
+    Mean anchor follows prior knowledge:
+    - use benign mean if use_benign_prior is True
+    - otherwise use attacker mean
+    """
+    atk_updates = updates[:num_attackers]
+    all_updates = torch.stack(atk_updates)
+
+    norms = torch.sum(all_updates ** 2, dim=1, keepdim=True)
+    distances = norms + norms.T - 2 * (all_updates @ all_updates.T)
+    max_distance = distances.max()
+
+    if use_benign_prior and len(updates) > num_attackers:
+        mean_update = torch.mean(torch.stack(updates[num_attackers:]), dim=0)
+    else:
+        mean_update = torch.mean(all_updates, dim=0)
+    direction = vector_s.to(mean_update.device).to(mean_update.dtype)
+    direction = direction / (torch.norm(direction) + 1e-9)
+
+    scale = float(init_scale) if init_scale is not None else 5.0
+    if scale <= 0:
+        scale = 5.0
+
+    step = scale
+    scale_succ = 0.0
+    try_count = 0
+
+    while abs(scale_succ - scale) > threshold_diff and try_count < 64:
+        mal_update = mean_update - scale * direction
+        distance = torch.norm(all_updates - mal_update, dim=1) ** 2
+        max_d = torch.max(distance)
+
+        if max_d <= max_distance:
+            scale_succ = scale
+            scale = scale + step / 2
+        else:
+            scale = scale - step / 2
+
+        step = step / 2
+        try_count += 1
+
+    malicious_update = mean_update - scale_succ * direction
+    logger.info("vector_s_minmax try_count: %s", try_count)
+    logger.info("vector_s_minmax scale: %s", scale_succ)
+
+    return malicious_update, scale_succ
+
 def LIE_attack(updates, weights, num_attackers, num_clients):
     """
     LIE_attack computes a malicious update based on the uploaded updates from clients.
@@ -115,9 +165,20 @@ def sign_flip_attack(updates, weights, num_attackers):
         tuple: (modified updates, weights)
     """
     for i in range(num_attackers):
-        updates[i] = -updates[i]
+        updates[i] = -updates[i] * 2
     
     return updates, weights
+
+def global_sign_flip_attack(updates, weights, num_attackers):
+    """
+    Global sign flip: compute mean of attacker updates, flip sign, assign to all attackers.
+    """
+    mal_updates = updates[:num_attackers]
+    mean_mal = torch.mean(torch.stack(mal_updates), dim=0)
+    flipped = -mean_mal
+    for i in range(num_attackers):
+        updates[i] = flipped.clone()
+    return updates, weights, None
 
 def enhanced_sign_flip_attack(updates, weights, num_attackers):
     """
@@ -191,8 +252,8 @@ def CAMP_attack(updates, weights, num_attacks, mode, filter, vector_s, lamda, pk
     """
     # 1. calculate the global update
     if pk == 'all':
-        ideal_update = calculate_ideal_update(updates, filter, num_attacks, weights=weights, 
-                                               uploaded_models=uploaded_models, noise_level=noise_level, m=m)
+        ideal_update = calculate_ideal_update(updates[num_attacks:], filter, num_attacks, weights=weights[num_attacks:], 
+                                               uploaded_models=uploaded_models[num_attacks:], noise_level=noise_level, m=m)
     elif pk == 'updates':
         ideal_update = calculate_ideal_update(updates, 'avg', num_attacks, weights=weights, 
                                                uploaded_models=uploaded_models, noise_level=noise_level, m=m)
@@ -210,19 +271,85 @@ def CAMP_attack(updates, weights, num_attacks, mode, filter, vector_s, lamda, pk
         mask = (torch.sign(ideal_update) == vector_s).float()
         malicious_update = ideal_update * mask
         # malicious_update = malicious_update / torch.norm(malicious_update) * torch.norm(ideal_update) * 1.5  
+    elif mode == 'clipping_v5':
+        # Personalized clipping: each attacker flips its own update guided by vector_s
+        # This preserves diversity (like sign_flip) while steering direction (like CAMP)
+        for i in range(num_attacks):
+            mask_i = (torch.sign(updates[i]) == vector_s).float()
+            updates[i] = updates[i] * (2 * mask_i - 1)
+        return updates, weights, vector_s
+    elif mode == 'clipping_v6':
+        # Mean-based selective flip: compute mean of attacker updates, then flip dims aligned with vector_s
+        # Analogous to enhanced_sign_flip vs sign_flip, but with directional guidance
+        mean_update = torch.mean(torch.stack(updates[:num_attacks]), dim=0)
+        mask = (torch.sign(mean_update) == vector_s).float()
+        malicious_update = mean_update * (2 * mask - 1)
+        for i in range(num_attacks):
+            updates[i] = malicious_update.clone()
+        return updates, weights, vector_s
+    elif mode == 'clipping_v7':
+        # Prior-aware selective flip: use ideal_update (from pk branch) as base signal.
+        # Keep dims aligned with vector_s, flip the rest.
+        mask = (torch.sign(ideal_update) == vector_s).float()
+        malicious_update = ideal_update * (2 * mask - 1)
+    elif mode == 'clipping_v8':
+        # PK-aware aggregated flip: select mean anchor based on prior knowledge,
+        # then selectively flip dimensions guided by vector_s.
+        if pk in ['all', 'updates'] and len(updates) > num_attacks:
+            mean_update = torch.mean(torch.stack(updates[num_attacks:]), dim=0)
+        else:
+            mean_update = torch.mean(torch.stack(updates[:num_attacks]), dim=0)
+        mask = (torch.sign(mean_update) == vector_s).float()
+        malicious_update = mean_update * (2 * mask - 1)
+        for i in range(num_attacks):
+            updates[i] = malicious_update.clone()
+        return updates, weights, vector_s
     elif mode == 'perturbation':
         vector_z = torch.randn_like(ideal_update)
         mask = (torch.sign(vector_z) == vector_s).float()
         delta_z = vector_z * mask
         malicious_update = ideal_update + delta_z * lamda
         # malicious_update = malicious_update / torch.norm(malicious_update) * torch.norm(ideal_update) * 1.5
+    elif mode == 'perturbation_v5':
+        # min-max base + deterministic fixed-direction CAMP bias (NO jitter)
+        # Step 1: get min-max base via calculate_ideal_update
+        base_update = calculate_ideal_update(updates[:num_attacks], 'min-max', num_attacks, weights=weights)
+        
+        # Step 2: add fixed-direction perturbation: base + vector_s * scale
+        # vector_s is ±1 per dim, fixed across rounds -> cumulative bias
+        # Scale relative to base norm, controlled by lamda
+        perturbation = vector_s * torch.norm(base_update) * lamda * 0.1
+        malicious_update = base_update + perturbation
+        
+        # Renormalize to base norm to preserve distance property
+        malicious_update = malicious_update / (torch.norm(malicious_update) + 1e-9) * torch.norm(base_update)
+        
+        # All attackers get IDENTICAL update (no jitter!)
+        for i in range(num_attacks):
+            updates[i] = malicious_update.clone()
+        return updates, weights, vector_s
+    elif mode == 'perturbation_v6':
+        # Your idea: use attacker-mean anchor and vector_s as search direction.
+        init_scale = lamda if lamda is not None and lamda > 0 else 5.0
+        use_benign_prior = pk in ['all', 'updates']
+        malicious_update, _ = vector_s_minmax_update(
+            updates=updates,
+            num_attackers=num_attacks,
+            vector_s=vector_s,
+            use_benign_prior=use_benign_prior,
+            init_scale=init_scale,
+        )
+
+        for i in range(num_attacks):
+            updates[i] = malicious_update.clone()
+        return updates, weights, vector_s
     
     else:
         raise ValueError(f"Unknown CAMP mode: {mode}")
     
     # 3. adaptive clipping by median norm
     if pk in ['all', 'updates']:
-        ref_updates = updates
+        ref_updates = updates[num_attacks:]
     else:
         ref_updates = updates[:num_attacks]
     norms = [torch.norm(u, p=2).item() for u in ref_updates]
@@ -231,12 +358,12 @@ def CAMP_attack(updates, weights, num_attacks, mode, filter, vector_s, lamda, pk
     if C > 0 :
         malicious_update = malicious_update / torch.norm(malicious_update, p=2) * C
     
-    # 4. update the malicious clients' updates
-    for i in range(num_attacks):
-        jitter = torch.randn_like(malicious_update) * 0.01 * torch.norm(malicious_update)
-        updates[i] = (malicious_update + jitter).clone()
+    # # 4. update the malicious clients' updates
+    # for i in range(num_attacks):
+    #     jitter = torch.randn_like(malicious_update) * 0.01 * torch.norm(malicious_update)
+    #     updates[i] = (malicious_update + jitter).clone()
     
-    return updates, weights
+    return updates, weights, vector_s
 
 
 def ideal_update_flame(uploaded_models, uploaded_updates, uploaded_weights=None, m=0, noise_level=0.0):
@@ -296,6 +423,17 @@ def calculate_ideal_update(updates, agregation_method, num_attackers,
     elif agregation_method == 'trmean':
         return trimmed(updates, ratio=0.2)
     elif agregation_method == 'avg':
+        ideal_update = torch.zeros_like(updates[0])
+        for update in updates:
+            ideal_update += update / len(updates)
+        return ideal_update
+    elif agregation_method == 'min-max':
+        # Run min_max_attack to get the malicious direction
+        tmp_updates = [u.clone() for u in updates]
+        tmp_weights = [1.0] * len(updates)
+        tmp_updates, _ = min_max_attack(tmp_updates, tmp_weights, len(updates))
+        return tmp_updates[0]
+    elif agregation_method in ('maud-norm', 'maud-cosine'):
         ideal_update = torch.zeros_like(updates[0])
         for update in updates:
             ideal_update += update / len(updates)

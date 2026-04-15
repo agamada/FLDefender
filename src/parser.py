@@ -43,7 +43,7 @@ def args_parser():
 
     # defense related arguments
     parser.add_argument('--filter',
-                        choices=['avg', 'krum', 'median', 'trmean', 'multi-krum', 'sad', 'dpd', 'FLDetector', 'flame'],
+                        choices=['avg', 'krum', 'median', 'trmean', 'multi-krum', 'sad', 'dpd', 'FLDetector', 'flame', 'maud-norm', 'maud-cosine'],
                         default='avg', help='filter rule used by server'
                         )
 
@@ -60,7 +60,7 @@ def args_parser():
     parser.add_argument('--dp', choices=['none', 'lf', 'rlf'], default='none', help='data poisoning method')
     parser.add_argument('--ls', type=int, default=5, help='source label to flip')
     parser.add_argument('--lt', type=int, default=3, help='targeted label after flipping')
-    parser.add_argument('--mp', choices=['none', 'min-max', 'LIE', 'random', 'sign_flip', 'CAMP', 'scale', 'MPAF', 'PoisonedFL'], default='none',
+    parser.add_argument('--mp', choices=['none', 'min-max', 'LIE', 'random', 'sign_flip', 'global_sign_flip', 'enhanced_sign_flip', 'CAMP', 'scale', 'MPAF', 'PoisonedFL'], default='none',
                         help='model poisoning method')
     parser.add_argument('--dpd_mode', choices=['none', 'low', 'high', 'auto'], default='auto',
                         help='clipping strategy')
@@ -68,8 +68,9 @@ def args_parser():
     parser.add_argument('--s', type=float, default=1, help='scaling factor')
     parser.add_argument('--lamda', type=float, default=2, help='hyper parameter')
     parser.add_argument('--trmean_ratio', type=float, default=0.2, help='ratio for trimmed mean')
+    parser.add_argument('--maud_window', type=int, default=10, help='MAUD accumulation window size N')
     parser.add_argument('--pk', choices=['none', 'agr', 'updates', 'all'], default='all', help='prior knowledge')
-    parser.add_argument('--CAMP_mode', choices=['clipping', 'perturbation'], default='perturbation', help='CAMP mode')
+    parser.add_argument('--CAMP_mode', choices=['clipping', 'clipping_v5', 'clipping_v5_1', 'clipping_v6', 'clipping_v7', 'clipping_v8', 'perturbation', 'perturbation_v5', 'perturbation_v6'], default='perturbation', help='CAMP mode')
 
     # other arguments
     parser.add_argument("--device", type=str, default="cuda",

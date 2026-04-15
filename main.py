@@ -12,7 +12,7 @@ from src import spliter
 from src import parser
 from src import roles
 
-seed = 0
+seed = 2026
 torch.manual_seed(seed)
 torch.cuda.manual_seed(seed)
 random.seed(seed)
@@ -31,14 +31,26 @@ if __name__ == '__main__':
         args.sn = f'{args.noise_level}'
     elif args.exp == 3:
         args.sp = f'./exp/exp3/{args.dataset}'
-        args.sn = f'{args.filter}_{args.mp}'
+        if args.m == 0:
+            args.sn = f'{args.filter}_noatk'
+        else:
+            args.sn = f'{args.filter}_{args.mp}'
     elif args.exp == 4:
+        win_suffix = f'_w{args.maud_window}' if args.filter in ('maud-norm', 'maud-cosine') else ''
         if args.mp == 'CAMP':
             args.sp = f'./exp/exp4/{args.dataset}'
-            args.sn = f'{args.filter}_{args.mp}_{args.CAMP_mode}'
+            args.sn = f'{args.filter}_{args.mp}_{args.CAMP_mode}{win_suffix}'
         else:
             args.sp = f'./exp/exp4/{args.dataset}'
-            args.sn = f'{args.filter}_{args.mp}'
+            args.sn = f'{args.filter}_{args.mp}{win_suffix}'
+    elif args.exp == 5:
+        win_suffix = f'_w{args.maud_window}' if args.filter in ('maud-norm', 'maud-cosine') else ''
+        if args.mp == 'CAMP':
+            args.sp = f'./exp/exp5/{args.dataset}'
+            args.sn = f'{args.filter}_{args.mp}_{args.CAMP_mode}{win_suffix}'
+        else:
+            args.sp = f'./exp/exp5/{args.dataset}'
+            args.sn = f'{args.filter}_{args.mp}{win_suffix}'
     else:
         args.sp = f'./exp/exp{args.exp}/{args.dataset}'
         args.sn = f'{args.mp}_{args.filter}_{args.m}'
@@ -75,7 +87,9 @@ if __name__ == '__main__':
     #         raise NotImplementedError
     
     # prepare model
-    if args.model == "cnn":
+    if args.dataset == "UCIHAR":
+        model = HARCNN(in_channels=1, num_classes=args.nc).to(args.device)
+    elif args.model == "cnn":
         if args.dataset == "FashionMNIST":
             model = CNN(in_features=1, num_classes=args.nc, dim=1024).to(args.device)
         elif args.dataset == "MNIST":

@@ -35,16 +35,31 @@ def median(uploaded_updates):
     return torch.median(torch.stack(uploaded_updates), dim=0).values
 
 
-def trimmed(uploaded_updates, ratio):
+def trimmed(uploaded_updates, ratio, track_trimmed=False):
     assert 0 < ratio < 0.5
 
     n = len(uploaded_updates)
+    stacked = torch.stack(uploaded_updates)
 
-    sorted_updates, _ = torch.sort(torch.stack(uploaded_updates), dim=0)
+    sorted_updates, sorted_indices = torch.sort(stacked, dim=0)
     trim_count = int(n * ratio)
     trim_mean = torch.mean(sorted_updates[trim_count:-trim_count], dim=0)
 
-    return trim_mean
+    if not track_trimmed:
+        return trim_mean
+
+    # For each client, count how many dimensions were trimmed (top or bottom)
+    d = stacked.shape[1]
+    trim_ratio_per_client = torch.zeros(n)
+    # Bottom trimmed: sorted_indices[:trim_count] 
+    # Top trimmed: sorted_indices[-trim_count:]
+    bottom_indices = sorted_indices[:trim_count]  # [trim_count, d]
+    top_indices = sorted_indices[-trim_count:]     # [trim_count, d]
+    for i in range(n):
+        trimmed_dims = ((bottom_indices == i).sum() + (top_indices == i).sum()).item()
+        trim_ratio_per_client[i] = trimmed_dims / d
+
+    return trim_mean, trim_ratio_per_client
 
 
 def multi_krum(uploaded_updates, num_attackers):
@@ -363,3 +378,121 @@ def flame(uploaded_models, uploaded_updates, m):
             uploaded_updates[benign_clients[i]] = uploaded_updates[benign_clients[i]] * gama
 
     return benign_clients, clip_value
+
+def maud_norm_filter(uploaded_updates, uploaded_ids, accumulated_updates, window_size):
+    """
+    MAUD-Norm: Filter malicious clients based on L2-norm of multi-round accumulated updates.
+    Uses K-means (k=2) clustering on norms, keeps the cluster with smaller mean norm.
+    
+    Args:
+        uploaded_updates: list of torch.Tensor, current round updates
+        uploaded_ids: list of int, client ids
+        accumulated_updates: dict {client_id: list of unit-normalized updates (last N rounds)}
+        window_size: int, accumulation window size N
+    
+    Returns:
+        selected_indices: list of int, indices into uploaded_updates to keep
+        accumulated_updates: updated history dict
+    """
+    k = len(uploaded_updates)
+    
+    # Step 1: update accumulated history with current round (unit-normalized)
+    for idx, cid in enumerate(uploaded_ids):
+        u = uploaded_updates[idx]
+        u_norm = u / (torch.norm(u) + 1e-9)
+        if cid not in accumulated_updates:
+            accumulated_updates[cid] = []
+        accumulated_updates[cid].append(u_norm)
+        # keep only last N rounds
+        if len(accumulated_updates[cid]) > window_size:
+            accumulated_updates[cid] = accumulated_updates[cid][-window_size:]
+    
+    # Step 2: compute accumulated update norms
+    norms = []
+    for idx, cid in enumerate(uploaded_ids):
+        acc_u = torch.stack(accumulated_updates[cid]).sum(dim=0)
+        norms.append(torch.norm(acc_u, p=1).item())
+    norms = np.array(norms).reshape(-1, 1)
+    logger.info(f"[MAUD-Norm] client_ids: {uploaded_ids}")
+    norms_str = ", ".join([f"{n:.4f}" for n in norms.flatten()])
+    logger.info(f"[MAUD-Norm] acc_norms: [{norms_str}]")
+    
+    # Step 3: K-means (k=2) clustering on norms
+    kmeans = KMeans(n_clusters=2, random_state=0, n_init=10).fit(norms)
+    labels = kmeans.labels_
+    centers = kmeans.cluster_centers_.flatten()
+    
+    # Step 4: keep the cluster with smaller mean norm
+    benign_cluster = int(np.argmin(centers))
+    selected_indices = [i for i in range(k) if labels[i] == benign_cluster]
+    
+    logger.info(f"[MAUD-Norm] cluster centers: {centers}, benign_cluster: {benign_cluster}")
+    logger.info(f"[MAUD-Norm] selected {len(selected_indices)}/{k} clients: {selected_indices}")
+    
+    return selected_indices, accumulated_updates
+
+
+def maud_cosine_filter(uploaded_updates, uploaded_ids, accumulated_updates, window_size):
+    """
+    MAUD-Cosine: Filter malicious clients based on cosine distance of multi-round accumulated updates.
+    Uses HDBSCAN clustering with min_cluster_size = k//2 + 1, keeps the main cluster.
+    
+    Args:
+        uploaded_updates: list of torch.Tensor, current round updates
+        uploaded_ids: list of int, client ids
+        accumulated_updates: dict {client_id: list of unit-normalized updates (last N rounds)}
+        window_size: int, accumulation window size N
+    
+    Returns:
+        selected_indices: list of int, indices into uploaded_updates to keep
+        accumulated_updates: updated history dict
+    """
+    k = len(uploaded_updates)
+    
+    # Step 1: update accumulated history (same as MAUD-Norm)
+    for idx, cid in enumerate(uploaded_ids):
+        u = uploaded_updates[idx]
+        u_norm = u / (torch.norm(u) + 1e-9)
+        if cid not in accumulated_updates:
+            accumulated_updates[cid] = []
+        accumulated_updates[cid].append(u_norm)
+        if len(accumulated_updates[cid]) > window_size:
+            accumulated_updates[cid] = accumulated_updates[cid][-window_size:]
+    
+    # Step 2: compute accumulated updates
+    acc_updates = []
+    for idx, cid in enumerate(uploaded_ids):
+        acc_u = torch.stack(accumulated_updates[cid]).sum(dim=0)
+        acc_updates.append(acc_u)
+    acc_stack = torch.stack(acc_updates)  # [k, d]
+    
+    # Step 3: compute cosine distance matrix
+    acc_normalized = acc_stack / (torch.norm(acc_stack, dim=1, keepdim=True) + 1e-9)
+    cos_sim = acc_normalized @ acc_normalized.T  # [k, k]
+    cos_dist = (1 - cos_sim).cpu().numpy()
+    np.fill_diagonal(cos_dist, 0)
+    # ensure non-negative (numerical stability)
+    cos_dist = np.maximum(cos_dist, 0).astype(np.float64)
+    
+    # Step 4: HDBSCAN clustering
+    min_cluster_size = k // 2 + 1
+    clusterer = hdbscan.HDBSCAN(min_cluster_size=min_cluster_size, min_samples=1, allow_single_cluster=True, metric='precomputed')
+    labels = clusterer.fit_predict(cos_dist)
+    
+    # Step 5: keep the main cluster (largest cluster, or label 0 if exists)
+    unique_labels = set(labels)
+    unique_labels.discard(-1)  # remove noise label
+    
+    if len(unique_labels) == 0:
+        # all classified as noise, keep all
+        logger.warning("[MAUD-Cosine] HDBSCAN found no clusters, keeping all clients")
+        selected_indices = list(range(k))
+    else:
+        # pick the largest cluster
+        best_label = max(unique_labels, key=lambda l: np.sum(labels == l))
+        selected_indices = [i for i in range(k) if labels[i] == best_label]
+    
+    logger.info(f"[MAUD-Cosine] HDBSCAN labels: {labels.tolist()}")
+    logger.info(f"[MAUD-Cosine] selected {len(selected_indices)}/{k} clients: {selected_indices}")
+    
+    return selected_indices, accumulated_updates

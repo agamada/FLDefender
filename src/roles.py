@@ -13,8 +13,8 @@ from pathlib import Path
 
 from src.model import init_cnn
 from src.utils import read_client_data
-from src.attack_methods import min_max_attack, LIE_attack, sign_flip_attack, random_attack, CAMP_attack, scale_attack, init_MPAF_model, poisonedfl_attack
-from src.defend_methods import krum, median, trimmed, multi_krum, selective_mean, dpd, lbfgs_torch, fld_distance, detection, detection1, flame
+from src.attack_methods import min_max_attack, LIE_attack, sign_flip_attack, enhanced_sign_flip_attack, global_sign_flip_attack, random_attack, CAMP_attack, scale_attack, init_MPAF_model, poisonedfl_attack
+from src.defend_methods import krum, median, trimmed, multi_krum, selective_mean, dpd, lbfgs_torch, fld_distance, detection, detection1, flame, maud_norm_filter, maud_cosine_filter
 
 logger = logging.getLogger('client')
 
@@ -68,6 +68,8 @@ class Server(object):
         self.malicious_score = torch.zeros((1, self.k))
         self.poisonedfl_state = {}
         self._round_idx = 0
+        self.maud_accumulated = {}  # MAUD: per-client accumulated update history
+        self.maud_window = args.maud_window
 
         self.C_t = 0 # clipping value
 
@@ -160,7 +162,7 @@ class Server(object):
 
     def poisoning_attack(self):
         if self.mp == 'min-max':
-            self.uploaded_updates, self.uploaded_weights = min_max_attack(
+            self.uploaded_updates, self.uploaded_weights, _ = min_max_attack(
                 self.uploaded_updates, self.uploaded_weights, self.m
             )
         elif self.mp == 'LIE':
@@ -171,16 +173,24 @@ class Server(object):
             self.uploaded_updates, self.uploaded_weights = sign_flip_attack(
                 self.uploaded_updates, self.uploaded_weights, self.m
             )
+        elif self.mp == 'enhanced_sign_flip':
+            self.uploaded_updates, self.uploaded_weights, _ = enhanced_sign_flip_attack(
+                self.uploaded_updates, self.uploaded_weights, self.m
+            )
+        elif self.mp == 'global_sign_flip':
+            self.uploaded_updates, self.uploaded_weights, _ = global_sign_flip_attack(
+                self.uploaded_updates, self.uploaded_weights, self.m
+            )
         elif self.mp == 'random':
-            self.uploaded_updates, self.uploaded_weights = random_attack(
+            self.uploaded_updates, self.uploaded_weights, _ = random_attack(
                 self.uploaded_updates, self.uploaded_weights, self.m
             )
         elif self.mp == 'CAMP':
-            if self.vector_s is None:
+            if self.vector_s is None and self.args.CAMP_mode != 'clipping_v4':
                 print(self.uploaded_updates[0].device)
                 self.vector_s = torch.sign(torch.randn_like(self.uploaded_updates[0]))
                 self.vector_s[self.vector_s == 0] = 1 # to avoid zero vectors
-            self.uploaded_updates, self.uploaded_weights = CAMP_attack(
+            self.uploaded_updates, self.uploaded_weights, self.vector_s = CAMP_attack(
                 self.uploaded_updates, self.uploaded_weights, self.m, 
                 self.args.CAMP_mode, self.filter, self.vector_s, self.args.lamda, self.args.pk,
                 self.uploaded_models, self.noise_level, self.m
@@ -227,7 +237,11 @@ class Server(object):
             self.uploaded_updates = [selected_update]
             self.uploaded_weights = [1]
         elif self.filter == 'trmean':
-            selected_update = trimmed(self.uploaded_updates, self.trmean_ratio)
+            selected_update, trim_ratios = trimmed(self.uploaded_updates, self.trmean_ratio, track_trimmed=True)
+            atk_trim = trim_ratios[:self.m].tolist()
+            ben_trim = trim_ratios[self.m:].tolist()
+            logger.info(f"[trmean] attacker trim ratios: {[f'{r:.3f}' for r in atk_trim]}")
+            if atk_trim: logger.info(f"[trmean] attacker avg trim: {sum(atk_trim)/len(atk_trim):.4f}, benign avg trim: {sum(ben_trim)/len(ben_trim):.4f}")
             self.uploaded_updates = [selected_update]
             self.uploaded_weights = [1]
         elif self.filter == 'multi-krum':
@@ -287,6 +301,18 @@ class Server(object):
             self.last_weight = self.weight
             self.old_updates = self.local_updates
         
+        elif self.filter == 'maud-norm':
+            selected_indices, self.maud_accumulated = maud_norm_filter(
+                self.uploaded_updates, self.uploaded_ids, self.maud_accumulated, self.maud_window)
+            self.uploaded_ids = [self.uploaded_ids[i] for i in selected_indices]
+            self.uploaded_updates = [self.uploaded_updates[i] for i in selected_indices]
+            self.uploaded_weights = [self.uploaded_weights[i] for i in selected_indices]
+        elif self.filter == 'maud-cosine':
+            selected_indices, self.maud_accumulated = maud_cosine_filter(
+                self.uploaded_updates, self.uploaded_ids, self.maud_accumulated, self.maud_window)
+            self.uploaded_ids = [self.uploaded_ids[i] for i in selected_indices]
+            self.uploaded_updates = [self.uploaded_updates[i] for i in selected_indices]
+            self.uploaded_weights = [self.uploaded_weights[i] for i in selected_indices]
         elif self.filter == 'flame':
             selected_indices, self.C_t = flame(self.uploaded_models, self.uploaded_updates, self.m)
             self.uploaded_ids = [self.uploaded_ids[i] for i in selected_indices]

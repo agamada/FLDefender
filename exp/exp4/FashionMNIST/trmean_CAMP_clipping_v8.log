@@ -1,0 +1,627 @@
+2026-04-15 14:48:32,977 - *****************EXP-4*****************
+2026-04-15 14:48:32,977 - Exp repeats: 1
+2026-04-15 14:48:32,977 - Communication Rounds: 100
+2026-04-15 14:48:32,977 - Clients: 40
+
+2026-04-15 14:48:32,977 - Attack method: CAMP
+2026-04-15 14:48:32,978 - Filtering rule: trmean
+2026-04-15 14:48:32,978 - Dataset: FashionMNIST
+2026-04-15 14:48:32,978 - Model: cnn
+2026-04-15 14:48:32,978 - Learning Rate: 0.02
+2026-04-15 14:48:32,978 - Batch Size: 64
+2026-04-15 14:48:32,978 - Device: cuda
+2026-04-15 14:48:32,978 - Device id: 0
+2026-04-15 14:48:32,978 - Adversaries: 8
+2026-04-15 14:48:32,978 - Model Poisoning: CAMP attack, mode clipping_v8
+2026-04-15 14:48:32,978 - *****************EXP-4*****************
+2026-04-15 14:48:33,263 - Running time: 0th ==========================
+2026-04-15 14:48:34,954 - Round number: 0 --------------------------
+2026-04-15 14:48:34,954 - Evaluate global model
+2026-04-15 14:48:37,386 - Averaged Train Loss: 2.3011
+2026-04-15 14:48:37,387 - Test Accurancy: 0.0974
+2026-04-15 14:48:42,199 - [trmean] attacker trim ratios: ['0.319', '0.332', '0.340', '0.343', '0.341', '0.338', '0.329', '0.311']
+2026-04-15 14:48:42,200 - [trmean] attacker avg trim: 0.3316, benign avg trim: 0.4171
+2026-04-15 14:48:42,213 - Round number: 1 --------------------------
+2026-04-15 14:48:42,213 - Evaluate global model
+2026-04-15 14:48:44,076 - Averaged Train Loss: 1.9356
+2026-04-15 14:48:44,076 - Test Accurancy: 0.5010
+2026-04-15 14:48:47,890 - [trmean] attacker trim ratios: ['0.317', '0.334', '0.342', '0.345', '0.346', '0.342', '0.332', '0.314']
+2026-04-15 14:48:47,891 - [trmean] attacker avg trim: 0.3340, benign avg trim: 0.4165
+2026-04-15 14:48:47,896 - Round number: 2 --------------------------
+2026-04-15 14:48:47,896 - Evaluate global model
+2026-04-15 14:48:49,255 - Averaged Train Loss: 1.3960
+2026-04-15 14:48:49,255 - Test Accurancy: 0.5877
+2026-04-15 14:48:52,944 - [trmean] attacker trim ratios: ['0.285', '0.305', '0.314', '0.319', '0.322', '0.320', '0.312', '0.297']
+2026-04-15 14:48:52,945 - [trmean] attacker avg trim: 0.3092, benign avg trim: 0.4227
+2026-04-15 14:48:52,950 - Round number: 3 --------------------------
+2026-04-15 14:48:52,950 - Evaluate global model
+2026-04-15 14:48:54,387 - Averaged Train Loss: 1.0876
+2026-04-15 14:48:54,388 - Test Accurancy: 0.6442
+2026-04-15 14:48:58,204 - [trmean] attacker trim ratios: ['0.257', '0.274', '0.284', '0.292', '0.295', '0.294', '0.288', '0.278']
+2026-04-15 14:48:58,207 - [trmean] attacker avg trim: 0.2827, benign avg trim: 0.4293
+2026-04-15 14:48:58,220 - Round number: 4 --------------------------
+2026-04-15 14:48:58,220 - Evaluate global model
+2026-04-15 14:49:00,675 - Averaged Train Loss: 0.9468
+2026-04-15 14:49:00,675 - Test Accurancy: 0.6680
+2026-04-15 14:49:04,421 - [trmean] attacker trim ratios: ['0.228', '0.245', '0.256', '0.261', '0.264', '0.264', '0.261', '0.252']
+2026-04-15 14:49:04,421 - [trmean] attacker avg trim: 0.2539, benign avg trim: 0.4365
+2026-04-15 14:49:04,429 - Round number: 5 --------------------------
+2026-04-15 14:49:04,429 - Evaluate global model
+2026-04-15 14:49:06,008 - Averaged Train Loss: 0.8625
+2026-04-15 14:49:06,009 - Test Accurancy: 0.6902
+2026-04-15 14:49:09,729 - [trmean] attacker trim ratios: ['0.213', '0.227', '0.236', '0.242', '0.245', '0.247', '0.246', '0.239']
+2026-04-15 14:49:09,729 - [trmean] attacker avg trim: 0.2369, benign avg trim: 0.4408
+2026-04-15 14:49:09,735 - Round number: 6 --------------------------
+2026-04-15 14:49:09,735 - Evaluate global model
+2026-04-15 14:49:11,140 - Averaged Train Loss: 0.8101
+2026-04-15 14:49:11,140 - Test Accurancy: 0.7078
+2026-04-15 14:49:14,923 - [trmean] attacker trim ratios: ['0.195', '0.207', '0.214', '0.220', '0.225', '0.225', '0.226', '0.221']
+2026-04-15 14:49:14,924 - [trmean] attacker avg trim: 0.2165, benign avg trim: 0.4459
+2026-04-15 14:49:14,930 - Round number: 7 --------------------------
+2026-04-15 14:49:14,930 - Evaluate global model
+2026-04-15 14:49:16,536 - Averaged Train Loss: 0.7761
+2026-04-15 14:49:16,536 - Test Accurancy: 0.7165
+2026-04-15 14:49:20,119 - [trmean] attacker trim ratios: ['0.183', '0.194', '0.201', '0.205', '0.208', '0.210', '0.212', '0.210']
+2026-04-15 14:49:20,119 - [trmean] attacker avg trim: 0.2028, benign avg trim: 0.4493
+2026-04-15 14:49:20,126 - Round number: 8 --------------------------
+2026-04-15 14:49:20,126 - Evaluate global model
+2026-04-15 14:49:21,517 - Averaged Train Loss: 0.7520
+2026-04-15 14:49:21,517 - Test Accurancy: 0.7270
+2026-04-15 14:49:25,158 - [trmean] attacker trim ratios: ['0.178', '0.185', '0.190', '0.193', '0.196', '0.197', '0.199', '0.200']
+2026-04-15 14:49:25,158 - [trmean] attacker avg trim: 0.1922, benign avg trim: 0.4519
+2026-04-15 14:49:25,164 - Round number: 9 --------------------------
+2026-04-15 14:49:25,164 - Evaluate global model
+2026-04-15 14:49:26,409 - Averaged Train Loss: 0.7277
+2026-04-15 14:49:26,409 - Test Accurancy: 0.7331
+2026-04-15 14:49:30,337 - [trmean] attacker trim ratios: ['0.165', '0.172', '0.177', '0.181', '0.185', '0.189', '0.193', '0.194']
+2026-04-15 14:49:30,337 - [trmean] attacker avg trim: 0.1822, benign avg trim: 0.4544
+2026-04-15 14:49:30,344 - Round number: 10 --------------------------
+2026-04-15 14:49:30,344 - Evaluate global model
+2026-04-15 14:49:31,717 - Averaged Train Loss: 0.7125
+2026-04-15 14:49:31,718 - Test Accurancy: 0.7374
+2026-04-15 14:49:36,150 - [trmean] attacker trim ratios: ['0.159', '0.165', '0.169', '0.173', '0.175', '0.178', '0.182', '0.185']
+2026-04-15 14:49:36,151 - [trmean] attacker avg trim: 0.1734, benign avg trim: 0.4567
+2026-04-15 14:49:36,162 - Round number: 11 --------------------------
+2026-04-15 14:49:36,162 - Evaluate global model
+2026-04-15 14:49:38,263 - Averaged Train Loss: 0.6970
+2026-04-15 14:49:38,264 - Test Accurancy: 0.7424
+2026-04-15 14:49:41,984 - [trmean] attacker trim ratios: ['0.156', '0.160', '0.162', '0.165', '0.168', '0.171', '0.176', '0.178']
+2026-04-15 14:49:41,984 - [trmean] attacker avg trim: 0.1669, benign avg trim: 0.4583
+2026-04-15 14:49:41,993 - Round number: 12 --------------------------
+2026-04-15 14:49:41,993 - Evaluate global model
+2026-04-15 14:49:43,580 - Averaged Train Loss: 0.6872
+2026-04-15 14:49:43,580 - Test Accurancy: 0.7462
+2026-04-15 14:49:47,213 - [trmean] attacker trim ratios: ['0.148', '0.152', '0.154', '0.157', '0.161', '0.164', '0.167', '0.171']
+2026-04-15 14:49:47,213 - [trmean] attacker avg trim: 0.1592, benign avg trim: 0.4602
+2026-04-15 14:49:47,219 - Round number: 13 --------------------------
+2026-04-15 14:49:47,219 - Evaluate global model
+2026-04-15 14:49:48,913 - Averaged Train Loss: 0.6782
+2026-04-15 14:49:48,913 - Test Accurancy: 0.7497
+2026-04-15 14:49:53,261 - [trmean] attacker trim ratios: ['0.143', '0.146', '0.148', '0.151', '0.155', '0.159', '0.164', '0.167']
+2026-04-15 14:49:53,262 - [trmean] attacker avg trim: 0.1543, benign avg trim: 0.4614
+2026-04-15 14:49:53,275 - Round number: 14 --------------------------
+2026-04-15 14:49:53,275 - Evaluate global model
+2026-04-15 14:49:54,707 - Averaged Train Loss: 0.6718
+2026-04-15 14:49:54,707 - Test Accurancy: 0.7518
+2026-04-15 14:49:58,411 - [trmean] attacker trim ratios: ['0.142', '0.144', '0.143', '0.146', '0.147', '0.151', '0.156', '0.160']
+2026-04-15 14:49:58,411 - [trmean] attacker avg trim: 0.1486, benign avg trim: 0.4629
+2026-04-15 14:49:58,417 - Round number: 15 --------------------------
+2026-04-15 14:49:58,417 - Evaluate global model
+2026-04-15 14:49:59,861 - Averaged Train Loss: 0.6615
+2026-04-15 14:49:59,862 - Test Accurancy: 0.7557
+2026-04-15 14:50:03,507 - [trmean] attacker trim ratios: ['0.139', '0.139', '0.140', '0.142', '0.144', '0.148', '0.154', '0.159']
+2026-04-15 14:50:03,507 - [trmean] attacker avg trim: 0.1458, benign avg trim: 0.4635
+2026-04-15 14:50:03,513 - Round number: 16 --------------------------
+2026-04-15 14:50:03,513 - Evaluate global model
+2026-04-15 14:50:05,063 - Averaged Train Loss: 0.6509
+2026-04-15 14:50:05,063 - Test Accurancy: 0.7598
+2026-04-15 14:50:09,384 - [trmean] attacker trim ratios: ['0.132', '0.133', '0.133', '0.135', '0.137', '0.142', '0.147', '0.152']
+2026-04-15 14:50:09,384 - [trmean] attacker avg trim: 0.1390, benign avg trim: 0.4653
+2026-04-15 14:50:09,399 - Round number: 17 --------------------------
+2026-04-15 14:50:09,400 - Evaluate global model
+2026-04-15 14:50:11,057 - Averaged Train Loss: 0.6423
+2026-04-15 14:50:11,058 - Test Accurancy: 0.7626
+2026-04-15 14:50:14,939 - [trmean] attacker trim ratios: ['0.131', '0.131', '0.132', '0.132', '0.135', '0.138', '0.144', '0.150']
+2026-04-15 14:50:14,940 - [trmean] attacker avg trim: 0.1366, benign avg trim: 0.4658
+2026-04-15 14:50:14,945 - Round number: 18 --------------------------
+2026-04-15 14:50:14,946 - Evaluate global model
+2026-04-15 14:50:16,273 - Averaged Train Loss: 0.6337
+2026-04-15 14:50:16,273 - Test Accurancy: 0.7664
+2026-04-15 14:50:19,855 - [trmean] attacker trim ratios: ['0.127', '0.128', '0.128', '0.130', '0.132', '0.137', '0.143', '0.148']
+2026-04-15 14:50:19,855 - [trmean] attacker avg trim: 0.1340, benign avg trim: 0.4665
+2026-04-15 14:50:19,862 - Round number: 19 --------------------------
+2026-04-15 14:50:19,862 - Evaluate global model
+2026-04-15 14:50:21,364 - Averaged Train Loss: 0.6245
+2026-04-15 14:50:21,365 - Test Accurancy: 0.7690
+2026-04-15 14:50:24,839 - [trmean] attacker trim ratios: ['0.126', '0.125', '0.124', '0.125', '0.128', '0.132', '0.137', '0.143']
+2026-04-15 14:50:24,840 - [trmean] attacker avg trim: 0.1299, benign avg trim: 0.4675
+2026-04-15 14:50:24,846 - Round number: 20 --------------------------
+2026-04-15 14:50:24,846 - Evaluate global model
+2026-04-15 14:50:26,637 - Averaged Train Loss: 0.6215
+2026-04-15 14:50:26,638 - Test Accurancy: 0.7697
+2026-04-15 14:50:31,304 - [trmean] attacker trim ratios: ['0.122', '0.119', '0.119', '0.119', '0.121', '0.125', '0.130', '0.137']
+2026-04-15 14:50:31,305 - [trmean] attacker avg trim: 0.1241, benign avg trim: 0.4690
+2026-04-15 14:50:31,311 - Round number: 21 --------------------------
+2026-04-15 14:50:31,311 - Evaluate global model
+2026-04-15 14:50:32,990 - Averaged Train Loss: 0.6156
+2026-04-15 14:50:32,990 - Test Accurancy: 0.7720
+2026-04-15 14:50:36,667 - [trmean] attacker trim ratios: ['0.120', '0.116', '0.117', '0.118', '0.121', '0.125', '0.130', '0.136']
+2026-04-15 14:50:36,667 - [trmean] attacker avg trim: 0.1228, benign avg trim: 0.4693
+2026-04-15 14:50:36,673 - Round number: 22 --------------------------
+2026-04-15 14:50:36,673 - Evaluate global model
+2026-04-15 14:50:38,112 - Averaged Train Loss: 0.6110
+2026-04-15 14:50:38,112 - Test Accurancy: 0.7732
+2026-04-15 14:50:41,829 - [trmean] attacker trim ratios: ['0.118', '0.117', '0.116', '0.117', '0.118', '0.120', '0.126', '0.133']
+2026-04-15 14:50:41,830 - [trmean] attacker avg trim: 0.1206, benign avg trim: 0.4699
+2026-04-15 14:50:41,835 - Round number: 23 --------------------------
+2026-04-15 14:50:41,836 - Evaluate global model
+2026-04-15 14:50:43,371 - Averaged Train Loss: 0.6066
+2026-04-15 14:50:43,371 - Test Accurancy: 0.7752
+2026-04-15 14:50:47,941 - [trmean] attacker trim ratios: ['0.119', '0.116', '0.115', '0.115', '0.117', '0.120', '0.124', '0.131']
+2026-04-15 14:50:47,942 - [trmean] attacker avg trim: 0.1196, benign avg trim: 0.4701
+2026-04-15 14:50:47,958 - Round number: 24 --------------------------
+2026-04-15 14:50:47,959 - Evaluate global model
+2026-04-15 14:50:49,636 - Averaged Train Loss: 0.6022
+2026-04-15 14:50:49,637 - Test Accurancy: 0.7764
+2026-04-15 14:50:53,478 - [trmean] attacker trim ratios: ['0.116', '0.113', '0.113', '0.114', '0.115', '0.117', '0.122', '0.128']
+2026-04-15 14:50:53,479 - [trmean] attacker avg trim: 0.1171, benign avg trim: 0.4707
+2026-04-15 14:50:53,485 - Round number: 25 --------------------------
+2026-04-15 14:50:53,485 - Evaluate global model
+2026-04-15 14:50:54,805 - Averaged Train Loss: 0.5975
+2026-04-15 14:50:54,805 - Test Accurancy: 0.7781
+2026-04-15 14:50:58,579 - [trmean] attacker trim ratios: ['0.117', '0.113', '0.112', '0.111', '0.113', '0.116', '0.120', '0.127']
+2026-04-15 14:50:58,579 - [trmean] attacker avg trim: 0.1160, benign avg trim: 0.4710
+2026-04-15 14:50:58,585 - Round number: 26 --------------------------
+2026-04-15 14:50:58,585 - Evaluate global model
+2026-04-15 14:50:59,901 - Averaged Train Loss: 0.5916
+2026-04-15 14:50:59,901 - Test Accurancy: 0.7803
+2026-04-15 14:51:03,674 - [trmean] attacker trim ratios: ['0.114', '0.110', '0.109', '0.109', '0.111', '0.115', '0.119', '0.126']
+2026-04-15 14:51:03,675 - [trmean] attacker avg trim: 0.1142, benign avg trim: 0.4714
+2026-04-15 14:51:03,681 - Round number: 27 --------------------------
+2026-04-15 14:51:03,681 - Evaluate global model
+2026-04-15 14:51:05,442 - Averaged Train Loss: 0.5881
+2026-04-15 14:51:05,443 - Test Accurancy: 0.7798
+2026-04-15 14:51:09,826 - [trmean] attacker trim ratios: ['0.113', '0.110', '0.109', '0.109', '0.109', '0.110', '0.114', '0.119']
+2026-04-15 14:51:09,826 - [trmean] attacker avg trim: 0.1116, benign avg trim: 0.4721
+2026-04-15 14:51:09,834 - Round number: 28 --------------------------
+2026-04-15 14:51:09,834 - Evaluate global model
+2026-04-15 14:51:11,482 - Averaged Train Loss: 0.5837
+2026-04-15 14:51:11,483 - Test Accurancy: 0.7815
+2026-04-15 14:51:15,154 - [trmean] attacker trim ratios: ['0.110', '0.106', '0.104', '0.105', '0.106', '0.109', '0.113', '0.120']
+2026-04-15 14:51:15,155 - [trmean] attacker avg trim: 0.1091, benign avg trim: 0.4727
+2026-04-15 14:51:15,161 - Round number: 29 --------------------------
+2026-04-15 14:51:15,161 - Evaluate global model
+2026-04-15 14:51:16,550 - Averaged Train Loss: 0.5815
+2026-04-15 14:51:16,551 - Test Accurancy: 0.7822
+2026-04-15 14:51:20,261 - [trmean] attacker trim ratios: ['0.111', '0.107', '0.106', '0.105', '0.107', '0.109', '0.114', '0.119']
+2026-04-15 14:51:20,261 - [trmean] attacker avg trim: 0.1097, benign avg trim: 0.4726
+2026-04-15 14:51:20,267 - Round number: 30 --------------------------
+2026-04-15 14:51:20,267 - Evaluate global model
+2026-04-15 14:51:21,587 - Averaged Train Loss: 0.5791
+2026-04-15 14:51:21,588 - Test Accurancy: 0.7836
+2026-04-15 14:51:25,389 - [trmean] attacker trim ratios: ['0.109', '0.104', '0.103', '0.104', '0.106', '0.109', '0.111', '0.117']
+2026-04-15 14:51:25,390 - [trmean] attacker avg trim: 0.1079, benign avg trim: 0.4730
+2026-04-15 14:51:25,396 - Round number: 31 --------------------------
+2026-04-15 14:51:25,396 - Evaluate global model
+2026-04-15 14:51:27,215 - Averaged Train Loss: 0.5762
+2026-04-15 14:51:27,215 - Test Accurancy: 0.7843
+2026-04-15 14:51:31,768 - [trmean] attacker trim ratios: ['0.106', '0.104', '0.103', '0.103', '0.105', '0.108', '0.112', '0.118']
+2026-04-15 14:51:31,769 - [trmean] attacker avg trim: 0.1073, benign avg trim: 0.4732
+2026-04-15 14:51:31,788 - Round number: 32 --------------------------
+2026-04-15 14:51:31,788 - Evaluate global model
+2026-04-15 14:51:33,258 - Averaged Train Loss: 0.5699
+2026-04-15 14:51:33,259 - Test Accurancy: 0.7858
+2026-04-15 14:51:37,166 - [trmean] attacker trim ratios: ['0.108', '0.105', '0.103', '0.102', '0.104', '0.105', '0.108', '0.114']
+2026-04-15 14:51:37,167 - [trmean] attacker avg trim: 0.1062, benign avg trim: 0.4734
+2026-04-15 14:51:37,174 - Round number: 33 --------------------------
+2026-04-15 14:51:37,174 - Evaluate global model
+2026-04-15 14:51:38,669 - Averaged Train Loss: 0.5694
+2026-04-15 14:51:38,669 - Test Accurancy: 0.7863
+2026-04-15 14:51:42,415 - [trmean] attacker trim ratios: ['0.107', '0.103', '0.100', '0.100', '0.101', '0.103', '0.107', '0.113']
+2026-04-15 14:51:42,416 - [trmean] attacker avg trim: 0.1043, benign avg trim: 0.4739
+2026-04-15 14:51:42,422 - Round number: 34 --------------------------
+2026-04-15 14:51:42,422 - Evaluate global model
+2026-04-15 14:51:43,962 - Averaged Train Loss: 0.5676
+2026-04-15 14:51:43,962 - Test Accurancy: 0.7874
+2026-04-15 14:51:48,001 - [trmean] attacker trim ratios: ['0.103', '0.099', '0.098', '0.098', '0.100', '0.103', '0.107', '0.113']
+2026-04-15 14:51:48,002 - [trmean] attacker avg trim: 0.1025, benign avg trim: 0.4744
+2026-04-15 14:51:48,009 - Round number: 35 --------------------------
+2026-04-15 14:51:48,009 - Evaluate global model
+2026-04-15 14:51:49,693 - Averaged Train Loss: 0.5625
+2026-04-15 14:51:49,694 - Test Accurancy: 0.7894
+2026-04-15 14:51:53,995 - [trmean] attacker trim ratios: ['0.104', '0.100', '0.098', '0.098', '0.099', '0.102', '0.106', '0.111']
+2026-04-15 14:51:53,997 - [trmean] attacker avg trim: 0.1023, benign avg trim: 0.4744
+2026-04-15 14:51:54,003 - Round number: 36 --------------------------
+2026-04-15 14:51:54,003 - Evaluate global model
+2026-04-15 14:51:55,541 - Averaged Train Loss: 0.5621
+2026-04-15 14:51:55,542 - Test Accurancy: 0.7905
+2026-04-15 14:51:59,124 - [trmean] attacker trim ratios: ['0.099', '0.099', '0.097', '0.097', '0.100', '0.103', '0.107', '0.112']
+2026-04-15 14:51:59,124 - [trmean] attacker avg trim: 0.1017, benign avg trim: 0.4746
+2026-04-15 14:51:59,130 - Round number: 37 --------------------------
+2026-04-15 14:51:59,130 - Evaluate global model
+2026-04-15 14:52:00,503 - Averaged Train Loss: 0.5593
+2026-04-15 14:52:00,503 - Test Accurancy: 0.7899
+2026-04-15 14:52:04,311 - [trmean] attacker trim ratios: ['0.104', '0.099', '0.096', '0.096', '0.098', '0.100', '0.103', '0.109']
+2026-04-15 14:52:04,311 - [trmean] attacker avg trim: 0.1007, benign avg trim: 0.4748
+2026-04-15 14:52:04,318 - Round number: 38 --------------------------
+2026-04-15 14:52:04,318 - Evaluate global model
+2026-04-15 14:52:05,570 - Averaged Train Loss: 0.5586
+2026-04-15 14:52:05,571 - Test Accurancy: 0.7913
+2026-04-15 14:52:09,450 - [trmean] attacker trim ratios: ['0.100', '0.098', '0.096', '0.096', '0.099', '0.101', '0.105', '0.109']
+2026-04-15 14:52:09,450 - [trmean] attacker avg trim: 0.1006, benign avg trim: 0.4749
+2026-04-15 14:52:09,456 - Round number: 39 --------------------------
+2026-04-15 14:52:09,456 - Evaluate global model
+2026-04-15 14:52:10,896 - Averaged Train Loss: 0.5573
+2026-04-15 14:52:10,897 - Test Accurancy: 0.7922
+2026-04-15 14:52:15,211 - [trmean] attacker trim ratios: ['0.098', '0.096', '0.094', '0.095', '0.097', '0.101', '0.104', '0.110']
+2026-04-15 14:52:15,212 - [trmean] attacker avg trim: 0.0994, benign avg trim: 0.4751
+2026-04-15 14:52:15,219 - Round number: 40 --------------------------
+2026-04-15 14:52:15,220 - Evaluate global model
+2026-04-15 14:52:16,847 - Averaged Train Loss: 0.5554
+2026-04-15 14:52:16,848 - Test Accurancy: 0.7925
+2026-04-15 14:52:20,895 - [trmean] attacker trim ratios: ['0.097', '0.095', '0.093', '0.095', '0.096', '0.099', '0.103', '0.109']
+2026-04-15 14:52:20,896 - [trmean] attacker avg trim: 0.0984, benign avg trim: 0.4754
+2026-04-15 14:52:20,902 - Round number: 41 --------------------------
+2026-04-15 14:52:20,903 - Evaluate global model
+2026-04-15 14:52:22,476 - Averaged Train Loss: 0.5510
+2026-04-15 14:52:22,476 - Test Accurancy: 0.7935
+2026-04-15 14:52:26,204 - [trmean] attacker trim ratios: ['0.099', '0.096', '0.093', '0.094', '0.097', '0.099', '0.103', '0.108']
+2026-04-15 14:52:26,204 - [trmean] attacker avg trim: 0.0985, benign avg trim: 0.4754
+2026-04-15 14:52:26,211 - Round number: 42 --------------------------
+2026-04-15 14:52:26,211 - Evaluate global model
+2026-04-15 14:52:27,571 - Averaged Train Loss: 0.5512
+2026-04-15 14:52:27,571 - Test Accurancy: 0.7941
+2026-04-15 14:52:31,331 - [trmean] attacker trim ratios: ['0.097', '0.095', '0.093', '0.093', '0.096', '0.098', '0.101', '0.106']
+2026-04-15 14:52:31,333 - [trmean] attacker avg trim: 0.0974, benign avg trim: 0.4756
+2026-04-15 14:52:31,349 - Round number: 43 --------------------------
+2026-04-15 14:52:31,350 - Evaluate global model
+2026-04-15 14:52:32,982 - Averaged Train Loss: 0.5475
+2026-04-15 14:52:32,982 - Test Accurancy: 0.7948
+2026-04-15 14:52:37,720 - [trmean] attacker trim ratios: ['0.097', '0.094', '0.091', '0.092', '0.093', '0.096', '0.100', '0.105']
+2026-04-15 14:52:37,721 - [trmean] attacker avg trim: 0.0960, benign avg trim: 0.4760
+2026-04-15 14:52:37,727 - Round number: 44 --------------------------
+2026-04-15 14:52:37,727 - Evaluate global model
+2026-04-15 14:52:39,261 - Averaged Train Loss: 0.5439
+2026-04-15 14:52:39,261 - Test Accurancy: 0.7959
+2026-04-15 14:52:43,065 - [trmean] attacker trim ratios: ['0.097', '0.094', '0.091', '0.092', '0.094', '0.097', '0.101', '0.106']
+2026-04-15 14:52:43,066 - [trmean] attacker avg trim: 0.0965, benign avg trim: 0.4759
+2026-04-15 14:52:43,071 - Round number: 45 --------------------------
+2026-04-15 14:52:43,072 - Evaluate global model
+2026-04-15 14:52:44,366 - Averaged Train Loss: 0.5446
+2026-04-15 14:52:44,366 - Test Accurancy: 0.7958
+2026-04-15 14:52:48,123 - [trmean] attacker trim ratios: ['0.094', '0.091', '0.090', '0.091', '0.092', '0.095', '0.100', '0.105']
+2026-04-15 14:52:48,123 - [trmean] attacker avg trim: 0.0947, benign avg trim: 0.4763
+2026-04-15 14:52:48,131 - Round number: 46 --------------------------
+2026-04-15 14:52:48,131 - Evaluate global model
+2026-04-15 14:52:49,438 - Averaged Train Loss: 0.5415
+2026-04-15 14:52:49,438 - Test Accurancy: 0.7969
+2026-04-15 14:52:53,257 - [trmean] attacker trim ratios: ['0.095', '0.091', '0.089', '0.090', '0.092', '0.095', '0.099', '0.105']
+2026-04-15 14:52:53,257 - [trmean] attacker avg trim: 0.0945, benign avg trim: 0.4764
+2026-04-15 14:52:53,263 - Round number: 47 --------------------------
+2026-04-15 14:52:53,263 - Evaluate global model
+2026-04-15 14:52:54,673 - Averaged Train Loss: 0.5396
+2026-04-15 14:52:54,673 - Test Accurancy: 0.7980
+2026-04-15 14:52:58,598 - [trmean] attacker trim ratios: ['0.097', '0.093', '0.092', '0.092', '0.093', '0.097', '0.101', '0.105']
+2026-04-15 14:52:58,598 - [trmean] attacker avg trim: 0.0963, benign avg trim: 0.4759
+2026-04-15 14:52:58,605 - Round number: 48 --------------------------
+2026-04-15 14:52:58,605 - Evaluate global model
+2026-04-15 14:53:00,432 - Averaged Train Loss: 0.5391
+2026-04-15 14:53:00,432 - Test Accurancy: 0.7981
+2026-04-15 14:53:04,688 - [trmean] attacker trim ratios: ['0.092', '0.091', '0.089', '0.091', '0.093', '0.095', '0.098', '0.104']
+2026-04-15 14:53:04,689 - [trmean] attacker avg trim: 0.0940, benign avg trim: 0.4765
+2026-04-15 14:53:04,709 - Round number: 49 --------------------------
+2026-04-15 14:53:04,710 - Evaluate global model
+2026-04-15 14:53:06,239 - Averaged Train Loss: 0.5348
+2026-04-15 14:53:06,240 - Test Accurancy: 0.7994
+2026-04-15 14:53:10,026 - [trmean] attacker trim ratios: ['0.095', '0.092', '0.089', '0.090', '0.092', '0.095', '0.098', '0.102']
+2026-04-15 14:53:10,026 - [trmean] attacker avg trim: 0.0941, benign avg trim: 0.4765
+2026-04-15 14:53:10,034 - Round number: 50 --------------------------
+2026-04-15 14:53:10,034 - Evaluate global model
+2026-04-15 14:53:11,423 - Averaged Train Loss: 0.5329
+2026-04-15 14:53:11,423 - Test Accurancy: 0.7987
+2026-04-15 14:53:15,171 - [trmean] attacker trim ratios: ['0.095', '0.092', '0.090', '0.090', '0.093', '0.095', '0.098', '0.102']
+2026-04-15 14:53:15,171 - [trmean] attacker avg trim: 0.0943, benign avg trim: 0.4764
+2026-04-15 14:53:15,178 - Round number: 51 --------------------------
+2026-04-15 14:53:15,178 - Evaluate global model
+2026-04-15 14:53:16,460 - Averaged Train Loss: 0.5315
+2026-04-15 14:53:16,460 - Test Accurancy: 0.8002
+2026-04-15 14:53:20,056 - [trmean] attacker trim ratios: ['0.095', '0.092', '0.090', '0.091', '0.091', '0.094', '0.098', '0.103']
+2026-04-15 14:53:20,057 - [trmean] attacker avg trim: 0.0944, benign avg trim: 0.4764
+2026-04-15 14:53:20,063 - Round number: 52 --------------------------
+2026-04-15 14:53:20,063 - Evaluate global model
+2026-04-15 14:53:21,501 - Averaged Train Loss: 0.5311
+2026-04-15 14:53:21,501 - Test Accurancy: 0.8009
+2026-04-15 14:53:25,160 - [trmean] attacker trim ratios: ['0.093', '0.092', '0.091', '0.091', '0.093', '0.095', '0.099', '0.103']
+2026-04-15 14:53:25,160 - [trmean] attacker avg trim: 0.0946, benign avg trim: 0.4763
+2026-04-15 14:53:25,166 - Round number: 53 --------------------------
+2026-04-15 14:53:25,166 - Evaluate global model
+2026-04-15 14:53:26,695 - Averaged Train Loss: 0.5307
+2026-04-15 14:53:26,696 - Test Accurancy: 0.8019
+2026-04-15 14:53:31,436 - [trmean] attacker trim ratios: ['0.094', '0.090', '0.090', '0.090', '0.091', '0.093', '0.097', '0.102']
+2026-04-15 14:53:31,436 - [trmean] attacker avg trim: 0.0934, benign avg trim: 0.4767
+2026-04-15 14:53:31,444 - Round number: 54 --------------------------
+2026-04-15 14:53:31,444 - Evaluate global model
+2026-04-15 14:53:32,865 - Averaged Train Loss: 0.5292
+2026-04-15 14:53:32,866 - Test Accurancy: 0.8024
+2026-04-15 14:53:36,737 - [trmean] attacker trim ratios: ['0.094', '0.090', '0.089', '0.090', '0.092', '0.094', '0.097', '0.101']
+2026-04-15 14:53:36,738 - [trmean] attacker avg trim: 0.0933, benign avg trim: 0.4767
+2026-04-15 14:53:36,744 - Round number: 55 --------------------------
+2026-04-15 14:53:36,744 - Evaluate global model
+2026-04-15 14:53:38,224 - Averaged Train Loss: 0.5275
+2026-04-15 14:53:38,224 - Test Accurancy: 0.8018
+2026-04-15 14:53:41,761 - [trmean] attacker trim ratios: ['0.095', '0.092', '0.091', '0.091', '0.092', '0.094', '0.097', '0.102']
+2026-04-15 14:53:41,761 - [trmean] attacker avg trim: 0.0943, benign avg trim: 0.4764
+2026-04-15 14:53:41,768 - Round number: 56 --------------------------
+2026-04-15 14:53:41,768 - Evaluate global model
+2026-04-15 14:53:43,294 - Averaged Train Loss: 0.5270
+2026-04-15 14:53:43,294 - Test Accurancy: 0.8018
+2026-04-15 14:53:46,802 - [trmean] attacker trim ratios: ['0.094', '0.091', '0.089', '0.089', '0.091', '0.092', '0.096', '0.101']
+2026-04-15 14:53:46,803 - [trmean] attacker avg trim: 0.0930, benign avg trim: 0.4767
+2026-04-15 14:53:46,809 - Round number: 57 --------------------------
+2026-04-15 14:53:46,809 - Evaluate global model
+2026-04-15 14:53:48,387 - Averaged Train Loss: 0.5240
+2026-04-15 14:53:48,387 - Test Accurancy: 0.8031
+2026-04-15 14:53:52,869 - [trmean] attacker trim ratios: ['0.092', '0.090', '0.089', '0.089', '0.091', '0.093', '0.097', '0.101']
+2026-04-15 14:53:52,869 - [trmean] attacker avg trim: 0.0928, benign avg trim: 0.4768
+2026-04-15 14:53:52,876 - Round number: 58 --------------------------
+2026-04-15 14:53:52,876 - Evaluate global model
+2026-04-15 14:53:54,471 - Averaged Train Loss: 0.5241
+2026-04-15 14:53:54,472 - Test Accurancy: 0.8043
+2026-04-15 14:53:58,526 - [trmean] attacker trim ratios: ['0.093', '0.091', '0.090', '0.089', '0.090', '0.092', '0.096', '0.101']
+2026-04-15 14:53:58,527 - [trmean] attacker avg trim: 0.0927, benign avg trim: 0.4768
+2026-04-15 14:53:58,533 - Round number: 59 --------------------------
+2026-04-15 14:53:58,534 - Evaluate global model
+2026-04-15 14:53:59,766 - Averaged Train Loss: 0.5207
+2026-04-15 14:53:59,766 - Test Accurancy: 0.8039
+2026-04-15 14:54:03,625 - [trmean] attacker trim ratios: ['0.094', '0.092', '0.090', '0.089', '0.091', '0.093', '0.097', '0.101']
+2026-04-15 14:54:03,625 - [trmean] attacker avg trim: 0.0933, benign avg trim: 0.4767
+2026-04-15 14:54:03,632 - Round number: 60 --------------------------
+2026-04-15 14:54:03,633 - Evaluate global model
+2026-04-15 14:54:04,985 - Averaged Train Loss: 0.5198
+2026-04-15 14:54:04,985 - Test Accurancy: 0.8046
+2026-04-15 14:54:08,620 - [trmean] attacker trim ratios: ['0.094', '0.092', '0.089', '0.089', '0.090', '0.092', '0.094', '0.100']
+2026-04-15 14:54:08,620 - [trmean] attacker avg trim: 0.0924, benign avg trim: 0.4769
+2026-04-15 14:54:08,626 - Round number: 61 --------------------------
+2026-04-15 14:54:08,626 - Evaluate global model
+2026-04-15 14:54:10,026 - Averaged Train Loss: 0.5203
+2026-04-15 14:54:10,026 - Test Accurancy: 0.8048
+2026-04-15 14:54:13,762 - [trmean] attacker trim ratios: ['0.091', '0.089', '0.088', '0.087', '0.090', '0.092', '0.096', '0.100']
+2026-04-15 14:54:13,762 - [trmean] attacker avg trim: 0.0915, benign avg trim: 0.4771
+2026-04-15 14:54:13,768 - Round number: 62 --------------------------
+2026-04-15 14:54:13,768 - Evaluate global model
+2026-04-15 14:54:15,196 - Averaged Train Loss: 0.5198
+2026-04-15 14:54:15,196 - Test Accurancy: 0.8038
+2026-04-15 14:54:19,790 - [trmean] attacker trim ratios: ['0.094', '0.092', '0.090', '0.089', '0.092', '0.093', '0.097', '0.101']
+2026-04-15 14:54:19,791 - [trmean] attacker avg trim: 0.0936, benign avg trim: 0.4766
+2026-04-15 14:54:19,803 - Round number: 63 --------------------------
+2026-04-15 14:54:19,804 - Evaluate global model
+2026-04-15 14:54:21,777 - Averaged Train Loss: 0.5191
+2026-04-15 14:54:21,777 - Test Accurancy: 0.8043
+2026-04-15 14:54:25,973 - [trmean] attacker trim ratios: ['0.092', '0.091', '0.089', '0.088', '0.090', '0.092', '0.096', '0.101']
+2026-04-15 14:54:25,974 - [trmean] attacker avg trim: 0.0924, benign avg trim: 0.4769
+2026-04-15 14:54:25,982 - Round number: 64 --------------------------
+2026-04-15 14:54:25,982 - Evaluate global model
+2026-04-15 14:54:27,487 - Averaged Train Loss: 0.5166
+2026-04-15 14:54:27,487 - Test Accurancy: 0.8067
+2026-04-15 14:54:31,009 - [trmean] attacker trim ratios: ['0.091', '0.089', '0.088', '0.089', '0.090', '0.091', '0.095', '0.100']
+2026-04-15 14:54:31,009 - [trmean] attacker avg trim: 0.0917, benign avg trim: 0.4771
+2026-04-15 14:54:31,015 - Round number: 65 --------------------------
+2026-04-15 14:54:31,015 - Evaluate global model
+2026-04-15 14:54:32,531 - Averaged Train Loss: 0.5170
+2026-04-15 14:54:32,531 - Test Accurancy: 0.8048
+2026-04-15 14:54:36,263 - [trmean] attacker trim ratios: ['0.094', '0.092', '0.091', '0.089', '0.089', '0.092', '0.096', '0.101']
+2026-04-15 14:54:36,263 - [trmean] attacker avg trim: 0.0931, benign avg trim: 0.4767
+2026-04-15 14:54:36,270 - Round number: 66 --------------------------
+2026-04-15 14:54:36,270 - Evaluate global model
+2026-04-15 14:54:37,800 - Averaged Train Loss: 0.5129
+2026-04-15 14:54:37,801 - Test Accurancy: 0.8064
+2026-04-15 14:54:42,383 - [trmean] attacker trim ratios: ['0.092', '0.091', '0.089', '0.089', '0.090', '0.093', '0.096', '0.100']
+2026-04-15 14:54:42,383 - [trmean] attacker avg trim: 0.0926, benign avg trim: 0.4769
+2026-04-15 14:54:42,401 - Round number: 67 --------------------------
+2026-04-15 14:54:42,401 - Evaluate global model
+2026-04-15 14:54:44,212 - Averaged Train Loss: 0.5132
+2026-04-15 14:54:44,213 - Test Accurancy: 0.8072
+2026-04-15 14:54:48,229 - [trmean] attacker trim ratios: ['0.092', '0.091', '0.089', '0.089', '0.090', '0.093', '0.096', '0.101']
+2026-04-15 14:54:48,230 - [trmean] attacker avg trim: 0.0925, benign avg trim: 0.4769
+2026-04-15 14:54:48,236 - Round number: 68 --------------------------
+2026-04-15 14:54:48,236 - Evaluate global model
+2026-04-15 14:54:49,545 - Averaged Train Loss: 0.5116
+2026-04-15 14:54:49,545 - Test Accurancy: 0.8073
+2026-04-15 14:54:53,153 - [trmean] attacker trim ratios: ['0.093', '0.091', '0.090', '0.090', '0.091', '0.093', '0.095', '0.099']
+2026-04-15 14:54:53,153 - [trmean] attacker avg trim: 0.0927, benign avg trim: 0.4768
+2026-04-15 14:54:53,160 - Round number: 69 --------------------------
+2026-04-15 14:54:53,160 - Evaluate global model
+2026-04-15 14:54:54,464 - Averaged Train Loss: 0.5110
+2026-04-15 14:54:54,464 - Test Accurancy: 0.8075
+2026-04-15 14:54:58,129 - [trmean] attacker trim ratios: ['0.092', '0.091', '0.090', '0.089', '0.089', '0.091', '0.095', '0.099']
+2026-04-15 14:54:58,130 - [trmean] attacker avg trim: 0.0918, benign avg trim: 0.4770
+2026-04-15 14:54:58,136 - Round number: 70 --------------------------
+2026-04-15 14:54:58,136 - Evaluate global model
+2026-04-15 14:54:59,469 - Averaged Train Loss: 0.5107
+2026-04-15 14:54:59,469 - Test Accurancy: 0.8083
+2026-04-15 14:55:03,342 - [trmean] attacker trim ratios: ['0.093', '0.091', '0.090', '0.090', '0.090', '0.092', '0.095', '0.099']
+2026-04-15 14:55:03,343 - [trmean] attacker avg trim: 0.0927, benign avg trim: 0.4768
+2026-04-15 14:55:03,348 - Round number: 71 --------------------------
+2026-04-15 14:55:03,348 - Evaluate global model
+2026-04-15 14:55:04,997 - Averaged Train Loss: 0.5072
+2026-04-15 14:55:04,997 - Test Accurancy: 0.8096
+2026-04-15 14:55:09,476 - [trmean] attacker trim ratios: ['0.092', '0.091', '0.090', '0.090', '0.090', '0.092', '0.095', '0.099']
+2026-04-15 14:55:09,479 - [trmean] attacker avg trim: 0.0923, benign avg trim: 0.4769
+2026-04-15 14:55:09,497 - Round number: 72 --------------------------
+2026-04-15 14:55:09,497 - Evaluate global model
+2026-04-15 14:55:11,314 - Averaged Train Loss: 0.5061
+2026-04-15 14:55:11,315 - Test Accurancy: 0.8097
+2026-04-15 14:55:15,123 - [trmean] attacker trim ratios: ['0.092', '0.091', '0.090', '0.090', '0.089', '0.092', '0.094', '0.098']
+2026-04-15 14:55:15,123 - [trmean] attacker avg trim: 0.0918, benign avg trim: 0.4770
+2026-04-15 14:55:15,129 - Round number: 73 --------------------------
+2026-04-15 14:55:15,130 - Evaluate global model
+2026-04-15 14:55:16,656 - Averaged Train Loss: 0.5083
+2026-04-15 14:55:16,657 - Test Accurancy: 0.8086
+2026-04-15 14:55:20,304 - [trmean] attacker trim ratios: ['0.090', '0.089', '0.088', '0.087', '0.089', '0.092', '0.095', '0.099']
+2026-04-15 14:55:20,304 - [trmean] attacker avg trim: 0.0913, benign avg trim: 0.4772
+2026-04-15 14:55:20,310 - Round number: 74 --------------------------
+2026-04-15 14:55:20,310 - Evaluate global model
+2026-04-15 14:55:21,646 - Averaged Train Loss: 0.5056
+2026-04-15 14:55:21,646 - Test Accurancy: 0.8098
+2026-04-15 14:55:25,586 - [trmean] attacker trim ratios: ['0.091', '0.090', '0.089', '0.089', '0.090', '0.091', '0.094', '0.097']
+2026-04-15 14:55:25,586 - [trmean] attacker avg trim: 0.0913, benign avg trim: 0.4772
+2026-04-15 14:55:25,593 - Round number: 75 --------------------------
+2026-04-15 14:55:25,593 - Evaluate global model
+2026-04-15 14:55:27,113 - Averaged Train Loss: 0.5050
+2026-04-15 14:55:27,113 - Test Accurancy: 0.8092
+2026-04-15 14:55:31,414 - [trmean] attacker trim ratios: ['0.092', '0.091', '0.090', '0.089', '0.090', '0.092', '0.094', '0.098']
+2026-04-15 14:55:31,415 - [trmean] attacker avg trim: 0.0923, benign avg trim: 0.4769
+2026-04-15 14:55:31,424 - Round number: 76 --------------------------
+2026-04-15 14:55:31,424 - Evaluate global model
+2026-04-15 14:55:32,917 - Averaged Train Loss: 0.5048
+2026-04-15 14:55:32,919 - Test Accurancy: 0.8093
+2026-04-15 14:55:37,250 - [trmean] attacker trim ratios: ['0.092', '0.091', '0.089', '0.089', '0.090', '0.093', '0.095', '0.099']
+2026-04-15 14:55:37,251 - [trmean] attacker avg trim: 0.0922, benign avg trim: 0.4769
+2026-04-15 14:55:37,257 - Round number: 77 --------------------------
+2026-04-15 14:55:37,257 - Evaluate global model
+2026-04-15 14:55:38,671 - Averaged Train Loss: 0.5038
+2026-04-15 14:55:38,671 - Test Accurancy: 0.8095
+2026-04-15 14:55:42,406 - [trmean] attacker trim ratios: ['0.091', '0.090', '0.089', '0.090', '0.090', '0.091', '0.094', '0.098']
+2026-04-15 14:55:42,406 - [trmean] attacker avg trim: 0.0915, benign avg trim: 0.4771
+2026-04-15 14:55:42,413 - Round number: 78 --------------------------
+2026-04-15 14:55:42,413 - Evaluate global model
+2026-04-15 14:55:43,890 - Averaged Train Loss: 0.5005
+2026-04-15 14:55:43,890 - Test Accurancy: 0.8111
+2026-04-15 14:55:47,582 - [trmean] attacker trim ratios: ['0.090', '0.090', '0.090', '0.088', '0.089', '0.091', '0.093', '0.098']
+2026-04-15 14:55:47,582 - [trmean] attacker avg trim: 0.0911, benign avg trim: 0.4772
+2026-04-15 14:55:47,588 - Round number: 79 --------------------------
+2026-04-15 14:55:47,589 - Evaluate global model
+2026-04-15 14:55:49,122 - Averaged Train Loss: 0.5038
+2026-04-15 14:55:49,123 - Test Accurancy: 0.8110
+2026-04-15 14:55:53,400 - [trmean] attacker trim ratios: ['0.091', '0.090', '0.090', '0.090', '0.089', '0.091', '0.092', '0.096']
+2026-04-15 14:55:53,402 - [trmean] attacker avg trim: 0.0910, benign avg trim: 0.4772
+2026-04-15 14:55:53,415 - Round number: 80 --------------------------
+2026-04-15 14:55:53,416 - Evaluate global model
+2026-04-15 14:55:55,113 - Averaged Train Loss: 0.5005
+2026-04-15 14:55:55,114 - Test Accurancy: 0.8111
+2026-04-15 14:55:59,522 - [trmean] attacker trim ratios: ['0.091', '0.090', '0.090', '0.089', '0.089', '0.091', '0.094', '0.098']
+2026-04-15 14:55:59,523 - [trmean] attacker avg trim: 0.0916, benign avg trim: 0.4771
+2026-04-15 14:55:59,530 - Round number: 81 --------------------------
+2026-04-15 14:55:59,530 - Evaluate global model
+2026-04-15 14:56:01,099 - Averaged Train Loss: 0.5016
+2026-04-15 14:56:01,099 - Test Accurancy: 0.8110
+2026-04-15 14:56:04,748 - [trmean] attacker trim ratios: ['0.092', '0.090', '0.090', '0.090', '0.091', '0.093', '0.094', '0.098']
+2026-04-15 14:56:04,749 - [trmean] attacker avg trim: 0.0923, benign avg trim: 0.4769
+2026-04-15 14:56:04,755 - Round number: 82 --------------------------
+2026-04-15 14:56:04,755 - Evaluate global model
+2026-04-15 14:56:06,169 - Averaged Train Loss: 0.5005
+2026-04-15 14:56:06,169 - Test Accurancy: 0.8113
+2026-04-15 14:56:09,955 - [trmean] attacker trim ratios: ['0.092', '0.090', '0.090', '0.091', '0.091', '0.091', '0.093', '0.097']
+2026-04-15 14:56:09,955 - [trmean] attacker avg trim: 0.0918, benign avg trim: 0.4771
+2026-04-15 14:56:09,963 - Round number: 83 --------------------------
+2026-04-15 14:56:09,963 - Evaluate global model
+2026-04-15 14:56:11,261 - Averaged Train Loss: 0.4970
+2026-04-15 14:56:11,261 - Test Accurancy: 0.8118
+2026-04-15 14:56:15,205 - [trmean] attacker trim ratios: ['0.091', '0.089', '0.089', '0.090', '0.091', '0.093', '0.094', '0.097']
+2026-04-15 14:56:15,205 - [trmean] attacker avg trim: 0.0917, benign avg trim: 0.4771
+2026-04-15 14:56:15,211 - Round number: 84 --------------------------
+2026-04-15 14:56:15,211 - Evaluate global model
+2026-04-15 14:56:16,722 - Averaged Train Loss: 0.4978
+2026-04-15 14:56:16,723 - Test Accurancy: 0.8115
+2026-04-15 14:56:21,466 - [trmean] attacker trim ratios: ['0.092', '0.090', '0.091', '0.091', '0.092', '0.092', '0.095', '0.098']
+2026-04-15 14:56:21,467 - [trmean] attacker avg trim: 0.0925, benign avg trim: 0.4769
+2026-04-15 14:56:21,479 - Round number: 85 --------------------------
+2026-04-15 14:56:21,480 - Evaluate global model
+2026-04-15 14:56:23,267 - Averaged Train Loss: 0.4969
+2026-04-15 14:56:23,267 - Test Accurancy: 0.8124
+2026-04-15 14:56:27,151 - [trmean] attacker trim ratios: ['0.091', '0.089', '0.088', '0.090', '0.091', '0.092', '0.093', '0.096']
+2026-04-15 14:56:27,152 - [trmean] attacker avg trim: 0.0912, benign avg trim: 0.4772
+2026-04-15 14:56:27,166 - Round number: 86 --------------------------
+2026-04-15 14:56:27,166 - Evaluate global model
+2026-04-15 14:56:28,670 - Averaged Train Loss: 0.4967
+2026-04-15 14:56:28,671 - Test Accurancy: 0.8129
+2026-04-15 14:56:32,381 - [trmean] attacker trim ratios: ['0.092', '0.090', '0.090', '0.090', '0.091', '0.092', '0.093', '0.096']
+2026-04-15 14:56:32,382 - [trmean] attacker avg trim: 0.0918, benign avg trim: 0.4771
+2026-04-15 14:56:32,388 - Round number: 87 --------------------------
+2026-04-15 14:56:32,388 - Evaluate global model
+2026-04-15 14:56:33,736 - Averaged Train Loss: 0.4958
+2026-04-15 14:56:33,736 - Test Accurancy: 0.8132
+2026-04-15 14:56:37,438 - [trmean] attacker trim ratios: ['0.090', '0.090', '0.091', '0.091', '0.092', '0.091', '0.092', '0.095']
+2026-04-15 14:56:37,438 - [trmean] attacker avg trim: 0.0917, benign avg trim: 0.4771
+2026-04-15 14:56:37,445 - Round number: 88 --------------------------
+2026-04-15 14:56:37,445 - Evaluate global model
+2026-04-15 14:56:38,839 - Averaged Train Loss: 0.4947
+2026-04-15 14:56:38,839 - Test Accurancy: 0.8138
+2026-04-15 14:56:42,443 - [trmean] attacker trim ratios: ['0.090', '0.090', '0.090', '0.091', '0.092', '0.093', '0.093', '0.096']
+2026-04-15 14:56:42,443 - [trmean] attacker avg trim: 0.0918, benign avg trim: 0.4770
+2026-04-15 14:56:42,450 - Round number: 89 --------------------------
+2026-04-15 14:56:42,450 - Evaluate global model
+2026-04-15 14:56:44,034 - Averaged Train Loss: 0.4941
+2026-04-15 14:56:44,034 - Test Accurancy: 0.8138
+2026-04-15 14:56:48,230 - [trmean] attacker trim ratios: ['0.091', '0.090', '0.092', '0.093', '0.094', '0.094', '0.094', '0.097']
+2026-04-15 14:56:48,231 - [trmean] attacker avg trim: 0.0931, benign avg trim: 0.4767
+2026-04-15 14:56:48,243 - Round number: 90 --------------------------
+2026-04-15 14:56:48,243 - Evaluate global model
+2026-04-15 14:56:49,909 - Averaged Train Loss: 0.4930
+2026-04-15 14:56:49,910 - Test Accurancy: 0.8144
+2026-04-15 14:56:54,375 - [trmean] attacker trim ratios: ['0.091', '0.091', '0.092', '0.092', '0.093', '0.093', '0.094', '0.097']
+2026-04-15 14:56:54,376 - [trmean] attacker avg trim: 0.0930, benign avg trim: 0.4768
+2026-04-15 14:56:54,383 - Round number: 91 --------------------------
+2026-04-15 14:56:54,384 - Evaluate global model
+2026-04-15 14:56:55,743 - Averaged Train Loss: 0.4933
+2026-04-15 14:56:55,743 - Test Accurancy: 0.8143
+2026-04-15 14:56:59,702 - [trmean] attacker trim ratios: ['0.091', '0.090', '0.091', '0.092', '0.093', '0.093', '0.094', '0.096']
+2026-04-15 14:56:59,703 - [trmean] attacker avg trim: 0.0926, benign avg trim: 0.4769
+2026-04-15 14:56:59,709 - Round number: 92 --------------------------
+2026-04-15 14:56:59,709 - Evaluate global model
+2026-04-15 14:57:00,976 - Averaged Train Loss: 0.4917
+2026-04-15 14:57:00,976 - Test Accurancy: 0.8151
+2026-04-15 14:57:04,805 - [trmean] attacker trim ratios: ['0.090', '0.091', '0.091', '0.091', '0.093', '0.093', '0.093', '0.096']
+2026-04-15 14:57:04,806 - [trmean] attacker avg trim: 0.0921, benign avg trim: 0.4770
+2026-04-15 14:57:04,814 - Round number: 93 --------------------------
+2026-04-15 14:57:04,814 - Evaluate global model
+2026-04-15 14:57:06,339 - Averaged Train Loss: 0.4938
+2026-04-15 14:57:06,339 - Test Accurancy: 0.8152
+2026-04-15 14:57:10,002 - [trmean] attacker trim ratios: ['0.089', '0.091', '0.092', '0.093', '0.094', '0.094', '0.094', '0.097']
+2026-04-15 14:57:10,002 - [trmean] attacker avg trim: 0.0930, benign avg trim: 0.4768
+2026-04-15 14:57:10,009 - Round number: 94 --------------------------
+2026-04-15 14:57:10,009 - Evaluate global model
+2026-04-15 14:57:11,543 - Averaged Train Loss: 0.4898
+2026-04-15 14:57:11,543 - Test Accurancy: 0.8157
+2026-04-15 14:57:15,621 - [trmean] attacker trim ratios: ['0.090', '0.089', '0.091', '0.092', '0.093', '0.094', '0.095', '0.096']
+2026-04-15 14:57:15,622 - [trmean] attacker avg trim: 0.0928, benign avg trim: 0.4768
+2026-04-15 14:57:15,636 - Round number: 95 --------------------------
+2026-04-15 14:57:15,636 - Evaluate global model
+2026-04-15 14:57:17,347 - Averaged Train Loss: 0.4907
+2026-04-15 14:57:17,348 - Test Accurancy: 0.8161
+2026-04-15 14:57:21,496 - [trmean] attacker trim ratios: ['0.089', '0.088', '0.091', '0.092', '0.092', '0.092', '0.093', '0.095']
+2026-04-15 14:57:21,496 - [trmean] attacker avg trim: 0.0915, benign avg trim: 0.4771
+2026-04-15 14:57:21,503 - Round number: 96 --------------------------
+2026-04-15 14:57:21,503 - Evaluate global model
+2026-04-15 14:57:22,869 - Averaged Train Loss: 0.4918
+2026-04-15 14:57:22,870 - Test Accurancy: 0.8164
+2026-04-15 14:57:26,573 - [trmean] attacker trim ratios: ['0.089', '0.089', '0.091', '0.092', '0.093', '0.094', '0.093', '0.095']
+2026-04-15 14:57:26,573 - [trmean] attacker avg trim: 0.0921, benign avg trim: 0.4770
+2026-04-15 14:57:26,579 - Round number: 97 --------------------------
+2026-04-15 14:57:26,579 - Evaluate global model
+2026-04-15 14:57:28,061 - Averaged Train Loss: 0.4910
+2026-04-15 14:57:28,062 - Test Accurancy: 0.8160
+2026-04-15 14:57:31,587 - [trmean] attacker trim ratios: ['0.088', '0.089', '0.091', '0.092', '0.093', '0.093', '0.094', '0.095']
+2026-04-15 14:57:31,588 - [trmean] attacker avg trim: 0.0919, benign avg trim: 0.4770
+2026-04-15 14:57:31,594 - Round number: 98 --------------------------
+2026-04-15 14:57:31,595 - Evaluate global model
+2026-04-15 14:57:33,094 - Averaged Train Loss: 0.4909
+2026-04-15 14:57:33,095 - Test Accurancy: 0.8161
+2026-04-15 14:57:36,913 - [trmean] attacker trim ratios: ['0.089', '0.090', '0.093', '0.093', '0.094', '0.094', '0.095', '0.095']
+2026-04-15 14:57:36,914 - [trmean] attacker avg trim: 0.0929, benign avg trim: 0.4768
+2026-04-15 14:57:36,921 - Round number: 99 --------------------------
+2026-04-15 14:57:36,921 - Evaluate global model
+2026-04-15 14:57:38,704 - Averaged Train Loss: 0.4889
+2026-04-15 14:57:38,704 - Test Accurancy: 0.8165
+2026-04-15 14:57:43,407 - [trmean] attacker trim ratios: ['0.089', '0.090', '0.093', '0.093', '0.094', '0.094', '0.093', '0.094']
+2026-04-15 14:57:43,409 - [trmean] attacker avg trim: 0.0924, benign avg trim: 0.4769
+2026-04-15 14:57:43,418 - Round number: 100 --------------------------
+2026-04-15 14:57:43,418 - Evaluate global model
+2026-04-15 14:57:44,855 - Averaged Train Loss: 0.4887
+2026-04-15 14:57:44,855 - Test Accurancy: 0.8164
+2026-04-15 14:57:48,695 - [trmean] attacker trim ratios: ['0.090', '0.090', '0.092', '0.092', '0.092', '0.094', '0.094', '0.094']
+2026-04-15 14:57:48,695 - [trmean] attacker avg trim: 0.0922, benign avg trim: 0.4770
+2026-04-15 14:57:48,696 - Run over
+2026-04-15 14:57:48,696 - Saving results to ./exp/exp4/FashionMNIST/trmean_CAMP_clipping_v8.h5
+2026-04-15 14:57:48,732 - Best accuracy: 0.8164896654105287
+2026-04-15 14:57:48,732 - Average time cost per round: 5.464939172267914
