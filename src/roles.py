@@ -13,7 +13,7 @@ from pathlib import Path
 
 from src.model import init_cnn
 from src.utils import read_client_data
-from src.attack_methods import min_max_attack, LIE_attack, sign_flip_attack, enhanced_sign_flip_attack, global_sign_flip_attack, random_attack, CAMP_attack, scale_attack, init_MPAF_model, poisonedfl_attack
+from src.attack_methods import min_max_attack, LIE_attack, sign_flip_attack, sign_flip_ratio_attack, enhanced_sign_flip_attack, global_sign_flip_attack, random_attack, CAMP_attack, scale_attack, init_MPAF_model, poisonedfl_attack
 from src.defend_methods import krum, median, trimmed, multi_krum, selective_mean, dpd, lbfgs_torch, fld_distance, detection, detection1, flame, maud_norm_filter, maud_cosine_filter
 
 logger = logging.getLogger('client')
@@ -171,6 +171,10 @@ class Server(object):
             )
         elif self.mp == 'sign_flip':
             self.uploaded_updates, self.uploaded_weights = sign_flip_attack(
+                self.uploaded_updates, self.uploaded_weights, self.m
+            )
+        elif self.mp == 'sign_flip_ratio':
+            self.uploaded_updates, self.uploaded_weights = sign_flip_ratio_attack(
                 self.uploaded_updates, self.uploaded_weights, self.m
             )
         elif self.mp == 'enhanced_sign_flip':
@@ -447,6 +451,22 @@ class Server(object):
 
             # defending
             self.filter_update(epoch=i)
+
+            # median norm clipping (only for maud methods)
+            if self.filter in ("maud-norm", "maud-cosine"):
+                update_norms = torch.stack([torch.norm(u) for u in self.uploaded_updates])
+                median_norm = torch.median(update_norms)
+                self.uploaded_updates = [
+                    u * (median_norm / torch.norm(u)) if torch.norm(u) > median_norm else u
+                    for u in self.uploaded_updates
+                ]
+
+
+
+
+
+
+
 
             # aggregate
             # self.update_to_model()

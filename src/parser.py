@@ -60,7 +60,7 @@ def args_parser():
     parser.add_argument('--dp', choices=['none', 'lf', 'rlf'], default='none', help='data poisoning method')
     parser.add_argument('--ls', type=int, default=5, help='source label to flip')
     parser.add_argument('--lt', type=int, default=3, help='targeted label after flipping')
-    parser.add_argument('--mp', choices=['none', 'min-max', 'LIE', 'random', 'sign_flip', 'global_sign_flip', 'enhanced_sign_flip', 'CAMP', 'scale', 'MPAF', 'PoisonedFL'], default='none',
+    parser.add_argument('--mp', choices=['none', 'min-max', 'LIE', 'random', 'sign_flip', 'sign_flip_ratio', 'global_sign_flip', 'enhanced_sign_flip', 'CAMP', 'scale', 'MPAF', 'PoisonedFL'], default='none',
                         help='model poisoning method')
     parser.add_argument('--dpd_mode', choices=['none', 'low', 'high', 'auto'], default='auto',
                         help='clipping strategy')

@@ -1,0 +1,829 @@
+2026-04-15 19:02:58,804 - *****************EXP-5*****************
+2026-04-15 19:02:58,804 - Exp repeats: 1
+2026-04-15 19:02:58,804 - Communication Rounds: 100
+2026-04-15 19:02:58,804 - Clients: 40
+
+2026-04-15 19:02:58,804 - Attack method: CAMP
+2026-04-15 19:02:58,804 - Filtering rule: trmean
+2026-04-15 19:02:58,804 - Dataset: Cifar10
+2026-04-15 19:02:58,804 - Model: cnn2
+2026-04-15 19:02:58,805 - Learning Rate: 0.04
+2026-04-15 19:02:58,805 - Batch Size: 64
+2026-04-15 19:02:58,805 - Device: cuda
+2026-04-15 19:02:58,805 - Device id: 0
+2026-04-15 19:02:58,805 - Adversaries: 4
+2026-04-15 19:02:58,805 - Model Poisoning: CAMP attack, mode perturbation_v5
+2026-04-15 19:02:58,805 - *****************EXP-5*****************
+2026-04-15 19:02:59,409 - Running time: 0th ==========================
+2026-04-15 19:03:05,413 - Round number: 0 --------------------------
+2026-04-15 19:03:05,413 - Evaluate global model
+2026-04-15 19:03:10,124 - Averaged Train Loss: 2.3021
+2026-04-15 19:03:10,124 - Test Accurancy: 0.1016
+2026-04-15 19:03:20,630 - min_max_attack try_count: 19
+2026-04-15 19:03:20,631 - min_max_attack lamda: 0.8535289764404297, max_d: 1.1020625829696655
+2026-04-15 19:03:20,674 - [trmean] attacker trim ratios: ['0.768', '0.776', '0.780', '0.781']
+2026-04-15 19:03:20,675 - [trmean] attacker avg trim: 0.7763, benign avg trim: 0.3582
+2026-04-15 19:03:20,687 - Round number: 1 --------------------------
+2026-04-15 19:03:20,688 - Evaluate global model
+2026-04-15 19:03:23,742 - Averaged Train Loss: 2.2855
+2026-04-15 19:03:23,742 - Test Accurancy: 0.1369
+2026-04-15 19:03:33,183 - min_max_attack try_count: 19
+2026-04-15 19:03:33,184 - min_max_attack lamda: 0.7799816131591797, max_d: 0.9626729488372803
+2026-04-15 19:03:33,254 - [trmean] attacker trim ratios: ['0.746', '0.750', '0.751', '0.750']
+2026-04-15 19:03:33,254 - [trmean] attacker avg trim: 0.7492, benign avg trim: 0.3612
+2026-04-15 19:03:33,267 - Round number: 2 --------------------------
+2026-04-15 19:03:33,267 - Evaluate global model
+2026-04-15 19:03:37,018 - Averaged Train Loss: 2.2319
+2026-04-15 19:03:37,018 - Test Accurancy: 0.1750
+2026-04-15 19:03:45,800 - min_max_attack try_count: 19
+2026-04-15 19:03:45,801 - min_max_attack lamda: 0.7423114776611328, max_d: 0.876771867275238
+2026-04-15 19:03:45,854 - [trmean] attacker trim ratios: ['0.713', '0.717', '0.719', '0.719']
+2026-04-15 19:03:45,854 - [trmean] attacker avg trim: 0.7166, benign avg trim: 0.3648
+2026-04-15 19:03:45,871 - Round number: 3 --------------------------
+2026-04-15 19:03:45,872 - Evaluate global model
+2026-04-15 19:03:48,961 - Averaged Train Loss: 2.1502
+2026-04-15 19:03:48,961 - Test Accurancy: 0.2159
+2026-04-15 19:03:57,043 - min_max_attack try_count: 19
+2026-04-15 19:03:57,043 - min_max_attack lamda: 0.7326793670654297, max_d: 0.8609446883201599
+2026-04-15 19:03:57,112 - [trmean] attacker trim ratios: ['0.715', '0.718', '0.720', '0.719']
+2026-04-15 19:03:57,112 - [trmean] attacker avg trim: 0.7182, benign avg trim: 0.3646
+2026-04-15 19:03:57,123 - Round number: 4 --------------------------
+2026-04-15 19:03:57,129 - Evaluate global model
+2026-04-15 19:04:01,171 - Averaged Train Loss: 2.0622
+2026-04-15 19:04:01,171 - Test Accurancy: 0.2456
+2026-04-15 19:04:08,535 - min_max_attack try_count: 19
+2026-04-15 19:04:08,536 - min_max_attack lamda: 0.7408237457275391, max_d: 0.8255956172943115
+2026-04-15 19:04:08,607 - [trmean] attacker trim ratios: ['0.717', '0.720', '0.722', '0.721']
+2026-04-15 19:04:08,607 - [trmean] attacker avg trim: 0.7198, benign avg trim: 0.3645
+2026-04-15 19:04:08,618 - Round number: 5 --------------------------
+2026-04-15 19:04:08,618 - Evaluate global model
+2026-04-15 19:04:11,642 - Averaged Train Loss: 2.0031
+2026-04-15 19:04:11,642 - Test Accurancy: 0.2731
+2026-04-15 19:04:20,432 - min_max_attack try_count: 19
+2026-04-15 19:04:20,433 - min_max_attack lamda: 0.6775760650634766, max_d: 0.7312322854995728
+2026-04-15 19:04:20,475 - [trmean] attacker trim ratios: ['0.680', '0.682', '0.682', '0.681']
+2026-04-15 19:04:20,475 - [trmean] attacker avg trim: 0.6813, benign avg trim: 0.3687
+2026-04-15 19:04:20,487 - Round number: 6 --------------------------
+2026-04-15 19:04:20,487 - Evaluate global model
+2026-04-15 19:04:23,215 - Averaged Train Loss: 1.9605
+2026-04-15 19:04:23,215 - Test Accurancy: 0.2857
+2026-04-15 19:04:31,649 - min_max_attack try_count: 19
+2026-04-15 19:04:31,650 - min_max_attack lamda: 0.6856060028076172, max_d: 0.7272346019744873
+2026-04-15 19:04:31,711 - [trmean] attacker trim ratios: ['0.687', '0.690', '0.691', '0.691']
+2026-04-15 19:04:31,711 - [trmean] attacker avg trim: 0.6897, benign avg trim: 0.3678
+2026-04-15 19:04:31,721 - Round number: 7 --------------------------
+2026-04-15 19:04:31,722 - Evaluate global model
+2026-04-15 19:04:34,907 - Averaged Train Loss: 1.9146
+2026-04-15 19:04:34,907 - Test Accurancy: 0.3130
+2026-04-15 19:04:42,813 - min_max_attack try_count: 19
+2026-04-15 19:04:42,814 - min_max_attack lamda: 0.6673908233642578, max_d: 0.7056668400764465
+2026-04-15 19:04:42,882 - [trmean] attacker trim ratios: ['0.664', '0.667', '0.668', '0.667']
+2026-04-15 19:04:42,882 - [trmean] attacker avg trim: 0.6663, benign avg trim: 0.3704
+2026-04-15 19:04:42,891 - Round number: 8 --------------------------
+2026-04-15 19:04:42,891 - Evaluate global model
+2026-04-15 19:04:45,448 - Averaged Train Loss: 1.8743
+2026-04-15 19:04:45,448 - Test Accurancy: 0.3313
+2026-04-15 19:04:55,028 - min_max_attack try_count: 19
+2026-04-15 19:04:55,029 - min_max_attack lamda: 0.6122875213623047, max_d: 0.6302486658096313
+2026-04-15 19:04:55,073 - [trmean] attacker trim ratios: ['0.622', '0.624', '0.624', '0.624']
+2026-04-15 19:04:55,074 - [trmean] attacker avg trim: 0.6236, benign avg trim: 0.3752
+2026-04-15 19:04:55,091 - Round number: 9 --------------------------
+2026-04-15 19:04:55,091 - Evaluate global model
+2026-04-15 19:04:58,772 - Averaged Train Loss: 1.8512
+2026-04-15 19:04:58,772 - Test Accurancy: 0.3323
+2026-04-15 19:05:07,734 - min_max_attack try_count: 19
+2026-04-15 19:05:07,736 - min_max_attack lamda: 0.6244182586669922, max_d: 0.6378107070922852
+2026-04-15 19:05:07,793 - [trmean] attacker trim ratios: ['0.640', '0.642', '0.643', '0.642']
+2026-04-15 19:05:07,793 - [trmean] attacker avg trim: 0.6419, benign avg trim: 0.3731
+2026-04-15 19:05:07,810 - Round number: 10 --------------------------
+2026-04-15 19:05:07,810 - Evaluate global model
+2026-04-15 19:05:12,177 - Averaged Train Loss: 1.8213
+2026-04-15 19:05:12,178 - Test Accurancy: 0.3455
+2026-04-15 19:05:19,647 - min_max_attack try_count: 19
+2026-04-15 19:05:19,648 - min_max_attack lamda: 0.5541324615478516, max_d: 0.5542240738868713
+2026-04-15 19:05:19,717 - [trmean] attacker trim ratios: ['0.567', '0.568', '0.569', '0.570']
+2026-04-15 19:05:19,717 - [trmean] attacker avg trim: 0.5685, benign avg trim: 0.3813
+2026-04-15 19:05:19,730 - Round number: 11 --------------------------
+2026-04-15 19:05:19,730 - Evaluate global model
+2026-04-15 19:05:24,094 - Averaged Train Loss: 1.8004
+2026-04-15 19:05:24,096 - Test Accurancy: 0.3512
+2026-04-15 19:05:31,770 - min_max_attack try_count: 19
+2026-04-15 19:05:31,771 - min_max_attack lamda: 0.5439090728759766, max_d: 0.5336937308311462
+2026-04-15 19:05:31,811 - [trmean] attacker trim ratios: ['0.561', '0.562', '0.563', '0.563']
+2026-04-15 19:05:31,811 - [trmean] attacker avg trim: 0.5623, benign avg trim: 0.3820
+2026-04-15 19:05:31,824 - Round number: 12 --------------------------
+2026-04-15 19:05:31,825 - Evaluate global model
+2026-04-15 19:05:35,129 - Averaged Train Loss: 1.7709
+2026-04-15 19:05:35,129 - Test Accurancy: 0.3572
+2026-04-15 19:05:45,140 - min_max_attack try_count: 19
+2026-04-15 19:05:45,141 - min_max_attack lamda: 0.5684566497802734, max_d: 0.565921425819397
+2026-04-15 19:05:45,182 - [trmean] attacker trim ratios: ['0.589', '0.590', '0.590', '0.590']
+2026-04-15 19:05:45,182 - [trmean] attacker avg trim: 0.5897, benign avg trim: 0.3789
+2026-04-15 19:05:45,197 - Round number: 13 --------------------------
+2026-04-15 19:05:45,197 - Evaluate global model
+2026-04-15 19:05:48,818 - Averaged Train Loss: 1.7416
+2026-04-15 19:05:48,819 - Test Accurancy: 0.3674
+2026-04-15 19:05:57,873 - min_max_attack try_count: 19
+2026-04-15 19:05:57,875 - min_max_attack lamda: 0.5632686614990234, max_d: 0.5657834410667419
+2026-04-15 19:05:57,926 - [trmean] attacker trim ratios: ['0.592', '0.593', '0.593', '0.593']
+2026-04-15 19:05:57,926 - [trmean] attacker avg trim: 0.5929, benign avg trim: 0.3786
+2026-04-15 19:05:57,939 - Round number: 14 --------------------------
+2026-04-15 19:05:57,939 - Evaluate global model
+2026-04-15 19:06:01,457 - Averaged Train Loss: 1.7213
+2026-04-15 19:06:01,458 - Test Accurancy: 0.3724
+2026-04-15 19:06:09,908 - min_max_attack try_count: 19
+2026-04-15 19:06:09,909 - min_max_attack lamda: 0.49843788146972656, max_d: 0.5057151317596436
+2026-04-15 19:06:09,997 - [trmean] attacker trim ratios: ['0.495', '0.495', '0.496', '0.498']
+2026-04-15 19:06:09,997 - [trmean] attacker avg trim: 0.4959, benign avg trim: 0.3893
+2026-04-15 19:06:10,009 - Round number: 15 --------------------------
+2026-04-15 19:06:10,009 - Evaluate global model
+2026-04-15 19:06:13,133 - Averaged Train Loss: 1.6998
+2026-04-15 19:06:13,134 - Test Accurancy: 0.3816
+2026-04-15 19:06:21,202 - min_max_attack try_count: 19
+2026-04-15 19:06:21,203 - min_max_attack lamda: 0.5591297149658203, max_d: 0.5378459692001343
+2026-04-15 19:06:21,276 - [trmean] attacker trim ratios: ['0.600', '0.602', '0.603', '0.604']
+2026-04-15 19:06:21,276 - [trmean] attacker avg trim: 0.6021, benign avg trim: 0.3775
+2026-04-15 19:06:21,287 - Round number: 16 --------------------------
+2026-04-15 19:06:21,288 - Evaluate global model
+2026-04-15 19:06:24,285 - Averaged Train Loss: 1.6817
+2026-04-15 19:06:24,286 - Test Accurancy: 0.3847
+2026-04-15 19:06:33,133 - min_max_attack try_count: 19
+2026-04-15 19:06:33,134 - min_max_attack lamda: 0.5506420135498047, max_d: 0.525163471698761
+2026-04-15 19:06:33,178 - [trmean] attacker trim ratios: ['0.594', '0.595', '0.596', '0.596']
+2026-04-15 19:06:33,179 - [trmean] attacker avg trim: 0.5953, benign avg trim: 0.3783
+2026-04-15 19:06:33,198 - Round number: 17 --------------------------
+2026-04-15 19:06:33,199 - Evaluate global model
+2026-04-15 19:06:36,420 - Averaged Train Loss: 1.6645
+2026-04-15 19:06:36,420 - Test Accurancy: 0.3887
+2026-04-15 19:06:44,337 - min_max_attack try_count: 19
+2026-04-15 19:06:44,338 - min_max_attack lamda: 0.5348110198974609, max_d: 0.4998118579387665
+2026-04-15 19:06:44,429 - [trmean] attacker trim ratios: ['0.572', '0.574', '0.575', '0.576']
+2026-04-15 19:06:44,429 - [trmean] attacker avg trim: 0.5741, benign avg trim: 0.3807
+2026-04-15 19:06:44,441 - Round number: 18 --------------------------
+2026-04-15 19:06:44,441 - Evaluate global model
+2026-04-15 19:06:48,355 - Averaged Train Loss: 1.6477
+2026-04-15 19:06:48,356 - Test Accurancy: 0.3967
+2026-04-15 19:06:55,283 - min_max_attack try_count: 19
+2026-04-15 19:06:55,284 - min_max_attack lamda: 0.5118465423583984, max_d: 0.48559245467185974
+2026-04-15 19:06:55,331 - [trmean] attacker trim ratios: ['0.543', '0.543', '0.543', '0.544']
+2026-04-15 19:06:55,332 - [trmean] attacker avg trim: 0.5431, benign avg trim: 0.3841
+2026-04-15 19:06:55,342 - Round number: 19 --------------------------
+2026-04-15 19:06:55,342 - Evaluate global model
+2026-04-15 19:06:59,402 - Averaged Train Loss: 1.6313
+2026-04-15 19:06:59,402 - Test Accurancy: 0.4000
+2026-04-15 19:07:07,948 - min_max_attack try_count: 19
+2026-04-15 19:07:07,949 - min_max_attack lamda: 0.5130863189697266, max_d: 0.4716649353504181
+2026-04-15 19:07:07,991 - [trmean] attacker trim ratios: ['0.577', '0.579', '0.579', '0.579']
+2026-04-15 19:07:07,991 - [trmean] attacker avg trim: 0.5787, benign avg trim: 0.3801
+2026-04-15 19:07:08,005 - Round number: 20 --------------------------
+2026-04-15 19:07:08,005 - Evaluate global model
+2026-04-15 19:07:12,013 - Averaged Train Loss: 1.6151
+2026-04-15 19:07:12,013 - Test Accurancy: 0.4064
+2026-04-15 19:07:20,357 - min_max_attack try_count: 19
+2026-04-15 19:07:20,357 - min_max_attack lamda: 0.5026912689208984, max_d: 0.46564510464668274
+2026-04-15 19:07:20,405 - [trmean] attacker trim ratios: ['0.566', '0.567', '0.568', '0.568']
+2026-04-15 19:07:20,405 - [trmean] attacker avg trim: 0.5673, benign avg trim: 0.3814
+2026-04-15 19:07:20,419 - Round number: 21 --------------------------
+2026-04-15 19:07:20,420 - Evaluate global model
+2026-04-15 19:07:23,775 - Averaged Train Loss: 1.6040
+2026-04-15 19:07:23,776 - Test Accurancy: 0.4117
+2026-04-15 19:07:31,793 - min_max_attack try_count: 19
+2026-04-15 19:07:31,793 - min_max_attack lamda: 0.47081947326660156, max_d: 0.4439592659473419
+2026-04-15 19:07:31,858 - [trmean] attacker trim ratios: ['0.522', '0.523', '0.525', '0.527']
+2026-04-15 19:07:31,858 - [trmean] attacker avg trim: 0.5242, benign avg trim: 0.3862
+2026-04-15 19:07:31,868 - Round number: 22 --------------------------
+2026-04-15 19:07:31,868 - Evaluate global model
+2026-04-15 19:07:35,327 - Averaged Train Loss: 1.5925
+2026-04-15 19:07:35,327 - Test Accurancy: 0.4161
+2026-04-15 19:07:42,523 - min_max_attack try_count: 19
+2026-04-15 19:07:42,524 - min_max_attack lamda: 0.4913043975830078, max_d: 0.4216708242893219
+2026-04-15 19:07:42,554 - [trmean] attacker trim ratios: ['0.550', '0.551', '0.552', '0.552']
+2026-04-15 19:07:42,555 - [trmean] attacker avg trim: 0.5513, benign avg trim: 0.3832
+2026-04-15 19:07:42,574 - Round number: 23 --------------------------
+2026-04-15 19:07:42,574 - Evaluate global model
+2026-04-15 19:07:46,675 - Averaged Train Loss: 1.5805
+2026-04-15 19:07:46,675 - Test Accurancy: 0.4177
+2026-04-15 19:07:53,622 - min_max_attack try_count: 19
+2026-04-15 19:07:53,622 - min_max_attack lamda: 0.46278953552246094, max_d: 0.41856059432029724
+2026-04-15 19:07:53,679 - [trmean] attacker trim ratios: ['0.498', '0.497', '0.497', '0.499']
+2026-04-15 19:07:53,679 - [trmean] attacker avg trim: 0.4978, benign avg trim: 0.3891
+2026-04-15 19:07:53,690 - Round number: 24 --------------------------
+2026-04-15 19:07:53,690 - Evaluate global model
+2026-04-15 19:07:57,281 - Averaged Train Loss: 1.5603
+2026-04-15 19:07:57,282 - Test Accurancy: 0.4261
+2026-04-15 19:08:04,205 - min_max_attack try_count: 19
+2026-04-15 19:08:04,206 - min_max_attack lamda: 0.4548168182373047, max_d: 0.3875216245651245
+2026-04-15 19:08:04,271 - [trmean] attacker trim ratios: ['0.480', '0.478', '0.479', '0.481']
+2026-04-15 19:08:04,271 - [trmean] attacker avg trim: 0.4795, benign avg trim: 0.3912
+2026-04-15 19:08:04,281 - Round number: 25 --------------------------
+2026-04-15 19:08:04,281 - Evaluate global model
+2026-04-15 19:08:09,109 - Averaged Train Loss: 1.5510
+2026-04-15 19:08:09,109 - Test Accurancy: 0.4284
+2026-04-15 19:08:16,288 - min_max_attack try_count: 19
+2026-04-15 19:08:16,289 - min_max_attack lamda: 0.47133445739746094, max_d: 0.39301446080207825
+2026-04-15 19:08:16,316 - [trmean] attacker trim ratios: ['0.532', '0.532', '0.533', '0.535']
+2026-04-15 19:08:16,317 - [trmean] attacker avg trim: 0.5333, benign avg trim: 0.3852
+2026-04-15 19:08:16,341 - Round number: 26 --------------------------
+2026-04-15 19:08:16,342 - Evaluate global model
+2026-04-15 19:08:20,470 - Averaged Train Loss: 1.5455
+2026-04-15 19:08:20,470 - Test Accurancy: 0.4299
+2026-04-15 19:08:28,419 - min_max_attack try_count: 19
+2026-04-15 19:08:28,420 - min_max_attack lamda: 0.4521656036376953, max_d: 0.38340309262275696
+2026-04-15 19:08:28,461 - [trmean] attacker trim ratios: ['0.496', '0.496', '0.496', '0.499']
+2026-04-15 19:08:28,461 - [trmean] attacker avg trim: 0.4968, benign avg trim: 0.3892
+2026-04-15 19:08:28,471 - Round number: 27 --------------------------
+2026-04-15 19:08:28,472 - Evaluate global model
+2026-04-15 19:08:31,472 - Averaged Train Loss: 1.5318
+2026-04-15 19:08:31,473 - Test Accurancy: 0.4344
+2026-04-15 19:08:39,469 - min_max_attack try_count: 19
+2026-04-15 19:08:39,470 - min_max_attack lamda: 0.4245281219482422, max_d: 0.35375314950942993
+2026-04-15 19:08:39,545 - [trmean] attacker trim ratios: ['0.463', '0.463', '0.465', '0.469']
+2026-04-15 19:08:39,545 - [trmean] attacker avg trim: 0.4650, benign avg trim: 0.3928
+2026-04-15 19:08:39,572 - Round number: 28 --------------------------
+2026-04-15 19:08:39,572 - Evaluate global model
+2026-04-15 19:08:43,787 - Averaged Train Loss: 1.5205
+2026-04-15 19:08:43,788 - Test Accurancy: 0.4406
+2026-04-15 19:08:50,591 - min_max_attack try_count: 19
+2026-04-15 19:08:50,591 - min_max_attack lamda: 0.40505409240722656, max_d: 0.34526968002319336
+2026-04-15 19:08:50,648 - [trmean] attacker trim ratios: ['0.437', '0.435', '0.435', '0.437']
+2026-04-15 19:08:50,649 - [trmean] attacker avg trim: 0.4360, benign avg trim: 0.3960
+2026-04-15 19:08:50,659 - Round number: 29 --------------------------
+2026-04-15 19:08:50,659 - Evaluate global model
+2026-04-15 19:08:54,402 - Averaged Train Loss: 1.5103
+2026-04-15 19:08:54,402 - Test Accurancy: 0.4434
+2026-04-15 19:09:02,460 - min_max_attack try_count: 19
+2026-04-15 19:09:02,460 - min_max_attack lamda: 0.45432090759277344, max_d: 0.36701831221580505
+2026-04-15 19:09:02,516 - [trmean] attacker trim ratios: ['0.520', '0.520', '0.521', '0.524']
+2026-04-15 19:09:02,516 - [trmean] attacker avg trim: 0.5214, benign avg trim: 0.3865
+2026-04-15 19:09:02,527 - Round number: 30 --------------------------
+2026-04-15 19:09:02,528 - Evaluate global model
+2026-04-15 19:09:05,778 - Averaged Train Loss: 1.4994
+2026-04-15 19:09:05,778 - Test Accurancy: 0.4494
+2026-04-15 19:09:12,900 - min_max_attack try_count: 19
+2026-04-15 19:09:12,901 - min_max_attack lamda: 0.40719032287597656, max_d: 0.3226354718208313
+2026-04-15 19:09:12,992 - [trmean] attacker trim ratios: ['0.434', '0.432', '0.433', '0.437']
+2026-04-15 19:09:12,993 - [trmean] attacker avg trim: 0.4341, benign avg trim: 0.3962
+2026-04-15 19:09:13,004 - Round number: 31 --------------------------
+2026-04-15 19:09:13,004 - Evaluate global model
+2026-04-15 19:09:17,990 - Averaged Train Loss: 1.4876
+2026-04-15 19:09:17,990 - Test Accurancy: 0.4522
+2026-04-15 19:09:25,809 - min_max_attack try_count: 19
+2026-04-15 19:09:25,810 - min_max_attack lamda: 0.3946971893310547, max_d: 0.30614224076271057
+2026-04-15 19:09:25,844 - [trmean] attacker trim ratios: ['0.452', '0.449', '0.450', '0.453']
+2026-04-15 19:09:25,844 - [trmean] attacker avg trim: 0.4511, benign avg trim: 0.3943
+2026-04-15 19:09:25,877 - Round number: 32 --------------------------
+2026-04-15 19:09:25,877 - Evaluate global model
+2026-04-15 19:09:31,267 - Averaged Train Loss: 1.4836
+2026-04-15 19:09:31,268 - Test Accurancy: 0.4548
+2026-04-15 19:09:38,290 - min_max_attack try_count: 19
+2026-04-15 19:09:38,291 - min_max_attack lamda: 0.39084434509277344, max_d: 0.3190159797668457
+2026-04-15 19:09:38,334 - [trmean] attacker trim ratios: ['0.429', '0.426', '0.426', '0.430']
+2026-04-15 19:09:38,334 - [trmean] attacker avg trim: 0.4278, benign avg trim: 0.3969
+2026-04-15 19:09:38,344 - Round number: 33 --------------------------
+2026-04-15 19:09:38,345 - Evaluate global model
+2026-04-15 19:09:43,358 - Averaged Train Loss: 1.4721
+2026-04-15 19:09:43,359 - Test Accurancy: 0.4599
+2026-04-15 19:09:51,396 - min_max_attack try_count: 19
+2026-04-15 19:09:51,396 - min_max_attack lamda: 0.39521217346191406, max_d: 0.3005041778087616
+2026-04-15 19:09:51,448 - [trmean] attacker trim ratios: ['0.445', '0.444', '0.445', '0.448']
+2026-04-15 19:09:51,449 - [trmean] attacker avg trim: 0.4455, benign avg trim: 0.3949
+2026-04-15 19:09:51,461 - Round number: 34 --------------------------
+2026-04-15 19:09:51,461 - Evaluate global model
+2026-04-15 19:09:54,775 - Averaged Train Loss: 1.4679
+2026-04-15 19:09:54,776 - Test Accurancy: 0.4629
+2026-04-15 19:10:03,706 - min_max_attack try_count: 19
+2026-04-15 19:10:03,708 - min_max_attack lamda: 0.39910316467285156, max_d: 0.29868897795677185
+2026-04-15 19:10:03,768 - [trmean] attacker trim ratios: ['0.475', '0.472', '0.473', '0.475']
+2026-04-15 19:10:03,769 - [trmean] attacker avg trim: 0.4737, benign avg trim: 0.3918
+2026-04-15 19:10:03,782 - Round number: 35 --------------------------
+2026-04-15 19:10:03,782 - Evaluate global model
+2026-04-15 19:10:08,301 - Averaged Train Loss: 1.4593
+2026-04-15 19:10:08,301 - Test Accurancy: 0.4635
+2026-04-15 19:10:15,412 - min_max_attack try_count: 19
+2026-04-15 19:10:15,413 - min_max_attack lamda: 0.3921222686767578, max_d: 0.29753005504608154
+2026-04-15 19:10:15,478 - [trmean] attacker trim ratios: ['0.436', '0.434', '0.435', '0.439']
+2026-04-15 19:10:15,478 - [trmean] attacker avg trim: 0.4358, benign avg trim: 0.3960
+2026-04-15 19:10:15,493 - Round number: 36 --------------------------
+2026-04-15 19:10:15,493 - Evaluate global model
+2026-04-15 19:10:19,477 - Averaged Train Loss: 1.4570
+2026-04-15 19:10:19,478 - Test Accurancy: 0.4644
+2026-04-15 19:10:27,926 - min_max_attack try_count: 19
+2026-04-15 19:10:27,927 - min_max_attack lamda: 0.3665637969970703, max_d: 0.2666691243648529
+2026-04-15 19:10:27,985 - [trmean] attacker trim ratios: ['0.409', '0.405', '0.405', '0.408']
+2026-04-15 19:10:27,986 - [trmean] attacker avg trim: 0.4069, benign avg trim: 0.3992
+2026-04-15 19:10:27,998 - Round number: 37 --------------------------
+2026-04-15 19:10:27,998 - Evaluate global model
+2026-04-15 19:10:31,206 - Averaged Train Loss: 1.4474
+2026-04-15 19:10:31,207 - Test Accurancy: 0.4688
+2026-04-15 19:10:39,945 - min_max_attack try_count: 19
+2026-04-15 19:10:39,945 - min_max_attack lamda: 0.38977622985839844, max_d: 0.286888062953949
+2026-04-15 19:10:40,032 - [trmean] attacker trim ratios: ['0.449', '0.447', '0.448', '0.452']
+2026-04-15 19:10:40,032 - [trmean] attacker avg trim: 0.4489, benign avg trim: 0.3946
+2026-04-15 19:10:40,046 - Round number: 38 --------------------------
+2026-04-15 19:10:40,046 - Evaluate global model
+2026-04-15 19:10:44,835 - Averaged Train Loss: 1.4399
+2026-04-15 19:10:44,836 - Test Accurancy: 0.4714
+2026-04-15 19:10:51,385 - min_max_attack try_count: 19
+2026-04-15 19:10:51,399 - min_max_attack lamda: 0.38399696350097656, max_d: 0.2749216556549072
+2026-04-15 19:10:51,438 - [trmean] attacker trim ratios: ['0.459', '0.457', '0.457', '0.460']
+2026-04-15 19:10:51,438 - [trmean] attacker avg trim: 0.4582, benign avg trim: 0.3935
+2026-04-15 19:10:51,458 - Round number: 39 --------------------------
+2026-04-15 19:10:51,459 - Evaluate global model
+2026-04-15 19:10:56,799 - Averaged Train Loss: 1.4336
+2026-04-15 19:10:56,799 - Test Accurancy: 0.4722
+2026-04-15 19:11:04,393 - min_max_attack try_count: 19
+2026-04-15 19:11:04,394 - min_max_attack lamda: 0.37192344665527344, max_d: 0.2722023129463196
+2026-04-15 19:11:04,431 - [trmean] attacker trim ratios: ['0.433', '0.430', '0.432', '0.436']
+2026-04-15 19:11:04,431 - [trmean] attacker avg trim: 0.4328, benign avg trim: 0.3964
+2026-04-15 19:11:04,447 - Round number: 40 --------------------------
+2026-04-15 19:11:04,448 - Evaluate global model
+2026-04-15 19:11:08,543 - Averaged Train Loss: 1.4203
+2026-04-15 19:11:08,544 - Test Accurancy: 0.4798
+2026-04-15 19:11:17,311 - min_max_attack try_count: 19
+2026-04-15 19:11:17,313 - min_max_attack lamda: 0.3806018829345703, max_d: 0.2813738286495209
+2026-04-15 19:11:17,366 - [trmean] attacker trim ratios: ['0.476', '0.474', '0.475', '0.478']
+2026-04-15 19:11:17,366 - [trmean] attacker avg trim: 0.4756, benign avg trim: 0.3916
+2026-04-15 19:11:17,388 - Round number: 41 --------------------------
+2026-04-15 19:11:17,388 - Evaluate global model
+2026-04-15 19:11:21,122 - Averaged Train Loss: 1.4180
+2026-04-15 19:11:21,124 - Test Accurancy: 0.4817
+2026-04-15 19:11:30,179 - min_max_attack try_count: 19
+2026-04-15 19:11:30,180 - min_max_attack lamda: 0.37886619567871094, max_d: 0.2661049962043762
+2026-04-15 19:11:30,222 - [trmean] attacker trim ratios: ['0.448', '0.445', '0.445', '0.449']
+2026-04-15 19:11:30,222 - [trmean] attacker avg trim: 0.4466, benign avg trim: 0.3948
+2026-04-15 19:11:30,239 - Round number: 42 --------------------------
+2026-04-15 19:11:30,239 - Evaluate global model
+2026-04-15 19:11:34,549 - Averaged Train Loss: 1.4123
+2026-04-15 19:11:34,550 - Test Accurancy: 0.4816
+2026-04-15 19:11:43,580 - min_max_attack try_count: 19
+2026-04-15 19:11:43,583 - min_max_attack lamda: 0.3573322296142578, max_d: 0.25210464000701904
+2026-04-15 19:11:43,614 - [trmean] attacker trim ratios: ['0.424', '0.421', '0.421', '0.425']
+2026-04-15 19:11:43,614 - [trmean] attacker avg trim: 0.4230, benign avg trim: 0.3974
+2026-04-15 19:11:43,643 - Round number: 43 --------------------------
+2026-04-15 19:11:43,643 - Evaluate global model
+2026-04-15 19:11:48,576 - Averaged Train Loss: 1.4001
+2026-04-15 19:11:48,576 - Test Accurancy: 0.4853
+2026-04-15 19:11:55,781 - min_max_attack try_count: 19
+2026-04-15 19:11:55,782 - min_max_attack lamda: 0.3460216522216797, max_d: 0.24454420804977417
+2026-04-15 19:11:55,859 - [trmean] attacker trim ratios: ['0.401', '0.398', '0.399', '0.404']
+2026-04-15 19:11:55,859 - [trmean] attacker avg trim: 0.4005, benign avg trim: 0.3999
+2026-04-15 19:11:55,878 - Round number: 44 --------------------------
+2026-04-15 19:11:55,878 - Evaluate global model
+2026-04-15 19:12:00,960 - Averaged Train Loss: 1.3980
+2026-04-15 19:12:00,961 - Test Accurancy: 0.4861
+2026-04-15 19:12:08,796 - min_max_attack try_count: 19
+2026-04-15 19:12:08,797 - min_max_attack lamda: 0.3383350372314453, max_d: 0.24534665048122406
+2026-04-15 19:12:08,859 - [trmean] attacker trim ratios: ['0.390', '0.386', '0.385', '0.389']
+2026-04-15 19:12:08,859 - [trmean] attacker avg trim: 0.3875, benign avg trim: 0.4014
+2026-04-15 19:12:08,877 - Round number: 45 --------------------------
+2026-04-15 19:12:08,877 - Evaluate global model
+2026-04-15 19:12:12,878 - Averaged Train Loss: 1.3909
+2026-04-15 19:12:12,880 - Test Accurancy: 0.4910
+2026-04-15 19:12:20,753 - min_max_attack try_count: 19
+2026-04-15 19:12:20,753 - min_max_attack lamda: 0.3457927703857422, max_d: 0.2353854477405548
+2026-04-15 19:12:20,796 - [trmean] attacker trim ratios: ['0.406', '0.401', '0.401', '0.405']
+2026-04-15 19:12:20,797 - [trmean] attacker avg trim: 0.4031, benign avg trim: 0.3997
+2026-04-15 19:12:20,817 - Round number: 46 --------------------------
+2026-04-15 19:12:20,818 - Evaluate global model
+2026-04-15 19:12:25,886 - Averaged Train Loss: 1.3841
+2026-04-15 19:12:25,887 - Test Accurancy: 0.4920
+2026-04-15 19:12:31,970 - min_max_attack try_count: 19
+2026-04-15 19:12:31,970 - min_max_attack lamda: 0.3522968292236328, max_d: 0.24548503756523132
+2026-04-15 19:12:32,072 - [trmean] attacker trim ratios: ['0.428', '0.425', '0.426', '0.431']
+2026-04-15 19:12:32,073 - [trmean] attacker avg trim: 0.4276, benign avg trim: 0.3969
+2026-04-15 19:12:32,089 - Round number: 47 --------------------------
+2026-04-15 19:12:32,089 - Evaluate global model
+2026-04-15 19:12:36,963 - Averaged Train Loss: 1.3801
+2026-04-15 19:12:36,964 - Test Accurancy: 0.4937
+2026-04-15 19:12:44,061 - min_max_attack try_count: 19
+2026-04-15 19:12:44,062 - min_max_attack lamda: 0.35965919494628906, max_d: 0.2432318925857544
+2026-04-15 19:12:44,127 - [trmean] attacker trim ratios: ['0.452', '0.450', '0.451', '0.456']
+2026-04-15 19:12:44,127 - [trmean] attacker avg trim: 0.4523, benign avg trim: 0.3942
+2026-04-15 19:12:44,140 - Round number: 48 --------------------------
+2026-04-15 19:12:44,141 - Evaluate global model
+2026-04-15 19:12:48,390 - Averaged Train Loss: 1.3787
+2026-04-15 19:12:48,391 - Test Accurancy: 0.4912
+2026-04-15 19:12:55,690 - min_max_attack try_count: 19
+2026-04-15 19:12:55,691 - min_max_attack lamda: 0.3312969207763672, max_d: 0.22275449335575104
+2026-04-15 19:12:55,773 - [trmean] attacker trim ratios: ['0.412', '0.408', '0.409', '0.412']
+2026-04-15 19:12:55,773 - [trmean] attacker avg trim: 0.4104, benign avg trim: 0.3988
+2026-04-15 19:12:55,784 - Round number: 49 --------------------------
+2026-04-15 19:12:55,785 - Evaluate global model
+2026-04-15 19:13:00,264 - Averaged Train Loss: 1.3787
+2026-04-15 19:13:00,264 - Test Accurancy: 0.4926
+2026-04-15 19:13:06,886 - min_max_attack try_count: 19
+2026-04-15 19:13:06,886 - min_max_attack lamda: 0.33293724060058594, max_d: 0.22774484753608704
+2026-04-15 19:13:06,963 - [trmean] attacker trim ratios: ['0.409', '0.406', '0.407', '0.413']
+2026-04-15 19:13:06,963 - [trmean] attacker avg trim: 0.4089, benign avg trim: 0.3990
+2026-04-15 19:13:06,975 - Round number: 50 --------------------------
+2026-04-15 19:13:06,975 - Evaluate global model
+2026-04-15 19:13:11,460 - Averaged Train Loss: 1.3706
+2026-04-15 19:13:11,460 - Test Accurancy: 0.4976
+2026-04-15 19:13:18,324 - min_max_attack try_count: 19
+2026-04-15 19:13:18,324 - min_max_attack lamda: 0.32624244689941406, max_d: 0.2106112539768219
+2026-04-15 19:13:18,407 - [trmean] attacker trim ratios: ['0.401', '0.396', '0.395', '0.398']
+2026-04-15 19:13:18,407 - [trmean] attacker avg trim: 0.3976, benign avg trim: 0.4003
+2026-04-15 19:13:18,417 - Round number: 51 --------------------------
+2026-04-15 19:13:18,417 - Evaluate global model
+2026-04-15 19:13:22,039 - Averaged Train Loss: 1.3610
+2026-04-15 19:13:22,040 - Test Accurancy: 0.5001
+2026-04-15 19:13:29,581 - min_max_attack try_count: 19
+2026-04-15 19:13:29,581 - min_max_attack lamda: 0.3290271759033203, max_d: 0.20891989767551422
+2026-04-15 19:13:29,688 - [trmean] attacker trim ratios: ['0.423', '0.420', '0.420', '0.425']
+2026-04-15 19:13:29,688 - [trmean] attacker avg trim: 0.4219, benign avg trim: 0.3976
+2026-04-15 19:13:29,700 - Round number: 52 --------------------------
+2026-04-15 19:13:29,700 - Evaluate global model
+2026-04-15 19:13:34,201 - Averaged Train Loss: 1.3612
+2026-04-15 19:13:34,201 - Test Accurancy: 0.4998
+2026-04-15 19:13:40,228 - min_max_attack try_count: 19
+2026-04-15 19:13:40,229 - min_max_attack lamda: 0.31073570251464844, max_d: 0.20233015716075897
+2026-04-15 19:13:40,345 - [trmean] attacker trim ratios: ['0.377', '0.373', '0.373', '0.378']
+2026-04-15 19:13:40,345 - [trmean] attacker avg trim: 0.3751, benign avg trim: 0.4028
+2026-04-15 19:13:40,356 - Round number: 53 --------------------------
+2026-04-15 19:13:40,356 - Evaluate global model
+2026-04-15 19:13:46,008 - Averaged Train Loss: 1.3545
+2026-04-15 19:13:46,010 - Test Accurancy: 0.5033
+2026-04-15 19:13:51,959 - min_max_attack try_count: 19
+2026-04-15 19:13:51,960 - min_max_attack lamda: 0.32004356384277344, max_d: 0.2001032680273056
+2026-04-15 19:13:52,065 - [trmean] attacker trim ratios: ['0.412', '0.408', '0.407', '0.411']
+2026-04-15 19:13:52,065 - [trmean] attacker avg trim: 0.4096, benign avg trim: 0.3989
+2026-04-15 19:13:52,074 - Round number: 54 --------------------------
+2026-04-15 19:13:52,075 - Evaluate global model
+2026-04-15 19:13:56,534 - Averaged Train Loss: 1.3402
+2026-04-15 19:13:56,535 - Test Accurancy: 0.5084
+2026-04-15 19:14:05,185 - min_max_attack try_count: 19
+2026-04-15 19:14:05,185 - min_max_attack lamda: 0.31508445739746094, max_d: 0.1989387720823288
+2026-04-15 19:14:05,263 - [trmean] attacker trim ratios: ['0.393', '0.390', '0.390', '0.395']
+2026-04-15 19:14:05,263 - [trmean] attacker avg trim: 0.3921, benign avg trim: 0.4009
+2026-04-15 19:14:05,274 - Round number: 55 --------------------------
+2026-04-15 19:14:05,275 - Evaluate global model
+2026-04-15 19:14:09,307 - Averaged Train Loss: 1.3389
+2026-04-15 19:14:09,308 - Test Accurancy: 0.5085
+2026-04-15 19:14:17,050 - min_max_attack try_count: 19
+2026-04-15 19:14:17,050 - min_max_attack lamda: 0.30091285705566406, max_d: 0.19308727979660034
+2026-04-15 19:14:17,136 - [trmean] attacker trim ratios: ['0.386', '0.382', '0.383', '0.388']
+2026-04-15 19:14:17,136 - [trmean] attacker avg trim: 0.3846, benign avg trim: 0.4017
+2026-04-15 19:14:17,149 - Round number: 56 --------------------------
+2026-04-15 19:14:17,149 - Evaluate global model
+2026-04-15 19:14:22,166 - Averaged Train Loss: 1.3326
+2026-04-15 19:14:22,166 - Test Accurancy: 0.5097
+2026-04-15 19:14:28,658 - min_max_attack try_count: 19
+2026-04-15 19:14:28,659 - min_max_attack lamda: 0.31821250915527344, max_d: 0.19617852568626404
+2026-04-15 19:14:28,731 - [trmean] attacker trim ratios: ['0.425', '0.422', '0.422', '0.427']
+2026-04-15 19:14:28,731 - [trmean] attacker avg trim: 0.4242, benign avg trim: 0.3973
+2026-04-15 19:14:28,744 - Round number: 57 --------------------------
+2026-04-15 19:14:28,744 - Evaluate global model
+2026-04-15 19:14:32,697 - Averaged Train Loss: 1.3339
+2026-04-15 19:14:32,698 - Test Accurancy: 0.5082
+2026-04-15 19:14:42,596 - min_max_attack try_count: 19
+2026-04-15 19:14:42,596 - min_max_attack lamda: 0.2953624725341797, max_d: 0.1826300024986267
+2026-04-15 19:14:42,668 - [trmean] attacker trim ratios: ['0.376', '0.371', '0.371', '0.375']
+2026-04-15 19:14:42,668 - [trmean] attacker avg trim: 0.3734, benign avg trim: 0.4030
+2026-04-15 19:14:42,689 - Round number: 58 --------------------------
+2026-04-15 19:14:42,689 - Evaluate global model
+2026-04-15 19:14:46,380 - Averaged Train Loss: 1.3268
+2026-04-15 19:14:46,380 - Test Accurancy: 0.5106
+2026-04-15 19:14:54,921 - min_max_attack try_count: 19
+2026-04-15 19:14:54,922 - min_max_attack lamda: 0.2962017059326172, max_d: 0.1712125837802887
+2026-04-15 19:14:55,016 - [trmean] attacker trim ratios: ['0.378', '0.374', '0.375', '0.380']
+2026-04-15 19:14:55,016 - [trmean] attacker avg trim: 0.3768, benign avg trim: 0.4026
+2026-04-15 19:14:55,040 - Round number: 59 --------------------------
+2026-04-15 19:14:55,040 - Evaluate global model
+2026-04-15 19:14:59,743 - Averaged Train Loss: 1.3236
+2026-04-15 19:14:59,744 - Test Accurancy: 0.5117
+2026-04-15 19:15:07,094 - min_max_attack try_count: 19
+2026-04-15 19:15:07,096 - min_max_attack lamda: 0.28306007385253906, max_d: 0.16791370511054993
+2026-04-15 19:15:07,199 - [trmean] attacker trim ratios: ['0.378', '0.374', '0.374', '0.379']
+2026-04-15 19:15:07,199 - [trmean] attacker avg trim: 0.3764, benign avg trim: 0.4026
+2026-04-15 19:15:07,223 - Round number: 60 --------------------------
+2026-04-15 19:15:07,223 - Evaluate global model
+2026-04-15 19:15:13,066 - Averaged Train Loss: 1.3180
+2026-04-15 19:15:13,067 - Test Accurancy: 0.5165
+2026-04-15 19:15:20,702 - min_max_attack try_count: 19
+2026-04-15 19:15:20,703 - min_max_attack lamda: 0.30821800231933594, max_d: 0.18586400151252747
+2026-04-15 19:15:20,805 - [trmean] attacker trim ratios: ['0.436', '0.432', '0.432', '0.436']
+2026-04-15 19:15:20,805 - [trmean] attacker avg trim: 0.4339, benign avg trim: 0.3962
+2026-04-15 19:15:20,815 - Round number: 61 --------------------------
+2026-04-15 19:15:20,816 - Evaluate global model
+2026-04-15 19:15:25,838 - Averaged Train Loss: 1.3057
+2026-04-15 19:15:25,839 - Test Accurancy: 0.5193
+2026-04-15 19:15:34,935 - min_max_attack try_count: 19
+2026-04-15 19:15:34,936 - min_max_attack lamda: 0.2886676788330078, max_d: 0.17211835086345673
+2026-04-15 19:15:35,020 - [trmean] attacker trim ratios: ['0.404', '0.400', '0.400', '0.404']
+2026-04-15 19:15:35,020 - [trmean] attacker avg trim: 0.4018, benign avg trim: 0.3998
+2026-04-15 19:15:35,035 - Round number: 62 --------------------------
+2026-04-15 19:15:35,035 - Evaluate global model
+2026-04-15 19:15:39,270 - Averaged Train Loss: 1.2986
+2026-04-15 19:15:39,271 - Test Accurancy: 0.5199
+2026-04-15 19:15:47,447 - min_max_attack try_count: 19
+2026-04-15 19:15:47,448 - min_max_attack lamda: 0.30379295349121094, max_d: 0.16639801859855652
+2026-04-15 19:15:47,531 - [trmean] attacker trim ratios: ['0.419', '0.415', '0.415', '0.419']
+2026-04-15 19:15:47,531 - [trmean] attacker avg trim: 0.4169, benign avg trim: 0.3981
+2026-04-15 19:15:47,548 - Round number: 63 --------------------------
+2026-04-15 19:15:47,548 - Evaluate global model
+2026-04-15 19:15:51,910 - Averaged Train Loss: 1.3030
+2026-04-15 19:15:51,911 - Test Accurancy: 0.5198
+2026-04-15 19:15:59,434 - min_max_attack try_count: 19
+2026-04-15 19:15:59,435 - min_max_attack lamda: 0.30829429626464844, max_d: 0.17006047070026398
+2026-04-15 19:15:59,533 - [trmean] attacker trim ratios: ['0.468', '0.465', '0.466', '0.470']
+2026-04-15 19:15:59,534 - [trmean] attacker avg trim: 0.4675, benign avg trim: 0.3925
+2026-04-15 19:15:59,544 - Round number: 64 --------------------------
+2026-04-15 19:15:59,544 - Evaluate global model
+2026-04-15 19:16:03,497 - Averaged Train Loss: 1.2968
+2026-04-15 19:16:03,498 - Test Accurancy: 0.5212
+2026-04-15 19:16:12,545 - min_max_attack try_count: 19
+2026-04-15 19:16:12,546 - min_max_attack lamda: 0.2788257598876953, max_d: 0.15266843140125275
+2026-04-15 19:16:12,639 - [trmean] attacker trim ratios: ['0.391', '0.386', '0.385', '0.389']
+2026-04-15 19:16:12,639 - [trmean] attacker avg trim: 0.3876, benign avg trim: 0.4014
+2026-04-15 19:16:12,649 - Round number: 65 --------------------------
+2026-04-15 19:16:12,649 - Evaluate global model
+2026-04-15 19:16:16,368 - Averaged Train Loss: 1.2898
+2026-04-15 19:16:16,369 - Test Accurancy: 0.5225
+2026-04-15 19:16:24,813 - min_max_attack try_count: 19
+2026-04-15 19:16:24,815 - min_max_attack lamda: 0.29097557067871094, max_d: 0.15550634264945984
+2026-04-15 19:16:24,893 - [trmean] attacker trim ratios: ['0.430', '0.425', '0.425', '0.430']
+2026-04-15 19:16:24,894 - [trmean] attacker avg trim: 0.4274, benign avg trim: 0.3970
+2026-04-15 19:16:24,913 - Round number: 66 --------------------------
+2026-04-15 19:16:24,913 - Evaluate global model
+2026-04-15 19:16:28,659 - Averaged Train Loss: 1.2895
+2026-04-15 19:16:28,660 - Test Accurancy: 0.5250
+2026-04-15 19:16:37,072 - min_max_attack try_count: 19
+2026-04-15 19:16:37,072 - min_max_attack lamda: 0.2817249298095703, max_d: 0.1538611650466919
+2026-04-15 19:16:37,162 - [trmean] attacker trim ratios: ['0.413', '0.408', '0.408', '0.412']
+2026-04-15 19:16:37,162 - [trmean] attacker avg trim: 0.4104, benign avg trim: 0.3988
+2026-04-15 19:16:37,173 - Round number: 67 --------------------------
+2026-04-15 19:16:37,173 - Evaluate global model
+2026-04-15 19:16:40,132 - Averaged Train Loss: 1.2841
+2026-04-15 19:16:40,133 - Test Accurancy: 0.5256
+2026-04-15 19:16:47,634 - min_max_attack try_count: 19
+2026-04-15 19:16:47,638 - min_max_attack lamda: 0.2697467803955078, max_d: 0.14594018459320068
+2026-04-15 19:16:47,751 - [trmean] attacker trim ratios: ['0.399', '0.395', '0.395', '0.400']
+2026-04-15 19:16:47,752 - [trmean] attacker avg trim: 0.3972, benign avg trim: 0.4003
+2026-04-15 19:16:47,762 - Round number: 68 --------------------------
+2026-04-15 19:16:47,762 - Evaluate global model
+2026-04-15 19:16:52,951 - Averaged Train Loss: 1.2839
+2026-04-15 19:16:52,952 - Test Accurancy: 0.5263
+2026-04-15 19:17:00,939 - min_max_attack try_count: 19
+2026-04-15 19:17:00,939 - min_max_attack lamda: 0.2735424041748047, max_d: 0.14598222076892853
+2026-04-15 19:17:01,048 - [trmean] attacker trim ratios: ['0.400', '0.395', '0.395', '0.400']
+2026-04-15 19:17:01,049 - [trmean] attacker avg trim: 0.3973, benign avg trim: 0.4003
+2026-04-15 19:17:01,061 - Round number: 69 --------------------------
+2026-04-15 19:17:01,061 - Evaluate global model
+2026-04-15 19:17:05,899 - Averaged Train Loss: 1.2816
+2026-04-15 19:17:05,900 - Test Accurancy: 0.5263
+2026-04-15 19:17:13,340 - min_max_attack try_count: 19
+2026-04-15 19:17:13,340 - min_max_attack lamda: 0.2634143829345703, max_d: 0.14267203211784363
+2026-04-15 19:17:13,417 - [trmean] attacker trim ratios: ['0.389', '0.384', '0.384', '0.388']
+2026-04-15 19:17:13,417 - [trmean] attacker avg trim: 0.3860, benign avg trim: 0.4016
+2026-04-15 19:17:13,433 - Round number: 70 --------------------------
+2026-04-15 19:17:13,433 - Evaluate global model
+2026-04-15 19:17:17,445 - Averaged Train Loss: 1.2748
+2026-04-15 19:17:17,445 - Test Accurancy: 0.5283
+2026-04-15 19:17:24,541 - min_max_attack try_count: 19
+2026-04-15 19:17:24,542 - min_max_attack lamda: 0.2762889862060547, max_d: 0.150452122092247
+2026-04-15 19:17:24,620 - [trmean] attacker trim ratios: ['0.414', '0.410', '0.410', '0.414']
+2026-04-15 19:17:24,621 - [trmean] attacker avg trim: 0.4121, benign avg trim: 0.3987
+2026-04-15 19:17:24,631 - Round number: 71 --------------------------
+2026-04-15 19:17:24,631 - Evaluate global model
+2026-04-15 19:17:28,245 - Averaged Train Loss: 1.2718
+2026-04-15 19:17:28,245 - Test Accurancy: 0.5299
+2026-04-15 19:17:36,739 - min_max_attack try_count: 19
+2026-04-15 19:17:36,739 - min_max_attack lamda: 0.25397300720214844, max_d: 0.13719411194324493
+2026-04-15 19:17:36,803 - [trmean] attacker trim ratios: ['0.355', '0.350', '0.350', '0.355']
+2026-04-15 19:17:36,803 - [trmean] attacker avg trim: 0.3525, benign avg trim: 0.4053
+2026-04-15 19:17:36,813 - Round number: 72 --------------------------
+2026-04-15 19:17:36,813 - Evaluate global model
+2026-04-15 19:17:40,184 - Averaged Train Loss: 1.2621
+2026-04-15 19:17:40,184 - Test Accurancy: 0.5332
+2026-04-15 19:17:49,355 - min_max_attack try_count: 19
+2026-04-15 19:17:49,357 - min_max_attack lamda: 0.26602745056152344, max_d: 0.1347968578338623
+2026-04-15 19:17:49,397 - [trmean] attacker trim ratios: ['0.413', '0.409', '0.408', '0.412']
+2026-04-15 19:17:49,398 - [trmean] attacker avg trim: 0.4105, benign avg trim: 0.3988
+2026-04-15 19:17:49,421 - Round number: 73 --------------------------
+2026-04-15 19:17:49,422 - Evaluate global model
+2026-04-15 19:17:53,608 - Averaged Train Loss: 1.2622
+2026-04-15 19:17:53,609 - Test Accurancy: 0.5321
+2026-04-15 19:18:01,116 - min_max_attack try_count: 19
+2026-04-15 19:18:01,117 - min_max_attack lamda: 0.27869224548339844, max_d: 0.14278756082057953
+2026-04-15 19:18:01,162 - [trmean] attacker trim ratios: ['0.455', '0.451', '0.451', '0.455']
+2026-04-15 19:18:01,162 - [trmean] attacker avg trim: 0.4527, benign avg trim: 0.3941
+2026-04-15 19:18:01,175 - Round number: 74 --------------------------
+2026-04-15 19:18:01,175 - Evaluate global model
+2026-04-15 19:18:04,552 - Averaged Train Loss: 1.2623
+2026-04-15 19:18:04,552 - Test Accurancy: 0.5325
+2026-04-15 19:18:14,020 - min_max_attack try_count: 19
+2026-04-15 19:18:14,021 - min_max_attack lamda: 0.2336406707763672, max_d: 0.11992166936397552
+2026-04-15 19:18:14,062 - [trmean] attacker trim ratios: ['0.323', '0.318', '0.317', '0.320']
+2026-04-15 19:18:14,063 - [trmean] attacker avg trim: 0.3194, benign avg trim: 0.4090
+2026-04-15 19:18:14,076 - Round number: 75 --------------------------
+2026-04-15 19:18:14,076 - Evaluate global model
+2026-04-15 19:18:17,420 - Averaged Train Loss: 1.2553
+2026-04-15 19:18:17,420 - Test Accurancy: 0.5341
+2026-04-15 19:18:27,049 - min_max_attack try_count: 19
+2026-04-15 19:18:27,052 - min_max_attack lamda: 0.25277137756347656, max_d: 0.12564153969287872
+2026-04-15 19:18:27,120 - [trmean] attacker trim ratios: ['0.395', '0.389', '0.389', '0.392']
+2026-04-15 19:18:27,120 - [trmean] attacker avg trim: 0.3914, benign avg trim: 0.4010
+2026-04-15 19:18:27,152 - Round number: 76 --------------------------
+2026-04-15 19:18:27,152 - Evaluate global model
+2026-04-15 19:18:31,983 - Averaged Train Loss: 1.2546
+2026-04-15 19:18:31,983 - Test Accurancy: 0.5332
+2026-04-15 19:18:41,208 - min_max_attack try_count: 19
+2026-04-15 19:18:41,209 - min_max_attack lamda: 0.24725914001464844, max_d: 0.12111484259366989
+2026-04-15 19:18:41,270 - [trmean] attacker trim ratios: ['0.376', '0.370', '0.370', '0.374']
+2026-04-15 19:18:41,271 - [trmean] attacker avg trim: 0.3723, benign avg trim: 0.4031
+2026-04-15 19:18:41,287 - Round number: 77 --------------------------
+2026-04-15 19:18:41,288 - Evaluate global model
+2026-04-15 19:18:45,929 - Averaged Train Loss: 1.2510
+2026-04-15 19:18:45,929 - Test Accurancy: 0.5351
+2026-04-15 19:18:54,715 - min_max_attack try_count: 19
+2026-04-15 19:18:54,715 - min_max_attack lamda: 0.2368640899658203, max_d: 0.11911386996507645
+2026-04-15 19:18:54,802 - [trmean] attacker trim ratios: ['0.371', '0.366', '0.365', '0.370']
+2026-04-15 19:18:54,802 - [trmean] attacker avg trim: 0.3680, benign avg trim: 0.4036
+2026-04-15 19:18:54,813 - Round number: 78 --------------------------
+2026-04-15 19:18:54,813 - Evaluate global model
+2026-04-15 19:18:58,059 - Averaged Train Loss: 1.2514
+2026-04-15 19:18:58,059 - Test Accurancy: 0.5345
+2026-04-15 19:19:05,525 - min_max_attack try_count: 19
+2026-04-15 19:19:05,526 - min_max_attack lamda: 0.22620201110839844, max_d: 0.11326036602258682
+2026-04-15 19:19:05,571 - [trmean] attacker trim ratios: ['0.317', '0.312', '0.311', '0.315']
+2026-04-15 19:19:05,571 - [trmean] attacker avg trim: 0.3140, benign avg trim: 0.4096
+2026-04-15 19:19:05,591 - Round number: 79 --------------------------
+2026-04-15 19:19:05,591 - Evaluate global model
+2026-04-15 19:19:11,036 - Averaged Train Loss: 1.2435
+2026-04-15 19:19:11,037 - Test Accurancy: 0.5374
+2026-04-15 19:19:17,984 - min_max_attack try_count: 19
+2026-04-15 19:19:17,985 - min_max_attack lamda: 0.2382373809814453, max_d: 0.11196828633546829
+2026-04-15 19:19:18,058 - [trmean] attacker trim ratios: ['0.368', '0.362', '0.361', '0.365']
+2026-04-15 19:19:18,059 - [trmean] attacker avg trim: 0.3639, benign avg trim: 0.4040
+2026-04-15 19:19:18,082 - Round number: 80 --------------------------
+2026-04-15 19:19:18,083 - Evaluate global model
+2026-04-15 19:19:22,796 - Averaged Train Loss: 1.2461
+2026-04-15 19:19:22,797 - Test Accurancy: 0.5353
+2026-04-15 19:19:30,479 - min_max_attack try_count: 19
+2026-04-15 19:19:30,480 - min_max_attack lamda: 0.22873878479003906, max_d: 0.10889076441526413
+2026-04-15 19:19:30,533 - [trmean] attacker trim ratios: ['0.354', '0.349', '0.348', '0.353']
+2026-04-15 19:19:30,533 - [trmean] attacker avg trim: 0.3510, benign avg trim: 0.4054
+2026-04-15 19:19:30,545 - Round number: 81 --------------------------
+2026-04-15 19:19:30,546 - Evaluate global model
+2026-04-15 19:19:34,684 - Averaged Train Loss: 1.2366
+2026-04-15 19:19:34,686 - Test Accurancy: 0.5377
+2026-04-15 19:19:42,285 - min_max_attack try_count: 19
+2026-04-15 19:19:42,286 - min_max_attack lamda: 0.22332191467285156, max_d: 0.1074758991599083
+2026-04-15 19:19:42,360 - [trmean] attacker trim ratios: ['0.354', '0.349', '0.349', '0.354']
+2026-04-15 19:19:42,360 - [trmean] attacker avg trim: 0.3514, benign avg trim: 0.4054
+2026-04-15 19:19:42,380 - Round number: 82 --------------------------
+2026-04-15 19:19:42,380 - Evaluate global model
+2026-04-15 19:19:47,619 - Averaged Train Loss: 1.2303
+2026-04-15 19:19:47,619 - Test Accurancy: 0.5420
+2026-04-15 19:19:55,468 - min_max_attack try_count: 19
+2026-04-15 19:19:55,469 - min_max_attack lamda: 0.2233409881591797, max_d: 0.1025492250919342
+2026-04-15 19:19:55,516 - [trmean] attacker trim ratios: ['0.353', '0.348', '0.347', '0.351']
+2026-04-15 19:19:55,517 - [trmean] attacker avg trim: 0.3495, benign avg trim: 0.4056
+2026-04-15 19:19:55,532 - Round number: 83 --------------------------
+2026-04-15 19:19:55,532 - Evaluate global model
+2026-04-15 19:20:00,609 - Averaged Train Loss: 1.2317
+2026-04-15 19:20:00,610 - Test Accurancy: 0.5401
+2026-04-15 19:20:08,827 - min_max_attack try_count: 19
+2026-04-15 19:20:08,828 - min_max_attack lamda: 0.2230358123779297, max_d: 0.1033695712685585
+2026-04-15 19:20:08,886 - [trmean] attacker trim ratios: ['0.358', '0.353', '0.353', '0.357']
+2026-04-15 19:20:08,886 - [trmean] attacker avg trim: 0.3553, benign avg trim: 0.4050
+2026-04-15 19:20:08,906 - Round number: 84 --------------------------
+2026-04-15 19:20:08,906 - Evaluate global model
+2026-04-15 19:20:13,193 - Averaged Train Loss: 1.2274
+2026-04-15 19:20:13,194 - Test Accurancy: 0.5422
+2026-04-15 19:20:21,269 - min_max_attack try_count: 19
+2026-04-15 19:20:21,270 - min_max_attack lamda: 0.22627830505371094, max_d: 0.1022961288690567
+2026-04-15 19:20:21,345 - [trmean] attacker trim ratios: ['0.380', '0.375', '0.374', '0.378']
+2026-04-15 19:20:21,346 - [trmean] attacker avg trim: 0.3770, benign avg trim: 0.4026
+2026-04-15 19:20:21,355 - Round number: 85 --------------------------
+2026-04-15 19:20:21,356 - Evaluate global model
+2026-04-15 19:20:25,190 - Averaged Train Loss: 1.2302
+2026-04-15 19:20:25,191 - Test Accurancy: 0.5410
+2026-04-15 19:20:32,879 - min_max_attack try_count: 19
+2026-04-15 19:20:32,880 - min_max_attack lamda: 0.23812294006347656, max_d: 0.10233860462903976
+2026-04-15 19:20:32,963 - [trmean] attacker trim ratios: ['0.433', '0.429', '0.428', '0.432']
+2026-04-15 19:20:32,964 - [trmean] attacker avg trim: 0.4305, benign avg trim: 0.3966
+2026-04-15 19:20:32,978 - Round number: 86 --------------------------
+2026-04-15 19:20:32,978 - Evaluate global model
+2026-04-15 19:20:37,128 - Averaged Train Loss: 1.2219
+2026-04-15 19:20:37,128 - Test Accurancy: 0.5442
+2026-04-15 19:20:43,702 - min_max_attack try_count: 19
+2026-04-15 19:20:43,703 - min_max_attack lamda: 0.2245044708251953, max_d: 0.10143385082483292
+2026-04-15 19:20:43,806 - [trmean] attacker trim ratios: ['0.384', '0.378', '0.377', '0.381']
+2026-04-15 19:20:43,806 - [trmean] attacker avg trim: 0.3801, benign avg trim: 0.4022
+2026-04-15 19:20:43,817 - Round number: 87 --------------------------
+2026-04-15 19:20:43,817 - Evaluate global model
+2026-04-15 19:20:47,462 - Averaged Train Loss: 1.2242
+2026-04-15 19:20:47,463 - Test Accurancy: 0.5424
+2026-04-15 19:20:54,870 - min_max_attack try_count: 19
+2026-04-15 19:20:54,871 - min_max_attack lamda: 0.23842811584472656, max_d: 0.10599242150783539
+2026-04-15 19:20:54,964 - [trmean] attacker trim ratios: ['0.431', '0.426', '0.426', '0.430']
+2026-04-15 19:20:54,965 - [trmean] attacker avg trim: 0.4283, benign avg trim: 0.3969
+2026-04-15 19:20:54,976 - Round number: 88 --------------------------
+2026-04-15 19:20:54,976 - Evaluate global model
+2026-04-15 19:20:59,079 - Averaged Train Loss: 1.2225
+2026-04-15 19:20:59,080 - Test Accurancy: 0.5421
+2026-04-15 19:21:05,475 - min_max_attack try_count: 19
+2026-04-15 19:21:05,476 - min_max_attack lamda: 0.21735191345214844, max_d: 0.09720643609762192
+2026-04-15 19:21:05,577 - [trmean] attacker trim ratios: ['0.379', '0.373', '0.373', '0.376']
+2026-04-15 19:21:05,577 - [trmean] attacker avg trim: 0.3752, benign avg trim: 0.4028
+2026-04-15 19:21:05,591 - Round number: 89 --------------------------
+2026-04-15 19:21:05,591 - Evaluate global model
+2026-04-15 19:21:11,164 - Averaged Train Loss: 1.2176
+2026-04-15 19:21:11,164 - Test Accurancy: 0.5442
+2026-04-15 19:21:18,929 - min_max_attack try_count: 19
+2026-04-15 19:21:18,930 - min_max_attack lamda: 0.2122783660888672, max_d: 0.09198947250843048
+2026-04-15 19:21:19,032 - [trmean] attacker trim ratios: ['0.371', '0.366', '0.365', '0.369']
+2026-04-15 19:21:19,033 - [trmean] attacker avg trim: 0.3678, benign avg trim: 0.4036
+2026-04-15 19:21:19,046 - Round number: 90 --------------------------
+2026-04-15 19:21:19,046 - Evaluate global model
+2026-04-15 19:21:24,631 - Averaged Train Loss: 1.2142
+2026-04-15 19:21:24,633 - Test Accurancy: 0.5449
+2026-04-15 19:21:32,201 - min_max_attack try_count: 19
+2026-04-15 19:21:32,203 - min_max_attack lamda: 0.2143383026123047, max_d: 0.08909837156534195
+2026-04-15 19:21:32,286 - [trmean] attacker trim ratios: ['0.397', '0.392', '0.390', '0.393']
+2026-04-15 19:21:32,286 - [trmean] attacker avg trim: 0.3931, benign avg trim: 0.4008
+2026-04-15 19:21:32,302 - Round number: 91 --------------------------
+2026-04-15 19:21:32,302 - Evaluate global model
+2026-04-15 19:21:37,598 - Averaged Train Loss: 1.2092
+2026-04-15 19:21:37,599 - Test Accurancy: 0.5483
+2026-04-15 19:21:44,585 - min_max_attack try_count: 19
+2026-04-15 19:21:44,587 - min_max_attack lamda: 0.2030467987060547, max_d: 0.0904712975025177
+2026-04-15 19:21:44,677 - [trmean] attacker trim ratios: ['0.346', '0.341', '0.340', '0.344']
+2026-04-15 19:21:44,678 - [trmean] attacker avg trim: 0.3427, benign avg trim: 0.4064
+2026-04-15 19:21:44,698 - Round number: 92 --------------------------
+2026-04-15 19:21:44,699 - Evaluate global model
+2026-04-15 19:21:49,124 - Averaged Train Loss: 1.2068
+2026-04-15 19:21:49,125 - Test Accurancy: 0.5485
+2026-04-15 19:21:58,013 - min_max_attack try_count: 19
+2026-04-15 19:21:58,014 - min_max_attack lamda: 0.2101612091064453, max_d: 0.08805904537439346
+2026-04-15 19:21:58,090 - [trmean] attacker trim ratios: ['0.395', '0.389', '0.389', '0.393']
+2026-04-15 19:21:58,090 - [trmean] attacker avg trim: 0.3917, benign avg trim: 0.4009
+2026-04-15 19:21:58,111 - Round number: 93 --------------------------
+2026-04-15 19:21:58,111 - Evaluate global model
+2026-04-15 19:22:03,826 - Averaged Train Loss: 1.2040
+2026-04-15 19:22:03,827 - Test Accurancy: 0.5494
+2026-04-15 19:22:11,099 - min_max_attack try_count: 19
+2026-04-15 19:22:11,099 - min_max_attack lamda: 0.21180152893066406, max_d: 0.08685226738452911
+2026-04-15 19:22:11,200 - [trmean] attacker trim ratios: ['0.403', '0.397', '0.396', '0.400']
+2026-04-15 19:22:11,200 - [trmean] attacker avg trim: 0.3993, benign avg trim: 0.4001
+2026-04-15 19:22:11,213 - Round number: 94 --------------------------
+2026-04-15 19:22:11,213 - Evaluate global model
+2026-04-15 19:22:15,685 - Averaged Train Loss: 1.2032
+2026-04-15 19:22:15,686 - Test Accurancy: 0.5510
+2026-04-15 19:22:22,996 - min_max_attack try_count: 19
+2026-04-15 19:22:22,996 - min_max_attack lamda: 0.19654273986816406, max_d: 0.0826895609498024
+2026-04-15 19:22:23,074 - [trmean] attacker trim ratios: ['0.356', '0.350', '0.349', '0.353']
+2026-04-15 19:22:23,074 - [trmean] attacker avg trim: 0.3521, benign avg trim: 0.4053
+2026-04-15 19:22:23,085 - Round number: 95 --------------------------
+2026-04-15 19:22:23,085 - Evaluate global model
+2026-04-15 19:22:26,995 - Averaged Train Loss: 1.1977
+2026-04-15 19:22:26,996 - Test Accurancy: 0.5525
+2026-04-15 19:22:34,830 - min_max_attack try_count: 19
+2026-04-15 19:22:34,831 - min_max_attack lamda: 0.2033710479736328, max_d: 0.08138877153396606
+2026-04-15 19:22:34,924 - [trmean] attacker trim ratios: ['0.391', '0.386', '0.386', '0.391']
+2026-04-15 19:22:34,924 - [trmean] attacker avg trim: 0.3887, benign avg trim: 0.4013
+2026-04-15 19:22:34,934 - Round number: 96 --------------------------
+2026-04-15 19:22:34,934 - Evaluate global model
+2026-04-15 19:22:38,117 - Averaged Train Loss: 1.1962
+2026-04-15 19:22:38,117 - Test Accurancy: 0.5527
+2026-04-15 19:22:45,565 - min_max_attack try_count: 19
+2026-04-15 19:22:45,566 - min_max_attack lamda: 0.2156352996826172, max_d: 0.08527123928070068
+2026-04-15 19:22:45,678 - [trmean] attacker trim ratios: ['0.471', '0.467', '0.466', '0.469']
+2026-04-15 19:22:45,678 - [trmean] attacker avg trim: 0.4684, benign avg trim: 0.3924
+2026-04-15 19:22:45,690 - Round number: 97 --------------------------
+2026-04-15 19:22:45,690 - Evaluate global model
+2026-04-15 19:22:50,036 - Averaged Train Loss: 1.1923
+2026-04-15 19:22:50,036 - Test Accurancy: 0.5538
+2026-04-15 19:22:56,702 - min_max_attack try_count: 19
+2026-04-15 19:22:56,703 - min_max_attack lamda: 0.19690513610839844, max_d: 0.07426676154136658
+2026-04-15 19:22:56,812 - [trmean] attacker trim ratios: ['0.377', '0.371', '0.371', '0.375']
+2026-04-15 19:22:56,813 - [trmean] attacker avg trim: 0.3735, benign avg trim: 0.4029
+2026-04-15 19:22:56,823 - Round number: 98 --------------------------
+2026-04-15 19:22:56,823 - Evaluate global model
+2026-04-15 19:23:01,702 - Averaged Train Loss: 1.1922
+2026-04-15 19:23:01,703 - Test Accurancy: 0.5538
+2026-04-15 19:23:08,592 - min_max_attack try_count: 19
+2026-04-15 19:23:08,592 - min_max_attack lamda: 0.19438743591308594, max_d: 0.07298637181520462
+2026-04-15 19:23:08,681 - [trmean] attacker trim ratios: ['0.396', '0.390', '0.389', '0.392']
+2026-04-15 19:23:08,682 - [trmean] attacker avg trim: 0.3920, benign avg trim: 0.4009
+2026-04-15 19:23:08,694 - Round number: 99 --------------------------
+2026-04-15 19:23:08,694 - Evaluate global model
+2026-04-15 19:23:12,432 - Averaged Train Loss: 1.1921
+2026-04-15 19:23:12,433 - Test Accurancy: 0.5554
+2026-04-15 19:23:19,992 - min_max_attack try_count: 19
+2026-04-15 19:23:19,993 - min_max_attack lamda: 0.20173072814941406, max_d: 0.07564487308263779
+2026-04-15 19:23:20,028 - [trmean] attacker trim ratios: ['0.412', '0.407', '0.406', '0.410']
+2026-04-15 19:23:20,029 - [trmean] attacker avg trim: 0.4088, benign avg trim: 0.3990
+2026-04-15 19:23:20,042 - Round number: 100 --------------------------
+2026-04-15 19:23:20,042 - Evaluate global model
+2026-04-15 19:23:22,841 - Averaged Train Loss: 1.1894
+2026-04-15 19:23:22,841 - Test Accurancy: 0.5559
+2026-04-15 19:23:27,943 - min_max_attack try_count: 19
+2026-04-15 19:23:27,943 - min_max_attack lamda: 0.1940631866455078, max_d: 0.07312890142202377
+2026-04-15 19:23:27,987 - [trmean] attacker trim ratios: ['0.415', '0.409', '0.409', '0.412']
+2026-04-15 19:23:27,987 - [trmean] attacker avg trim: 0.4112, benign avg trim: 0.3988
+2026-04-15 19:23:27,988 - Run over
+2026-04-15 19:23:27,988 - Saving results to ./exp/exp5/Cifar10/trmean_CAMP_perturbation_v5.h5
+2026-04-15 19:23:28,000 - Best accuracy: 0.5559107559107559
+2026-04-15 19:23:28,001 - Average time cost per round: 12.073120470046996
