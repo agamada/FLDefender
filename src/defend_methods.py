@@ -335,6 +335,42 @@ def detection1(score):
     else:
         print('Attack Detected!')
         return 1
+    
+
+def agnostic(updates):
+    all_updates = torch.stack(updates)
+    
+    norms = torch.sum(all_updates ** 2, dim=1, keepdim=True)  # [N,1]
+    distances = norms + norms.T - 2 * (all_updates @ all_updates.T)
+    max_distance = distances.max()
+
+    lamda = 5
+    threshold_diff = 1e-5
+    step = lamda
+    lamda_succ = 0
+    try_count = 0
+
+    mean_update = torch.mean(all_updates, dim=0)
+    deviation = mean_update / torch.norm(mean_update)
+
+    while abs(lamda_succ - lamda) > threshold_diff:  
+        mal_update = mean_update - lamda * deviation
+        distance = torch.norm(all_updates - mal_update, dim=1) ** 2
+        max_d = torch.max(distance)
+
+        if max_d <= max_distance:
+            lamda_succ = lamda
+            lamda = lamda + step / 2
+        else:
+            lamda = lamda - step / 2
+        
+        step = step / 2
+        try_count += 1
+
+    agnostic_update = mean_update - lamda * deviation
+
+    return agnostic_update
+
 
 def flame(uploaded_models, uploaded_updates, m):
     cos = torch.nn.CosineSimilarity(dim=0, eps=1e-6).cuda()
@@ -403,7 +439,7 @@ def maud_norm_filter(uploaded_updates, uploaded_ids, accumulated_updates, window
         if cid not in accumulated_updates:
             accumulated_updates[cid] = []
         accumulated_updates[cid].append(u_norm)
-        # keep only last N rounds
+        
         if len(accumulated_updates[cid]) > window_size:
             accumulated_updates[cid] = accumulated_updates[cid][-window_size:]
     
@@ -471,7 +507,6 @@ def maud_cosine_filter(uploaded_updates, uploaded_ids, accumulated_updates, wind
     cos_sim = acc_normalized @ acc_normalized.T  # [k, k]
     cos_dist = (1 - cos_sim).cpu().numpy()
     np.fill_diagonal(cos_dist, 0)
-    # ensure non-negative (numerical stability)
     cos_dist = np.maximum(cos_dist, 0).astype(np.float64)
     
     # Step 4: HDBSCAN clustering

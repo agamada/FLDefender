@@ -13,7 +13,7 @@ from pathlib import Path
 
 from src.model import init_cnn
 from src.utils import read_client_data
-from src.attack_methods import min_max_attack, LIE_attack, sign_flip_attack, sign_flip_ratio_attack, enhanced_sign_flip_attack, global_sign_flip_attack, random_attack, CAMP_attack, scale_attack, init_MPAF_model, poisonedfl_attack
+from src.attack_methods import min_max_attack, LIE_attack, sign_flip_attack, random_attack, CAMP_attack, scale_attack, init_MPAF_model
 from src.defend_methods import krum, median, trimmed, multi_krum, selective_mean, dpd, lbfgs_torch, fld_distance, detection, detection1, flame, maud_norm_filter, maud_cosine_filter
 
 logger = logging.getLogger('client')
@@ -155,7 +155,7 @@ class Server(object):
             param.data.copy_(global_params[start_idx:start_idx + param_size].view_as(param))
             start_idx += param_size
         
-        if self.filter == 'flame':
+        if self.filter == 'flame':      # flame通过对聚合后模型施加高斯噪声削弱恶意特征，在此处实现是为了避免重复操作
             for param in self.global_model.parameters():
                 temp = torch.normal(mean=0, std=self.C_t * self.noise_level, size=param.size()).to(self.device)
                 param.data += temp
@@ -173,18 +173,6 @@ class Server(object):
             self.uploaded_updates, self.uploaded_weights = sign_flip_attack(
                 self.uploaded_updates, self.uploaded_weights, self.m
             )
-        elif self.mp == 'sign_flip_ratio':
-            self.uploaded_updates, self.uploaded_weights = sign_flip_ratio_attack(
-                self.uploaded_updates, self.uploaded_weights, self.m
-            )
-        elif self.mp == 'enhanced_sign_flip':
-            self.uploaded_updates, self.uploaded_weights, _ = enhanced_sign_flip_attack(
-                self.uploaded_updates, self.uploaded_weights, self.m
-            )
-        elif self.mp == 'global_sign_flip':
-            self.uploaded_updates, self.uploaded_weights, _ = global_sign_flip_attack(
-                self.uploaded_updates, self.uploaded_weights, self.m
-            )
         elif self.mp == 'random':
             self.uploaded_updates, self.uploaded_weights, _ = random_attack(
                 self.uploaded_updates, self.uploaded_weights, self.m
@@ -198,20 +186,6 @@ class Server(object):
                 self.uploaded_updates, self.uploaded_weights, self.m, 
                 self.args.CAMP_mode, self.filter, self.vector_s, self.args.lamda, self.args.pk,
                 self.uploaded_models, self.noise_level, self.m
-            )
-        elif self.mp == 'PoisonedFL':
-            self.uploaded_updates, self.uploaded_weights, self.poisonedfl_state = poisonedfl_attack(
-                updates=self.uploaded_updates,
-                weights=self.uploaded_weights,
-                num_attackers=self.m,
-                state=self.poisonedfl_state,
-                round_idx=self._round_idx,
-                scaling_factor=1e5,     # 你也可以做成 args
-                adjust_period=50,       # 同上
-                global_model_vec=None,
-                global_model_vec_prev_period=None,
-                last_global_grad=None,
-                jitter_ratio=0.0
             )
         elif self.mp == 'scale':
             self.uploaded_updates = scale_attack(self.uploaded_updates, self.m, self.s)
